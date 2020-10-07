@@ -68,7 +68,7 @@ export default {
 }
 
 .anim_letter-p {
-  animation: letterP 3.4s 0.5s both 4 ease-in-out alternate;
+  animation: letterP 5.4s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -95,7 +95,7 @@ export default {
 }
 
 .anim_letter-e {
-  animation: letterE 2.6s 0.5s both 4 ease-in-out alternate;
+  animation: letterE 4.6s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -120,7 +120,7 @@ export default {
 }
 
 .anim_letter-r {
-  animation: letterR 3.1s 0.5s both 4 ease-in-out alternate;
+  animation: letterR 5.1s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -145,7 +145,7 @@ export default {
 }
 
 .anim_letter-s {
-  animation: letterS 2.3s 0.5s both 4 ease-in-out alternate;
+  animation: letterS 4.3s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -169,7 +169,7 @@ export default {
   transform-origin: left;
 }
 .anim_letter-o {
-  animation: letterO 3s 0.5s both 4 ease-in-out alternate;
+  animation: letterO 5s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -193,7 +193,7 @@ export default {
   transform-origin: left;
 }
 .anim_letter-n {
-  animation: letterN 2.9s 0.5s both 4 ease-in-out alternate;
+  animation: letterN 4.9s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
@@ -217,7 +217,7 @@ export default {
   transform-origin: left;
 }
 .anim_letter-a {
-  animation: letterA 3.6s 0.5s both 4 ease-in-out alternate;
+  animation: letterA 5.6s 0.5s forwards 1 ease-in-out normal running;
   &:hover {
     animation-play-state: paused;
   }
