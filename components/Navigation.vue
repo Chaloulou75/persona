@@ -23,10 +23,10 @@
           <li class="text-gray-700 bg-transparent cursor-pointer dark:text-white">
             <select
               v-model="$colorMode.preference"
-              class="w-24 text-gray-700 bg-transparent cursor-pointer"
+              class="w-24 font-hairline text-gray-700 uppercase bg-transparent cursor-pointer dark:text-white focus:outline-none"
             >
-              <option value="light">White</option>
-              <option value="dark">Gold</option>
+              <option value="light" class="font-hairline text-gray-700 cursor-pointer">White</option>
+              <option value="dark" class="font-hairline text-gray-700 cursor-pointer">Gold</option>
             </select>
           </li>
         </ul>
@@ -37,13 +37,13 @@
         <ul class="flex flex-col items-end px-8 space-y-2 text-sm" v-if="show">
           <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2"><nuxt-link to="/">Proyectos</nuxt-link></li>
           <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2"><nuxt-link to="/">Sobre mi</nuxt-link></li>
-          <li class="cursor-pointer dark:text-white">
+          <li class="cursor-pointer ">
             <select
               v-model="$colorMode.preference"
-              class="w-24 text-gray-700 bg-transparent cursor-pointer"
+              class="w-24 text-gray-700 bg-transparent cursor-pointer dark:text-white"
             >
-              <option value="light">Light</option>
-              <option value="dark">Gold</option>
+              <option value="light" class="">Light</option>
+              <option value="dark" class="">Gold</option>
             </select>
           </li>
         </ul>
