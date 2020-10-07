@@ -15,6 +15,7 @@ module.exports = {
         gold: '#FFDF00',
       },
       fontSize: {
+        '7xl': '7rem',
         '12xl': '12rem',
       },
       spacing: {

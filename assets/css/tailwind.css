@@ -10,6 +10,15 @@ body, html{
     @apply bg-gray-800 text-white;
 }
 
-.letter{
-  @apply absolute font-hairline text-gray-900 cursor-pointer text-12xl;
+.letterBig{
+  @apply absolute font-hairline text-gray-900 cursor-pointer text-7xl;
+}
+@screen lg {
+  .letterBig {
+    @apply text-12xl;
+  }
+}
+
+.letterSmall{
+  @apply absolute font-hairline text-gray-900 cursor-pointer text-3xl;
 }
