@@ -25,7 +25,7 @@
               v-model="$colorMode.preference"
               class="w-24 font-hairline text-gray-700 uppercase bg-transparent cursor-pointer dark:text-white focus:outline-none"
             >
-              <option value="light" class="font-hairline text-gray-700 cursor-pointer">White</option>
+              <option value="light" selected class="font-hairline text-gray-700 cursor-pointer">White</option>
               <option value="dark" class="font-hairline text-gray-700 cursor-pointer">Gold</option>
             </select>
           </li>
@@ -40,10 +40,10 @@
           <li class="cursor-pointer ">
             <select
               v-model="$colorMode.preference"
-              class="w-24 text-gray-700 bg-transparent cursor-pointer dark:text-white"
+              class="w-24 font-hairline text-gray-700 uppercase bg-transparent cursor-pointer dark:text-white focus:outline-none"
             >
-              <option value="light" class="">Light</option>
-              <option value="dark" class="">Gold</option>
+              <option value="light" class="font-hairline text-gray-700 cursor-pointer">Light</option>
+              <option value="dark" class="font-hairline text-gray-700 cursor-pointer">Gold</option>
             </select>
           </li>
         </ul>
