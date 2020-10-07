@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body, html{
+  overflow: hidden;
+}
+
+.dark-mode body {
+    @apply bg-gray-800 text-white;
+}
+
+.letter{
+  @apply absolute font-hairline text-gray-900 cursor-pointer text-12xl;
+}
