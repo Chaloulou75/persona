@@ -2,23 +2,53 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body, html{
-  overflow: hidden;
+.theme-blue{
+  --bg-background-primary: #008aae;
+  --bg-background-secondary: #f23941;
+  --bg-background-ternary: white;
+  --text-copy-primary: #f23941;
+  --text-copy-secondary: #008aae;
 }
 
-.dark-mode body {
-    @apply bg-gray-800 text-white;
+.theme-reddy{
+  --bg-background-primary: #f23941;
+  --bg-background-secondary: #fed718;
+  --bg-background-ternary: white;
+  --text-copy-primary: #fed718;
+  --text-copy-secondary: #f23941;
+}
+
+.theme-yellowy{
+  --bg-background-primary: #fed718;
+  --bg-background-secondary: #008aae;
+  --bg-background-ternary: white;
+  --text-copy-primary: #008aae;
+  --text-copy-secondary: #fed718;
+}
+
+body, html{
+  overflow: hidden;
+  font-family: 'Montserrat', 'Ubuntu', sans-serif ;
+  cursor: url(https://colorsxstudios.com/content/uploads/colors-studios-colors-studios-try-new-mouse-kopie.png) 24 24, pointer !important;
+}
+
+nav, .desktop-menu, .mobile-menu{
+  font-family: 'Sorts Mill Goudy', 'Montserrat', sans-serif;
 }
 
 .letterBig{
-  @apply absolute font-hairline text-gray-900 cursor-pointer text-7xl;
+  font-family: 'Ubuntu', 'Montserrat', sans-serif;
+  @apply absolute font-hairline text-7xl;
+
 }
 @screen lg {
   .letterBig {
-    @apply text-12xl;
+    @apply text-11xl;
   }
 }
 
 .letterSmall{
-  @apply absolute font-hairline text-gray-900 cursor-pointer text-3xl;
+  @apply absolute font-hairline text-3xl;
 }
+
+

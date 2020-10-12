@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <nav class="flex justify-between w-full px-8 py-4 font-hairline text-gray-700 bg-transparent border-b-2 border-gray-400 dark:text-white">
+  <div class="border-b-2 border-gray-400">
+    <nav class="flex justify-between w-full px-8 py-4 font-hairline text-gray-700 bg-transparent">
 
-      <nuxt-link to='/' class="tracking-wider uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2">Persona</nuxt-link>
+      <nuxt-link to='/' class="tracking-wider uppercase transition duration-500 ease-in-out transform hover:translate-x-2">Persona</nuxt-link>
 
       <button
         class="outline-none mobile-hamburger lg:hidden focus:outline-none hover:text-gray-700"
@@ -14,38 +14,23 @@
 
       <div class="hidden desktop-menu lg:block">
         <ul class="flex justify-around space-x-6">
-          <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2">
-            <nuxt-link to="/">PROYECTOS</nuxt-link>
+          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
+            <nuxt-link to="/proyectos">PROYECTOS</nuxt-link>
           </li>
-          <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2">
-            <nuxt-link to="/">SOBRE MI</nuxt-link>
+          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
+            <nuxt-link to="/sobremi">SOBRE MI</nuxt-link>
           </li>
-          <li class="text-gray-700 bg-transparent cursor-pointer dark:text-white">
-            <select
-              v-model="$colorMode.preference"
-              class="w-24 font-hairline text-gray-700 uppercase bg-transparent cursor-pointer dark:text-white focus:outline-none"
-            >
-              <option value="light" selected class="font-hairline text-gray-700 cursor-pointer">White</option>
-              <option value="dark" class="font-hairline text-gray-700 cursor-pointer">Gold</option>
-            </select>
-          </li>
+
         </ul>
       </div>
     </nav>
 
     <transition name="fade" class="mobile-menu lg:hidden">
         <ul class="flex flex-col items-end px-8 space-y-2 text-sm" v-if="show">
-          <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2"><nuxt-link to="/">Proyectos</nuxt-link></li>
-          <li class="uppercase transition duration-500 ease-in-out transform cursor-pointer hover:translate-x-2"><nuxt-link to="/">Sobre mi</nuxt-link></li>
-          <li class="cursor-pointer ">
-            <select
-              v-model="$colorMode.preference"
-              class="w-24 font-hairline text-gray-700 uppercase bg-transparent cursor-pointer dark:text-white focus:outline-none"
-            >
-              <option value="light" class="font-hairline text-gray-700 cursor-pointer">Light</option>
-              <option value="dark" class="font-hairline text-gray-700 cursor-pointer">Gold</option>
-            </select>
-          </li>
+          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/proyectos">Proyectos</nuxt-link></li>
+
+          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/sobremi">Sobre mi</nuxt-link></li>
+
         </ul>
     </transition>
   </div>

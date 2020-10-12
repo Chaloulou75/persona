@@ -1,27 +1,27 @@
 <template>
-    <div class="persona">
-      <div class="relative h-screen">
-        <button class="left-0 px-2 py-1 mr-2 text-gray-500 focus:outline-none" @click="toggle">Animate me! or click on any letter</button>
+    <div class="min-h-screen persona bg-background-primary" :class="theme">
+      <div class="relative ">
+        <button class="right-0 px-2 py-1 mr-2 text-gray-500 focus:outline-none" @click="toggle" >X</button>
         <div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-p' : show}" class=" letter-p dark:text-blue-500 letterBig">
-            P
+          <div v-bind:class="{ 'anim_letter-p' : show}" class=" letter-p letterBig text-copy-primary">
+             <nuxt-link to="/proyectos">P</nuxt-link>
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e dark:text-blue-500 letterBig">
+          <div @click="toggle" v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e letterBig text-copy-primary">
             E
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-r' : show}" class="letter-r dark:text-blue-500 letterBig">
-            R
+          <div @click="toggle" v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
+            <nuxt-link to="/resume">R</nuxt-link>
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s dark:text-blue-500 letterBig">
-            S
+          <div @click="toggle" v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
+            <nuxt-link to="/sobremi">S</nuxt-link>
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-o' : show}" class="letter-o dark:text-blue-500 letterBig">
+          <div @click="toggleThemeYellow" v-bind:class="{ 'anim_letter-o' : show}" class="letter-o letterBig text-copy-primary">
             O
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-n' : show}" class="letter-n dark:text-blue-500 letterBig">
+          <div @click="toggle" v-bind:class="{ 'anim_letter-n' : show}" class="letter-n letterBig text-copy-primary">
             N
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a dark:text-blue-500 letterBig">
+          <div @click="toggleThemeRed" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a letterBig text-copy-primary">
             A
           </div>
         </div>
@@ -30,36 +30,28 @@
 </template>
 
 <script>
-import TButton from "~/components/TButton";
-
 export default {
   data() {
     return {
-      show: false
+      show: false,
+      theme : 'theme-blue',
     }
   },
   methods:{
     toggle : function () {
       this.show = !this.show
-    }
-  },
-  components: {
-    TButton
+    },
+    toggleThemeRed : function () {
+      this.theme = this.theme === 'theme-blue' ? 'theme-reddy' : 'theme-blue'
+    },
+    toggleThemeYellow : function () {
+      this.theme = this.theme === 'theme-blue' ? 'theme-yellowy' : 'theme-blue'
+    },
   }
 };
 </script>
 
 <style scoped>
-
-/* .badge {
-  @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700;
-  &:hover {
-    @apply bg-gray-300;
-  }
-}
-.dark-mode .badge {
-  @apply bg-gray-700 text-gray-200;
-} */
 
 .letter-p {
   top: 255px;
@@ -89,7 +81,7 @@ export default {
     transform:  translate(-120px, 50px)  rotate(360deg) ;
   }
   100% {
-    transform:  translate(225px, 10px)  rotate(0deg);
+    transform:  translate(225px, 15px)  rotate(0deg);
     opacity: 1;
   }
 }

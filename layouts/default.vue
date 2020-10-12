@@ -1,6 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white dark:bg-gold">
-    <Navigation />
+  <div class="min-h-screen">
     <Nuxt />
   </div>
 </template>

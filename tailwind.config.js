@@ -9,14 +9,26 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   theme: {
-    darkSelector: ".dark-mode",
     extend: {
       colors: {
+        background: {
+          primary: 'var(--bg-background-primary)',
+          secondary: 'var(--bg-background-secondary)',
+          ternary: 'var(--bg-background-ternary)',
+        },
+        copy: {
+          primary: 'var(--text-copy-primary)',
+          secondary: 'var(--text-copy-secondary)',
+          ternary: 'var(--text-copy-ternary)',
+        },
         gold: '#FFDF00',
+        bluejuli: '#008aae',
+        redjuli: "#f23941",
+        yellowjuli: '#fed718',
       },
       fontSize: {
         '7xl': '7rem',
-        '12xl': '12rem',
+        '11xl': '11rem',
       },
       spacing: {
         80: '20rem',
@@ -28,18 +40,8 @@ module.exports = {
     },
   },
   variants: {
-    backgroundColor: [
-      "dark",
-      "dark-hover",
-      "dark-group-hover",
-      "dark-even",
-      "dark-odd"
-    ],
-    borderColor: ["dark", "dark-focus", "dark-focus-within"],
-    textColor: ["dark", "dark-hover", "dark-active"]
   },
   plugins: [
-    require('tailwindcss-dark-mode')()
   ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
