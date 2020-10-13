@@ -2,6 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.theme-inicio{
+  --bg-background-primary: #ffffff;
+  --bg-background-secondary: #000000;
+  --bg-background-ternary: white;
+  --text-copy-primary: #000000;
+  --text-copy-secondary: #ffffff;
+}
+
 .theme-blue{
   --bg-background-primary: #008aae;
   --bg-background-secondary: #f23941;
@@ -27,9 +35,13 @@
 }
 
 body, html{
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Montserrat', 'Ubuntu', sans-serif ;
-  cursor: url(https://colorsxstudios.com/content/uploads/colors-studios-colors-studios-try-new-mouse-kopie.png) 24 24, pointer !important;
+  cursor: url('~assets/img/CURSOR2.png') 24 24, pointer;
+}
+
+nav, a, button {
+  cursor: url('~assets/img/CURSOR2.png') 24 24, pointer;
 }
 
 nav, .desktop-menu, .mobile-menu{
@@ -50,5 +62,7 @@ nav, .desktop-menu, .mobile-menu{
 .letterSmall{
   @apply absolute font-hairline text-3xl;
 }
+
+
 
 

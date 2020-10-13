@@ -1,11 +1,11 @@
 <template>
-  <div class="border-b-2 border-gray-400">
-    <nav class="flex justify-between w-full px-8 py-4 font-hairline text-gray-700 bg-transparent">
+  <div class="border-b-2 border-blue-400 border-dashed">
+    <nav class="flex justify-between w-full px-8 py-4 font-hairline bg-transparent text-copy-primary">
 
       <nuxt-link to='/' class="tracking-wider uppercase transition duration-500 ease-in-out transform hover:translate-x-2">Persona</nuxt-link>
 
       <button
-        class="outline-none mobile-hamburger lg:hidden focus:outline-none hover:text-gray-700"
+        class="outline-none mobile-hamburger lg:hidden focus:outline-none hover:text-copy-primary"
         @click="show = !show"
       >
         <svg v-if="!show" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>

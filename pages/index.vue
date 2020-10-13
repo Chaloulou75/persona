@@ -1,27 +1,28 @@
 <template>
-    <div class="min-h-screen persona bg-background-primary" :class="theme">
+    <div class="min-h-screen bg-background-primary" :class="theme">
+      <Navigation />
       <div class="relative ">
-        <button class="right-0 px-2 py-1 mr-2 text-gray-500 focus:outline-none" @click="toggle" >X</button>
+        <button class="right-0 px-2 py-1 mr-2 text-gray-500 focus:outline-none" @click="toggle">Start your journey</button>
         <div>
           <div v-bind:class="{ 'anim_letter-p' : show}" class=" letter-p letterBig text-copy-primary">
              <nuxt-link to="/proyectos">P</nuxt-link>
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e letterBig text-copy-primary">
+          <div v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e letterBig text-copy-primary">
             E
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
+          <div v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
             <nuxt-link to="/resume">R</nuxt-link>
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
+          <div v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
             <nuxt-link to="/sobremi">S</nuxt-link>
           </div>
-          <div @click="toggleThemeYellow" v-bind:class="{ 'anim_letter-o' : show}" class="letter-o letterBig text-copy-primary">
+          <div @mouseover="toggleThemeBlue" v-bind:class="{ 'anim_letter-o' : show}" class="letter-o letterBig text-copy-primary">
             O
           </div>
-          <div @click="toggle" v-bind:class="{ 'anim_letter-n' : show}" class="letter-n letterBig text-copy-primary">
+          <div v-bind:class="{ 'anim_letter-n' : show}" class="letter-n letterBig text-copy-primary">
             N
           </div>
-          <div @click="toggleThemeRed" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a letterBig text-copy-primary">
+          <div @mouseover="toggleThemeRed" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a letterBig text-copy-primary">
             A
           </div>
         </div>
@@ -34,18 +35,22 @@ export default {
   data() {
     return {
       show: false,
-      theme : 'theme-blue',
+      theme : 'theme-inicio',
     }
   },
   methods:{
     toggle : function () {
       this.show = !this.show
+      this.theme = this.theme === 'theme-inicio' ? 'theme-blue' : 'theme-inicio'
+    },
+    toggleThemeBlue : function () {
+      this.theme = this.theme === 'theme-blue' ? 'theme-inicio' : 'theme-blue'
     },
     toggleThemeRed : function () {
-      this.theme = this.theme === 'theme-blue' ? 'theme-reddy' : 'theme-blue'
+      this.theme = this.theme === 'theme-reddy' ? 'theme-yellowy' : 'theme-reddy'
     },
     toggleThemeYellow : function () {
-      this.theme = this.theme === 'theme-blue' ? 'theme-yellowy' : 'theme-blue'
+      this.theme = this.theme === 'theme-yellowy' ? 'theme-blue' : 'theme-yellowy'
     },
   }
 };
