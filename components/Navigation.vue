@@ -26,7 +26,7 @@
     </nav>
 
     <transition name="fade" class="mobile-menu lg:hidden">
-        <ul class="flex flex-col items-end px-8 space-y-2 text-sm" v-if="show">
+        <ul class="flex flex-col items-start px-8 space-y-2 text-sm" v-if="show">
           <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/proyectos">Proyectos</nuxt-link></li>
 
           <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/sobremi">Sobre mi</nuxt-link></li>

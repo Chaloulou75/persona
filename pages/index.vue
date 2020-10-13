@@ -2,7 +2,7 @@
     <div class="min-h-screen bg-background-primary" :class="theme">
       <Navigation />
       <div class="relative ">
-        <button class="right-0 px-2 py-1 mr-2 text-gray-500 focus:outline-none" @click="toggle">Start your journey</button>
+        <button class="absolute top-0 right-0 px-2 py-1 mr-4 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
         <div>
           <div v-bind:class="{ 'anim_letter-p' : show}" class=" letter-p letterBig text-copy-primary">
              <nuxt-link to="/proyectos">P</nuxt-link>
@@ -284,7 +284,7 @@ export default {
       transform:  translate(-30px, 10px)  rotate(360deg) ;
     }
     100% {
-      transform:  translate(25px, 30px)  rotate(0deg);
+      transform:  translate(15px, 10px)  rotate(0deg);
       opacity: 1;
     }
   }
