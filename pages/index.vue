@@ -1,8 +1,82 @@
 <template>
     <div class="min-h-screen bg-background-primary" :class="theme">
       <Navigation />
-      <div class="relative ">
-        <button class="absolute top-0 right-0 px-2 py-1 mr-4 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
+      <div class="relative">
+
+      <!-- photos de colores -->
+      <template v-if="foto === 'Azul' ">
+        <div class="flex items-center justify-between p-32 space-between bg-background-primary" >
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl" >
+            <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/azul/una.jpg" alt="azul" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <h1 class="text-3xl tracking-wider text-teal-100"></h1>
+            </div>
+          </div>
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl">
+            <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/azul/dos.jpg" alt="azul2" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <h1 class="text-3xl tracking-wider text-teal-100"></h1>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="foto === 'Amarillo'">
+        <div class="flex items-center justify-between p-32 space-between bg-background-primary" >
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl" >
+            <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/amarillo/una.jpg" alt="amarillouna" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <h1 class="text-3xl tracking-wider text-teal-100"></h1>
+            </div>
+          </div>
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl">
+            <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/amarillo/dos.jpg" alt="amarillodos" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <h1 class="text-3xl tracking-wider text-teal-100"></h1>
+            </div>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="foto === 'Rojo' ">
+        <div class="flex items-center justify-center p-32 bg-background-primary" >
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl" >
+            <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/rojo/una.jpg" alt="rojo" />
+            <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
+            <div class="relative flex items-center justify-center h-full">
+              <h1 class="text-3xl tracking-wider text-teal-100"></h1>
+            </div>
+          </div>
+        </div>
+      </template>
+
+        <button class="absolute top-0 right-0 px-2 py-3 mr-6 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
+
+        <div class="absolute inset-y-0 right-0 mt-16 mr-12">
+          <div class="fixed space-y-3">
+            <div class="w-6 h-6 bg-blue-500 border border-gray-500"
+            @click="foto = 'Azul'"
+            @mouseover="foto = 'Azul'"
+            >
+            </div>
+
+            <div class="w-6 h-6 border border-gray-500 bg-yellowjuli"
+            @click="foto = 'Amarillo'"
+            @mouseover="foto = 'Amarillo'"
+            >
+            </div>
+
+            <div class="w-6 h-6 border border-gray-500 bg-redjuli"
+            @click="foto = 'Rojo'"
+            @mouseover="foto = 'Rojo'"
+            >
+            </div>
+          </div>
+        </div>
+
+        <!-- las letras -->
         <div>
           <div v-bind:class="{ 'anim_letter-p' : show}" class=" letter-p letterBig text-copy-primary">
              <nuxt-link to="/proyectos">P</nuxt-link>
@@ -11,7 +85,7 @@
             E
           </div>
           <div v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
-            <nuxt-link to="/resume">R</nuxt-link>
+            <nuxt-link to="/sobremi/#resume">R</nuxt-link>
           </div>
           <div v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
             <nuxt-link to="/sobremi">S</nuxt-link>
@@ -36,6 +110,7 @@ export default {
     return {
       show: false,
       theme : 'theme-inicio',
+      foto: '',
     }
   },
   methods:{
@@ -51,13 +126,12 @@ export default {
     },
     toggleThemeYellow : function () {
       this.theme = this.theme === 'theme-yellowy' ? 'theme-blue' : 'theme-yellowy'
-    },
+    }
   }
 };
 </script>
 
 <style scoped>
-
 .letter-p {
   top: 255px;
   left: 150px;

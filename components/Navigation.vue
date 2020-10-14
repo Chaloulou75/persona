@@ -1,6 +1,6 @@
 <template>
   <div class="border-b-2 border-blue-400 border-dashed">
-    <nav class="flex justify-between w-full px-8 py-4 font-hairline bg-transparent text-copy-primary">
+    <nav class="flex justify-between w-full px-8 py-6 font-medium bg-transparent text-copy-primary">
 
       <nuxt-link to='/' class="tracking-wider uppercase transition duration-500 ease-in-out transform hover:translate-x-2">Persona</nuxt-link>
 
@@ -13,11 +13,11 @@
       </button>
 
       <div class="hidden desktop-menu lg:block">
-        <ul class="flex justify-around space-x-6">
-          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
+        <ul class="flex justify-around space-x-6 text-copy-primary">
+          <li class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
             <nuxt-link to="/proyectos">PROYECTOS</nuxt-link>
           </li>
-          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
+          <li class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2">
             <nuxt-link to="/sobremi">SOBRE MI</nuxt-link>
           </li>
 
@@ -25,11 +25,11 @@
       </div>
     </nav>
 
-    <transition name="fade" class="mobile-menu lg:hidden">
-        <ul class="flex flex-col items-start px-8 space-y-2 text-sm" v-if="show">
-          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/proyectos">Proyectos</nuxt-link></li>
+    <transition name="fade" class="mobile-menu lg:hidden ">
+        <ul class="flex flex-col items-start px-8 pb-4 space-y-2 text-sm text-copy-primary" v-if="show">
+          <li class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/proyectos">Proyectos</nuxt-link></li>
 
-          <li class="uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/sobremi">Sobre mi</nuxt-link></li>
+          <li class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"><nuxt-link to="/sobremi">Sobre mi</nuxt-link></li>
 
         </ul>
     </transition>
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .3s;
+    transition: opacity .3s ease-in-out;
   }
   .fade-enter, .fade-leave-to {
     opacity: 0;

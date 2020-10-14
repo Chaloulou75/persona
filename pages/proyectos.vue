@@ -1,20 +1,22 @@
 <template>
-    <div class="proyectos">
+    <div class="min-h-screen proyectos">
       <Navigation />
-      <h1 class="w-full py-4 text-lg text-center">Proyectos page</h1>
+      <div class="relative ">
+        <h1 class="w-full py-4 text-lg text-center">Proyectos page</h1>
+        <Lostresbotones />
+      </div>
+
     </div>
 </template>
 
 <script>
+import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
-  data() {
-    return {
-    }
-  },
-  methods:{
-
+  components : {
+    Lostresbotones
   }
+
 };
 </script>
 
