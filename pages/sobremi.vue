@@ -7,7 +7,7 @@
 
         <lostresbotones />
 
-        <div class="flex flex-col items-center justify-center w-1/2 h-screen mx-auto lg:w-1/5" data-scroll>
+        <div class="flex flex-col items-center justify-center w-1/2 min-h-screen mx-auto lg:w-1/5" data-scroll>
           <div class="px-4 py-2">
             <h2 class="py-4 text-sm font-semibold text-gray-900">a// Quien sos?</h2>
 
@@ -27,13 +27,28 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-center h-screen" data-scroll>
+        <div class="flex items-center justify-center min-h-screen" data-scroll>
           <div class="w-full mx-2 my-4 lg:w-1/3">
             <img
               src="~assets/img/autorretrato-min.jpg"
               alt="autorretrato"
               class="object-cover w-full h-full rounded-lg"
             />
+          </div>
+        </div>
+
+        <div id="resume" class="flex items-center justify-center min-h-screen" data-scroll>
+          <div class="relative w-full h-screen p-2 overflow-hidden rounded-lg shadow-2xl ">
+            <img
+              src="~assets/img/resume.jpg"
+              alt="resume"
+              class="absolute inset-0 object-cover w-full h-full"
+            />
+            <div class="absolute inset-0 bg-gray-100 bg-opacity-0"></div>
+            <div class="relative flex flex-col items-center justify-center h-full">
+              <button class="px-4 py-2 mb-6 text-xl font-medium tracking-wider uppercase bg-blue-100 border border-gray-900 rounded hover:bg-blue-200">descargar resume </button>
+              <svg class="w-16 h-16 text-yellowjuli" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path></svg>
+            </div>
           </div>
         </div>
 
