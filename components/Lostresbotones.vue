@@ -1,12 +1,11 @@
 <template>
   <div class="absolute inset-y-0 right-0 mt-16 mr-12">
-    <div class="fixed space-y-3">
-      <div class="w-5 h-5 border border-gray-500 bg-bluejuli">
-      </div>
-      <div class="w-5 h-5 border border-gray-500 bg-redjuli">
-      </div>
-      <div class="w-5 h-5 border border-gray-500 bg-yellowjuli">
-      </div>
+    <div class="fixed space-y-4">
+      <div class="w-6 h-6 transition duration-150 transform border border-gray-500 rounded shadow-lg bg-bluejuli hover:scale-110 hover:-rotate-45"></div>
+
+      <div class="w-6 h-6 transition duration-150 transform border border-gray-500 rounded shadow-lg bg-yellowjuli hover:scale-110 hover:-rotate-45"></div>
+
+      <div class="w-6 h-6 transition duration-150 transform border border-gray-500 rounded shadow-lg bg-redjuli hover:scale-110 hover:-rotate-45"></div>
     </div>
   </div>
 
