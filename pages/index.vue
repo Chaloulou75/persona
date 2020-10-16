@@ -91,7 +91,7 @@
             E
           </div>
           <div v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
-            <nuxt-link to="/sobremi/#resume">R</nuxt-link>
+            <nuxt-link to="/sobremi">R</nuxt-link>
           </div>
           <div v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
             <nuxt-link to="/sobremi">S</nuxt-link>
