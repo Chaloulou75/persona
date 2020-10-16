@@ -58,7 +58,7 @@
         </div>
       </template>
 
-        <button class="absolute top-0 right-0 px-2 py-3 mr-6 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
+      <button class="absolute top-0 right-0 px-2 py-3 mr-6 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
 
         <div class="absolute inset-y-0 right-0 mt-16 mr-12">
           <div class="fixed space-y-4">
@@ -91,7 +91,7 @@
             E
           </div>
           <div v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
-            <nuxt-link to="/sobremi">R</nuxt-link>
+            <nuxt-link to="/resume">R</nuxt-link>
           </div>
           <div v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
             <nuxt-link to="/sobremi">S</nuxt-link>
@@ -100,7 +100,7 @@
             O
           </div>
           <div v-bind:class="{ 'anim_letter-n' : show}" class="letter-n letterBig text-copy-primary">
-            N
+            <nuxt-link to="/contacto">N</nuxt-link>
           </div>
           <div @mouseover="toggleThemeRed" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a letterBig text-copy-primary">
             A
