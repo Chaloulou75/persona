@@ -7,7 +7,7 @@
         <div id="contacto" class="flex items-center justify-center min-h-screen mb-auto" data-scroll>
           <div class="relative w-full h-screen p-2 overflow-hidden">
             <img
-              src="~assets/img/fondoN.jpg"
+              src="~assets/img/paginaN/PAGINAN.png"
               alt="resume"
               class="absolute inset-0 object-cover w-full h-full"
             />
@@ -30,6 +30,7 @@ import VueTypedJs from 'vue-typed-js';
 import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
+  transition: "page",
   components : {
     Lostresbotones
   },
@@ -58,6 +59,17 @@ export default {
 [data-scroll="out"] {
   opacity: 0;
   transform: translateX(-150px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
 </style>

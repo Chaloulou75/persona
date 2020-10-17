@@ -1,16 +1,18 @@
 <template>
   <div class="border-b-2 border-blue-400 border-dashed">
     <nav
-      class="flex justify-between w-full px-8 py-6 text-base font-medium bg-transparent text-copy-primary lg:text-lg"
+      class="flex items-baseline justify-between w-full px-8 pt-4 pb-4 text-base font-medium text-gray-900 bg-transparent lg:text-xl"
     >
       <nuxt-link
         to="/"
-        class="tracking-wider uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
-        >Persona</nuxt-link
-      >
+        class="transition duration-500 transform hover:translate-x-2"
+        >
+        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+
+      </nuxt-link>
 
       <button
-        class="outline-none mobile-hamburger lg:hidden focus:outline-none hover:text-copy-primary"
+        class="outline-none mobile-hamburger lg:hidden focus:outline-none"
         @click="show = !show"
       >
         <svg
@@ -45,8 +47,8 @@
         </svg>
       </button>
 
-      <div class="hidden desktop-menu lg:block">
-        <ul class="flex justify-around space-x-6 text-copy-primary">
+      <div class="hidden mr-40 font-medium desktop-menu lg:block">
+        <ul class="flex justify-around space-x-12 text-gray-900">
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
@@ -63,7 +65,7 @@
 
     <transition name="fade" class="mobile-menu lg:hidden">
       <ul
-        class="flex flex-col items-start px-8 pb-4 space-y-2 text-base text-copy-primary"
+        class="flex flex-col items-start px-8 pb-4 space-y-2 text-base text-gray-900"
         v-if="show"
       >
         <li

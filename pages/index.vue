@@ -6,14 +6,14 @@
       <!-- photos de colores -->
       <template v-if="foto === 'Azul' ">
         <div class="flex items-center justify-between p-32 space-between bg-background-primary" >
-          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl" >
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg" >
             <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/una.jpg" alt="azul" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
             <div class="relative flex items-center justify-center h-full">
               <h1 class="text-3xl tracking-wider text-teal-100"></h1>
             </div>
           </div>
-          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl">
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg">
             <img class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/dos.jpg" alt="azul2" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
             <div class="relative flex items-center justify-center h-full">
@@ -24,7 +24,7 @@
       </template>
       <template v-else-if="foto === 'Amarillo'">
         <div class="flex items-center justify-between p-32 space-between bg-background-primary" >
-          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl" >
+          <div class="relative w-1/2 h-64 max-w-lg overflow-hidden rounded-lg" >
             <img class="absolute inset-0 object-cover w-full h-full " src="~assets/img/portadas/compress/amarillo/una.jpg" alt="amarillouna" />
             <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
             <div class="relative flex items-center justify-center h-full">
@@ -58,27 +58,27 @@
         </div>
       </template>
 
-      <button class="absolute top-0 right-0 px-2 py-3 mr-6 text-copy-primary focus:outline-none" @click="toggle">Start Me</button>
-
-        <div class="absolute inset-y-0 right-0 mt-16 mr-12">
+        <div class="absolute inset-y-0 right-0 mt-16 mr-20">
           <div class="fixed space-y-4">
-            <div class="w-6 h-6 transition duration-200 transform bg-blue-500 border border-gray-500 rounded shadow-lg hover:scale-110 hover:-rotate-45 "
+            <div class="w-5 h-5 transition duration-200 transform bg-blue-500 border border-gray-500 shadow-lg hover:scale-110 hover:-rotate-45"
             @click="foto = 'Azul'"
             @mouseover="foto = 'Azul'"
             >
             </div>
 
-            <div class="w-6 h-6 transition duration-200 transform border border-gray-500 rounded shadow-lg bg-yellowjuli hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-yellowjuli hover:scale-110 hover:-rotate-45"
             @click="foto = 'Amarillo'"
             @mouseover="foto = 'Amarillo'"
             >
             </div>
 
-            <div class="w-6 h-6 transition duration-200 transform border border-gray-500 rounded shadow-lg bg-redjuli hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-redjuli hover:scale-110 hover:-rotate-45"
             @click="foto = 'Rojo'"
             @mouseover="foto = 'Rojo'"
             >
             </div>
+
+            <button class="py-3 mt-6 -ml-6 text-copy-primary focus:outline-none" @click="toggle">Start me</button>
           </div>
         </div>
 
@@ -112,6 +112,8 @@
 
 <script>
 export default {
+  transition: "page",
+
   data() {
     return {
       show: false,
@@ -438,5 +440,16 @@ export default {
       transform:  translate(55px, 90px) rotate(0deg);
     }
   }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 </style>

@@ -37,20 +37,20 @@
 body, html{
   overflow-x: hidden;
   font-family: 'Montserrat', 'Ubuntu', sans-serif ;
-  cursor: url('~assets/img/CURSOR2.png') 24 24, pointer;
+  cursor: url('~assets/img/CURSOR3.png') 24 24, pointer;
 }
 
 nav, a, button {
-  cursor: url('~assets/img/CURSOR2.png') 24 24, pointer;
+  cursor: url('~assets/img/CURSOR3.png') 24 24, pointer;
 }
 
 nav, .desktop-menu, .mobile-menu{
-  font-family: 'Sorts Mill Goudy', 'Montserrat', sans-serif;
+  font-family:  'Montserrat', sans-serif;
 }
 
 .letterBig{
   font-family: 'Ubuntu', 'Montserrat', sans-serif;
-  @apply absolute font-hairline text-7xl;
+  @apply absolute font-semibold text-7xl;
 
 }
 @screen lg {

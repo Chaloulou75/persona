@@ -11,11 +11,11 @@
 
         <lostresbotones />
 
-        <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto mt-8 bg-gray-100 shadow-lg" data-scroll>
+        <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto my-8" data-scroll>
           <div class="px-4 py-4 mr-auto">
             <h2 class="py-4 text-sm font-semibold text-gray-900">a// Quien sos?</h2>
 
-            <vue-typed-js :strings="['SOY PERSONA, LA DIOSA DE TODAS LAS PERSONAS','b//  Lorem ipsum dolor sit amet consectetur adipisicing elit. ^500 Eos sed deserunt accusamus quia officiis ^500 sint adipisci dolorem odio architecto iure accusantium at nisi commodi vitae, rem libero facere, omnis voluptatem.']" :startDelay="1000"  :backDelay="100" :backSpeed="20" :typeSpeed="30" :showCursor="false">
+            <vue-typed-js :strings="['b // Soy Julieta, me muero por trabajar con vos...', 'b // Hola, soy Julieta y como diseñadora creo en la capacidad de la disciplina de crear un entorno contemporáneo que acompañe a las personas en el avance y desarrollo de las sociedades uniendo eficiencia y responsabilidad. Creo en el trabajo en equipo, la curiosidad y la experiencia como principales motores generadores.']" :startDelay="1000" :backDelay="100" :backSpeed="20" :typeSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
@@ -25,10 +25,38 @@
               a// Porque Persona?
             </h2>
 
-            <vue-typed-js :strings="['Que sé yo!!', 'b//  Lorem ipsum dolor sit amet consectetur adipisicing elit. ^500 Eos sed deserunt accusamus quia officiis sint adipisci dolorem odio ^500 architecto iure accusantium at nisi commodi vitae, rem libero facere, omnis voluptatem.']" :startDelay="15000" :typeSpeed="30" :backSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['b// Uhh que complicado...', 'b// La elección está dada por una perspectiva sobre el diseño y más particularmente de la indumentaria que estuve indagando durante el último tiempo, la misma consiste en entender al diseño como manifestación sociológica de una cultura global orientada hacia el mundo de las imágenes, es decir, como en la actualidad con un sistema de relaciones mediato y superficial (aunque no por ello menos interesante) los individuos logran construir diversos sistemas de comunicación y lenguajes complejos, codificados al igual que el habla.']" :startDelay="14000" :typeSpeed="20" :backSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"> </p>
             </vue-typed-js>
           </div>
+
+          <div class="px-4 py-4 mb-auto mr-auto">
+            <h2 class="py-4 text-sm font-semibold text-left text-gray-900">
+              a// Como te identificarías?
+            </h2>
+
+            <vue-typed-js :strings="['b// Si quieren navegar en este sitio, voy a contarles un poco sobre qué es lo que me detiene e intriga a cada momento, a la hora de empezar un proyecto.']" :startDelay="33000" :typeSpeed="20" :showCursor="false">
+              <p class="text-sm text-justify text-gray-600 typing"> </p>
+            </vue-typed-js>
+          </div>
+
+          <div class="px-4 py-4 mb-auto mr-auto">
+            <vue-typed-js :strings="['A la hora de diseñar, tiendo a inclinarme (por no decir a caer estrepitosamente) a pensar en las personas, en estos sujetos increíbles, misteriosos, que pueden aportar un sin fin de disparadores. Hay muchas maneras de observarlos, de entenderlos, según el día en que me encuentre suelen despertar en mi diferentes sentidos..']" :startDelay="39000" :typeSpeed="20" :showCursor="false">
+              <p class="text-sm text-justify text-gray-600 typing"> </p>
+            </vue-typed-js>
+          </div>
+
+          <div class="px-4 py-4 mb-auto mr-auto">
+            <vue-typed-js :strings="['A lo largo de este sitio, intentaré mostrarles un poco de lo que fui recolentando en el pasar de los días y así esperaré que entiendan que me detuvo en cada ocasión...']" :startDelay="48000" :typeSpeed="20" :showCursor="false">
+              <p class="text-sm text-justify text-gray-600 typing"> </p>
+            </vue-typed-js>
+          </div>
+          <div class="px-4 py-2 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-300 transform border-2 rounded-lg shadow-lg border-redjuli hover:bg-redjuli hover:text-white hover:translate-y-2 hover:font-semibold hover:border-white focus:outline-none">
+
+            <nuxt-link to="/proyectos"> para ver los proyectos</nuxt-link>
+
+          </div>
+
         </div>
 
         <div class="flex items-center justify-center min-h-screen" data-scroll>
@@ -53,6 +81,7 @@ import VueTypedJs from 'vue-typed-js';
 import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
+  transition: "page",
   components : {
     Lostresbotones
   },
@@ -81,6 +110,17 @@ export default {
 [data-scroll="out"] {
   opacity: 0;
   transform: translateX(-150px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
 
 </style>
