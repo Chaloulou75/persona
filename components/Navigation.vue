@@ -1,7 +1,7 @@
 <template>
   <div class="border-b-2 border-blue-400 border-dashed">
     <nav
-      class="flex justify-between w-full px-8 py-6 font-medium bg-transparent text-copy-primary"
+      class="flex justify-between w-full px-8 py-6 text-base font-medium bg-transparent text-copy-primary lg:text-lg"
     >
       <nuxt-link
         to="/"
@@ -63,7 +63,7 @@
 
     <transition name="fade" class="mobile-menu lg:hidden">
       <ul
-        class="flex flex-col items-start px-8 pb-4 space-y-2 text-sm text-copy-primary"
+        class="flex flex-col items-start px-8 pb-4 space-y-2 text-base text-copy-primary"
         v-if="show"
       >
         <li

@@ -1,8 +1,9 @@
 <template>
-    <div class="min-h-screen resume">
+    <div id="resume">
+
       <Navigation />
 
-      <div class="relative w-full text-gray-900">
+      <div class="relative w-full min-h-screen text-gray-900">
 
       <lostresbotones />
 
@@ -24,7 +25,9 @@
           </div>
         </div>
       </div>
+
       <Footer />
+
     </div>
 </template>
 

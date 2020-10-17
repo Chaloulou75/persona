@@ -3,17 +3,17 @@
     <Navigation />
       <div class="relative w-full text-gray-900">
 
-        <h1 class="py-4 text-2xl font-semibold tracking-widest text-center uppercase ">sobre mi</h1>
+        <h1 class="py-4 text-2xl font-semibold tracking-widest text-center uppercase">sobre mi</h1>
 
-        <nuxt-link to="/contacto" class="fixed left-0 z-30 px-4 py-2 mt-32 ml-16 tracking-widest text-gray-700 uppercase transition duration-200 ease-in-out transform rotate-45 border border-gray-600 rounded hover:text-white hover:border-white lg:mt-64 lg:ml-48 focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
+        <nuxt-link to="/contacto" class="fixed left-0 z-30 px-4 py-2 mt-32 ml-16 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform rotate-45 border border-gray-600 rounded shadow-lg hover:text-white hover:border-white lg:mt-64 lg:ml-48 focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
 
-        <nuxt-link to="/resume" class="fixed right-0 z-30 px-6 py-2 mt-12 mr-16 tracking-widest text-gray-700 uppercase transition duration-200 ease-in-out transform -rotate-45 border border-gray-600 rounded hover:text-white hover:border-white lg:mt-20 lg:mr-48 focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume</nuxt-link>
+        <nuxt-link to="/resume" class="fixed right-0 z-30 px-6 py-2 mt-12 mr-16 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border border-gray-600 rounded shadow-lg hover:text-white hover:border-white lg:mt-20 lg:mr-48 focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume</nuxt-link>
 
 
 
         <lostresbotones />
 
-        <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto mt-8" data-scroll>
+        <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto mt-8 shadow-lg" data-scroll>
           <div class="px-4 py-4 mr-auto">
             <h2 class="py-4 text-sm font-semibold text-gray-900">a// Quien sos?</h2>
 
