@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-center bg-no-repeat bg-contain bg-pagina-n">
+  <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-no-repeat bg-cover bg-pagina-n">
     <Navigation />
     <div class="relative w-full min-h-screen">
     <lostresbotones />
