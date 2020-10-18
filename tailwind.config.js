@@ -10,6 +10,10 @@ module.exports = {
   },
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'pagina-n': "url('~assets/img/paginaN/PAGINAN.png')",
+        'pagina-r': "url('~assets/img/paginaR/PAGINAR.svg')",
+      }),
       colors: {
         background: {
           primary: 'var(--bg-background-primary)',
