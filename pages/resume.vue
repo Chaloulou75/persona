@@ -5,7 +5,7 @@
 
       <lostresbotones />
       <div class="fixed left-0 flex flex-col items-center justify-center h-full ml-8 lg:ml-32">
-        <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-lg font-medium leading-6 tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 border-4 border-gray-500 rounded-lg shadow-xl hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none">
+        <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-lg font-medium leading-6 tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 border-4 border-gray-700 rounded-lg shadow-xl hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
         </a>
@@ -29,7 +29,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2017/ <br>2020</p>
+              <p class="text-base font-bold text-gray-700">2017/ <br>2020</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline text-gray-600 uppercase ">SANTISTA</h2>
@@ -41,7 +41,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2016/ <br>2017</p>
+              <p class="text-base font-bold text-gray-700">2016/ <br>2017</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline text-gray-600 uppercase ">BRANDO</h2>
@@ -51,7 +51,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2015/ <br>2016</p>
+              <p class="text-base font-bold text-gray-700">2015/ <br>2016</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline text-gray-600 uppercase">FANATICOS</h2>
@@ -63,7 +63,7 @@
           <h2 class="py-4 pl-6 text-lg font-hairline uppercase text-redjuli">// EDUCACIÓN</h2>
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2019/ <br>HOY</p>
+              <p class="text-base font-bold text-gray-700">2019/ <br>HOY</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-gray-600">Universidad Argentina de la Empresa (UADE)</h2>
@@ -73,7 +73,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2019</p>
+              <p class="text-base font-bold text-gray-700">2019</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-gray-600">Universidad de Buenos Aires (UBA)</h2>
@@ -84,7 +84,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2018</p>
+              <p class="text-base font-bold text-gray-700">2018</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-gray-600">Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
@@ -94,7 +94,7 @@
 
           <div class="flex items-start">
             <div class="ml-4">
-              <p class="text-lg font-bold text-gray-700">2015</p>
+              <p class="text-base font-bold text-gray-700">2015</p>
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-gray-600">Universidad de Monterrey (UDEM)</h2>
