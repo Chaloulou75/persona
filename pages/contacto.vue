@@ -4,7 +4,7 @@
     <div class="relative w-full min-h-screen">
     <lostresbotones />
 
-      <div class="flex flex-col items-center max-w-lg px-6 py-6 mx-auto my-16 bg-white border-4 border-gray-400">
+      <div class="flex flex-col items-center max-w-lg px-6 py-6 mx-auto my-16 bg-white border-4 border-gray-400 shadow-md">
         <form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div>
           <label class="text-sm font-bold text-gray-600" for="username">Tu nombre</label>
@@ -27,7 +27,7 @@
 
         <div class="mt-8">
           <button type="submit"
-            class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase rounded-lg bg-bluejuli focus:outline-none focus:shadow-outline">
+            class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase rounded-lg bg-bluejuli hover:bg-blue-500 focus:outline-none focus:shadow-outline">
             Envia Mensaje
           </button>
         </div>
