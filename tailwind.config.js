@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'pagina-n': "url('~assets/img/paginaN/PAGINAN.png')",
+        'pagina-n': "url('~assets/img/paginaN/PAGINAN.svg')",
         'pagina-r': "url('~assets/img/paginaR/PAGINAR.svg')",
       }),
       colors: {
