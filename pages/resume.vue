@@ -25,7 +25,9 @@
           <h2 class="py-4 text-lg font-hairline text-center uppercase text-redjuli">// experienca laboral</h2>
         </div>
 
-        <div class="flex flex-col justify-end max-w-sm mt-2 ml-auto space-y-8 border-l-2 border-gray-400 border-dashed">
+        <!-- Para hacer las lineas de borde -->
+        <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
+        <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
 
           <div class="flex items-start">
             <div class="ml-4">
@@ -111,6 +113,7 @@
             <p class="text-xs font-medium text-gray-500 ">EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
           </div>
 
+        </div>
         </div>
       </div>
 
