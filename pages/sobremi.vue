@@ -51,7 +51,7 @@
               <p class="text-sm text-justify text-gray-600 typing">A lo largo de este sitio, intentaré mostrarles un poco de lo que fui recolentando en el pasar de los días y así esperaré que entiendan que me detuvo en cada ocasión... </p>
             <!-- </vue-typed-js> -->
           </div>
-          <div class="px-4 py-2 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-300 transform border-2 rounded-lg shadow-lg border-redjuli hover:bg-redjuli hover:text-white hover:translate-y-2 hover:font-semibold hover:border-white focus:outline-none">
+          <div class="px-4 py-2 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-300 transform border-2 rounded-lg shadow-lg border-redjuli hover:bg-redjuli hover:text-white hover:translate-y-2 hover:font-semibold hover:border-white focus:outline-none" data-scroll>
 
             <nuxt-link to="/proyectos"> para ver los proyectos</nuxt-link>
 

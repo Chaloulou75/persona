@@ -65,7 +65,7 @@
 
     <transition name="fade" class="mobile-menu lg:hidden">
       <ul
-        class="flex flex-col items-start px-8 pb-4 space-y-2 text-base text-gray-900"
+        class="flex flex-col items-start px-8 pb-4 space-y-2 text-base font-semibold text-gray-900"
         v-if="show"
       >
         <li
@@ -97,7 +97,7 @@ export default {
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 .fade-enter,
 .fade-leave-to {

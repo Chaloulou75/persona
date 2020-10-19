@@ -38,6 +38,9 @@ module.exports = {
         80: '20rem',
         108: '27rem'
       },
+      height : {
+        128: '32rem'
+      },
       borderWidth: {
         14: '14px'
       }
