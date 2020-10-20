@@ -13,6 +13,11 @@ module.exports = {
       backgroundImage: theme => ({
         'pagina-n': "url('~assets/img/paginaN/PAGINAN.svg')",
         'pagina-r': "url('~assets/img/paginaR/PAGINAR.svg')",
+        'dia-1': "url('~assets/img/proyectos/dias/dia1.jpg')",
+        'dia-2': "url('~assets/img/proyectos/dias/dia2.jpg')",
+        'dia-3': "url('~assets/img/proyectos/dias/dia3.jpg')",
+        'dia-4': "url('~assets/img/proyectos/dias/dia4.jpg')",
+        'dia-5': "url('~assets/img/proyectos/dias/dia5.jpg')"
       }),
       colors: {
         background: {
@@ -47,6 +52,9 @@ module.exports = {
     },
   },
   variants: {
+    backgroundImage: ['responsive', 'hover'],
+    backgroundColor: ['responsive', 'hover'],
+    transitionDuration: ['responsive', 'hover'],
   },
   plugins: [
   ],
