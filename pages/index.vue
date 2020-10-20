@@ -73,7 +73,7 @@
 
         <!-- las letras -->
         <div v-bind:class="{ 'anim_letter-p' : show}" class="letter-p letterBig text-copy-primary">
-            <nuxt-link to="/proyectos">P</nuxt-link>
+            <nuxt-link to="/porfolio">P</nuxt-link>
         </div>
         <div v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e letterBig text-copy-primary">
           E

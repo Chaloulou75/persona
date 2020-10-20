@@ -38,8 +38,14 @@ module.exports = {
       fontSize: {
         '7xl': '7rem',
         '11xl': '11rem',
+        '12xl': '12rem',
+        '16xl': '16rem',
+        '17xl': '17rem',
       },
       spacing: {
+        28: '7rem',
+        29: '7.25rem',
+        30: '7.5rem',
         80: '20rem',
         108: '27rem'
       },

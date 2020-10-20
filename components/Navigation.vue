@@ -52,7 +52,7 @@
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/proyectos">PROYECTOS</nuxt-link>
+            <nuxt-link to="/porfolio">porfolio</nuxt-link>
           </li>
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
@@ -71,7 +71,7 @@
         <li
           class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
         >
-          <nuxt-link to="/proyectos">Proyectos</nuxt-link>
+          <nuxt-link to="/porfolio">porfolio</nuxt-link>
         </li>
 
         <li
