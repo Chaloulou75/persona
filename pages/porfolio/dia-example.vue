@@ -1,27 +1,24 @@
 <template>
 <div>
   <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
-
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
         <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
     <Lostresbotones />
-
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli" @click="show = !show">
         <div class="relative w-48 h-48 mt-auto border-2 border-bluejuli">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
           <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-29 numberBig text-17xl">1</div>
-        </div>
 
+        </div>
         <div class="flex items-center justify-center mt-8 space-x-1">
           <div class="px-1 py-1 border border-white"></div>
           <div class="px-1 py-1 border border-white"></div>
           <div class="px-1 py-1 border border-white"></div>
         </div>
-
         <div class="flex flex-col items-center justify-center w-48 h-48 px-4 py-2 mt-4 text-xs text-center text-white uppercase">
           <div class="pb-4">ESTE DÍA, ME OBSESIONÉ CON LOS CUERPOS,  HASTA VER SOLO FORMAS FLOTANDO.
           </div>
@@ -31,7 +28,8 @@
       </div>
 
       <!-- right screen 1 -->
-      <div name="page" v-if="show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2">
+
+      <div v-if="show" class="flex flex-col w-full h-screen px-4 bg-white lg:w-1/2">
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
@@ -59,33 +57,32 @@
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">Posibilidades de abstraccion__
+        <div class="w-1/2 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">Posibilidades de abstraccion__
         </div>
       </div>
+
       <!-- right screen 2 -->
-
-      <div name="page" v-else  class="flex flex-col w-full h-screen p-4 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
-
-          <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen" data-scroll>
+      <div v-else class="flex flex-col w-full h-screen p-4 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen" data-scroll>
           </div>
-          <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen" >
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg" >
+            <img src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg" >
+            <img src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
+          <div class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
   </div>
@@ -111,11 +108,44 @@ export default {
   components : {
     Lostresbotones
   },
-  data() {
-    return {
-      show: true,
-    };
-  },
+  data: () => ({
+    show: true,
+    currBackground: 0,
+    backgrounds: [
+      {
+        name: "1",
+        url: require("@/assets/img/proyectos/diauno/1.jpg")
+      },
+      {
+        name: "2",
+        url: require("@/assets/img/proyectos/diauno/2.jpg")
+      },
+      {
+        name: "3",
+        url: require("@/assets/img/proyectos/diauno/3.jpg")
+      },
+      {
+        name: "4",
+        url: require("@/assets/img/proyectos/diauno/4.jpg")
+      },
+      {
+        name: "5",
+        url: require("@/assets/img/proyectos/diauno/5.jpg")
+      },
+      {
+        name: "6",
+        url: require("@/assets/img/proyectos/diauno/6.jpg")
+      },
+      {
+        name: "7",
+        url: require("@/assets/img/proyectos/diauno/7.jpg")
+      },
+      {
+        name: "8",
+        url: ''
+      }
+    ]
+  }),
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
@@ -126,6 +156,22 @@ export default {
     this.so.teardown();
   },
 };
+// @click="nextImage()"
+// @scroll.native="nextImage()"
+//  <button class="bg-yellowjuli hover:bg-blue-400 focus:outline-none focus:shadow-outline">Cambiar image</button>
+  // computed: {
+  //   currBackgroundURL: function() {
+  //       return this.backgrounds[this.currBackground].url
+  //   }
+  // },
+  // methods: {
+  //   nextImage() {
+  //     this.currBackground += 1
+  //     if (this.currBackground > 7) {
+  //       this.currBackground = 0
+  //     }
+  //   }
+  // }
 </script>
 
 <style scoped>
