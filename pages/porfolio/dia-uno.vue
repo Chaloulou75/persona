@@ -64,7 +64,25 @@
       </div>
       <!-- right screen 2 -->
 
-      <div name="page" v-else  class="flex flex-col w-full h-screen p-4 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
+      <div name="page" v-else  class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
+
+        <div class="fixed flex flex-col w-1/4 px-2 space-y-4">
+
+          <scroll-link href="#uno" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '1'" v-bind:class="{ active: isActive == '1' }" ></scroll-link>
+
+          <scroll-link href="#dos" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '2'" v-bind:class="{ active: isActive == '2'}" ></scroll-link>
+
+          <scroll-link href="#tres" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '3'" v-bind:class="{ active: isActive == '3' }"></scroll-link>
+
+          <scroll-link href="#cuatro" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '4'" v-bind:class="{ active: isActive == '4' }"></scroll-link>
+
+          <scroll-link href="#cinco" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '5'" v-bind:class="{ active: isActive == '5' }"></scroll-link>
+
+          <scroll-link href="#seis" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"  @click.native="isActive = '6'" v-bind:class="{ active: isActive == '6' }" ></scroll-link>
+
+          <scroll-link href="#siete" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '7'" v-bind:class="{ active: isActive == '7' }"></scroll-link>
+
+        </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen" data-scroll>
@@ -104,16 +122,19 @@
 
 <script>
 import Lostresbotones from '~/components/Lostresbotones';
+import ScrollLink from '~/components/ScrollLink';
 import ScrollOut from "scroll-out";
 
 export default {
   transition: "page",
   components : {
-    Lostresbotones
+    Lostresbotones,
+    ScrollLink
   },
   data() {
     return {
       show: true,
+      isActive: ''
     };
   },
   mounted() {
@@ -124,11 +145,16 @@ export default {
   },
   destroyed() {
     this.so.teardown();
-  },
+  }
+
 };
 </script>
 
 <style scoped>
+
+.active{
+  @apply bg-bluejuli;
+}
 
 .scrollhidden::-webkit-scrollbar {
   display: none;
