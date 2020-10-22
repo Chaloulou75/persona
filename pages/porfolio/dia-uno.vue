@@ -25,13 +25,13 @@
         <div class="flex flex-col items-center justify-center w-48 h-48 px-4 py-2 mt-4 text-xs text-center text-white uppercase">
           <div class="pb-4">ESTE DÍA, ME OBSESIONÉ CON LOS CUERPOS,  HASTA VER SOLO FORMAS FLOTANDO.
           </div>
-          <div>trabajo de fotogragia digital</div>
+          <div>trabajo de fotografia digital</div>
 
         </div>
       </div>
 
       <!-- right screen 1 -->
-      <div name="page" v-if="show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2">
+      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2">
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
@@ -66,26 +66,47 @@
 
       <div name="page" v-else  class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
 
-        <div class="fixed flex flex-col w-1/4 px-2 space-y-4">
+        <div class="fixed flex flex-col w-16 px-1 space-y-4 bg-transparent">
 
-          <scroll-link href="#uno" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '1'" v-bind:class="{ active: isActive == '1' }" ></scroll-link>
+          <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '1'"
+          v-bind:class="{ active: isActive == '1' }"
+          ></scroll-link>
 
-          <scroll-link href="#dos" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '2'" v-bind:class="{ active: isActive == '2'}" ></scroll-link>
+          <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '2'"
+          v-bind:class="{ active: isActive == '2'}"
+          ></scroll-link>
 
-          <scroll-link href="#tres" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '3'" v-bind:class="{ active: isActive == '3' }"></scroll-link>
+          <scroll-link href="#tres" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '3'"
+          v-bind:class="{ active: isActive == '3' }"
+          ></scroll-link>
 
-          <scroll-link href="#cuatro" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '4'" v-bind:class="{ active: isActive == '4' }"></scroll-link>
+          <scroll-link href="#cuatro" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '4'"
+          v-bind:class="{ active: isActive == '4' }"
+          ></scroll-link>
 
-          <scroll-link href="#cinco" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '5'" v-bind:class="{ active: isActive == '5' }"></scroll-link>
+          <scroll-link href="#cinco" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '5'"
+          v-bind:class="{ active: isActive == '5' }"
+          ></scroll-link>
 
-          <scroll-link href="#seis" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"  @click.native="isActive = '6'" v-bind:class="{ active: isActive == '6' }" ></scroll-link>
+          <scroll-link href="#seis" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '6'"
+          v-bind:class="{ active: isActive == '6' }"
+          ></scroll-link>
 
-          <scroll-link href="#siete" class="w-1/5 h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110" @click.native="isActive = '7'" v-bind:class="{ active: isActive == '7' }"></scroll-link>
+          <scroll-link href="#siete" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          @click.native="isActive = '7'"
+          v-bind:class="{ active: isActive == '7' }"
+          ></scroll-link>
 
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen" data-scroll>
+            <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
@@ -134,7 +155,7 @@ export default {
   data() {
     return {
       show: true,
-      isActive: ''
+      isActive: '',
     };
   },
   mounted() {
@@ -146,14 +167,13 @@ export default {
   destroyed() {
     this.so.teardown();
   }
-
 };
 </script>
 
 <style scoped>
 
 .active{
-  @apply bg-bluejuli;
+  @apply bg-bluejuli transform scale-y-125 scale-x-110;
 }
 
 .scrollhidden::-webkit-scrollbar {
