@@ -54,7 +54,7 @@
 
           <div class="mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-300 transform hover:bg-redjuli hover:text-white hover:translate-y-2 hover:font-semibold focus:outline-none" data-scroll>
 
-            <nuxt-link to="/proyectos"> para ver los proyectos</nuxt-link>
+            <nuxt-link to="/porfolio"> Para ver el Porfolio</nuxt-link>
           </div>
         </div>
 
