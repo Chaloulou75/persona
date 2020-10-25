@@ -8,11 +8,11 @@
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
             <p class="px-4 text-lg">2020</p>
         </nuxt-link>
-        <nuxt-link to="/porfolio/dia-uno" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
+        <nuxt-link to="/porfolio/dia-dos" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">2</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
-        <nuxt-link to="/porfolio/dia-uno" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-gray-800">
+        <nuxt-link to="/porfolio/dia-tres" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-gray-800">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">3</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
+  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row sortsMill">
 
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
@@ -10,8 +10,8 @@
     <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli" @click="show = !show">
-        <div class="relative w-48 h-48 mt-auto border-2 border-bluejuli">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
+        <div class="relative w-48 h-48 mt-auto border-2 border-redjuli">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
           <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-29 numberBig text-17xl">1</div>
         </div>
@@ -22,11 +22,10 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-48 h-48 px-4 py-2 mt-4 text-xs text-center text-white uppercase">
-          <div class="pb-4">ESTE DÍA, ME OBSESIONÉ CON LOS CUERPOS,  HASTA VER SOLO FORMAS FLOTANDO.
-          </div>
-          <div>trabajo de fotografia digital</div>
-
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-xs text-center text-white lg:w-1/2">
+          <p class="pb-6">Este día me obsesioné con aquellas cosas que tenían la capacidad de interrumpir el orden, me intrigó lo inquieto, los que rompían la tan esperada absurda monotonía.
+          </p>
+          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN</p>
         </div>
       </div>
 
@@ -35,13 +34,13 @@
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="text-sm uppercase text-bluejuli">fotografia digital</div>
+          <div class="text-sm uppercase text-bluejuli">Tendencias</div>
         </div>
         <div class="flex justify-around">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">literatura</div>
+            <div class="text-sm uppercase text-bluejuli">Moldería</div>
           </div>
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -59,31 +58,30 @@
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">Posibilidades de abstraccion__
+        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">SUBVERSIVO
         </div>
       </div>
+
       <!-- right screen 2 -->
+      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
 
-      <div name="page" v-else  class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
-
-        <div class="fixed flex flex-col w-16 px-1 space-y-4 bg-transparent">
-
-          <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+          <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '1'"
           v-bind:class="{ active: isActive == '1' }"
           ></scroll-link>
 
-          <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '2'"
           v-bind:class="{ active: isActive == '2'}"
           ></scroll-link>
 
-          <scroll-link href="#tres" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          <scroll-link href="#tres" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '3'"
           v-bind:class="{ active: isActive == '3' }"
           ></scroll-link>
 
-          <scroll-link href="#cuatro" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          <scroll-link href="#cuatro" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '4'"
           v-bind:class="{ active: isActive == '4' }"
           ></scroll-link>
@@ -93,25 +91,24 @@
           v-bind:class="{ active: isActive == '5' }"
           ></scroll-link>
 
-          <scroll-link href="#seis" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          <scroll-link href="#seis" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '6'"
           v-bind:class="{ active: isActive == '6' }"
           ></scroll-link>
 
-          <scroll-link href="#siete" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
+          <scroll-link href="#siete" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '7'"
           v-bind:class="{ active: isActive == '7' }"
           ></scroll-link>
-
         </div>
 
-          <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+          <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+          <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
           </div>
-          <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+          <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
@@ -120,7 +117,7 @@
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
             <img alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+          <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
@@ -155,7 +152,7 @@ export default {
   data() {
     return {
       show: true,
-      isActive: '',
+      isActive: ''
     };
   },
   mounted() {

@@ -25,7 +25,6 @@ export default {
   plugins: [
     { src: '@/plugins/scroll-out', ssr: false },
     '@/plugins/vue-typed-js',
-
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
