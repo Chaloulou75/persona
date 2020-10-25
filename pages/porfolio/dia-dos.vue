@@ -66,6 +66,7 @@
       <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+
           <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '1'"
           v-bind:class="{ active: isActive == '1' }"
