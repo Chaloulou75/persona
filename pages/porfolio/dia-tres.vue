@@ -138,6 +138,7 @@
             <!-- <video class="w-full h-auto" controls>
               <source src="~assets/img/proyectos/diatres/KaukVideoMarca.mp4" type="video/mp4">
             </video> -->
+
             <iframe src="https://player.vimeo.com/video/223297212" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
 
