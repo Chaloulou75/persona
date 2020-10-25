@@ -117,7 +117,7 @@
           v-bind:class="{ active: isActive == '8' }"
           ></scroll-link>
 
-          <scroll-link href="#nueve" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          <!-- <scroll-link href="#nueve" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '9'"
           v-bind:class="{ active: isActive == '9' }"
           ></scroll-link>
@@ -130,7 +130,7 @@
           <scroll-link href="#once" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '11'"
           v-bind:class="{ active: isActive == '11' }"
-          ></scroll-link>
+          ></scroll-link> -->
 
         </div>
 
@@ -169,7 +169,7 @@
           <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img alt="ocho" src="~assets/img/proyectos/diatres/8.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+          <!-- <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img alt="nueve" src="~assets/img/proyectos/diatres/9.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
@@ -177,7 +177,7 @@
           </div>
           <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img alt="once" src="~assets/img/proyectos/diatres/11.jpg" class="object-cover w-full h-screen">
-          </div>
+          </div> -->
       </div>
   </div>
 
