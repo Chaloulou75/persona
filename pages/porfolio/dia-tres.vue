@@ -167,16 +167,16 @@
             <img alt="siete" src="~assets/img/proyectos/diatres/7.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="ocho" src="~assets/img/proyectos/diatres/8.jpg" class="object-cover w-full h-screen">
+            <img alt="ocho" src="~assets/img/proyectos/diatres/8.JPG" class="object-cover w-full h-screen">
           </div>
           <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="nueve" src="~assets/img/proyectos/diatres/9.jpg" class="object-cover w-full h-screen">
+            <img alt="nueve" src="~assets/img/proyectos/diatres/9.JPG" class="object-cover w-full h-screen">
           </div>
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="dies" src="~assets/img/proyectos/diatres/10.jpg" class="object-cover w-full h-screen">
+            <img alt="dies" src="~assets/img/proyectos/diatres/10.JPG" class="object-cover w-full h-screen">
           </div>
           <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="once" src="~assets/img/proyectos/diatres/11.jpg" class="object-cover w-full h-screen">
+            <img alt="once" src="~assets/img/proyectos/diatres/11.JPG" class="object-cover w-full h-screen">
           </div>
       </div>
   </div>
