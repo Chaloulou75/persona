@@ -4,7 +4,7 @@
 
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
-        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
     <Lostresbotones />
@@ -22,7 +22,7 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-xs text-center text-white lg:w-1/2">
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
           <p class="pb-6">Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.
           </p>
           <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN.</p>
@@ -124,37 +124,37 @@
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="uno" src="~assets/img/proyectos/diados/1.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diados/1.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="dos" src="~assets/img/proyectos/diados/2.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diados/2.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="tres" src="~assets/img/proyectos/diados/3.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diados/3.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="cuatro" src="~assets/img/proyectos/diados/4.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diados/4.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img alt="cinco" src="~assets/img/proyectos/diados/5.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diados/5.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="siete" src="~assets/img/proyectos/diados/7.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diados/7.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="ocho" src="~assets/img/proyectos/diados/8.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diados/8.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="nueve" src="~assets/img/proyectos/diados/9.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diados/9.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
   </div>

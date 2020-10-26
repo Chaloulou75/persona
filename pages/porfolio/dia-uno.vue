@@ -4,7 +4,7 @@
 
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
-        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
     <Lostresbotones />
@@ -13,7 +13,7 @@
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
         <div class="relative w-48 h-48 mt-auto border-2 border-redjuli">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
-          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-29 numberBig text-17xl">1</div>
+          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">1</div>
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -22,7 +22,7 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-xs text-center text-white lg:w-1/2">
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
           <p class="pb-6">Este día me obsesioné con aquellas cosas que tenían la capacidad de interrumpir el orden, me intrigó lo inquieto, los que rompían la tan esperada absurda monotonía.
           </p>
           <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN</p>
@@ -103,25 +103,25 @@
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
   </div>

@@ -61,6 +61,7 @@
         <div class="flex items-center justify-center min-h-screen" data-scroll>
           <div class="w-full mx-2 my-4 mb-auto lg:w-1/3">
             <img
+              loading="lazy"
               src="~assets/img/autorretrato-min.jpg"
               alt="autorretrato"
               class="object-cover w-full h-full rounded-lg"

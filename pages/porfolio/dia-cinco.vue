@@ -10,10 +10,10 @@
     <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
-        <div class="relative w-48 h-48 mt-auto border-2 border-yellowjuli">
+      <div class="flex flex-col items-center justify-center w-full h-screen bg-black lg:w-1/2" @click="show = !show">
+        <div class="relative w-48 h-48 mt-auto border-2 border-bluejuli">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
-          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">3</div>
+          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">5</div>
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -23,9 +23,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">El tercer día la tierra se me hizo imprescindible, sus texturas, sus capas, sus colores y la facilidad con la que flotaba en el aire.
+          <p class="pb-6">Con el pasar de los días me empecé a contagiar de un sentimiento mítico, me vi absorbida por la teatralidad de la forma de vestir de los humanos.
           </p>
-          <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA Y CONCEPTUALIZACIÓN DE DOS COLECCIONES.</p>
+          <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA READY-TO-WEAR, CON SISTEMA DE COMUNICACIÓN COMPLETO.</p>
         </div>
       </div>
 
@@ -58,28 +58,17 @@
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli">KAUK
+        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">SUBVERSIVO
         </div>
       </div>
 
       <!-- right screen 2 -->
       <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
 
-        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-
-          <scroll-link href="#video" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = 'video'"
-          v-bind:class="{ active: isActive == 'video' }"
-          ></scroll-link>
-
+        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
           <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '1'"
           v-bind:class="{ active: isActive == '1' }"
-          ></scroll-link>
-
-          <scroll-link href="#dosa" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '2a'"
-          v-bind:class="{ active: isActive == '2a'}"
           ></scroll-link>
 
           <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
@@ -132,51 +121,111 @@
           v-bind:class="{ active: isActive == '11' }"
           ></scroll-link>
 
+          <scroll-link href="#doce" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '12'"
+          v-bind:class="{ active: isActive == '12' }"
+          ></scroll-link>
+
+          <scroll-link href="#trece" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '13'"
+          v-bind:class="{ active: isActive == '13' }"
+          ></scroll-link>
+
+          <scroll-link href="#quatorce" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '14'"
+          v-bind:class="{ active: isActive == '14' }"
+          ></scroll-link>
+
+          <scroll-link href="#quinze" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '15'"
+          v-bind:class="{ active: isActive == '15' }"
+          ></scroll-link>
+
+          <scroll-link href="#seize" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '16'"
+          v-bind:class="{ active: isActive == '16' }"
+          ></scroll-link>
+
+          <scroll-link href="#dixsept" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '17'"
+          v-bind:class="{ active: isActive == '17' }"
+          ></scroll-link>
+
+          <scroll-link href="#dixhuit" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '18'"
+          v-bind:class="{ active: isActive == '18' }"
+          ></scroll-link>
+
+          <scroll-link href="#dixneuf" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '19'"
+          v-bind:class="{ active: isActive == '19' }"
+          ></scroll-link>
+
+          <scroll-link href="#veinte" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '20'"
+          v-bind:class="{ active: isActive == '20' }"
+          ></scroll-link>
         </div>
 
-          <div id="video" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <!-- <video class="w-full h-auto" controls>
-              <source src="~assets/img/proyectos/diatres/KaukVideoMarca.mp4" type="video/mp4">
-            </video> -->
-
-            <iframe src="https://player.vimeo.com/video/223297212" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
-
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diatres/1.jpg" class="object-cover w-full h-screen">
-          </div>
-          <div id="dosa" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dosa" src="~assets/img/proyectos/diatres/2a.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diacinco/1.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diatres/2.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diacinco/2.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diatres/3.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diacinco/3.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diatres/4.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diacinco/4.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diatres/5.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diacinco/5.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diatres/6.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diacinco/6.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diatres/7.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diacinco/7.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diatres/8.JPG" class="object-cover w-full h-screen">
+          <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diacinco/8.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diatres/9.JPG" class="object-cover w-full h-screen">
+          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diacinco/9.jpg" class="object-cover w-full h-screen" >
           </div>
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diatres/10.JPG" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diacinco/10.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="once" src="~assets/img/proyectos/diatres/11.JPG" class="object-cover w-full h-screen">
+          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
+            <img loading="lazy" alt="once" src="~assets/img/proyectos/diacinco/11.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="doce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="doce" src="~assets/img/proyectos/diacinco/12.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="trece" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="trece" src="~assets/img/proyectos/diacinco/13.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="quatorce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="quatorce" src="~assets/img/proyectos/diacinco/14.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="quinze" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="quinze" src="~assets/img/proyectos/diacinco/15.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="seize" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacinco/16.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="dixsept" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="dixsept" src="~assets/img/proyectos/diacinco/17.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="dixhuit" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="dixhuit" src="~assets/img/proyectos/diacinco/18.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="dixneuf" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+            <img loading="lazy" alt="dixneuf" src="~assets/img/proyectos/diacinco/19.jpg" class="object-cover w-full h-screen">
+          </div>
+          <div id="veinte" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacinco/20.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
   </div>
