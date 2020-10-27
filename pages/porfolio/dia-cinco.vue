@@ -10,8 +10,8 @@
     <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen bg-black lg:w-1/2" @click="show = !show">
-        <div class="relative w-48 h-48 mt-auto border-2 border-bluejuli">
+      <div class="flex flex-col items-center justify-center w-full h-screen bg-bluejuli lg:w-1/2" @click="show = !show">
+        <div class="relative w-48 h-48 mt-auto border-2 border-black">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
           <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">5</div>
         </div>

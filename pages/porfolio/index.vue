@@ -25,7 +25,7 @@
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-gray-900 to-black">
+        <nuxt-link to="/porfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">5</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
