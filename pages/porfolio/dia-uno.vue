@@ -108,26 +108,26 @@
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-contain w-full h-screen">
           </div>
 
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg" @click='toggleColorFoto'>
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
+          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-pointer animate-pulse" @click='toggleColorFoto'>
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
   </div>

@@ -187,73 +187,73 @@
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diacuatro/1.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diacuatro/1.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diacuatro/2.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diacuatro/2.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diacuatro/3.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diacuatro/3.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="tresa" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="tresa" src="~assets/img/proyectos/diacuatro/3a.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="tresa" src="~assets/img/proyectos/diacuatro/3a.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diacuatro/4.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diacuatro/4.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diacuatro/5.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diacuatro/5.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diacuatro/6.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diacuatro/6.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diacuatro/7.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diacuatro/7.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diacuatro/8.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diacuatro/8.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diacuatro/9.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diacuatro/9.jpg" class="object-contain w-full h-screen" >
           </div>
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diacuatro/10.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diacuatro/10.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="once" src="~assets/img/proyectos/diacuatro/11.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="once" src="~assets/img/proyectos/diacuatro/11.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="doce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="doce" src="~assets/img/proyectos/diacuatro/12.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="doce" src="~assets/img/proyectos/diacuatro/12.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="trece" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="trece" src="~assets/img/proyectos/diacuatro/13.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="trece" src="~assets/img/proyectos/diacuatro/13.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="quatorce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="quatorce" src="~assets/img/proyectos/diacuatro/14.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="quatorce" src="~assets/img/proyectos/diacuatro/14.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="quinze" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="quinze" src="~assets/img/proyectos/diacuatro/15.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="quinze" src="~assets/img/proyectos/diacuatro/15.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="seize" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacuatro/16.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacuatro/16.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="dixsept" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixsept" src="~assets/img/proyectos/diacuatro/17.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dixsept" src="~assets/img/proyectos/diacuatro/17.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="dixhuit" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixhuit" src="~assets/img/proyectos/diacuatro/18.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dixhuit" src="~assets/img/proyectos/diacuatro/18.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="dixneuf" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixneuf" src="~assets/img/proyectos/diacuatro/19.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="dixneuf" src="~assets/img/proyectos/diacuatro/19.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="veinte" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacuatro/20.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacuatro/20.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="veinteuno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="veinteuno" src="~assets/img/proyectos/diacuatro/21.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="veinteuno" src="~assets/img/proyectos/diacuatro/21.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="veintedos" class="flex items-center justify-center w-full min-h-screen shadow-lg " @click='toggleColorFoto'>
-            <img loading="lazy" alt="veintedos" src="~assets/img/proyectos/diacuatro/22.jpg" class="object-cover w-full h-screen">
+            <img loading="lazy" alt="veintedos" src="~assets/img/proyectos/diacuatro/22.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
   </div>
