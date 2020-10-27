@@ -110,11 +110,12 @@
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img loading="lazy" alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-cover w-full h-screen">
           </div>
+
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen" >
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-cover w-full h-screen">
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-cover w-full h-screen">
@@ -129,7 +130,7 @@
             <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
-      <div v-if="lastFotoRed" class="absolute inset-0 bg-opacity-75 bg-redjuli"></div>
+    <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-75 bg-redjuli"></div>
   </div>
 
   <div class="w-1/4 mx-auto my-20" data-scroll>
