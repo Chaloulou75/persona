@@ -1,6 +1,8 @@
 <template>
-<div>
+<div class="relative">
+  <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
   <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row sortsMill">
+    <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
@@ -63,7 +65,9 @@
       </div>
 
       <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll bg-gray-200 divide-y-2 lg:w-1/2 scrollhidden">
+      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll divide-y-2 lg:w-1/2 scrollhidden"
+      v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+      >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
           <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
@@ -248,7 +252,7 @@
           <div id="veinteuno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img loading="lazy" alt="veinteuno" src="~assets/img/proyectos/diacuatro/21.jpg" class="object-cover w-full h-screen">
           </div>
-          <div id="veintedos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
+          <div id="veintedos" class="flex items-center justify-center w-full min-h-screen shadow-lg " @click='toggleColorFoto'>
             <img loading="lazy" alt="veintedos" src="~assets/img/proyectos/diacuatro/22.jpg" class="object-cover w-full h-screen">
           </div>
       </div>
@@ -280,7 +284,8 @@ export default {
   data() {
     return {
       show: true,
-      isActive: ''
+      isActive: '',
+      lastFotoRed: false
     };
   },
   mounted() {
@@ -291,6 +296,11 @@ export default {
   },
   destroyed() {
     this.so.teardown();
+  },
+  methods:{
+    toggleColorFoto : function () {
+      this.lastFotoRed = !this.lastFotoRed
+    },
   }
 };
 </script>
