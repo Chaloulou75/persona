@@ -37,11 +37,27 @@
 body, html{
   overflow-x: hidden;
   font-family: 'Montserrat', 'Ubuntu', sans-serif ;
-  cursor: url('~assets/img/CURSOR3.png') 24 24, pointer;
+  cursor: url('~assets/img/cursors/cursor-amarillo.png'), pointer;
 }
 
 nav, a, button {
-  cursor: url('~assets/img/CURSOR3.png') 24 24, pointer;
+  cursor: url('~assets/img/cursors/cursor-amarillo.png'), pointer;
+}
+
+.cursor-amarillo{
+  cursor: url('~assets/img/cursors/cursor-amarillo.png'), pointer;
+}
+
+.cursor-negro{
+  cursor: url('~assets/img/cursors/cursor-negro.png'), pointer;
+}
+
+.cursor-action-amarillo{
+  cursor: url('~assets/img/cursors/cursor-action-amarillo.png'), pointer;
+}
+
+.cursor-action-negro{
+  cursor: url('~assets/img/cursors/cursor-action-negro.png'), pointer;
 }
 
 nav, .desktop-menu, .mobile-menu{

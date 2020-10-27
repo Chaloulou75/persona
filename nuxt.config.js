@@ -52,11 +52,5 @@ export default {
   tailwindcss: {
     // add '~tailwind.config` alias
     exposeConfig: true
-  },
-  loading: {
-    color: 'blue',
-    height: '3px',
-    throttle: 200,
   }
-
 }
