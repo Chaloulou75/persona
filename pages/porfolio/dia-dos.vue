@@ -158,7 +158,7 @@
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img loading="lazy" alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg" @click='toggleColorFoto'>
+          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-action-amarillo" @click='toggleColorFoto'>
             <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-contain w-full h-screen">
           </div>
       </div>

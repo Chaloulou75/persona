@@ -227,7 +227,7 @@
           <div id="dixneuf" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img loading="lazy" alt="dixneuf" src="~assets/img/proyectos/diacinco/19.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="veinte" class="flex items-center justify-center w-full min-h-screen shadow-lg" @click='toggleColorFoto'>
+          <div id="veinte" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-action-amarillo" @click='toggleColorFoto'>
             <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacinco/20.jpg" class="object-contain w-full h-screen">
           </div>
       </div>

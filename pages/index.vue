@@ -49,19 +49,19 @@
 
         <div class="absolute inset-y-0 right-0 mt-16 mr-20">
           <div class="fixed space-y-4">
-            <div class="w-5 h-5 transition duration-200 transform bg-blue-500 border border-gray-500 shadow-lg hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45"
             @click="foto = 'Azul'"
             @mouseover="foto = 'Azul'"
             >
             </div>
 
-            <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-yellowjuli hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45"
             @click="foto = 'Amarillo'"
             @mouseover="foto = 'Amarillo'"
             >
             </div>
 
-            <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-redjuli hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45"
             @click="foto = 'Rojo'"
             @mouseover="foto = 'Rojo'"
             >

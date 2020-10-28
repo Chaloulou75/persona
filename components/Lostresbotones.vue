@@ -4,15 +4,15 @@
     <div class="fixed space-y-4">
 
 
-      <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-bluejuli hover:scale-110 hover:-rotate-45">
+      <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-bluejuli bg-bluejuli hover:scale-110 hover:-rotate-45">
       </div>
 
 
-      <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-yellowjuli hover:scale-110 hover:-rotate-45">
+      <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45">
       </div>
 
 
-      <div class="w-5 h-5 transition duration-200 transform border border-gray-500 shadow-lg bg-redjuli hover:scale-110 hover:-rotate-45">
+      <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45">
       </div>
     </div>
     </nuxt-link>

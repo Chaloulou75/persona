@@ -252,7 +252,7 @@
           <div id="veinteuno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
             <img loading="lazy" alt="veinteuno" src="~assets/img/proyectos/diacuatro/21.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="veintedos" class="flex items-center justify-center w-full min-h-screen shadow-lg " @click='toggleColorFoto'>
+          <div id="veintedos" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-action-amarillo" @click='toggleColorFoto'>
             <img loading="lazy" alt="veintedos" src="~assets/img/proyectos/diacuatro/22.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
