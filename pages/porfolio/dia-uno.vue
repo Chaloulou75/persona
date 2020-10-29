@@ -10,8 +10,7 @@
         <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
-    <Lostresbotones />
-
+    <lostresbotones />
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
         <div class="relative w-48 h-48 mt-auto border-2 border-redjuli">

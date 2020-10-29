@@ -1,16 +1,13 @@
 <template>
-  <div class="absolute inset-y-0 right-0 z-30 mt-2 mr-12 lg:-mt-6 cursor-mano lg:mr-32">
+  <div class="absolute inset-y-0 right-0 z-30 mt-2 mr-12 lg:mt-6 cursor-mano lg:mr-32">
     <nuxt-link to="/">
     <div class="fixed space-y-4">
-
 
       <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-bluejuli bg-bluejuli hover:scale-110 hover:-rotate-45">
       </div>
 
-
       <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45">
       </div>
-
 
       <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45">
       </div>

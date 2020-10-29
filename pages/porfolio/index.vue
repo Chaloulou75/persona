@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="min-h-screen porfolio">
+    <div class="relative min-h-screen porfolio">
       <Navigation />
+      <Lostresbotones />
       <div class="relative grid w-full min-h-screen grid-cols-1 mt-6 text-white lg:mt-20 md:grid-cols-2 lg:grid-cols-4">
-        <Lostresbotones />
 
         <nuxt-link to="/porfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
