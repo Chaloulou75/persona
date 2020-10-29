@@ -8,7 +8,7 @@
   --bg-background-ternary: white;
   --text-copy-primary: #008aae;
   --text-copy-secondary: #000000;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .theme-blue{
@@ -17,7 +17,7 @@
   --bg-background-ternary: white;
   --text-copy-primary: #f23941;
   --text-copy-secondary: #008aae;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .theme-reddy{
@@ -26,7 +26,7 @@
   --bg-background-ternary: white;
   --text-copy-primary: #fed718;
   --text-copy-secondary: #f23941;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 .theme-yellowy{
@@ -35,7 +35,7 @@
   --bg-background-ternary: white;
   --text-copy-primary: #008aae;
   --text-copy-secondary: #fed718;
-  transition: 2s;
+  transition: 1.5s;
 }
 
 body, html{
