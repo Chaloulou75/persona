@@ -1,5 +1,5 @@
 <template>
-  <div class="border-b-2 border-blue-400 border-dashed">
+  <div>
     <nav
       class="flex items-center justify-between w-full px-8 pt-4 pb-4 text-base font-medium text-gray-900 bg-transparent lg:text-xl"
     >

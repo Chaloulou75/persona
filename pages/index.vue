@@ -47,23 +47,21 @@
           </div>
         </template>
 
-        <div class="absolute inset-y-0 right-0 mt-16 mr-20">
+        <!-- los 3 botones -->
+        <div class="absolute inset-y-0 right-0 mt-2 mr-2 lg:-mt-12 lg:mr-32">
           <div class="fixed space-y-4">
             <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45"
-            @click="foto = 'Azul'"
-            @mouseover="foto = 'Azul'"
+            @mouseover="toggleThemeBlue"
             >
             </div>
 
             <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45"
-            @click="foto = 'Amarillo'"
-            @mouseover="foto = 'Amarillo'"
+            @mouseover="toggleThemeYellow"
             >
             </div>
 
             <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45"
-            @click="foto = 'Rojo'"
-            @mouseover="foto = 'Rojo'"
+            @mouseover="toggleThemeRed"
             >
             </div>
 
@@ -72,26 +70,35 @@
         </div>
 
         <!-- las letras -->
-        <div v-bind:class="{ 'anim_letter-p' : show}" class="letter-p letterBig text-copy-primary">
+        <div v-bind:class="{ 'anim_letter-p' : show}" class="text-black letter-p letterBig">
             <nuxt-link to="/porfolio">P</nuxt-link>
         </div>
-        <div v-bind:class="{ 'anim_letter-e' : show}" class="transform rotate-90 letter-e letterBig text-copy-primary">
-          E
+        <div @click="foto = 'Amarillo'"
+             @mouseover="foto = 'Amarillo'"
+             v-bind:class="{ 'anim_letter-e' : show}"
+             class="text-black transform rotate-90 letter-e letterBig cursor-mano">
+            E
         </div>
-        <div v-bind:class="{ 'anim_letter-r' : show}" class="letter-r letterBig text-copy-primary">
+        <div v-bind:class="{ 'anim_letter-r' : show}" class="text-black letter-r letterBig">
           <nuxt-link to="/resume">R</nuxt-link>
         </div>
-        <div v-bind:class="{ 'anim_letter-s' : show}" class="transform rotate-90 letter-s letterBig text-copy-primary">
+        <div v-bind:class="{ 'anim_letter-s' : show}" class="text-black transform rotate-90 letter-s letterBig">
           <nuxt-link to="/sobremi">S</nuxt-link>
         </div>
-        <div @mouseover="toggleThemeBlue" v-bind:class="{ 'anim_letter-o' : show}" class="letter-o letterBig text-copy-primary">
+        <div @click="foto = 'Azul'"
+             @mouseover="foto = 'Azul'"
+             v-bind:class="{ 'anim_letter-o' : show}"
+             class="text-black letter-o letterBig cursor-mano">
           O
         </div>
-        <div v-bind:class="{ 'anim_letter-n' : show}" class="letter-n letterBig text-copy-primary">
+        <div v-bind:class="{ 'anim_letter-n' : show}" class="text-black letter-n letterBig">
           <nuxt-link to="/contacto">N</nuxt-link>
         </div>
-        <div @mouseover="toggleThemeRed" v-bind:class="{ 'anim_letter-a' : show}" class="letter-a letterBig text-copy-primary">
-          A
+        <div @click="foto = 'Rojo'"
+             @mouseover="foto = 'Rojo'"
+             v-bind:class="{ 'anim_letter-a' : show}"
+             class="text-black letter-a letterBig cursor-mano">
+            A
         </div>
       </div>
     </div>
@@ -111,6 +118,8 @@ export default {
   methods:{
     toggle : function () {
       this.show = !this.show
+    },
+     toggleThemeInicio : function () {
       this.theme = this.theme === 'theme-inicio' ? 'theme-blue' : 'theme-inicio'
     },
     toggleThemeBlue : function () {

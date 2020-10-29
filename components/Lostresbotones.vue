@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute inset-y-0 right-0 z-30 mt-16 mr-12 cursor-action-amarillo lg:mr-20">
+  <div class="absolute inset-y-0 right-0 z-30 mt-2 mr-12 lg:-mt-6 cursor-mano lg:mr-32">
     <nuxt-link to="/">
     <div class="fixed space-y-4">
 
