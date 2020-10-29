@@ -137,6 +137,14 @@ export default {
 
 <style scoped>
 
+.theme-yellowy {
+    transition: 1.5s;
+}
+
+.theme-blue {
+   transition: 1.5s;
+}
+
 .letter-p {
   top: -5%;
   left: 10%;
