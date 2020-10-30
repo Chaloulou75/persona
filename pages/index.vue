@@ -1,11 +1,12 @@
 <template>
-    <div class="min-h-screen overflow-y-hidden bg-background-primary" :class="theme">
+    <div class="min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
       <Navigation />
       <div class="relative w-full h-full">
 
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
-          <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row bg-background-primary" >
+          <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
+
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/una.jpg" alt="azul" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
@@ -14,11 +15,13 @@
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/dos.jpg" alt="azul2" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
             </div>
+
           </div>
         </template>
 
         <template v-else-if="foto === 'Amarillo'">
           <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
+
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full " src="~assets/img/portadas/compress/amarillo/una.jpg" alt="amarillouna" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
@@ -32,8 +35,8 @@
         </template>
 
         <template v-else-if="foto === 'Rojo' ">
-          <div class="flex items-center justify-center p-10 lg:p-32" >
-            <div class="relative w-full max-w-lg overflow-hidden rounded-lg shadow-2xl h-128 lg:h-64 lg:w-1/2" >
+          <div class="flex items-center justify-center p-10 lg:p-32">
+            <div class="relative w-full max-w-lg overflow-hidden rounded-lg shadow-2xl h-128 lg:h-64 lg:w-1/2">
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/rojo/una.jpg" alt="rojo" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
             </div>
@@ -41,14 +44,14 @@
         </template>
 
         <template v-else>
-          <div class="flex items-center justify-center p-10 space-y-4 lg:p-32 bg-background-primary" >
+          <div class="flex items-center justify-center p-10 space-y-4 lg:p-32">
             <div class="relative w-full max-w-lg overflow-hidden rounded-lg h-128 lg:h-64 lg:w-1/2">
             </div>
           </div>
         </template>
 
         <!-- los 3 botones -->
-        <div class="absolute inset-y-0 right-0 mt-2 mr-2 lg:-mt-12 lg:mr-32">
+        <div class="absolute inset-y-0 right-0 mt-2 mr-16 lg:-mt-12 lg:mr-32">
           <div class="fixed space-y-4">
             <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45"
             @mouseover="toggleThemeBlue"

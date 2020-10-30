@@ -158,13 +158,13 @@
           <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
             <img loading="lazy" alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-action-amarillo" @click='toggleColorFoto'>
+          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
             <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
   </div>
 
-  <div class="w-1/4 mx-auto my-20" data-scroll>
+  <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
     <nuxt-link to="/porfolio">
      <button class="w-full text-sm font-bold tracking-wide text-gray-900 uppercase animate-pulse bg-yellowjuli hover:bg-blue-400 focus:outline-none focus:shadow-outline">
       volver al porfolio

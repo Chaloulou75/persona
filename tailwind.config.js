@@ -33,7 +33,7 @@ module.exports = {
         gold: '#FFDF00',
         bluejuli: '#008aae',
         redjuli: "#f23941",
-        yellowjuli: '#fed718',
+        yellowjuli: '#FFDF00', //#fed718
       },
       fontSize: {
         '7xl': '7rem',
