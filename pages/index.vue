@@ -142,7 +142,7 @@ export default {
 
 .letter-p {
   top: -5%;
-  left: 10%;
+  left: 60%;
   transform-origin: left;
 
   @media (min-width: 767px) {
@@ -172,8 +172,8 @@ export default {
 }
 
 .letter-e {
-  top: 5%;
-  left: 24%;
+  top: 10%;
+  left: 20%;
   transform-origin: left;
 
   @media (min-width: 767px) {
@@ -419,7 +419,7 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60% {
-      transform:  translate(120px,-81px)  rotate(120deg) ;
+      transform:  translate(120px,-81px)  rotate(180deg) ;
     }
     100% {
       transform:  translate(80px, -60px)  rotate(0deg);

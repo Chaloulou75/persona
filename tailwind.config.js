@@ -43,6 +43,7 @@ module.exports = {
         '17xl': '17rem',
       },
       spacing: {
+        25: '6.25rem',
         26: '6.5rem',
         27: '6.75rem',
         28: '7rem',
@@ -52,6 +53,12 @@ module.exports = {
         108: '27rem'
       },
       height : {
+        25: '6.25rem',
+        26: '6.5rem',
+        27: '6.75rem',
+        28: '7rem',
+        29: '7.25rem',
+        30: '7.5rem',
         128: '32rem'
       },
       borderWidth: {
