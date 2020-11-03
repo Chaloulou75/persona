@@ -53,7 +53,7 @@
         <!-- los 3 botones -->
         <div class="absolute inset-y-0 right-0 mt-2 mr-16 lg:-mt-12 lg:mr-32">
           <div class="fixed space-y-4">
-            <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45"
+            <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45 "
             @mouseover="toggleThemeBlue"
             >
             </div>
@@ -74,7 +74,7 @@
 
         <!-- las letras -->
         <div v-bind:class="{ 'anim_letter-p' : show}" class="text-black letter-p letterBig">
-            <nuxt-link to="/porfolio">P</nuxt-link>
+            <nuxt-link to="/portfolio">P</nuxt-link>
         </div>
         <div @click="foto = 'Amarillo'"
              @mouseover="foto = 'Amarillo'"

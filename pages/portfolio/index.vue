@@ -5,62 +5,62 @@
       <Lostresbotones />
       <div class="relative grid w-full min-h-screen grid-cols-1 mt-6 text-white lg:mt-20 md:grid-cols-2 lg:grid-cols-4">
 
-        <nuxt-link to="/porfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
+        <nuxt-link to="/portfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
             <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-dos" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
+        <nuxt-link to="/portfolio/dia-dos" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">2</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-tres" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-blue-700">
+        <nuxt-link to="/portfolio/dia-tres" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-blue-700">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">3</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-cuatro" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-4 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli">
+        <nuxt-link to="/portfolio/dia-cuatro" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-4 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">4</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
+        <nuxt-link to="/portfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">5</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-seis" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-blue-700">
+        <nuxt-link to="/portfolio/dia-seis" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-black">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">6</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
+        <nuxt-link to="/portfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
             <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-dos" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
+        <nuxt-link to="/portfolio/dia-dos" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-2 hover:bg-gradient-to-br from-red-600 to-redjuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">2</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-tres" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-blue-700">
+        <nuxt-link to="/portfolio/dia-tres" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-3 hover:bg-gradient-to-br from-bluejuli to-blue-700">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">3</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-cuatro" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-4 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli">
+        <nuxt-link to="/portfolio/dia-cuatro" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-4 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">4</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
+        <nuxt-link to="/portfolio/dia-cinco" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
           <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">5</span></h2>
           <p class="px-4 text-lg">2020</p>
         </nuxt-link>
 
-        <nuxt-link to="/porfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
+        <nuxt-link to="/portfolio/dia-uno" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-blue-500 to-bluejuli">
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
             <p class="px-4 text-lg">2020</p>
         </nuxt-link>

@@ -203,9 +203,9 @@
   </div>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
-    <nuxt-link to="/porfolio">
+    <nuxt-link to="/portfolio">
      <button class="w-full text-sm font-bold tracking-wide text-gray-900 uppercase animate-pulse bg-yellowjuli hover:bg-blue-400 focus:outline-none focus:shadow-outline">
-      volver al porfolio
+      volver al portfolio
      </button>
     </nuxt-link>
   </div>

@@ -10,12 +10,13 @@
         <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
-    <lostresbotones />
+    <Lostresbotones />
+
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
-        <div class="relative w-48 h-48 mt-auto border-2 border-redjuli">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli" @click="show = !show">
+        <div class="relative w-48 h-48 mt-auto border-2 border-bluejuli">
           <div class="absolute bottom-0 left-0 -mb-5 -ml-2 text-5xl font-bold text-white uppercase numberBig">DÍA</div>
-          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">1</div>
+          <div class="absolute top-0 right-0 w-1/2 h-48 font-semibold text-white -mt-26 numberBig text-16xl">2</div>
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -25,9 +26,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Este día me obsesioné con aquellas cosas que tenían la capacidad de interrumpir el orden, me intrigó lo inquieto, los que rompían la tan esperada absurda monotonía.
+          <p class="pb-6">Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.
           </p>
-          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN</p>
+          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN.</p>
         </div>
       </div>
 
@@ -36,13 +37,13 @@
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="text-sm uppercase text-bluejuli">Tendencias</div>
+          <div class="text-sm uppercase text-bluejuli">Concepto </div>
         </div>
         <div class="flex justify-around">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Moldería</div>
+            <div class="text-sm uppercase text-bluejuli">Fotografía digital</div>
           </div>
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -54,13 +55,13 @@
           <div class="flex items-center justify-center w-full">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Concepto</div>
+            <div class="text-sm uppercase text-bluejuli">Literatura</div>
           </div>
           <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">SUBVERSIVO
+        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">POSIBILIDADES DE ABSTRACCIÓN
         </div>
       </div>
 
@@ -70,6 +71,7 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+
           <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = '1'"
           v-bind:class="{ active: isActive == '1' }"
@@ -104,37 +106,68 @@
           @click.native="isActive = '7'"
           v-bind:class="{ active: isActive == '7' }"
           ></scroll-link>
+
+          <scroll-link href="#ocho" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '8'"
+          v-bind:class="{ active: isActive == '8' }"
+          ></scroll-link>
+
+          <scroll-link href="#nueve" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '9'"
+          v-bind:class="{ active: isActive == '9' }"
+          ></scroll-link>
+
+          <scroll-link href="#dies" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '10'"
+          v-bind:class="{ active: isActive == '10' }"
+          ></scroll-link>
+
+          <scroll-link href="#once" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          @click.native="isActive = '11'"
+          v-bind:class="{ active: isActive == '11' }"
+          ></scroll-link>
         </div>
 
           <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diauno/1.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diados/1.jpg" class="object-contain w-full h-screen">
           </div>
-
           <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diauno/2.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diados/2.jpg" class="object-contain w-full h-screen" >
           </div>
           <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diauno/3.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diados/3.jpg" class="object-contain w-full h-screen" >
           </div>
           <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diauno/4.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diados/4.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diauno/5.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diados/5.jpg" class="object-contain w-full h-screen">
           </div>
           <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diauno/6.jpg" class="object-contain w-full h-screen">
+            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-contain w-full h-screen">
           </div>
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-contain w-full h-screen">
+          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diados/7.jpg" class="object-contain w-full h-screen">
+          </div>
+          <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diados/8.jpg" class="object-contain w-full h-screen">
+          </div>
+          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diados/9.jpg" class="object-contain w-full h-screen">
+          </div>
+          <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
+            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-contain w-full h-screen">
+          </div>
+          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
+            <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
   </div>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
-    <nuxt-link to="/porfolio">
+    <nuxt-link to="/portfolio">
      <button class="w-full text-sm font-bold tracking-wide text-gray-900 uppercase animate-pulse bg-yellowjuli hover:bg-blue-400 focus:outline-none focus:shadow-outline">
-      volver al porfolio
+      volver al portfolio
      </button>
     </nuxt-link>
   </div>
