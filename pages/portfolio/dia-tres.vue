@@ -1,7 +1,7 @@
 <template>
 <div class="relative">
   <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row sortsMill">
+  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
@@ -251,9 +251,6 @@ export default {
 
 .numberBig, .dia-uno{
   font-family: 'Ubuntu', 'Sorts Mill Goudy', 'Montserrat', sans-serif;
-}
-.sortsMill{
-  font-family: 'Sorts Mill Goudy', 'Ubuntu',  'Montserrat', sans-serif;
 }
 
 .page-enter-active,

@@ -1,7 +1,7 @@
 <template>
 <div class="relative">
   <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row sortsMill">
+  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
       <nuxt-link to="/">
@@ -59,7 +59,7 @@
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli sortsMill">SUBVERSIVO
+        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli">SUBVERSIVO
         </div>
       </div>
 
@@ -298,9 +298,6 @@ export default {
 
 .numberBig, .dia-uno{
   font-family: 'Ubuntu', 'Sorts Mill Goudy', 'Montserrat', sans-serif;
-}
-.sortsMill{
-  font-family: 'Sorts Mill Goudy', 'Ubuntu',  'Montserrat', sans-serif;
 }
 
 .page-enter-active,
