@@ -172,7 +172,7 @@ export default {
 }
 
 .letter-e {
-  top: 2%;
+  top: 8%;
   left: 30%;
   transform-origin: left;
 
@@ -203,7 +203,7 @@ export default {
 }
 
 .letter-r {
-  top: 20%;
+  top: 30%;
   left: 5%;
   transform-origin: left;
 
@@ -234,7 +234,7 @@ export default {
 }
 
 .letter-s {
-  top: 30%;
+  top: 45%;
   left: 30%;
   transform-origin: left;
 
@@ -265,7 +265,7 @@ export default {
 }
 
 .letter-o {
-  top: 50%;
+  top: 70%;
   left: 40%;
   transform-origin: left;
 
@@ -295,8 +295,8 @@ export default {
 }
 
 .letter-n {
-  top: 10%;
-  left: 60%;
+  top: 20%;
+  left: 55%;
   transform-origin: left;
 
   @media (min-width: 767px) {
@@ -325,8 +325,8 @@ export default {
 }
 
 .letter-a {
-  top: 35%;
-  left: 60%;
+  top: 45%;
+  left: 55%;
   transform-origin: left;
 
   @media (min-width: 767px) {
@@ -363,7 +363,7 @@ export default {
       transform:  translate(-160%, 100%) rotate(360deg);
     }
     100% {
-      transform:  translate(30%, 30%) rotate(0deg);
+      transform:  translate(40%, 60%) rotate(0deg);
     }
   }
 
@@ -398,7 +398,7 @@ export default {
       transform:  translate(170%, -90%)  rotate(360deg);
     }
     100% {
-      transform:  translate(30%, -60%)  rotate(90deg);
+      transform:  translate(30%, 15%)  rotate(90deg);
     }
   }
 
@@ -410,7 +410,7 @@ export default {
       transform:  translate(90%, -80%)  rotate(360deg);
     }
     100% {
-      transform:  translate( -80%, -25%)  rotate(0deg);
+      transform:  translate( -80%, 10%)  rotate(0deg);
     }
   }
 
@@ -419,7 +419,7 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60% {
-      transform:  translate(-70%, 80%) rotate(90deg) ;
+      transform:  translate( 10%, 150%) rotate(90deg) ;
     }
     100% {
       transform:  translate(-75%, 60%) rotate(0deg);
@@ -431,7 +431,7 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(-280%, 0%) rotate(180deg);
+      transform:  translate(-180%, 0%) rotate(180deg);
     }
     100% {
       transform:  translate(70%, -30%) rotate(0deg);
