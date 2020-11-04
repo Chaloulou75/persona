@@ -14,9 +14,9 @@
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden text-white bg-black">
-          <div class="absolute bottom-0 left-0 -mb-4 -ml-1 text-5xl font-bold uppercase numberBig">DÍA</div>
-          <div class="absolute inset-y-0 right-0 w-1/2 mr-8 font-semibold -mt-26 numberBig text-17xl">4</div>
+        <div class="relative w-48 h-48 mt-auto overflow-hidden text-white bg-black ubuntu">
+          <div class="absolute bottom-0 left-0 -mb-4 -ml-1 text-5xl font-bold uppercase">DÍA</div>
+          <div class="absolute inset-y-0 right-0 w-1/2 mr-8 font-semibold -mt-26 text-17xl">4</div>
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -320,10 +320,6 @@ export default {
 .scrollhidden {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
-}
-
-.numberBig, .dia-uno{
-  font-family: 'Ubuntu', 'Sorts Mill Goudy', 'Montserrat', sans-serif;
 }
 
 .page-enter-active,
