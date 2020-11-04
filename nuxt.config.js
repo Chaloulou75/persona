@@ -13,7 +13,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/gif', href: '/gifcolores.gif' },
       {
-        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:wght@300&display=swap' }
+        rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:wght@300&display=swap',
+      }
+
     ]
   },
 
