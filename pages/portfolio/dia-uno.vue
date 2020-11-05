@@ -10,6 +10,7 @@
         <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
+
     <lostresbotones />
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" @click="show = !show">
@@ -77,26 +78,31 @@
           @click.native="isActive = image.id"
           v-bind:class="{ active: isActive == image.id }"
           ></scroll-link>
-
         </div>
 
-          <div :id="image.name"
-           v-for="image in images"
-           :key="image.id"
-           class="flex items-center justify-center w-full min-h-screen shadow-lg "
+        <div :id="image.name"
+          v-for="image in images"
+          :key="image.id"
+          class="flex items-center justify-center w-full min-h-screen shadow-lg "
+        >
+          <img loading="lazy"
+              :alt="image.name"
+              :src="image.src"
+              class="object-contain w-full h-screen"
+              @click="openModal(image)"
           >
-            <img loading="lazy"
-                :alt="image.name"
-                :src="image.src"
-                class="object-contain w-full h-screen"
-            >
-          </div>
+        </div>
+        <!-- end v-for image -->
 
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-contain w-full h-screen">
-          </div>
+        <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
+          <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-contain w-full h-screen">
+        </div>
       </div>
   </div>
+
+  <transition name="component-fade" mode="out-in">
+    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+  </transition>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
     <nuxt-link to="/portfolio">
@@ -113,6 +119,7 @@
 <script>
 import Lostresbotones from '~/components/Lostresbotones';
 import ScrollLink from '~/components/ScrollLink';
+import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
@@ -120,12 +127,15 @@ export default {
   components : {
     Lostresbotones,
     ScrollLink,
+    Modal
   },
   data() {
     return {
       show: true,
       isActive: '',
       lastFotoRed: false,
+      showModal: false,
+      image: null,
       images : [
         {
           id: 1,
@@ -178,6 +188,10 @@ export default {
     toggleColorFoto : function () {
       this.lastFotoRed = !this.lastFotoRed
     },
+    openModal(image) {
+      this.image = image
+      this.showModal = true
+    },
   }
 };
 </script>
@@ -206,6 +220,13 @@ export default {
 }
 .page-enter,
 .page-leave-to {
+  opacity: 0;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
   opacity: 0;
 }
 

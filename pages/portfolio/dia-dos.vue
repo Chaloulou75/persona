@@ -1,6 +1,7 @@
 <template>
 <div class="relative">
   <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
+
   <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
@@ -72,98 +73,37 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-
-          <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '1'"
-          v-bind:class="{ active: isActive == '1' }"
-          ></scroll-link>
-
-          <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '2'"
-          v-bind:class="{ active: isActive == '2'}"
-          ></scroll-link>
-
-          <scroll-link href="#tres" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '3'"
-          v-bind:class="{ active: isActive == '3' }"
-          ></scroll-link>
-
-          <scroll-link href="#cuatro" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '4'"
-          v-bind:class="{ active: isActive == '4' }"
-          ></scroll-link>
-
-          <scroll-link href="#cinco" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
-          @click.native="isActive = '5'"
-          v-bind:class="{ active: isActive == '5' }"
-          ></scroll-link>
-
-          <scroll-link href="#seis" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '6'"
-          v-bind:class="{ active: isActive == '6' }"
-          ></scroll-link>
-
-          <scroll-link href="#siete" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '7'"
-          v-bind:class="{ active: isActive == '7' }"
-          ></scroll-link>
-
-          <scroll-link href="#ocho" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '8'"
-          v-bind:class="{ active: isActive == '8' }"
-          ></scroll-link>
-
-          <scroll-link href="#nueve" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '9'"
-          v-bind:class="{ active: isActive == '9' }"
-          ></scroll-link>
-
-          <scroll-link href="#dies" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '10'"
-          v-bind:class="{ active: isActive == '10' }"
-          ></scroll-link>
-
-          <scroll-link href="#once" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '11'"
-          v-bind:class="{ active: isActive == '11' }"
+          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          v-for="image in images"
+          :key="image.id"
+          @click.native="isActive = image.id"
+          v-bind:class="{ active: isActive == image.id }"
           ></scroll-link>
         </div>
 
-          <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diados/1.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diados/2.jpg" class="object-contain w-full h-screen" >
-          </div>
-          <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diados/3.jpg" class="object-contain w-full h-screen" >
-          </div>
-          <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diados/4.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diados/5.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diados/7.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diados/8.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diados/9.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diados/10.jpg" class="object-contain w-full h-screen">
-          </div>
+        <div :id="image.name"
+              v-for="image in images"
+              :key="image.id"
+              class="flex items-center justify-center w-full min-h-screen shadow-lg "
+        >
+        <img loading="lazy"
+              :alt="image.name"
+              :src="image.src"
+              class="object-contain w-full h-screen"
+              @click="openModal(image)"
+        >
+        </div>
+        <!-- end v-for image -->
+
           <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
             <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-contain w-full h-screen">
           </div>
       </div>
   </div>
+
+  <transition name="component-fade" mode="out-in">
+    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+  </transition>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
     <nuxt-link to="/portfolio">
@@ -180,19 +120,80 @@
 <script>
 import Lostresbotones from '~/components/Lostresbotones';
 import ScrollLink from '~/components/ScrollLink';
+import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
   transition: "page",
   components : {
     Lostresbotones,
-    ScrollLink
+    ScrollLink,
+    Modal
   },
   data() {
     return {
       show: true,
       isActive: '',
-      lastFotoRed: false
+      lastFotoRed: false,
+      showModal: false,
+      image: null,
+      images : [
+        {
+          id: 1,
+          name: 'uno',
+          src: require(`~/assets/img/proyectos/diados/1.jpg`)
+        },
+        {
+          id: 2,
+          name: 'dos',
+          src: require(`~/assets/img/proyectos/diados/2.jpg`)
+        },
+        {
+          id: 3,
+          name: 'tres',
+          src: require(`~/assets/img/proyectos/diados/3.jpg`)
+        },
+        {
+          id: 4,
+          name: 'cuatro',
+          src: require(`~/assets/img/proyectos/diados/4.jpg`)
+        },
+        {
+          id: 5,
+          name: 'cinco',
+          src: require(`~/assets/img/proyectos/diados/5.jpg`)
+        },
+        {
+          id: 6,
+          name: 'seis',
+          src: require(`~/assets/img/proyectos/diados/6.jpg`)
+        },
+        {
+          id: 7,
+          name: 'siete',
+          src: require(`~/assets/img/proyectos/diados/7.jpg`)
+        },
+        {
+          id: 8,
+          name: 'ocho',
+          src: require(`~/assets/img/proyectos/diados/8.jpg`)
+        },
+        {
+          id: 9,
+          name: 'nueve',
+          src: require(`~/assets/img/proyectos/diados/9.jpg`)
+        },
+        {
+          id: 10,
+          name: 'dies',
+          src: require(`~/assets/img/proyectos/diados/10.jpg`)
+        },
+        {
+          id: 11,
+          name: 'once',
+          src: require(`~/assets/img/proyectos/diados/11.jpg`)
+        }
+      ]
     };
   },
   mounted() {
@@ -207,6 +208,10 @@ export default {
   methods:{
     toggleColorFoto : function () {
       this.lastFotoRed = !this.lastFotoRed
+    },
+    openModal(image) {
+      this.image = image
+      this.showModal = true
     },
   }
 };
@@ -236,6 +241,13 @@ export default {
 }
 .page-enter,
 .page-leave-to {
+  opacity: 0;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
   opacity: 0;
 }
 
