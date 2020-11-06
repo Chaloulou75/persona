@@ -105,7 +105,7 @@
           </div>
 
           <div id="ultima3" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="once" src="~assets/img/proyectos/diatres/11.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diatres/10.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
           </div>
       </div>
   </div>
@@ -196,11 +196,6 @@ export default {
           id: 10,
           name: 'dies',
           src: require(`~/assets/img/proyectos/diatres/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          src: require(`~/assets/img/proyectos/diatres/11.jpg`)
         }
       ]
     };
