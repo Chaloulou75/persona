@@ -66,7 +66,7 @@
       </div>
 
       <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll divide-y-2 lg:w-1/2 scrollhidden"
+      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
       v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
       >
 
@@ -83,18 +83,18 @@
           <div :id="image.name"
               v-for="image in images"
               :key="image.id"
-              class="flex items-center justify-center w-full min-h-screen shadow-lg "
+              class="flex items-center justify-center w-full h-auto shadow-lg cursor-mano lg:min-h-screen"
           >
           <img loading="lazy"
                 :alt="image.name"
                 :src="image.src"
-                class="object-contain w-full h-screen"
+                class="object-cover w-full h-auto lg:object-contain lg:h-screen"
                 @click="openModal(image)"
           >
           </div>
 
-          <div id="ultima4" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-contain w-full h-screen">
+          <div id="ultima4" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
           </div>
       </div>
   </div>

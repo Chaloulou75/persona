@@ -68,7 +68,7 @@
             >
             </div>
 
-            <button class="py-3 mt-6 -ml-6 text-copy-primary focus:outline-none" @click="toggle">Start me</button>
+            <button class="py-3 mt-6 -ml-6 text-xs lg:text-base text-copy-primary focus:outline-none" @click="toggle">Start me</button>
           </div>
         </div>
 

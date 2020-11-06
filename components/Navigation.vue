@@ -7,7 +7,7 @@
         to="/"
         class="transition duration-500 transform hover:translate-x-2"
         >
-        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-10 lg:h-12">
 
       </nuxt-link>
 
