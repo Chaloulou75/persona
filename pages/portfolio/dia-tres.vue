@@ -185,17 +185,17 @@ export default {
         {
           id: 8,
           name: 'ocho',
-          src: require(`~/assets/img/proyectos/diatres/8.jpg`)
+          src: require(`~/assets/img/proyectos/diatres/8.JPG`)
         },
         {
           id: 9,
           name: 'nueve',
-          src: require(`~/assets/img/proyectos/diatres/9.jpg`)
+          src: require(`~/assets/img/proyectos/diatres/9.JPG`)
         },
         {
           id: 10,
           name: 'dies',
-          src: require(`~/assets/img/proyectos/diatres/10.jpg`)
+          src: require(`~/assets/img/proyectos/diatres/10.JPG`)
         }
       ]
     };
