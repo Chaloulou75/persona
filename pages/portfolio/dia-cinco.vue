@@ -70,169 +70,37 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-          <scroll-link href="#uno" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '1'"
-          v-bind:class="{ active: isActive == '1' }"
-          ></scroll-link>
-
-          <scroll-link href="#dos" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '2'"
-          v-bind:class="{ active: isActive == '2'}"
-          ></scroll-link>
-
-          <scroll-link href="#tres" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '3'"
-          v-bind:class="{ active: isActive == '3' }"
-          ></scroll-link>
-
-          <scroll-link href="#cuatro" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '4'"
-          v-bind:class="{ active: isActive == '4' }"
-          ></scroll-link>
-
-          <scroll-link href="#cinco" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110"
-          @click.native="isActive = '5'"
-          v-bind:class="{ active: isActive == '5' }"
-          ></scroll-link>
-
-          <scroll-link href="#seis" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '6'"
-          v-bind:class="{ active: isActive == '6' }"
-          ></scroll-link>
-
-          <scroll-link href="#siete" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '7'"
-          v-bind:class="{ active: isActive == '7' }"
-          ></scroll-link>
-
-          <scroll-link href="#ocho" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '8'"
-          v-bind:class="{ active: isActive == '8' }"
-          ></scroll-link>
-
-          <scroll-link href="#nueve" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '9'"
-          v-bind:class="{ active: isActive == '9' }"
-          ></scroll-link>
-
-          <scroll-link href="#dies" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '10'"
-          v-bind:class="{ active: isActive == '10' }"
-          ></scroll-link>
-
-          <scroll-link href="#once" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '11'"
-          v-bind:class="{ active: isActive == '11' }"
-          ></scroll-link>
-
-          <scroll-link href="#doce" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '12'"
-          v-bind:class="{ active: isActive == '12' }"
-          ></scroll-link>
-
-          <scroll-link href="#trece" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '13'"
-          v-bind:class="{ active: isActive == '13' }"
-          ></scroll-link>
-
-          <scroll-link href="#quatorce" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '14'"
-          v-bind:class="{ active: isActive == '14' }"
-          ></scroll-link>
-
-          <scroll-link href="#quinze" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '15'"
-          v-bind:class="{ active: isActive == '15' }"
-          ></scroll-link>
-
-          <scroll-link href="#seize" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '16'"
-          v-bind:class="{ active: isActive == '16' }"
-          ></scroll-link>
-
-          <scroll-link href="#dixsept" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '17'"
-          v-bind:class="{ active: isActive == '17' }"
-          ></scroll-link>
-
-          <scroll-link href="#dixhuit" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '18'"
-          v-bind:class="{ active: isActive == '18' }"
-          ></scroll-link>
-
-          <scroll-link href="#dixneuf" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '19'"
-          v-bind:class="{ active: isActive == '19' }"
-          ></scroll-link>
-
-          <scroll-link href="#veinte" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = '20'"
-          v-bind:class="{ active: isActive == '20' }"
+          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          v-for="image in images"
+          :key="image.id"
+          @click.native="isActive = image.id"
+          v-bind:class="{ active: isActive == image.id }"
           ></scroll-link>
         </div>
 
-          <div id="uno" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="uno" src="~assets/img/proyectos/diacinco/1.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dos" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dos" src="~assets/img/proyectos/diacinco/2.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="tres" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="tres" src="~assets/img/proyectos/diacinco/3.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="cuatro" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="cuatro" src="~assets/img/proyectos/diacinco/4.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="cinco" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="cinco" src="~assets/img/proyectos/diacinco/5.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="seis" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seis" src="~assets/img/proyectos/diacinco/6.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="siete" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diacinco/7.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="ocho" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="ocho" src="~assets/img/proyectos/diacinco/8.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="nueve" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diacinco/9.jpg" class="object-contain w-full h-screen" >
-          </div>
-          <div id="dies" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diacinco/10.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg" >
-            <img loading="lazy" alt="once" src="~assets/img/proyectos/diacinco/11.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="doce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="doce" src="~assets/img/proyectos/diacinco/12.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="trece" class="flex items-center justify-center w-full min-h-screen shadow-lg">
-            <img loading="lazy" alt="trece" src="~assets/img/proyectos/diacinco/13.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="quatorce" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="quatorce" src="~assets/img/proyectos/diacinco/14.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="quinze" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="quinze" src="~assets/img/proyectos/diacinco/15.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="seize" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacinco/16.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dixsept" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixsept" src="~assets/img/proyectos/diacinco/17.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dixhuit" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixhuit" src="~assets/img/proyectos/diacinco/18.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="dixneuf" class="flex items-center justify-center w-full min-h-screen shadow-lg ">
-            <img loading="lazy" alt="dixneuf" src="~assets/img/proyectos/diacinco/19.jpg" class="object-contain w-full h-screen">
-          </div>
-          <div id="veinte" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
+        <div :id="image.name"
+              v-for="image in images"
+              :key="image.id"
+              class="flex items-center justify-center w-full min-h-screen shadow-lg "
+          >
+          <img loading="lazy"
+                :alt="image.name"
+                :src="image.src"
+                class="object-contain w-full h-screen"
+                @click="openModal(image)"
+          >
+        </div>
+
+        <div id="ultima5" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
             <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacinco/20.jpg" class="object-contain w-full h-screen">
-          </div>
+        </div>
+
       </div>
   </div>
+
+  <transition name="component-fade" mode="out-in">
+    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+  </transition>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
     <nuxt-link to="/portfolio">
@@ -249,19 +117,125 @@
 <script>
 import Lostresbotones from '~/components/Lostresbotones';
 import ScrollLink from '~/components/ScrollLink';
+import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
   transition: "page",
   components : {
     Lostresbotones,
-    ScrollLink
+    ScrollLink,
+    Modal
   },
   data() {
     return {
       show: true,
       isActive: '',
-      lastFotoRed: false
+      lastFotoRed: false,
+      showModal: false,
+      image: null,
+      images : [
+        {
+          id: 1,
+          name: 'uno',
+          src: require(`~/assets/img/proyectos/diacinco/1.jpg`)
+        },
+        {
+          id: 2,
+          name: 'dos',
+          src: require(`~/assets/img/proyectos/diacinco/2.jpg`)
+        },
+        {
+          id: 3,
+          name: 'tres',
+          src: require(`~/assets/img/proyectos/diacinco/3.jpg`)
+        },
+        {
+          id: 4,
+          name: 'cuatro',
+          src: require(`~/assets/img/proyectos/diacinco/4.jpg`)
+        },
+        {
+          id: 5,
+          name: 'cinco',
+          src: require(`~/assets/img/proyectos/diacinco/5.jpg`)
+        },
+        {
+          id: 6,
+          name: 'seis',
+          src: require(`~/assets/img/proyectos/diacinco/6.jpg`)
+        },
+        {
+          id: 7,
+          name: 'siete',
+          src: require(`~/assets/img/proyectos/diacinco/7.jpg`)
+        },
+        {
+          id: 8,
+          name: 'ocho',
+          src: require(`~/assets/img/proyectos/diacinco/8.jpg`)
+        },
+        {
+          id: 9,
+          name: 'nueve',
+          src: require(`~/assets/img/proyectos/diacinco/9.jpg`)
+        },
+        {
+          id: 10,
+          name: 'dies',
+          src: require(`~/assets/img/proyectos/diacinco/10.jpg`)
+        },
+        {
+          id: 11,
+          name: 'once',
+          src: require(`~/assets/img/proyectos/diacinco/11.jpg`)
+        },
+        {
+          id: 12,
+          name: 'doce',
+          src: require(`~/assets/img/proyectos/diacinco/12.jpg`)
+        },
+        {
+          id: 13,
+          name: 'trece',
+          src: require(`~/assets/img/proyectos/diacinco/13.jpg`)
+        },
+        {
+          id: 14,
+          name: 'quatorze',
+          src: require(`~/assets/img/proyectos/diacinco/14.jpg`)
+        },
+        {
+          id: 15,
+          name: 'quinze',
+          src: require(`~/assets/img/proyectos/diacinco/15.jpg`)
+        },
+        {
+          id: 16,
+          name: 'diesiseis',
+          src: require(`~/assets/img/proyectos/diacinco/16.jpg`)
+        },
+        {
+          id: 17,
+          name: 'diesisiete',
+          src: require(`~/assets/img/proyectos/diacinco/17.jpg`)
+        },
+        {
+          id: 18,
+          name: 'diesiocho',
+          src: require(`~/assets/img/proyectos/diacinco/18.jpg`)
+        },
+        {
+          id: 19,
+          name: 'diesinueve',
+          src: require(`~/assets/img/proyectos/diacinco/19.jpg`)
+        },
+        {
+          id: 20,
+          name: 'veinte',
+          src: require(`~/assets/img/proyectos/diacinco/20.jpg`)
+        }
+      ]
     };
   },
   mounted() {
@@ -276,6 +250,10 @@ export default {
   methods:{
     toggleColorFoto : function () {
       this.lastFotoRed = !this.lastFotoRed
+    },
+    openModal(image) {
+      this.image = image
+      this.showModal = true
     },
   }
 };
@@ -297,10 +275,6 @@ export default {
   scrollbar-width: none;  /* Firefox */
 }
 
-.numberBig, .dia-uno{
-  font-family: 'Ubuntu', 'Sorts Mill Goudy', 'Montserrat', sans-serif;
-}
-
 .page-enter-active,
 .page-leave-active {
   transition-property: opacity;
@@ -309,6 +283,13 @@ export default {
 }
 .page-enter,
 .page-leave-to {
+  opacity: 0;
+}
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
   opacity: 0;
 }
 

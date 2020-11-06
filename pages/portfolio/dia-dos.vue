@@ -95,7 +95,7 @@
         </div>
         <!-- end v-for image -->
 
-          <div id="once" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
+          <div id="ultima2" class="flex items-center justify-center w-full min-h-screen shadow-lg cursor-mano" @click='toggleColorFoto'>
             <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-contain w-full h-screen">
           </div>
       </div>

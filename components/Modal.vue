@@ -8,7 +8,7 @@
     <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span>&#8203;
 
     <div class="inline-block overflow-hidden align-middle transition-all transform rounded-sm shadow-xl sm:my-8 sm:max-w-3xl sm:w-full" role="dialog" aria-modal="true">
-      <div class="p-2 bg-white">
+      <div>
         <img loading="lazy"
         :alt="image.name"
         :src="image.src"
