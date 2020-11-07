@@ -17,7 +17,26 @@ module.exports = {
         'dia-2': "url('~assets/img/proyectos/dias/dia2.jpg')",
         'dia-3': "url('~assets/img/proyectos/dias/dia3.jpg')",
         'dia-4': "url('~assets/img/proyectos/dias/dia4.jpg')",
-        'dia-5': "url('~assets/img/proyectos/dias/dia5.jpg')"
+        'dia-5': "url('~assets/img/proyectos/dias/dia5.jpg')",
+        'dia-6': "url('~assets/img/proyectos/dias/dia6.jpg')",
+        'dia-7': "url('~assets/img/proyectos/dias/dia7.jpg')",
+        'dia-8': "url('~assets/img/proyectos/dias/dia8.jpg')",
+        'dia-9': "url('~assets/img/proyectos/dias/dia9.jpg')",
+        'dia-10': "url('~assets/img/proyectos/dias/dia10.jpg')",
+        'dia-11': "url('~assets/img/proyectos/dias/dia11.jpg')",
+        // 'dia-12': "url('~assets/img/proyectos/dias/dia12.jpg')"
+        'cuadro-1': "url('~assets/img/proyectos/cuadros/dia-1.png')",
+        'cuadro-2': "url('~assets/img/proyectos/cuadros/dia-2.png')",
+        'cuadro-3': "url('~assets/img/proyectos/cuadros/dia-3.png')",
+        'cuadro-4': "url('~assets/img/proyectos/cuadros/dia-4.png')",
+        'cuadro-5': "url('~assets/img/proyectos/cuadros/dia-5.png')",
+        'cuadro-6': "url('~assets/img/proyectos/cuadros/dia-6.png')",
+        'cuadro-7': "url('~assets/img/proyectos/cuadros/dia-7.png')",
+        'cuadro-8': "url('~assets/img/proyectos/cuadros/dia-8.png')",
+        'cuadro-9': "url('~assets/img/proyectos/cuadros/dia-9.png')",
+        'cuadro-10': "url('~assets/img/proyectos/cuadros/dia-10.png')",
+        'cuadro-11': "url('~assets/img/proyectos/cuadros/dia-11.png')",
+        'cuadro-12': "url('~assets/img/proyectos/cuadros/dia-12.png')",
       }),
       colors: {
         background: {
