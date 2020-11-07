@@ -59,6 +59,16 @@ export default {
   },
   destroyed() {
     this.so.teardown();
+  },
+  head: {
+    title: 'Persona | Contacto',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Contact Julieta Mercerat'
+      }
+    ],
   }
 };
 </script>

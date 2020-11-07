@@ -146,7 +146,18 @@
 
 <script>
 export default {
+  head: {
+    title: 'Persona | Resume',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Resume de Julieta Mercerat'
+      }
+    ],
+  },
   transition: "page",
+
 };
 </script>
 

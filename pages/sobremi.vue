@@ -81,6 +81,16 @@ import VueTypedJs from 'vue-typed-js';
 import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
+  head: {
+    title: 'Persona | Sobre Mi',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Curriculum de Julieta Mercerat'
+      }
+    ],
+  },
   transition: "page",
   components : {
     Lostresbotones

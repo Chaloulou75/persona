@@ -79,6 +79,16 @@ export default {
   transition: "page",
   components : {
     Lostresbotones
+  },
+  head: {
+    title: 'Persona | Porfolio',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Porfolio de Julieta Mercerat'
+      }
+    ],
   }
 
 };

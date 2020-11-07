@@ -122,6 +122,16 @@ import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
+  head: {
+    title: 'Persona | Porfolio - Dia 2',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Porfolio Julieta Mercerat, Dia 2'
+      }
+    ],
+  },
   transition: "page",
   components : {
     Lostresbotones,
