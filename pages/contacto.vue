@@ -61,7 +61,7 @@ export default {
     this.so.teardown();
   },
   head: {
-    title: 'Persona | Contacto',
+    title: 'Persona Diseño | Contacto',
     meta: [
       {
         hid: 'description',

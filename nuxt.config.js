@@ -4,11 +4,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Persona Diseño',
+    title: 'Persona Diseño | Julieta Mercerat',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Julieta Mercerat Diseño' }
+      { hid: 'description', name: 'description', content: 'Julieta Mercerat Diseñadora' }
     ],
     link: [
       { rel: 'icon', type: 'image/gif', href: '/gifcolores.gif' },

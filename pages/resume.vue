@@ -147,7 +147,7 @@
 <script>
 export default {
   head: {
-    title: 'Persona | Resume',
+    title: 'Persona Diseño | Resume',
     meta: [
       {
         hid: 'description',

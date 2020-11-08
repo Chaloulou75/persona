@@ -82,7 +82,7 @@ import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
   head: {
-    title: 'Persona | Sobre Mi',
+    title: 'Persona Diseño | Sobre Mi',
     meta: [
       {
         hid: 'description',

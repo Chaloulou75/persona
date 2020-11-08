@@ -81,7 +81,7 @@ export default {
     Lostresbotones
   },
   head: {
-    title: 'Persona | Porfolio',
+    title: 'Persona Diseño | Porfolio',
     meta: [
       {
         hid: 'description',
