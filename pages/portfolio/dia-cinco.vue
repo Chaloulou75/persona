@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-4xl text-right uppercase text-bluejuli">SUBVERSIVO
+        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">SUBVERSIVO
         </div>
       </div>
 
