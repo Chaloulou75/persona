@@ -3,7 +3,7 @@
     <div class="relative min-h-screen porfolio">
       <Navigation />
       <Lostresbotones />
-      <div class="container relative grid w-full min-h-screen grid-cols-1 gap-1 mx-auto my-8 text-white lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
+      <div class="container relative grid w-full min-h-screen grid-cols-1 gap-1 mx-auto my-8 text-white lg:gap-2 lg:mt-20 md:grid-cols-2 lg:grid-cols-3">
 
         <nuxt-link to="/portfolio/dia-uno" class="relative flex flex-col items-start text-white transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-1 hover:bg-gradient-to-br from-gray-900 to-black hover:-rotate-1 lg:hover:-rotate-3">
             <h2 class="px-4 py-4 text-3xl font-bold uppercase">DÍA <span class="text-xl numberBig">1</span></h2>
