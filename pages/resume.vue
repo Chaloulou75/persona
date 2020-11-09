@@ -147,7 +147,7 @@
 <script>
 export default {
   head: {
-    title: 'Persona Diseño | Resume',
+    title: 'Persona Diseño | Resume Julieta Mercerat',
     meta: [
       {
         hid: 'description',

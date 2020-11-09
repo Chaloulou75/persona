@@ -53,8 +53,7 @@
             </vue-typed-js>
           </div>
 
-          <div class="px-6 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-300 hover:bg-redjuli hover:text-white hover:font-semibold focus:outline-none" data-scroll>
-
+          <div class="px-6 py-1 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-200 hover:bg-redjuli hover:text-white focus:outline-none" data-scroll>
             <nuxt-link to="/portfolio"> Para ver el Portfolio</nuxt-link>
           </div>
         </div>

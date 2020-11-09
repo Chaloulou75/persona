@@ -61,7 +61,7 @@ export default {
     this.so.teardown();
   },
   head: {
-    title: 'Persona Diseño | Contacto',
+    title: 'Persona Diseño | Contacto Julieta Mercerat',
     meta: [
       {
         hid: 'description',
