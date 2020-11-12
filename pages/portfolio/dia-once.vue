@@ -12,7 +12,7 @@
     <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli cursor-mano" @click="show = !show">
 
         <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-11">
         </div>
@@ -31,7 +31,7 @@
       </div>
 
       <!-- right screen 1 -->
-      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2">
+      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
