@@ -11,7 +11,11 @@ export default {
       { hid: 'description', name: 'description', content: 'Persona Diseño | Julieta Mercerat Diseñadora' }
     ],
     link: [
-      { rel: 'icon', type: 'image/gif', href: '/gifcolores.gif' },
+      // { rel: 'icon', type: 'image/gif', href: '/gifcolores.gif' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
       {
         rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Sorts+Mill+Goudy:ital@0;1&family=Ubuntu:wght@300&display=swap',
       }
