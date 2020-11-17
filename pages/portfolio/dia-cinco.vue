@@ -92,12 +92,11 @@
         <div id="ultima5" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
             <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diacinco/20.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
         </div>
-
       </div>
   </div>
 
   <transition name="component-fade" mode="out-in">
-    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+    <LazyModal v-if="showModal" @close="showModal = false" :image='image'></LazyModal>
   </transition>
 
   <div class="w-2/3 mx-auto my-20 lg:w-1/4" data-scroll>
@@ -108,14 +107,11 @@
     </nuxt-link>
   </div>
 
-  <Footer />
+  <LazyFooter />
 </div>
 </template>
 
 <script>
-import Lostresbotones from '~/components/Lostresbotones';
-import ScrollLink from '~/components/ScrollLink';
-import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
@@ -130,11 +126,6 @@ export default {
     ],
   },
   transition: "page",
-  components : {
-    Lostresbotones,
-    ScrollLink,
-    Modal
-  },
   data() {
     return {
       show: true,

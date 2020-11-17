@@ -73,15 +73,13 @@
 </template>
 
 <script>
-import Lostresbotones from '~/components/Lostresbotones';
-import Count from '~/components/Count';
+//import Count from '~/components/Count';
 
 export default {
   transition: "page",
-  components : {
-    Lostresbotones,
-    Count
-  },
+  // components : {
+  //   Count
+  // },
   head: {
     title: 'Persona Diseño | Porfolio de Julieta Mercerat',
     meta: [

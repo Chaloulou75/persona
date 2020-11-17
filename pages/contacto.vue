@@ -44,13 +44,9 @@
 
 <script>
 import ScrollOut from "scroll-out";
-import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
   transition: "page",
-  components : {
-    Lostresbotones
-  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,

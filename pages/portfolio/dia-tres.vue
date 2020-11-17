@@ -125,9 +125,6 @@
 </template>
 
 <script>
-import Lostresbotones from '~/components/Lostresbotones';
-import ScrollLink from '~/components/ScrollLink';
-import Modal from '~/components/Modal';
 import ScrollOut from "scroll-out";
 
 export default {
@@ -142,11 +139,6 @@ export default {
     ],
   },
   transition: "page",
-  components : {
-    Lostresbotones,
-    ScrollLink,
-    Modal
-  },
   data() {
     return {
       show: true,

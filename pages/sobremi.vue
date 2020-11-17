@@ -77,7 +77,6 @@
 <script>
 import ScrollOut from "scroll-out";
 import VueTypedJs from 'vue-typed-js';
-import Lostresbotones from '~/components/Lostresbotones';
 
 export default {
   head: {
@@ -91,9 +90,6 @@ export default {
     ],
   },
   transition: "page",
-  components : {
-    Lostresbotones
-  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
