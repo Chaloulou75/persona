@@ -79,13 +79,13 @@
         <div @click="foto = 'Amarillo'"
              @mouseover="foto = 'Amarillo'"
              v-bind:class="{ 'anim_letter-e' : show}"
-             class="text-black transform rotate-90 letter-e letterBig cursor-mano">
+             class="text-black transform rotate-90 letter-e letterBig cursor-mano ">
             E
         </div>
-        <div v-bind:class="{ 'anim_letter-r' : show}" class="text-black letter-r letterBig">
+        <div v-bind:class="{ 'anim_letter-r' : show}" class="text-black letter-r letterBig ">
           <nuxt-link to="/resume">R</nuxt-link>
         </div>
-        <div v-bind:class="{ 'anim_letter-s' : show}" class="text-black transform rotate-90 letter-s letterBig">
+        <div v-bind:class="{ 'anim_letter-s' : show}" class="text-black transform rotate-90 letter-s letterBig ">
           <nuxt-link to="/sobremi">S</nuxt-link>
         </div>
         <div @click="foto = 'Azul'"
@@ -94,13 +94,14 @@
              class="text-black letter-o letterBig cursor-mano">
           O
         </div>
-        <div v-bind:class="{ 'anim_letter-n' : show}" class="text-black letter-n letterBig">
-          <nuxt-link to="/contacto">N</nuxt-link>
+        <div v-bind:class="{ 'anim_letter-n' : show}"
+             class="text-black letter-n letterBig">
+            <nuxt-link to="/contacto">N</nuxt-link>
         </div>
         <div @click="foto = 'Rojo'"
              @mouseover="foto = 'Rojo'"
              v-bind:class="{ 'anim_letter-a' : show}"
-             class="text-black letter-a letterBig cursor-mano">
+             class="text-black letter-a letterBig cursor-mano ">
             A
         </div>
       </div>
@@ -138,7 +139,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .letter-p {
   top: -5%;

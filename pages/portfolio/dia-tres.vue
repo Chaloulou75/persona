@@ -221,7 +221,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 
 .active{
   @apply bg-bluejuli transform scale-y-125 scale-x-110;
@@ -268,4 +268,4 @@ export default {
   transform: translateX(-100px);
 }
 
-</style>
+</styleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-rule>

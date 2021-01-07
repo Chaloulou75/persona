@@ -53,9 +53,11 @@
             </vue-typed-js>
           </div>
 
-          <div class="px-6 py-1 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-200 hover:bg-redjuli hover:text-white focus:outline-none" data-scroll>
-            <nuxt-link to="/portfolio"> Para ver el Portfolio</nuxt-link>
-          </div>
+          <nuxt-link to="/portfolio">
+            <div class="px-6 py-1 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-100 cursor-mano hover:bg-redjuli hover:text-white focus:outline-none" data-scroll>
+              Para ver el Portfolio
+            </div>
+          </nuxt-link>
         </div>
 
         <div class="flex items-center justify-center min-h-screen" data-scroll>
@@ -93,7 +95,7 @@ export default {
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,
-      threshold: .4
+      threshold: .3
     });
   },
   destroyed() {
