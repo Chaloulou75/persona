@@ -163,7 +163,7 @@ export default {
 
 <style scoped>
 
-.page-enter-active,e
+.page-enter-active,
 .page-leave-active {
   transition-property: opacity;
   transition-timing-function: ease-in-out;

@@ -23,7 +23,3 @@ export default {
   props: ['image'],
 }
 </script>
-
-<style scoped>
-
-</style>

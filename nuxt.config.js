@@ -58,11 +58,28 @@ export default {
           threshold: 10240
         }
       }
-    ]
+    ],
+    'nuxt-i18n',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+
+  i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,  // recommended
+    },
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'En', file: 'en-US.js' },
+      { code: 'fr', iso: 'fr-FR', name: 'Fr', file: 'fr-FR.js' },
+      { code: 'es', iso: 'es-ES', name: 'Es', file: 'es-ES.js' }
+    ],
+    lazy: true,
+    langDir: "lang/",
+    defaultLocale: 'es',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

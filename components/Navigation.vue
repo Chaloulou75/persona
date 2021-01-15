@@ -57,8 +57,18 @@
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/sobremi">SOBRE MI</nuxt-link>
+            <nuxt-link to="/sobremi"> {{ $t('about')}}</nuxt-link>
           </li>
+
+          <!-- <li>
+              <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+              class="text-xs tracking-widest uppercase">
+               {{ locale.name }}
+              </nuxt-link>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -91,13 +101,18 @@ export default {
       show: false,
     };
   },
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  }
 };
 </script>
 
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .fade-enter,
 .fade-leave-to {

@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .theme-inicio{
   --bg-background-primary: #ffffff;
@@ -91,7 +91,7 @@ nav, .desktop-menu, .mobile-menu{
 }
 
 .letterSmall{
-  @apply absolute font-hairline text-3xl;
+  @apply absolute font-thin text-3xl;
 }
 
 

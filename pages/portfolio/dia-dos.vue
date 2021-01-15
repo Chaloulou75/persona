@@ -25,7 +25,7 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm leading-normal text-center text-white lg:w-1/2">
           <p class="pb-6">Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.
           </p>
           <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN.</p>

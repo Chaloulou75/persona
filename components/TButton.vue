@@ -4,7 +4,7 @@
   </button>
 </template>
 
-<style scoped>
+<style lang='postcss' scoped>
 .btn {
   @apply font-bold py-2 px-4 rounded;
   &.btn-blue {
