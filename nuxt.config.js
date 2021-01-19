@@ -66,11 +66,11 @@ export default {
   axios: {},
 
   i18n: {
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,  // recommended
-    },
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   onlyOnRoot: true,  // recommended
+    // },
     locales: [
       { code: 'en', iso: 'en-US', name: 'En', file: 'en-US.js' },
       { code: 'fr', iso: 'fr-FR', name: 'Fr', file: 'fr-FR.js' },

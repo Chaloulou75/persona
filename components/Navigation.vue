@@ -60,15 +60,15 @@
             <nuxt-link to="/sobremi"> {{ $t('about')}}</nuxt-link>
           </li>
 
-          <!-- <li>
+          <li class="divide-x-2 divide-gray-600">
               <nuxt-link
               v-for="locale in availableLocales"
               :key="locale.code"
               :to="switchLocalePath(locale.code)"
-              class="text-xs tracking-widest uppercase">
+              class="px-2 text-xs tracking-widest uppercase">
                {{ locale.name }}
               </nuxt-link>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>

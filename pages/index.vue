@@ -68,42 +68,53 @@
             >
             </div>
 
-            <button class="py-3 mt-6 -ml-6 text-xs lg:text-base text-copy-primary focus:outline-none" @click="toggle">Start me</button>
+            <div class="text-copy-primary focus:outline-none cursor-mano" @click="toggle">
+              <!-- py-3 mt-6 -ml-6 text-xs lg:text-base -->
+              <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
           </div>
         </div>
 
         <!-- las letras -->
-        <div v-bind:class="{ 'anim_letter-p' : show}" class="text-black letter-p letterBig">
-            <nuxt-link to="/portfolio">P</nuxt-link>
-        </div>
-        <div @click="foto = 'Amarillo'"
-             @mouseover="foto = 'Amarillo'"
-             v-bind:class="{ 'anim_letter-e' : show}"
-             class="text-black transform rotate-90 letter-e letterBig cursor-mano ">
-            E
-        </div>
-        <div v-bind:class="{ 'anim_letter-r' : show}" class="text-black letter-r letterBig ">
-          <nuxt-link to="/resume">R</nuxt-link>
-        </div>
-        <div v-bind:class="{ 'anim_letter-s' : show}" class="text-black transform rotate-90 letter-s letterBig ">
-          <nuxt-link to="/sobremi">S</nuxt-link>
-        </div>
-        <div @click="foto = 'Azul'"
-             @mouseover="foto = 'Azul'"
-             v-bind:class="{ 'anim_letter-o' : show}"
-             class="text-black letter-o letterBig cursor-mano">
-          O
-        </div>
-        <div v-bind:class="{ 'anim_letter-n' : show}"
-             class="text-black letter-n letterBig">
-            <nuxt-link to="/contacto">N</nuxt-link>
-        </div>
-        <div @click="foto = 'Rojo'"
-             @mouseover="foto = 'Rojo'"
-             v-bind:class="{ 'anim_letter-a' : show}"
-             class="text-black letter-a letterBig cursor-mano ">
-            A
-        </div>
+        <transition name="letters" appear v-on:appear="lettersAnimStart">
+
+          <div>
+
+            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="text-black letter-p letterBig">
+                <nuxt-link to="/portfolio">P</nuxt-link>
+            </div>
+            <div @click="foto = 'Amarillo'"
+                @mouseover="foto = 'Amarillo'"
+                v-bind:class="{ 'anim_letter-e' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black transform rotate-90 letter-e letterBig cursor-mano ">
+                E
+            </div>
+            <div v-bind:class="{ 'anim_letter-r' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black letter-r letterBig ">
+              <nuxt-link to="/resume">R</nuxt-link>
+            </div>
+            <div v-bind:class="{ 'anim_letter-s' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black transform rotate-90 letter-s letterBig ">
+              <nuxt-link to="/sobremi">S</nuxt-link>
+            </div>
+            <div @click="foto = 'Azul'"
+                @mouseover="foto = 'Azul'"
+                v-bind:class="{ 'anim_letter-o' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black letter-o letterBig cursor-mano">
+              O
+            </div>
+            <div v-bind:class="{ 'anim_letter-n' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black letter-n letterBig">
+                <nuxt-link to="/contacto">N</nuxt-link>
+            </div>
+            <div @click="foto = 'Rojo'"
+                @mouseover="foto = 'Rojo'"
+                v-bind:class="{ 'anim_letter-a' : show, 'appearLettersStart' : appearLetters}"
+                class="text-black letter-a letterBig cursor-mano ">
+                A
+            </div>
+          </div>
+        </transition>
       </div>
     </div>
 </template>
@@ -114,12 +125,19 @@ export default {
 
   data() {
     return {
+      appearLetters: true,
       show: false,
       theme : 'theme-inicio',
       foto: '',
     }
   },
   methods:{
+    lettersAnimStart : function () {
+      setTimeout(()=>{
+        this.appearLetters = !this.appearLetters
+        this.show = !this.show
+      }, 4000);
+    },
     toggle : function () {
       this.show = !this.show
     },
@@ -140,6 +158,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.appearLettersStart {
+  animation: 4s ease-in-out forwards fade-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .letter-p {
   top: -5%;
@@ -168,7 +199,7 @@ export default {
     transform:  translate(-380%, 100%) rotate(360deg) ;
   }
   100% {
-    transform:  translate(200%, 15%) rotate(0deg);
+    transform:  translate(220%, 15%) rotate(0deg);
   }
 }
 
@@ -230,7 +261,7 @@ export default {
     transform:  translate(300%, -37%) rotate(360deg);
   }
   100% {
-    transform:  translate(55%, 22%) rotate(0deg);
+    transform:  translate(55%, 21%) rotate(0deg);
   }
 }
 
@@ -351,7 +382,7 @@ export default {
     transform:  translate(-300%, 15%) rotate(-360deg);
   }
   100% {
-    transform:  translate(170%, -9%) rotate(0deg);
+    transform:  translate(170%, -10%) rotate(0deg);
   }
 }
 
@@ -438,16 +469,5 @@ export default {
       transform:  translate(70%, -30%) rotate(0deg);
     }
   }
-}
-
-.page-enter-active,
-.page-leave-active {
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 500ms;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
 }
 </style>
