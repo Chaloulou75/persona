@@ -32,6 +32,7 @@ export default {
     { src: '@/plugins/scroll-out', ssr: false },
     { src: '@/plugins/in-viewport', ssr: false },
     '@/plugins/vue-typed-js',
+
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
