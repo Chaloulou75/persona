@@ -33,78 +33,72 @@
       </div>
 
       <!-- right screen 1 -->
-      <template name="page" v-if="show" @click="show = !show">
-        <div class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+        <div class="flex items-center justify-center w-full h-48">
+          <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+          </div>
+          <div class="text-sm uppercase text-bluejuli">Tendencias</div>
+        </div>
+        <div class="flex justify-around">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Tendencias</div>
+            <div class="text-sm uppercase text-bluejuli">Moldería</div>
           </div>
-          <div class="flex justify-around">
-            <div class="flex items-center justify-center w-full h-48">
-              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-              </div>
-              <div class="text-sm uppercase text-bluejuli">Moldería</div>
+          <div class="flex items-center justify-center w-full h-48">
+            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="flex items-center justify-center w-full h-48">
-              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-              </div>
-              <div class="text-sm uppercase text-bluejuli"></div>
-            </div>
-          </div>
-          <div class="flex items-center justify-center w-full h-48 space-x-16">
-            <div class="flex items-center justify-center w-full">
-              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-              </div>
-              <div class="text-sm uppercase text-bluejuli">Concepto</div>
-            </div>
-            <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
-            </div>
-          </div>
-
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli montserrat">SUBVERSIVO
+            <div class="text-sm uppercase text-bluejuli"></div>
           </div>
         </div>
-      </template>
+        <div class="flex items-center justify-center w-full h-48 space-x-16">
+          <div class="flex items-center justify-center w-full">
+            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+            </div>
+            <div class="text-sm uppercase text-bluejuli">Concepto</div>
+          </div>
+          <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
+          </div>
+        </div>
+
+        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli montserrat">SUBVERSIVO
+        </div>
+      </div>
 
       <!-- right screen 2 -->
-      <template name="page" v-else>
-        <div class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
-        v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
-        >
+      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+      v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+      >
 
-          <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-            <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-            v-for="image in images"
-            :key="image.id"
-            @click.native="isActive = image.id"
-            v-bind:class="{ active: isActive == image.id }"
-            ></scroll-link>
-          </div>
-
-          <div :id="image.name"
-            v-for="(image, imageIndex) in images"
-            :key="imageIndex"
-            @click="index = imageIndex"
-            class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
-          >
-            <img loading="lazy"
-                :alt="image.name"
-                :src="image.href"
-                class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-            >
-          </div>
-
-          <div id="ultima1" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
-          </div>
+        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          v-for="image in images"
+          :key="image.id"
+          @click.native="isActive = image.id"
+          v-bind:class="{ active: isActive == image.id }"
+          ></scroll-link>
         </div>
-      </template>
+
+        <div :id="image.name"
+          v-for="(image, imageIndex) in images"
+          :key="imageIndex"
+          @click="index = imageIndex"
+          class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
+        >
+          <img loading="lazy"
+              :alt="image.name"
+              :src="image.href"
+              class="object-cover w-full h-auto lg:object-contain lg:h-screen"
+          >
+        </div>
+
+        <div id="ultima1" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+          <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+        </div>
+      </div>
   </div>
 
-  <v-gallery :images="images"
-           :index="index"
-           @close="index = null" ></v-gallery>
+  <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano"/>
 
   <VolverButton />
 
@@ -207,7 +201,6 @@ export default {
 .scrollhidden::-webkit-scrollbar {
   display: none;
 }
-
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollhidden {
   -ms-overflow-style: none;  /* IE and Edge */
