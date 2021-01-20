@@ -10,6 +10,10 @@
 
         <nuxt-link to="/resume" class="fixed right-0 z-40 px-6 py-2 mt-64 mr-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border border-gray-600 rounded shadow-lg hover:text-white hover:border-white lg:mt-20 lg:mr-48 focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume</nuxt-link>
 
+        <div class="flex items-center justify-center w-full h-auto my-4 lg:min-h-screen respContainer">
+          <iframe src="https://player.vimeo.com/video/502370696" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+
         <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto my-8">
           <div class="px-4 py-4 mr-auto" data-scroll>
             <h2 class="py-4 text-sm font-semibold text-gray-900">a// Quien sos?</h2>
@@ -105,6 +109,23 @@ export default {
 </script>
 
 <style scoped>
+
+.respContainer {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.respContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
 [data-scroll] {
   transition: all 2s;

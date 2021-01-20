@@ -251,4 +251,4 @@ export default {
   transform: translateX(-100px);
 }
 
-</styleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-ruleat-rule>
+</style>
