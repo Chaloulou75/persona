@@ -2,6 +2,7 @@
   <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-no-repeat bg-cover bg-pagina-r">
     <Navigation />
     <lostresbotones />
+
     <div class="relative w-full min-h-screen">
       <div class="fixed left-0 flex flex-col items-center justify-center h-full ml-8 lg:ml-32">
         <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 border-4 border-gray-700 shadow-xl hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none">

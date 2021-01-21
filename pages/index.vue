@@ -166,9 +166,11 @@ export default {
 @keyframes fade-in {
   0% {
     opacity: 0;
+    filter: blur(10px);
   }
   100% {
     opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -194,6 +196,7 @@ export default {
 @keyframes letterP {
   0% {
     transform:  translate()  rotate(0deg);
+
   }
   40%, 60% {
     transform:  translate(-380%, 100%) rotate(360deg) ;
