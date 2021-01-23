@@ -77,9 +77,7 @@
 
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart">
-
           <div>
-
             <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="text-black letter-p letterBig">
                 <nuxt-link to="/portfolio">P</nuxt-link>
             </div>
@@ -160,7 +158,7 @@ export default {
 <style lang="scss" scoped>
 
 .appearLettersStart {
-  animation: 4s ease-in-out forwards fade-in;
+  animation: 4s ease-in forwards fade-in;
 }
 
 @keyframes fade-in {
