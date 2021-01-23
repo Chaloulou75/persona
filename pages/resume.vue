@@ -309,15 +309,15 @@
                 </div>
             </div>
             <div class="col-span-2"> <!--contacto -->
-              <div class="flex flex-col items-center justify-center w-full h-auto px-4 py-4">
-                <div class="flex items-center justify-center w-full py-4">
-                  <div class="flex flex-col mr-4">
+              <div class="flex flex-col items-center justify-center w-full h-auto px-4">
+                <div class="flex items-end justify-center w-full h-full py-4">
+                  <div class="flex flex-col pb-1 mr-4">
                     <div class="w-4 h-4 bg-yellowjuli"></div>
                     <div class="w-4 h-4 bg-bluejuli"></div>
                     <div class="w-4 h-4 bg-redjuli"></div>
                   </div>
-                  <div class="text-2xl font-bold text-center uppercase text-redjuli">
-                  contacto
+                  <div class="text-2xl font-bold leading-none text-center uppercase text-redjuli">
+                    contacto
                   </div>
                 </div>
 
@@ -481,21 +481,21 @@
                     <div class="w-full mt-auto h-3/5 bg-bluejuli"></div>
                   </div>
                   <div class="w-10 h-10 border-b border-r border-bluejuli"></div>
-                  <div class="w-10 h-10 border border-bluejuli"></div>
+                  <div class="w-10 h-10 border-t border-b border-r border-bluejuli"></div>
                   <div></div>
                   <div class="relative flex w-10 h-10 border-2 border-dashed border-bluejuli">
                     <div class="absolute font-semibold text-center inset-2">Ex</div>
                     <div class="w-full mt-auto h-3/5 bg-bluejuli"></div>
                   </div>
                   <div class="w-10 h-10 border-b border-r border-bluejuli"></div>
-                  <div class="w-10 h-10 border border-bluejuli"></div>
+                  <div class="w-10 h-10 border-b border-r border-bluejuli"></div>
                   <div></div>
                   <div class="relative flex w-10 h-10 border-2 border-dashed border-bluejuli">
                     <div class="absolute font-semibold text-center inset-2">Lr</div>
                     <div class="w-full mt-auto h-1/2 bg-bluejuli"></div>
                   </div>
-                  <div class="w-10 h-10 border-r border-bluejuli"></div>
-                  <div class="w-10 h-10 border border-bluejuli"></div>
+                  <div class="w-10 h-10"></div>
+                  <div class="w-10 h-10 border-b border-l border-r border-bluejuli"></div>
                   <div ></div>
                   <div ></div>
                   <div ></div>
