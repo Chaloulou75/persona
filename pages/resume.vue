@@ -4,7 +4,7 @@
     <lostresbotones />
 
     <div class="relative w-full min-h-screen lg:hidden"> <!--Resume Mobile -->
-      <div class="fixed left-0 z-50 flex flex-col items-center justify-center h-full ml-8 lg:ml-32">
+      <div class="fixed left-0 z-50 flex flex-col items-center justify-center h-auto ml-8">
         <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 border-4 border-gray-700 shadow-xl hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
