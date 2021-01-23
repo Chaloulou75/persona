@@ -95,9 +95,12 @@ module.exports = {
     },
   },
   variants: {
-    backgroundImage: ['responsive', 'hover'],
-    backgroundColor: ['responsive', 'hover'],
-    transitionDuration: ['responsive', 'hover'],
+    extend: {
+      backgroundImage: ['responsive', 'hover'],
+      backgroundColor: ['responsive', 'hover'],
+      transitionDuration: ['responsive', 'hover'],
+      transform: ['hover', 'focus'],
+    }
   },
   plugins: [
   ],
