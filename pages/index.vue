@@ -102,7 +102,7 @@
               O
             </div>
             <div v-bind:class="{ 'anim_letter-n' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black letter-n letterBig">
+                class="h-auto text-black letter-n letterBig">
                 <nuxt-link to="/contacto">N</nuxt-link>
             </div>
             <div @click="foto = 'Rojo'"
