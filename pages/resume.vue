@@ -5,7 +5,7 @@
     <lostresbotones />
 
     <div class="relative w-full min-h-screen mb-16 lg:hidden"> <!--Resume Mobile -->
-      <div class="fixed bottom-0 right-0 z-50 flex flex-col items-center justify-center h-auto mb-24 ml-8">
+      <div class="fixed bottom-0 right-0 z-50 flex flex-col items-center justify-center h-auto mb-48 ml-10">
         <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank" class="inline-flex items-center justify-center px-5 py-3 mb-6 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 border-4 border-gray-700 shadow-xl hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
@@ -227,7 +227,7 @@
           </div>
         </div>
       </div><!--end herramientas sm-->
-      <div class="flex flex-col items-start justify-center max-w-sm px-8 py-8 mx-auto space-y-4"><!--idiomas sm-->
+      <div class="flex flex-col items-start justify-center h-auto max-w-sm px-8 mx-auto my-12 space-y-4"><!--idiomas sm-->
         <div class="w-full px-4 py-4 text-4xl text-center uppercase border-2 border-dashed border-yellowjuli text-yellowjuli">
           <h3>IDIO</h3>
           <h3>MAS</h3>
@@ -253,7 +253,7 @@
           </div>
         </div>
       </div><!--end idiomas sm-->
-      <div class="flex flex-col justify-center h-full max-w-sm mx-auto my-8"> <!--INTERESES sm-->
+      <div class="flex flex-col justify-center h-auto max-w-sm px-8 mx-auto my-12"> <!--INTERESES sm-->
         <div class="py-4 border border-dashed border-yellowjuli">
           <h2 class="py-4 text-4xl font-thin text-center uppercase text-yellowjuli">INTERESES</h2>
           <div class="px-6 text-xs font-semibold text-gray-900">
@@ -266,7 +266,7 @@
           </div>
         </div>
       </div><!-- end intereses sm-->
-      <div class="flex flex-col items-center justify-center w-full h-auto px-4"> <!-- contacto sm-->
+      <div class="flex flex-col items-center justify-center w-full h-auto px-4 my-12"> <!-- contacto sm-->
         <div class="flex items-end justify-center w-full h-full py-4">
           <div class="flex flex-col pb-1 mr-4">
             <div class="w-4 h-4 bg-yellowjuli"></div>

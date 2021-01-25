@@ -121,9 +121,6 @@ export default {
     ],
   },
   transition: "page",
-  // components: {
-  //   'gallery': VueGallery
-  // },
   data() {
     return {
       show: true,
