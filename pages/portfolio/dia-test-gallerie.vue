@@ -1,18 +1,23 @@
 <template>
-<div class="relative">
-  <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli">
-  </div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+  <div class="relative">
+    <client-only>
+      <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+    </client-only>
+
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-      <nuxt-link to="/">
-        <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
-      </nuxt-link>
-    </div>
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
 
-    <lostresbotones />
+      <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
+
+      <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
+        <nuxt-link to="/">
+          <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        </nuxt-link>
+      </div>
+
+      <Lostresbotones />
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
 
@@ -96,14 +101,12 @@
           <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
         </div>
       </div>
+    </div>
+
+    <VolverButton />
+
+    <LazyFooter />
   </div>
-
-  <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano"/>
-
-  <VolverButton />
-
-  <LazyFooter />
-</div>
 </template>
 
 <script>

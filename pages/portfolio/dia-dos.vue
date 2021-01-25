@@ -1,5 +1,10 @@
 <template>
 <div class="relative">
+
+  <client-only>
+    <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+  </client-only>
+
   <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
   <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
@@ -11,100 +16,99 @@
         <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
+
     <Lostresbotones />
 
-      <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli cursor-mano" @click="show = !show">
+    <!-- left screen -->
+    <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli cursor-mano" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-2">
-        </div>
-
-        <div class="flex items-center justify-center mt-8 space-x-1">
-          <div class="px-1 py-1 border border-white"></div>
-          <div class="px-1 py-1 border border-white"></div>
-          <div class="px-1 py-1 border border-white"></div>
-        </div>
-
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm leading-normal text-center text-white lg:w-1/2">
-          <p class="pb-6">Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.
-          </p>
-          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN.</p>
-        </div>
+      <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-2">
       </div>
 
-      <!-- right screen 1 -->
-      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+      <div class="flex items-center justify-center mt-8 space-x-1">
+        <div class="px-1 py-1 border border-white"></div>
+        <div class="px-1 py-1 border border-white"></div>
+        <div class="px-1 py-1 border border-white"></div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm leading-normal text-center text-white lg:w-1/2">
+        <p class="pb-6">Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.
+        </p>
+        <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN.</p>
+      </div>
+    </div>
+
+    <!-- right screen 1 -->
+    <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+      <div class="flex items-center justify-center w-full h-48">
+        <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+        </div>
+        <div class="text-sm uppercase text-bluejuli">Concepto </div>
+      </div>
+      <div class="flex justify-around">
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="text-sm uppercase text-bluejuli">Concepto </div>
+          <div class="text-sm uppercase text-bluejuli">Fotografía digital</div>
         </div>
-        <div class="flex justify-around">
-          <div class="flex items-center justify-center w-full h-48">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-            </div>
-            <div class="text-sm uppercase text-bluejuli">Fotografía digital</div>
+        <div class="flex items-center justify-center w-full h-48">
+          <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="flex items-center justify-center w-full h-48">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-            </div>
-            <div class="text-sm uppercase text-bluejuli"></div>
-          </div>
+          <div class="text-sm uppercase text-bluejuli"></div>
         </div>
-        <div class="flex items-center justify-center w-full h-48 space-x-16">
-          <div class="flex items-center justify-center w-full">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-            </div>
-            <div class="text-sm uppercase text-bluejuli">Literatura</div>
+      </div>
+      <div class="flex items-center justify-center w-full h-48 space-x-16">
+        <div class="flex items-center justify-center w-full">
+          <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
-          </div>
+          <div class="text-sm uppercase text-bluejuli">Literatura</div>
         </div>
-
-        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">POSIBILIDADES DE ABSTRACCIÓN
+        <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
         </div>
       </div>
 
-      <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
-      v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+      <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">POSIBILIDADES DE ABSTRACCIÓN
+      </div>
+    </div>
+
+    <!-- right screen 2 -->
+    <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+    v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+    >
+
+      <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+        <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+        v-for="image in images"
+        :key="image.id"
+        @click.native="isActive = image.id"
+        v-bind:class="{ active: isActive == image.id }"
+        ></scroll-link>
+      </div>
+
+      <div :id="image.name"
+            v-for="(image, imageIndex) in images"
+            :key="imageIndex"
+            @click="index = imageIndex"
+            class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
       >
-
-        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          v-for="image in images"
-          :key="image.id"
-          @click.native="isActive = image.id"
-          v-bind:class="{ active: isActive == image.id }"
-          ></scroll-link>
-        </div>
-
-        <div :id="image.name"
-              v-for="image in images"
-              :key="image.id"
-              class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
-        >
         <img loading="lazy"
               :alt="image.name"
-              :src="image.src"
+              :src="image.href"
               class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-              @click="openModal(image)"
-        >
-        </div>
-        <!-- end v-for image -->
+        ><!-- @click="openModal(image)" -->
+        </div><!-- end v-for image -->
 
-          <div id="ultima2" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
-          </div>
-      </div>
+        <div id="ultima2" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+          <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+        </div>
+    </div>
   </div>
 
-  <transition name="component-fade" mode="out-in">
+  <!-- <transition name="component-fade" mode="out-in">
     <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
-  </transition>
+  </transition> -->
 
   <VolverButton />
-
   <Footer />
 </div>
 </template>
@@ -130,64 +134,65 @@ export default {
       isActive: '',
       lastFotoRed: false,
       showModal: false,
-      image: null,
+      // image: null,
       images : [
         {
           id: 1,
           name: 'uno',
-          src: require(`~/assets/img/proyectos/diados/1.jpg`)
+          href: require(`~/assets/img/proyectos/diados/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          src: require(`~/assets/img/proyectos/diados/2.jpg`)
+          href: require(`~/assets/img/proyectos/diados/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          src: require(`~/assets/img/proyectos/diados/3.jpg`)
+          href: require(`~/assets/img/proyectos/diados/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          src: require(`~/assets/img/proyectos/diados/4.jpg`)
+          href: require(`~/assets/img/proyectos/diados/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          src: require(`~/assets/img/proyectos/diados/5.jpg`)
+          href: require(`~/assets/img/proyectos/diados/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          src: require(`~/assets/img/proyectos/diados/6.jpg`)
+          href: require(`~/assets/img/proyectos/diados/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          src: require(`~/assets/img/proyectos/diados/7.jpg`)
+          href: require(`~/assets/img/proyectos/diados/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          src: require(`~/assets/img/proyectos/diados/8.jpg`)
+          href: require(`~/assets/img/proyectos/diados/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          src: require(`~/assets/img/proyectos/diados/9.jpg`)
+          href: require(`~/assets/img/proyectos/diados/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          src: require(`~/assets/img/proyectos/diados/10.jpg`)
+          href: require(`~/assets/img/proyectos/diados/10.jpg`)
         },
         {
           id: 11,
           name: 'once',
-          src: require(`~/assets/img/proyectos/diados/11.jpg`)
+          href: require(`~/assets/img/proyectos/diados/11.jpg`)
         }
-      ]
+      ],
+      index: null
     };
   },
   mounted() {

@@ -31,8 +31,8 @@ export default {
   plugins: [
     { src: '@/plugins/scroll-out', ssr: false },
     { src: '@/plugins/in-viewport', ssr: false },
+    '~plugins/vue-gallery.client.js',
     '@/plugins/vue-typed-js',
-    '~plugins/vue-gallery.client.js'
 
   ],
 
