@@ -1,5 +1,10 @@
 <template>
 <div class="relative">
+
+  <client-only>
+    <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+  </client-only>
+
   <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
   <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
 
@@ -102,8 +107,6 @@
   <!-- <transition name="component-fade" mode="out-in">
     <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
   </transition> -->
-
-  <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano"/>
 
   <VolverButton />
 
