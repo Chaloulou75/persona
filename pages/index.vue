@@ -429,7 +429,7 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(120%, -85%)  rotate(360deg) ;
+      transform:  translate(20%, -90%)  rotate(270deg) ;
     }
     100% {
       transform:  translate(0%, 27%) rotate(0deg);
@@ -443,7 +443,7 @@ export default {
       transform:  translate(170%, -280%)  rotate(360deg);
     }
     100% {
-      transform:  translate(60%, -20%)  rotate(90deg);
+      transform:  translate(60%, 10%)  rotate(90deg);
     }
   }
 
@@ -452,10 +452,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(60%, -300%)  rotate(360deg);
+      transform:  translate(-60%, -200%)  rotate(360deg);
     }
     100% {
-      transform:  translate( -105%, -30%) rotate(0deg);
+      transform:  translate( -75%, 20%) rotate(0deg);
     }
   }
 
@@ -464,10 +464,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60% {
-      transform:  translate( 20%, -180%) rotate(90deg) ;
+      transform:  translate( 20%, 180%) rotate(90deg) ;
     }
     100% {
-      transform:  translate(-75%, 60%) rotate(0deg);
+      transform:  translate(-75%, 55%) rotate(0deg);
     }
   }
 
@@ -476,10 +476,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(-180%, 70%) rotate(180deg);
+      transform:  translate(-180%, 120%) rotate(180deg);
     }
     100% {
-      transform:  translate(60%, -46%) rotate(0deg);
+      transform:  translate(60%, -50%) rotate(0deg);
     }
   }
 }
