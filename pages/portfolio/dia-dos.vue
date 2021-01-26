@@ -16,7 +16,6 @@
         <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
       </nuxt-link>
     </div>
-
     <Lostresbotones />
 
     <!-- left screen -->
@@ -251,5 +250,4 @@ export default {
   opacity: 0;
   transform: translateX(-100px);
 }
-
 </style>

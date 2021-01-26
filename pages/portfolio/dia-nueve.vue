@@ -1,15 +1,21 @@
 <template>
-<div class="relative">
-  <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+  <div class="relative">
+
+    <client-only>
+      <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+    </client-only>
+
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-      <nuxt-link to="/">
-        <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
-      </nuxt-link>
-    </div>
-    <Lostresbotones />
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+      <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
+
+      <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
+        <nuxt-link to="/">
+          <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        </nuxt-link>
+      </div>
+      <Lostresbotones />
 
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen bg-gray-800 lg:w-1/2 cursor-mano" @click="show = !show">
@@ -70,7 +76,6 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-
           <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           v-for="image in images"
           :key="image.id"
@@ -79,33 +84,32 @@
           ></scroll-link>
         </div>
 
-          <div :id="image.name"
-              v-for="image in images"
-              :key="image.id"
+        <div  :id="image.name"
+              v-for="(image, imageIndex) in images"
+              :key="imageIndex"
+              @click="index = imageIndex"
               class="flex items-center justify-center w-full h-auto shadow-lg cursor-mano lg:min-h-screen"
-          >
-          <img loading="lazy"
-                :alt="image.name"
-                :src="image.src"
-                class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-                @click="openModal(image)"
-          >
-          </div>
+        >
+        <img loading="lazy"
+              :alt="image.name"
+              :src="image.href"
+              class="object-cover w-full h-auto lg:object-contain lg:h-screen"
+        > <!-- @click="openModal(image)" -->
+        </div>
 
-          <div id="ultima9" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="diesinueve" src="~assets/img/proyectos/dianueve/19.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
-          </div>
+        <div id="ultima9" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+          <img loading="lazy" alt="diesinueve" src="~assets/img/proyectos/dianueve/19.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+        </div>
       </div>
+    </div>
+
+    <!-- <transition name="component-fade" mode="out-in">
+      <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+    </transition> -->
+
+    <VolverButton />
+    <Footer />
   </div>
-
-  <transition name="component-fade" mode="out-in">
-    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
-  </transition>
-
-  <VolverButton />
-
-  <Footer />
-</div>
 </template>
 
 <script>
@@ -129,104 +133,105 @@ export default {
       isActive: '',
       lastFotoRed: false,
       showModal: false,
-      image: null,
+      // image: null,
       images : [
         {
           id: 1,
           name: 'uno',
-          src: require(`~/assets/img/proyectos/dianueve/1.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          src: require(`~/assets/img/proyectos/dianueve/2.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          src: require(`~/assets/img/proyectos/dianueve/3.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          src: require(`~/assets/img/proyectos/dianueve/4.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          src: require(`~/assets/img/proyectos/dianueve/5.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          src: require(`~/assets/img/proyectos/dianueve/6.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          src: require(`~/assets/img/proyectos/dianueve/7.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          src: require(`~/assets/img/proyectos/dianueve/8.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          src: require(`~/assets/img/proyectos/dianueve/9.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          src: require(`~/assets/img/proyectos/dianueve/10.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/10.jpg`)
         },
         {
           id: 11,
           name: 'once',
-          src: require(`~/assets/img/proyectos/dianueve/11.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/11.jpg`)
         },
         {
           id: 12,
           name: 'doce',
-          src: require(`~/assets/img/proyectos/dianueve/12.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/12.jpg`)
         },
         {
           id: 13,
           name: 'trece',
-          src: require(`~/assets/img/proyectos/dianueve/13.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/13.jpg`)
         },
         {
           id: 14,
           name: 'quatorze',
-          src: require(`~/assets/img/proyectos/dianueve/14.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/14.jpg`)
         },
         {
           id: 15,
           name: 'quinze',
-          src: require(`~/assets/img/proyectos/dianueve/15.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/15.jpg`)
         },
         {
           id: 16,
           name: 'diesiseis',
-          src: require(`~/assets/img/proyectos/dianueve/16.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/16.jpg`)
         },
         {
           id: 17,
           name: 'diesisiete',
-          src: require(`~/assets/img/proyectos/dianueve/17.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/17.jpg`)
         },
         {
           id: 18,
           name: 'diesiocho',
-          src: require(`~/assets/img/proyectos/dianueve/18.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/18.jpg`)
         },
         {
           id: 19,
           name: 'diesinueve',
-          src: require(`~/assets/img/proyectos/dianueve/19.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/19.jpg`)
         }
-      ]
+      ],
+      index: null
     };
   },
   mounted() {
@@ -285,5 +290,4 @@ export default {
   opacity: 0;
   transform: translateX(-100px);
 }
-
 </style>

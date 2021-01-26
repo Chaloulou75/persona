@@ -47,26 +47,21 @@
 
         <nuxt-link to="/portfolio/dia-nueve" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-9 hover:bg-gradient-to-br from-gray-900 to-black hover:-rotate-1 lg:hover:-rotate-3">
           <h2 class="px-4 py-4 text-3xl font-bold leading-normal uppercase">DÍA <count :to="9" class="text-xl numberBig"></count></h2>
-          <p class="px-4 text-lg leading-normal"><count :to="2020"></count></p>
+          <p class="px-4 text-lg leading-normal"><count :to="2021"></count></p>
         </nuxt-link>
 
         <nuxt-link to="/portfolio/dia-dies" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-10 hover:bg-gradient-to-br from-blue-500 to-bluejuli hover:rotate-1 lg:hover:rotate-3">
           <h2 class="px-4 py-4 text-3xl font-bold leading-normal uppercase">DÍA <count :to="10" class="text-xl numberBig"></count></h2>
-          <p class="px-4 text-lg leading-normal"><count :to="2020"></count></p>
+          <p class="px-4 text-lg leading-normal"><count :to="2021"></count></p>
         </nuxt-link>
 
         <nuxt-link to="/portfolio/dia-once" class="flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-11 hover:bg-gradient-to-br from-red-600 to-redjuli hover:-rotate-1 lg:hover:-rotate-3">
           <h2 class="px-4 py-4 text-3xl font-bold leading-normal uppercase">DÍA <count :to="11" class="text-xl numberBig"></count></h2>
-          <p class="px-4 text-lg leading-normal"><count :to="2020"></count></p>
+          <p class="px-4 text-lg leading-normal"><count :to="2021"></count></p>
         </nuxt-link>
 
         <nuxt-link to="/portfolio/dia-doce" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli hover:rotate-1 lg:hover:rotate-3">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal uppercase">DÍA <count :to="12" class="text-xl numberBig"></count></h2>
-            <p class="px-4 text-lg leading-normal"><count :to="2020"></count></p>
-        </nuxt-link>
-
-        <nuxt-link to="/portfolio/dia-test-gallerie" class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-5 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli hover:rotate-1 lg:hover:rotate-3">
-            <h2 class="px-4 py-4 text-3xl font-bold leading-normal uppercase">DÍA <count :to="13" class="text-xl numberBig"></count></h2>
             <p class="px-4 text-lg leading-normal"><count :to="2021"></count></p>
         </nuxt-link>
       </div>

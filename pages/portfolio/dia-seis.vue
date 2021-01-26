@@ -1,15 +1,22 @@
 <template>
-<div class="relative">
-  <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+  <div class="relative">
+
+    <client-only>
+      <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+    </client-only>
+
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-      <nuxt-link to="/">
-        <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
-      </nuxt-link>
-    </div>
-    <Lostresbotones />
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+
+      <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
+
+      <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
+        <nuxt-link to="/">
+          <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+        </nuxt-link>
+      </div>
+      <Lostresbotones />
 
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
@@ -69,12 +76,10 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-
           <scroll-link href="#video" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           @click.native="isActive = 'video'"
           v-bind:class="{ active: isActive == 'video' }"
           ></scroll-link>
-
           <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           v-for="image in images"
           :key="image.id"
@@ -83,37 +88,36 @@
           ></scroll-link>
         </div>
 
-          <div id="video" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen">
-            <iframe src="https://player.vimeo.com/video/225087294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-          </div>
+        <div id="video" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen">
+          <iframe src="https://player.vimeo.com/video/225087294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
 
-          <div :id="image.name"
-              v-for="image in images"
-              :key="image.id"
+        <div  :id="image.name"
+              v-for="(image, imageIndex) in images"
+              :key="imageIndex"
+              @click="index = imageIndex"
               class="flex items-center justify-center w-full h-auto shadow-lg cursor-mano lg:min-h-screen"
-          >
-          <img loading="lazy"
-                :alt="image.name"
-                :src="image.src"
-                class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-                @click="openModal(image)"
-          >
-          </div>
+        >
+        <img loading="lazy"
+              :alt="image.name"
+              :src="image.href"
+              class="object-cover w-full h-auto lg:object-contain lg:h-screen"
+        > <!-- @click="openModal(image)"-->
+        </div>
 
-          <div id="ultima6" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="diesisiete" src="~assets/img/proyectos/diaseis/17.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
-          </div>
+        <div id="ultima6" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+          <img loading="lazy" alt="diesisiete" src="~assets/img/proyectos/diaseis/17.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+        </div>
       </div>
+    </div>
+
+    <!-- <transition name="component-fade" mode="out-in">
+      <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+    </transition> -->
+
+    <VolverButton />
+    <Footer />
   </div>
-
-  <transition name="component-fade" mode="out-in">
-    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
-  </transition>
-
-  <VolverButton />
-
-  <Footer />
-</div>
 </template>
 
 <script>
@@ -137,94 +141,95 @@ export default {
       isActive: '',
       lastFotoRed: false,
       showModal: false,
-      image: null,
+      // image: null,
       images : [
         {
           id: 1,
           name: 'uno',
-          src: require(`~/assets/img/proyectos/diaseis/1.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          src: require(`~/assets/img/proyectos/diaseis/2.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          src: require(`~/assets/img/proyectos/diaseis/3.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          src: require(`~/assets/img/proyectos/diaseis/4.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          src: require(`~/assets/img/proyectos/diaseis/5.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          src: require(`~/assets/img/proyectos/diaseis/6.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          src: require(`~/assets/img/proyectos/diaseis/7.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          src: require(`~/assets/img/proyectos/diaseis/8.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          src: require(`~/assets/img/proyectos/diaseis/9.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          src: require(`~/assets/img/proyectos/diaseis/10.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/10.jpg`)
         },
         {
           id: 11,
           name: 'once',
-          src: require(`~/assets/img/proyectos/diaseis/11.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/11.jpg`)
         },
         {
           id: 12,
           name: 'doce',
-          src: require(`~/assets/img/proyectos/diaseis/12.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/12.jpg`)
         },
         {
           id: 13,
           name: 'trece',
-          src: require(`~/assets/img/proyectos/diaseis/13.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/13.jpg`)
         },
         {
           id: 14,
           name: 'quatorze',
-          src: require(`~/assets/img/proyectos/diaseis/14.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/14.jpg`)
         },
         {
           id: 15,
           name: 'quinze',
-          src: require(`~/assets/img/proyectos/diaseis/15.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/15.jpg`)
         },
         {
           id: 16,
           name: 'diesiseis',
-          src: require(`~/assets/img/proyectos/diaseis/16.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/16.jpg`)
         },
         {
           id: 17,
           name: 'diesisiete',
-          src: require(`~/assets/img/proyectos/diaseis/17.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/17.jpg`)
         }
-      ]
+      ],
+      index: null
     };
   },
   mounted() {
@@ -283,5 +288,4 @@ export default {
   opacity: 0;
   transform: translateX(-100px);
 }
-
 </style>
