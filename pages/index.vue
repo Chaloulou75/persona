@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
       <Navigation />
-      <div class="relative w-full h-full">
+      <div class="relative w-full min-h-full">
 
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
@@ -78,37 +78,49 @@
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart">
           <div>
-            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="text-black letter-p letterBig">
-                <nuxt-link to="/portfolio">P</nuxt-link>
+
+            <nuxt-link to="/portfolio">
+            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="absolute font-semibold leading-none text-black letter-p text-7xl lg:text-11xl ubuntu">
+                P
             </div>
+            </nuxt-link>
+
             <div @click="foto = 'Amarillo'"
                 @mouseover="foto = 'Amarillo'"
                 v-bind:class="{ 'anim_letter-e' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black transform rotate-90 letter-e letterBig cursor-mano ">
+                class="absolute font-semibold leading-none text-black transform rotate-90 letter-e text-7xl lg:text-11xl ubuntu cursor-mano">
                 E
             </div>
+
+            <nuxt-link to="/resume">
             <div v-bind:class="{ 'anim_letter-r' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black letter-r letterBig ">
-              <nuxt-link to="/resume">R</nuxt-link>
+                class="absolute font-semibold leading-none text-black letter-r text-7xl lg:text-11xl ubuntu">
+              R
             </div>
+            </nuxt-link>
+
+            <nuxt-link to="/sobremi">
             <div v-bind:class="{ 'anim_letter-s' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black transform rotate-90 letter-s letterBig ">
-              <nuxt-link to="/sobremi">S</nuxt-link>
+                class="absolute font-semibold leading-none text-black transform rotate-90 letter-s text-7xl lg:text-11xl ubuntu">
+              S
             </div>
+            </nuxt-link>
             <div @click="foto = 'Azul'"
                 @mouseover="foto = 'Azul'"
                 v-bind:class="{ 'anim_letter-o' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black letter-o letterBig cursor-mano">
+                class="absolute font-semibold leading-none text-black letter-o text-7xl lg:text-11xl ubuntu cursor-mano">
               O
             </div>
+            <nuxt-link to="/contacto">
             <div v-bind:class="{ 'anim_letter-n' : show, 'appearLettersStart' : appearLetters}"
-                class="h-auto text-black letter-n letterBig">
-                <nuxt-link to="/contacto">N</nuxt-link>
+                class="absolute font-semibold leading-none text-black letter-n text-7xl lg:text-11xl ubuntu">
+                N
             </div>
+            </nuxt-link>
             <div @click="foto = 'Rojo'"
                 @mouseover="foto = 'Rojo'"
                 v-bind:class="{ 'anim_letter-a' : show, 'appearLettersStart' : appearLetters}"
-                class="text-black letter-a letterBig cursor-mano ">
+                class="absolute font-semibold leading-none text-black letter-a text-7xl lg:text-11xl ubuntu cursor-mano">
                 A
             </div>
           </div>
@@ -164,7 +176,7 @@ export default {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(8px);
   }
   100% {
     opacity: 1;
@@ -173,14 +185,14 @@ export default {
 }
 
 .letter-p {
-  top: -5%;
-  left: 40%;
-  transform-origin: left;
+  top: 0%;
+  left: 50%;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: -5%;
-    left: 45%;
-    transform-origin: left;
+    top: 2%;
+    left: 50%;
+    transform-origin: center;
   }
 }
 
@@ -197,22 +209,22 @@ export default {
 
   }
   40%, 60% {
-    transform:  translate(-380%, 100%) rotate(360deg) ;
+    transform:  translate(-400%, 200%) rotate(360deg);
   }
   100% {
-    transform:  translate(220%, 15%) rotate(0deg);
+    transform:  translate(150%, 15%) rotate(0deg);
   }
 }
 
 .letter-e {
   top: 8%;
   left: 30%;
-  transform-origin: left;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 0%;
+    top: 15%;
     left: 34%;
-    transform-origin: left;
+    transform-origin: center;
   }
 }
 
@@ -228,22 +240,22 @@ export default {
     transform:  translate()  rotate(90deg);
   }
   40%, 60% {
-    transform:  translate(10%, 75%) rotate(-90deg);
+    transform:  translate(-40%, 80%) rotate(-90deg);
   }
   100% {
-    transform:  translate(305%, -50%)  rotate(90deg);
+    transform:  translate(210%, -65%)  rotate(90deg);
   }
 }
 
 .letter-r {
   top: 30%;
   left: 5%;
-  transform-origin: left;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 25%;
+    top: 35%;
     left: 17%;
-    transform-origin: left;
+    transform-origin: center;
   }
 }
 
@@ -259,22 +271,22 @@ export default {
     transform:  translate()  rotate(0deg);
   }
   40%, 60%  {
-    transform:  translate(300%, -37%) rotate(360deg);
+    transform:  translate(300%, -60%) rotate(360deg);
   }
   100% {
-    transform:  translate(55%, 21%) rotate(0deg);
+    transform:  translate(40%, 28%) rotate(0deg);
   }
 }
 
 .letter-s {
   top: 45%;
   left: 30%;
-  transform-origin: left;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 35%;
+    top: 52%;
     left: 34%;
-    transform-origin: left;
+    transform-origin: center;
   }
 }
 
@@ -290,22 +302,22 @@ export default {
     transform:  translate()  rotate(90deg);
   }
   40%, 60% {
-    transform:  translate(350%, 2%)  rotate(-90deg) ;
+    transform:  translate(300%, -30%)  rotate(-90deg);
   }
   100% {
-    transform:  translate(110%, -25%) rotate(90deg);
+    transform:  translate(60%, -40%) rotate(90deg);
   }
 }
 
 .letter-o {
-  top: 70%;
-  left: 40%;
-  transform-origin: left;
+  bottom: 10%;
+  left: 50%;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 63%;
-    left: 45%;
-    transform-origin: left;
+    bottom: 2%;
+    left: 50%;
+    transform-origin: center;
   }
 }
 .anim_letter-o {
@@ -320,22 +332,22 @@ export default {
     transform:  translate()  rotate(0deg);
   }
   40%, 60%  {
-    transform:  translate(180%, -115%) rotate(720deg);
+    transform:  translate(170%, -125%) rotate(720deg);
   }
   100% {
-    transform:  translate(-90%, -10%)  rotate(0deg);
+    transform:  translate(-145%, 0%)  rotate(0deg);
   }
 }
 
 .letter-n {
   top: 20%;
   left: 55%;
-  transform-origin: left;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 5%;
-    left: 65%;
-    transform-origin: left;
+    top: 15%;
+    left: 70%;
+    transform-origin: center;
   }
 }
 .anim_letter-n {
@@ -350,22 +362,22 @@ export default {
     transform:  translate()  rotate(0deg);
   }
   40%, 60%  {
-    transform:  translate(-125%, -38%)  rotate(360deg) ;
+    transform:  translate(-180%, -50%)  rotate(360deg);
   }
   100% {
-    transform:  translate(-150%, 60%)  rotate(0deg);
+    transform:  translate(-230%, 86%)  rotate(0deg);
   }
 }
 
 .letter-a {
   top: 45%;
   left: 55%;
-  transform-origin: left;
+  transform-origin: center;
 
   @media (min-width: 767px) {
-    top: 41%;
-    left: 65%;
-    transform-origin: left;
+    top: 45%;
+    left: 70%;
+    transform-origin: center;
   }
 }
 .anim_letter-a {
@@ -380,10 +392,10 @@ export default {
     transform:  translate()  rotate(0deg);
   }
   40%, 60%  {
-    transform:  translate(-300%, 15%) rotate(-360deg);
+    transform:  translate(-350%, 50%) rotate(-360deg);
   }
   100% {
-    transform:  translate(170%, -10%) rotate(0deg);
+    transform:  translate(80%, -1%) rotate(0deg);
   }
 }
 

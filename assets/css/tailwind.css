@@ -78,22 +78,3 @@ a, button{
 nav, .desktop-menu, .mobile-menu{
   font-family: 'Montserrat', sans-serif;
 }
-
-.letterBig{
-  font-family: 'Ubuntu', 'Montserrat', sans-serif;
-  @apply absolute font-semibold text-7xl;
-}
-
-@screen lg {
-  .letterBig {
-    @apply text-11xl;
-  }
-}
-
-.letterSmall{
-  @apply absolute font-thin text-3xl;
-}
-
-
-
-

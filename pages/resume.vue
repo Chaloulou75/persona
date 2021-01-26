@@ -15,11 +15,11 @@
       <div class="flex flex-col items-center max-w-md mx-auto my-8"> <!-- intro + foto + experienca -->
 
         <div class="flex flex-col items-start justify-center h-auto px-6 mb-4 text-bluejuli"> <!--presentation sm-->
-          <div class="py-4 mt-auto text-3xl font-bold">Julieta Mercerat
+          <div class="py-4 mt-auto text-3xl font-bold lineyellow "><span>Julieta Mercerat</span>
           </div>
-          <div class="mb-4 text-2xl font-semibold text-bluejuli">Hola,
+          <div class="mb-4 text-2xl font-semibold text-bluejuli lineyellow "><span>Hola,</span>
           </div>
-          <div class="pb-6 text-sm leading-normal">Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</div>
+          <div class="pb-6 text-sm leading-normal lineyellow"><span>Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</span> </div>
         </div>
 
         <div class="flex flex-col h-full my-4"> <!-- foto sm-->
@@ -234,7 +234,7 @@
         </div>
         <div class="flex items-center justify-between w-full">
           <div class="text-sm text-redjuli">Español</div>
-          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="bg-yellowjuli w-full rounded-full h-1.5"></div>
           </div>
         </div>
@@ -242,13 +242,13 @@
           <div class="text-sm text-redjuli">
             Inglés
           </div>
-          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="bg-yellowjuli rounded-full  w-2/3 h-1.5"></div>
           </div>
         </div>
         <div class="flex items-center justify-between w-full">
           <div class="text-sm text-redjuli">Francés</div>
-          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+          <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="bg-yellowjuli rounded-full w-1/2 h-1.5"></div>
           </div>
         </div>
@@ -375,13 +375,13 @@
               </div>
             </div>
             <div class="items-center h-auto col-span-2 text-bluejuli"> <!--presentation -->
-              <div class="py-8 mt-auto text-4xl font-bold">Julieta Mercerat
+              <div class="py-8 mt-auto text-4xl font-bold lineyellow"><span>Julieta Mercerat</span>
               </div>
-              <div class="mb-4 text-3xl font-semibold text-bluejuli">Hola,
+              <div class="mb-4 text-3xl font-semibold text-bluejuli lineyellow"><span>Hola</span>,
               </div>
-              <div class="w-1/2 pb-6 text-base leading-normal">Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</div>
+              <div class="w-1/2 pb-6 text-base leading-normal lineyellow"><span>Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</span></div>
             </div>
-            <div class="col-span-3"></div>
+            <div class="col-span-3"></div><!--space -->
             <div class="col-span-2"><!--logo -->
               <div class="flex flex-col items-center justify-center h-full">
                 <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
@@ -393,7 +393,7 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--Experienca laboral -->
               <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// experienca laboral</h2>
               <!-- Para hacer las lineas de borde -->
@@ -444,14 +444,14 @@
               </div>
               </div>
             </div>
-            <div></div>
-            <div></div>
+            <div></div><!--space -->
+            <div></div><!--space -->
             <div class="col-span-2"> <!--foto cv -->
               <div class="flex flex-col h-full">
                 <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full">
               </div>
             </div>
-            <div></div>
+            <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--educacion -->
               <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// EDUCACIÓN</h2>
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
@@ -592,7 +592,7 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div></div><!--space -->
             <div class="col-span-2"> <!--idiomas -->
               <div class="flex flex-col items-start justify-center px-8 py-8 space-y-4">
                 <div class="px-4 py-4 text-4xl uppercase border-2 border-dashed border-yellowjuli text-yellowjuli">
@@ -601,7 +601,7 @@
                 </div>
                 <div class="flex items-center justify-between w-full">
                   <div class="text-sm text-redjuli">Español</div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
                     <div class="bg-yellowjuli w-full rounded-full h-1.5"></div>
                   </div>
                 </div>
@@ -609,19 +609,19 @@
                   <div class="text-sm text-redjuli">
                     Inglés
                   </div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
                     <div class="bg-yellowjuli rounded-full  w-2/3 h-1.5"></div>
                   </div>
                 </div>
                 <div class="flex items-center justify-between w-full">
                   <div class="text-sm text-redjuli">Francés</div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-yellowjuli ring-opacity-50">
+                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
                     <div class="bg-yellowjuli rounded-full w-1/2 h-1.5"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div></div>
+            <div></div><!--space -->
             <div class="col-span-2"><!-- CURSOS Y SEMINARIOS -->
               <div class="flex flex-col justify-end h-full">
                 <h2 class="py-4 pl-10 text-lg font-hairline uppercase text-redjuli">// CURSOS Y SEMINARIOS</h2>
@@ -632,7 +632,7 @@
                 </div>
               </div>
             </div>
-            <div></div>
+            <div></div><!--space -->
             <div class="col-span-2"> <!--Habilidades -->
               <div class="flex flex-col items-start justify-center px-4 py-4 space-y-4">
                 <div class="py-2 text-2xl uppercase text-bluejuli lineyellow">
@@ -731,7 +731,6 @@
       </div>
     </div>
     <Footer />
-
   </div>
 </template>
 
