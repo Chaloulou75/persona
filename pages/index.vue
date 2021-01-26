@@ -185,8 +185,8 @@ export default {
 }
 
 .letter-p {
-  top: 0%;
-  left: 50%;
+  top: 3%;
+  left: 45%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -217,8 +217,8 @@ export default {
 }
 
 .letter-e {
-  top: 8%;
-  left: 30%;
+  top: 15%;
+  left: 22%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -248,7 +248,7 @@ export default {
 }
 
 .letter-r {
-  top: 30%;
+  top: 35%;
   left: 5%;
   transform-origin: center;
 
@@ -279,8 +279,8 @@ export default {
 }
 
 .letter-s {
-  top: 45%;
-  left: 30%;
+  top: 55%;
+  left: 22%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -311,7 +311,7 @@ export default {
 
 .letter-o {
   bottom: 10%;
-  left: 50%;
+  left: 45%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -340,8 +340,8 @@ export default {
 }
 
 .letter-n {
-  top: 20%;
-  left: 55%;
+  top: 30%;
+  left: 65%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -370,8 +370,8 @@ export default {
 }
 
 .letter-a {
-  top: 45%;
-  left: 55%;
+  top: 50%;
+  left: 65%;
   transform-origin: center;
 
   @media (min-width: 767px) {
@@ -405,10 +405,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60% {
-      transform:  translate(-160%, 100%) rotate(360deg);
+      transform:  translate(80%, 200%) rotate(270deg);
     }
     100% {
-      transform:  translate(40%, 60%) rotate(0deg);
+      transform:  translate(10%, 90%) rotate(0deg);
     }
   }
 
@@ -420,7 +420,7 @@ export default {
       transform:  translate(-60%, 170%)  rotate(0deg);
     }
     100% {
-      transform:  translate(30%,-50%)  rotate(90deg);
+      transform:  translate(50%,-60%)  rotate(90deg);
     }
   }
 
@@ -429,10 +429,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(120%, -81%)  rotate(360deg) ;
+      transform:  translate(120%, -85%)  rotate(360deg) ;
     }
     100% {
-      transform:  translate(10%, 20%)  rotate(0deg);
+      transform:  translate(0%, 27%) rotate(0deg);
     }
   }
   @keyframes letterS {
@@ -440,10 +440,10 @@ export default {
       transform:  translate()  rotate(90deg);
     }
     40%, 60%  {
-      transform:  translate(170%, -90%)  rotate(360deg);
+      transform:  translate(170%, -280%)  rotate(360deg);
     }
     100% {
-      transform:  translate(30%, 15%)  rotate(90deg);
+      transform:  translate(60%, -20%)  rotate(90deg);
     }
   }
 
@@ -452,10 +452,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(90%, -80%)  rotate(360deg);
+      transform:  translate(60%, -300%)  rotate(360deg);
     }
     100% {
-      transform:  translate( -80%, 10%)  rotate(0deg);
+      transform:  translate( -105%, -30%) rotate(0deg);
     }
   }
 
@@ -464,7 +464,7 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60% {
-      transform:  translate( 10%, 150%) rotate(90deg) ;
+      transform:  translate( 20%, -180%) rotate(90deg) ;
     }
     100% {
       transform:  translate(-75%, 60%) rotate(0deg);
@@ -476,10 +476,10 @@ export default {
       transform:  translate()  rotate(0deg);
     }
     40%, 60%  {
-      transform:  translate(-180%, 0%) rotate(180deg);
+      transform:  translate(-180%, 70%) rotate(180deg);
     }
     100% {
-      transform:  translate(70%, -30%) rotate(0deg);
+      transform:  translate(60%, -46%) rotate(0deg);
     }
   }
 }
