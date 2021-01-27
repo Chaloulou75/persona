@@ -2,7 +2,7 @@
   <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-white">
     <!-- bg-no-repeat bg-cover bg-pagina-r -->
     <Navigation />
-    <lostresbotones />
+    <Lostresbotones />
 
     <div class="relative w-full min-h-screen mb-16 lg:hidden"> <!--Resume Mobile -->
       <div class="fixed bottom-0 right-0 z-50 flex flex-col items-center justify-center h-auto mb-48 ml-10">
@@ -23,7 +23,13 @@
         </div>
 
         <div class="flex flex-col h-full my-4"> <!-- foto sm-->
-          <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full">
+          <div class="h-full rounded-full">
+            <div class="p-1 rounded-full bg-gradient-to-tr from-yellowjuli to-fuchsia-600">
+              <div class="block p-1 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg hover:-rotate-12">
+                <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full h-auto">
+              </div>
+            </div>
+          </div>
         </div> <!-- end foto -->
 
         <div class="flex flex-col items-start"><!--info sm -->
@@ -39,7 +45,7 @@
         <div class="max-w-sm px-2 mt-6 ml-auto border-l-2 border-gray-400 border-dashed">
         <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
 
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// experienca laboral</h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>experienca laboral</span> </h2>
           <div class="flex items-start ">
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
@@ -48,10 +54,10 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-hairline uppercase text-bluejuli ">SANTISTA</h2>
-              <p class="pb-4 text-xs font-medium text-bluejuli">Responsable del área de Producto Jeanswear.</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli">Asistente de producto jeanswear.</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli">Pasantía en área de jeanswear.</p>
+              <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>SANTISTA</h2>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Responsable del área de Producto Jeanswear.</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Asistente de producto jeanswear.</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Pasantía en área de jeanswear.</p>
             </div>
           </div>
 
@@ -63,8 +69,8 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-hairline uppercase text-bluejuli ">BRANDO</h2>
-              <p class="text-xs font-medium text-bluejuli">Atención al público en tienda de indumentaria masculina.</p>
+              <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BRANDO</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Atención al público en tienda de indumentaria masculina.</p>
             </div>
           </div>
 
@@ -76,13 +82,13 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-hairline uppercase text-bluejuli">FANATICOS</h2>
-              <p class="text-xs font-medium text-bluejuli">Responsable de caja en tienda de indumentaria deportiva.</p>
+              <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>FANATICOS</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Responsable de caja en tienda de indumentaria deportiva.</p>
             </div>
           </div>
 
           <!-- educacion -->
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// EDUCACIÓN</h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>EDUCACIÓN</span> </h2>
 
           <div class="flex items-start">
             <div class="relative ml-4">
@@ -92,8 +98,8 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-medium text-bluejuli">Universidad Argentina de la Empresa (UADE)</h2>
-              <p class="text-xs font-medium text-bluejuli">Lic. Diseño textil e indumentaria.</p>
+              <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad Argentina de la Empresa (UADE)</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Lic. Diseño textil e indumentaria.</p>
             </div>
           </div>
 
@@ -105,9 +111,9 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-medium text-bluejuli">Universidad de Buenos Aires (UBA)</h2>
-              <p class="pb-4 text-xs font-medium text-bluejuli">Sistemas materiales // Biofabricación</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli">Experimentación con bioaglomerados fúngicos.</p>
+              <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Buenos Aires (UBA)</h2>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Sistemas materiales // Biofabricación</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Experimentación con bioaglomerados fúngicos.</p>
             </div>
           </div>
 
@@ -119,8 +125,8 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-medium text-bluejuli">Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
-              <p class="text-xs font-medium text-bluejuli">Cultura potente, Curso de posgrado en cultura y comunicación.</p>
+              <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Cultura potente, Curso de posgrado en cultura y comunicación.</p>
             </div>
           </div>
 
@@ -132,17 +138,17 @@
               </div>
             </div>
             <div class="px-4 pb-2">
-              <h2 class="text-lg font-medium text-bluejuli">Universidad de Monterrey (UDEM)</h2>
-              <p class="text-xs font-medium text-bluejuli">Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
+              <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Monterrey (UDEM)</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
             </div>
           </div>
 
           <!-- seminarios -->
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// CURSOS Y SEMINARIOS</h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span> CURSOS Y SEMINARIOS</span></h2>
           <div class="pb-2 pl-8">
-            <p class="pb-4 text-xs font-medium text-gray-500">COLOR, MATERIALS & FINISH (CMF)</p>
-            <p class="pb-4 text-xs font-medium text-gray-500">CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
-            <p class="text-xs font-medium text-gray-500 ">EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
+            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>COLOR, MATERIALS & FINISH (CMF)</p>
+            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
+            <p class="text-xs font-medium text-gray-500 laboral" data-scroll>EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
           </div>
         </div>
         </div>
@@ -235,7 +241,7 @@
         <div class="flex items-center justify-between w-full">
           <div class="text-sm text-redjuli">Español</div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
-            <div class="bg-yellowjuli w-full rounded-full h-1.5"></div>
+            <div class="transform origin-left bg-yellowjuli w-full rounded-full h-1.5 idiomas" data-scroll></div>
           </div>
         </div>
         <div class="flex items-center justify-between w-full ">
@@ -243,13 +249,13 @@
             Inglés
           </div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
-            <div class="bg-yellowjuli rounded-full  w-2/3 h-1.5"></div>
+            <div class="transform origin-left bg-yellowjuli rounded-full w-2/3 h-1.5 idiomas" data-scroll></div>
           </div>
         </div>
         <div class="flex items-center justify-between w-full">
           <div class="text-sm text-redjuli">Francés</div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
-            <div class="bg-yellowjuli rounded-full w-1/2 h-1.5"></div>
+            <div class="transform origin-left w-1/2 h-1.5 rounded-full bg-yellowjuli idiomas" data-scroll></div>
           </div>
         </div>
       </div><!--end idiomas sm-->
@@ -257,12 +263,12 @@
         <div class="py-4 border border-dashed border-yellowjuli">
           <h2 class="py-4 text-4xl font-thin text-center uppercase text-yellowjuli">INTERESES</h2>
           <div class="px-6 text-xs font-semibold text-gray-900">
-            <p class="">1. Cine / Documentales</p>
-            <p class="">2. Voley / Running</p>
-            <p class="">3. Biomateriales</p>
-            <p class="">4. Observar arquitectura</p>
-            <p class="">5. Apreciar arte plástico y digital y fotografía.</p>
-            <p class="">7. La montaña y el mar</p>
+            <p class="intereses" data-scroll>1. Cine / Documentales</p>
+            <p class="intereses" data-scroll>2. Voley / Running</p>
+            <p class="intereses" data-scroll>3. Biomateriales</p>
+            <p class="intereses" data-scroll>4. Observar arquitectura</p>
+            <p class="intereses" data-scroll>5. Apreciar arte plástico y digital y fotografía.</p>
+            <p class="intereses" data-scroll>7. La montaña y el mar</p>
           </div>
         </div>
       </div><!-- end intereses sm-->
@@ -383,25 +389,23 @@
             </div>
             <div class="col-span-3"></div><!--space -->
             <div class="col-span-2"><!--logo -->
-              <div class="flex flex-col items-center justify-center h-full">
+              <div class="flex flex-col items-start justify-center h-full">
                 <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
-                <div class="px-6 text-xs text-bluejuli">
+                <div class="px-6 text-sm text-bluejuli">
+                  Denim<br>
+                  Producto<br>
                   Conceptos <br>
-                  Denim <br>
-                  Producto <br>
                   Diseño
                 </div>
               </div>
             </div>
             <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--Experienca laboral -->
-              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// experienca laboral</h2>
+              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>experienca laboral</span> </h2>
               <!-- Para hacer las lineas de borde -->
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
               <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
-
                 <div class="flex items-start ">
-
                   <div class="relative ml-4">
                     <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
                     <div class="absolute top-0 left-0 mt-2 -ml-8">
@@ -409,10 +413,10 @@
                     </div>
                   </div>
                   <div class="px-4 pb-2">
-                    <h2 class="text-lg font-hairline uppercase text-bluejuli ">SANTISTA</h2>
-                    <p class="pb-4 text-xs font-medium text-bluejuli">Responsable del área de Producto Jeanswear.</p>
-                    <p class="pb-4 text-xs font-medium text-bluejuli">Asistente de producto jeanswear.</p>
-                    <p class="pb-4 text-xs font-medium text-bluejuli">Pasantía en área de jeanswear.</p>
+                    <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>SANTISTA</h2>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Responsable del área de Producto Jeanswear.</p>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Asistente de producto jeanswear.</p>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Pasantía en área de jeanswear.</p>
                   </div>
                 </div>
 
@@ -424,8 +428,8 @@
                     </div>
                   </div>
                   <div class="px-4 pb-2">
-                    <h2 class="text-lg font-hairline uppercase text-bluejuli">BRANDO</h2>
-                    <p class="text-xs font-medium text-bluejuli">Atención al público en tienda de indumentaria masculina.</p>
+                    <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BRANDO</h2>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Atención al público en tienda de indumentaria masculina.</p>
                   </div>
                 </div>
 
@@ -437,8 +441,8 @@
                     </div>
                   </div>
                   <div class="px-4 pb-2">
-                    <h2 class="text-lg font-hairline uppercase text-bluejuli">FANATICOS</h2>
-                    <p class="text-xs font-medium text-bluejuli">Responsable de caja en tienda de indumentaria deportiva.</p>
+                    <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>FANATICOS</h2>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Responsable de caja en tienda de indumentaria deportiva.</p>
                   </div>
                 </div>
               </div>
@@ -447,13 +451,18 @@
             <div></div><!--space -->
             <div></div><!--space -->
             <div class="col-span-2"> <!--foto cv -->
-              <div class="flex flex-col h-full">
-                <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full">
+              <div class="h-full rounded-full">
+                <div class="p-1 rounded-full bg-gradient-to-tr from-yellowjuli to-fuchsia-600">
+                  <div class="block p-1 transition duration-300 ease-in-out transform bg-white rounded-full shadow-xl hover:-rotate-12">
+                    <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full h-auto">
+                  </div>
+                </div>
               </div>
             </div>
             <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--educacion -->
-              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase">// EDUCACIÓN</h2>
+              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">
+                // <span>EDUCACIÓN</span></h2>
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
                 <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
                   <div class="flex items-start">
@@ -464,8 +473,8 @@
                       </div>
                     </div>
                     <div class="px-4 pb-2">
-                      <h2 class="text-lg font-medium text-bluejuli">Universidad Argentina de la Empresa (UADE)</h2>
-                      <p class="text-xs font-medium text-bluejuli">Lic. Diseño textil e indumentaria.</p>
+                      <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad Argentina de la Empresa (UADE)</h2>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Lic. Diseño textil e indumentaria.</p>
                     </div>
                   </div>
 
@@ -477,9 +486,9 @@
                       </div>
                     </div>
                     <div class="px-4 pb-2">
-                      <h2 class="text-lg font-medium text-bluejuli">Universidad de Buenos Aires (UBA)</h2>
-                      <p class="pb-4 text-xs font-medium text-bluejuli">Sistemas materiales // Biofabricación</p>
-                      <p class="pb-4 text-xs font-medium text-bluejuli">Experimentación con bioaglomerados fúngicos.</p>
+                      <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Buenos Aires (UBA)</h2>
+                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Sistemas materiales // Biofabricación</p>
+                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Experimentación con bioaglomerados fúngicos.</p>
                     </div>
                   </div>
 
@@ -491,8 +500,8 @@
                       </div>
                     </div>
                     <div class="px-4 pb-2">
-                      <h2 class="text-lg font-medium text-bluejuli">Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
-                      <p class="text-xs font-medium text-bluejuli">Cultura potente, Curso de posgrado en cultura y comunicación.</p>
+                      <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Cultura potente, Curso de posgrado en cultura y comunicación.</p>
                     </div>
                   </div>
 
@@ -504,8 +513,8 @@
                       </div>
                     </div>
                     <div class="px-4 pb-2">
-                      <h2 class="text-lg font-medium text-bluejuli">Universidad de Monterrey (UDEM)</h2>
-                      <p class="text-xs font-medium text-bluejuli">Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
+                      <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Monterrey (UDEM)</h2>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
                     </div>
                   </div>
                 </div>
@@ -600,23 +609,23 @@
                   <h3>MAS</h3>
                 </div>
                 <div class="flex items-center justify-between w-full">
-                  <div class="text-sm text-redjuli">Español</div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
-                    <div class="bg-yellowjuli w-full rounded-full h-1.5"></div>
+                  <div class="text-sm font-medium text-redjuli">Español</div>
+                  <div class="bg-white rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
+                    <div class="transform origin-left bg-yellowjuli w-full rounded-full h-1.5 idiomas" data-scroll></div>
                   </div>
                 </div>
                 <div class="flex items-center justify-between w-full ">
-                  <div class="text-sm text-redjuli">
+                  <div class="text-sm font-medium text-redjuli">
                     Inglés
                   </div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
-                    <div class="bg-yellowjuli rounded-full  w-2/3 h-1.5"></div>
+                  <div class="bg-white rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
+                    <div class="transform origin-left bg-yellowjuli rounded-full w-2/3 h-1.5 idiomas" data-scroll></div>
                   </div>
                 </div>
                 <div class="flex items-center justify-between w-full">
-                  <div class="text-sm text-redjuli">Francés</div>
-                  <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
-                    <div class="bg-yellowjuli rounded-full w-1/2 h-1.5"></div>
+                  <div class="text-sm font-medium text-redjuli">Francés</div>
+                  <div class="w-48 h-1.5 bg-white rounded-full ring-2 ring-bluejuli ring-opacity-75">
+                    <div class="transform origin-left w-1/2 h-1.5 rounded-full bg-yellowjuli idiomas" data-scroll></div>
                   </div>
                 </div>
               </div>
@@ -624,11 +633,11 @@
             <div></div><!--space -->
             <div class="col-span-2"><!-- CURSOS Y SEMINARIOS -->
               <div class="flex flex-col justify-end h-full">
-                <h2 class="py-4 pl-10 text-lg font-hairline uppercase text-redjuli">// CURSOS Y SEMINARIOS</h2>
+                <h2 class="py-4 pl-10 text-lg font-hairline uppercase text-redjuli lineyellow">// <span>CURSOS Y SEMINARIOS</span> </h2>
                 <div class="pb-2 pl-8">
-                  <p class="pb-4 text-xs font-medium text-gray-500">COLOR, MATERIALS & FINISH (CMF)</p>
-                  <p class="pb-4 text-xs font-medium text-gray-500">CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
-                  <p class="text-xs font-medium text-gray-500 ">EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
+                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>COLOR, MATERIALS & FINISH (CMF)</p>
+                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
+                  <p class="text-xs font-medium text-gray-500 laboral" data-scroll>EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
                 </div>
               </div>
             </div>
@@ -668,7 +677,7 @@
                   </div>
                   <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">RRAMIENTAS</div>
                 </div>
-                <div class="grid grid-cols-5 grid-rows-5 mx-auto justify-items-stretch">
+                <div class="grid grid-cols-5 grid-rows-5 mx-auto transition duration-500 transform justify-items-stretch hover:-translate-y-6 hover:skew-y-12">
                   <div ></div>
                   <div ></div>
                   <div ></div>
@@ -717,12 +726,12 @@
                 <div class="py-4 border border-dashed border-yellowjuli">
                   <h2 class="py-4 text-5xl font-thin text-center uppercase text-yellowjuli">INTERESES</h2>
                   <div class="px-4 text-xs font-semibold text-gray-900">
-                    <p class="">1. Cine / Documentales</p>
-                    <p class="">2. Voley / Running</p>
-                    <p class="">3. Biomateriales</p>
-                    <p class="">4. Observar arquitectura</p>
-                    <p class="">5. Apreciar arte plástico y digital y fotografía.</p>
-                    <p class="">7. La montaña y el mar</p>
+                    <p class="intereses" data-scroll>1. Cine / Documentales</p>
+                    <p class="intereses" data-scroll>2. Voley / Running</p>
+                    <p class="intereses" data-scroll>3. Biomateriales</p>
+                    <p class="intereses" data-scroll>4. Observar arquitectura</p>
+                    <p class="intereses" data-scroll>5. Apreciar arte plástico y digital y fotografía.</p>
+                    <p class="intereses" data-scroll>7. La montaña y el mar</p>
                   </div>
                 </div>
               </div>
@@ -735,6 +744,8 @@
 </template>
 
 <script>
+import ScrollOut from "scroll-out";
+
 export default {
   head: {
     title: 'Persona Diseño | Resume Julieta Mercerat',
@@ -747,7 +758,15 @@ export default {
     ],
   },
   transition: "page",
-
+  mounted() {
+    this.so = ScrollOut({
+      scope: this.$el,
+      threshold: .2
+    });
+  },
+  destroyed() {
+    this.so.teardown();
+  }
 };
 </script>
 
@@ -773,4 +792,41 @@ $color:#FFDF00;
   }
 }
 
+.intereses[data-scroll] {
+  transition: all 2s;
+}
+
+.intereses[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+.intereses[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(-135px);
+}
+
+.laboral, .laboral[data-scroll] {
+  transition: all 2s;
+}
+
+.laboral, .laboral[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+.laboral, .laboral[data-scroll="out"] {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.idiomas[data-scroll] {
+  transition: all 4s;
+}
+.idiomas[data-scroll="in"] {
+  transform: scaleX(1);
+}
+.idiomas[data-scroll="out"] {
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 2000ms ease-in-out;
+}
 </style>

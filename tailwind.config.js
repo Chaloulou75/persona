@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [
     './components/**/*.{vue,js}',
@@ -48,10 +50,13 @@ module.exports = {
           secondary: 'var(--text-copy-secondary)',
           ternary: 'var(--text-copy-ternary)',
         },
+        transparent: 'transparent',
+        current: 'currentColor',
         gold: '#FFDF00',
         bluejuli: '#008aae',
         redjuli: "#f23941",
         yellowjuli: '#FFDF00', //#fed718
+        fuchsia: colors.fuchsia,
       },
       fontSize: {
         xs: '0.75rem',
