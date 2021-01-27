@@ -455,7 +455,7 @@ export default {
       transform:  translate(-60%, -200%)  rotate(360deg);
     }
     100% {
-      transform:  translate( -75%, 20%) rotate(0deg);
+      transform:  translate( -90%, 20%) rotate(0deg);
     }
   }
 
