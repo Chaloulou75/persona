@@ -88,12 +88,12 @@
           v-for="(image, imageIndex) in images"
           :key="imageIndex"
           @click="index = imageIndex"
-          class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
+          class="flex items-center justify-center shadow-lg lg:min-h-screen cursor-mano"
         >
           <img loading="lazy"
               :alt="image.name"
               :src="image.href"
-              class="object-fill w-full h-full lg:object-contain lg:h-screen"
+              class="object-cover w-full h-auto lg:object-contain"
           ><!-- @click="openModal(image)" -->
         </div><!-- end v-for image -->
 

@@ -69,7 +69,6 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-1 bg-transparent">
-
           <scroll-link :href="'#'+ image.name" class="w-full h-1 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           v-for="image in images"
           :key="image.id"
