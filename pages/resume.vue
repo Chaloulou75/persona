@@ -390,7 +390,7 @@
             <div class="col-span-3"></div><!--space -->
             <div class="col-span-2"><!--logo -->
               <div class="flex flex-col items-start justify-center h-full">
-                <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
+                <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
                 <div class="px-6 text-sm text-bluejuli">
                   Denim<br>
                   Producto<br>
