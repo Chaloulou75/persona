@@ -584,7 +584,7 @@
                       </a>
                     </div>
                     <div class="text-sm font-medium text-bluejuli">
-                      <a href="https://vimeo.com/225087294" target="_blank" class="text-bluejuli hover:text-gray-500">// personadisenio</a>
+                      <a href="https://vimeo.com/502370696" target="_blank" class="text-bluejuli hover:text-gray-500">// personadisenio</a>
                     </div>
                   </div>
 
