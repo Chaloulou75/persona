@@ -71,7 +71,7 @@
       </div>
 
       <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+      <div name="page" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
       v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
       >
 
@@ -92,21 +92,18 @@
           <iframe src="https://player.vimeo.com/video/225087294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
-        <div  :id="image.name"
-              v-for="(image, imageIndex) in images"
-              :key="imageIndex"
-              @click="index = imageIndex"
-              class="flex items-center justify-center w-full h-auto shadow-lg cursor-mano lg:min-h-screen"
-        >
         <img loading="lazy"
-              :alt="image.name"
-              :src="image.href"
-              class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-        > <!-- @click="openModal(image)"-->
-        </div>
+            :id="image.name"
+            v-for="(image, imageIndex) in images"
+            :key="imageIndex"
+            @click="index = imageIndex"
+            :alt="image.name"
+            :src="image.href"
+            class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
+        >
 
-        <div id="ultima6" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-          <img loading="lazy" alt="diesisiete" src="~assets/img/proyectos/diaseis/17.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
+        <div id="ultima6" @click='toggleColorFoto'>
+          <img loading="lazy" alt="diesisiete" src="~assets/img/proyectos/diaseis/17.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
         </div>
       </div>
     </div>

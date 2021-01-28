@@ -71,11 +71,11 @@
       </div>
 
       <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+      <div name="page" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
       v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
       >
 
-        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
+        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
           <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           v-for="image in images"
           :key="image.id"
@@ -84,22 +84,19 @@
           ></scroll-link>
         </div>
 
-        <div :id="image.name"
-          v-for="(image, imageIndex) in images"
-          :key="imageIndex"
-          @click="index = imageIndex"
-          class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano"
-        >
           <img loading="lazy"
-              :alt="image.name"
-              :src="image.href"
-              class="object-cover w-full h-auto lg:object-contain lg:h-screen"
-          >
-        </div>
+            :id="image.name"
+            v-for="(image, imageIndex) in images"
+            :key="imageIndex"
+            @click="index = imageIndex"
+            :alt="image.name"
+            :src="image.href"
+            class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
+        >
 
-        <div id="ultima1" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-          <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-auto lg:object-contain lg:h-screen">
-        </div>
+          <div id="ultima4" @click='toggleColorFoto'>
+            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          </div>
       </div>
     </div>
 
