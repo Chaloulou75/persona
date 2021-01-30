@@ -88,7 +88,7 @@
         ></scroll-link>
       </div>
 
-        <div id="video" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen">
+        <div id="video" class="flex items-center justify-center w-full h-auto my-4 shadow-lg lg:min-h-screen">
           <iframe src="https://player.vimeo.com/video/223297212" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
@@ -113,7 +113,6 @@
   </transition> -->
 
   <VolverButton />
-
   <Footer />
 </div>
 </template>
