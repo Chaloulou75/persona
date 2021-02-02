@@ -87,6 +87,11 @@ export default {
     defaultLocale: 'es',
   },
 
+  sitemap: {
+    hostname: 'https://personadiseno.netlify.app',
+    gzip: true,
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
