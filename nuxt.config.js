@@ -8,7 +8,10 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Persona Diseño | Julieta Mercerat Diseñadora' }
+      { hid: 'description',
+        name: 'description',
+        content: 'Julieta Mercerat Diseñadora'
+      }
     ],
     link: [
       // { rel: 'icon', type: 'image/gif', href: '/gifcolores.gif' },
@@ -62,6 +65,7 @@ export default {
       }
     ],
     'nuxt-i18n',
+    '@nuxtjs/sitemap', //toujours en dernier des modules
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
