@@ -1,10 +1,8 @@
 <template>
   <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-no-repeat bg-cover bg-pagina-n">
     <Navigation />
-    <lostresbotones />
+    <Lostresbotones />
     <div class="relative w-full min-h-screen">
-
-
       <div class="flex flex-col items-center max-w-sm px-6 py-6 mx-auto mt-16 mb-32 bg-gray-100 shadow-md ">
         <form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div>
@@ -27,35 +25,21 @@
         <div data-netlify-recaptcha="true"></div>
 
         <div class="mt-8">
-
           <button type="submit"
             class="w-full p-3 text-sm font-bold tracking-wide text-gray-100 uppercase animate-pulse bg-bluejuli hover:bg-blue-500 focus:outline-none focus:shadow-outline">
             Envia Mensaje
           </button>
         </div>
-
         </form>
       </div>
-
     </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import ScrollOut from "scroll-out";
-
 export default {
   transition: "page",
-  mounted() {
-    this.so = ScrollOut({
-      scope: this.$el,
-      threshold: .4
-    });
-  },
-  destroyed() {
-    this.so.teardown();
-  },
   head: {
     title: 'Persona Diseño | Contacto Julieta Mercerat',
     meta: [
@@ -68,20 +52,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-[data-scroll] {
-  transition: all 2s;
-}
-
-[data-scroll="in"] {
-  opacity: 1;
-  transform: translateX(0);
-}
-[data-scroll="out"] {
-  opacity: 0;
-  transform: translateX(-150px);
-}
-
-</style>

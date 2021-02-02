@@ -6,7 +6,6 @@
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
           <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
-
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/una.jpg" alt="azul" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
@@ -15,7 +14,6 @@
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/dos.jpg" alt="azul2" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
-
           </div>
         </template>
 
@@ -78,7 +76,6 @@
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart">
           <div>
-
             <nuxt-link to="/portfolio">
             <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="absolute font-semibold leading-none text-black letter-p text-7xl lg:text-11xl ubuntu">
                 P

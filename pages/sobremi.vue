@@ -75,7 +75,6 @@
             />
           </div>
         </div>
-
       </div>
     <Footer />
   </div>
@@ -83,7 +82,6 @@
 
 <script>
 import ScrollOut from "scroll-out";
-import VueTypedJs from 'vue-typed-js';
 
 export default {
   head: {
@@ -126,7 +124,6 @@ export default {
     height: 100%;
     border: 0;
 }
-
 
 [data-scroll] {
   transition: all 2s;

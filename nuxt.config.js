@@ -35,10 +35,10 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    { src: '@/plugins/scroll-out', ssr: false },
-    { src: '@/plugins/in-viewport', ssr: false },
-    '~plugins/vue-gallery.client.js',
-    '@/plugins/vue-typed-js',
+    { src: '~/plugins/scroll-out.js', ssr: false },
+    '~/plugins/in-viewport.client.js',
+    '~/plugins/vue-gallery.client.js',
+    '~/plugins/vue-typed-js',
 
   ],
 
