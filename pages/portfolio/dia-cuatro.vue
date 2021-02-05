@@ -76,7 +76,6 @@
       >
 
         <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-
           <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
           v-for="image in images"
           :key="image.id"
@@ -93,11 +92,12 @@
             :alt="image.name"
             :src="image.href"
             class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
-        >
+          >
 
-          <div id="ultima4" @click='toggleColorFoto'>
-            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
-          </div>
+        <div id="ultima4" @click='toggleColorFoto'>
+          <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+        </div>
+
       </div>
     </div>
 
