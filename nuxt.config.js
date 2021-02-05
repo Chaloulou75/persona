@@ -103,5 +103,10 @@ export default {
   tailwindcss: {
     // add '~tailwind.config` alias
     exposeConfig: true
-  }
+  },
+  pwa: {
+    manifest: {
+      theme_color: '#FFDF00'
+    }
+  },
 }
