@@ -186,7 +186,7 @@ export default {
   left: 45%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 2%;
     left: 50%;
     transform-origin: center;
@@ -218,7 +218,7 @@ export default {
   left: 22%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 15%;
     left: 34%;
     transform-origin: center;
@@ -249,7 +249,7 @@ export default {
   left: 5%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 35%;
     left: 17%;
     transform-origin: center;
@@ -280,7 +280,7 @@ export default {
   left: 22%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 52%;
     left: 34%;
     transform-origin: center;
@@ -311,7 +311,7 @@ export default {
   left: 45%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     bottom: 2%;
     left: 50%;
     transform-origin: center;
@@ -341,7 +341,7 @@ export default {
   left: 65%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 15%;
     left: 70%;
     transform-origin: center;
@@ -371,7 +371,7 @@ export default {
   left: 65%;
   transform-origin: center;
 
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     top: 45%;
     left: 70%;
     transform-origin: center;
@@ -396,7 +396,7 @@ export default {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   @keyframes letterP {
     0% {
       transform:  translate()  rotate(0deg);
