@@ -19,7 +19,7 @@
       <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli cursor-mano" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
 
         <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
         </div>
@@ -31,9 +31,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">El cuarto día continué, como si el horario no hubiese cambiado continué con la misma obsesión.
+          <p class="pb-6">Este día me concentré en los microorganismos vivos y como se relacionan entre ellos, cuales son los enlaces que generan para la construcción del sistema.
           </p>
-          <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA Y CONCEPTUALIZACIÓN DE DOS COLECCIONES</p>
+          <p class="uppercase">TRABAJO DE DESARROLLO DE COLECCIÓN DE ESTAMPAS TEXTILES.</p>
         </div>
       </div>
 
@@ -42,13 +42,13 @@
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
-          <div class="text-sm uppercase text-bluejuli">Experimentación</div>
+          <div class="text-sm uppercase text-bluejuli">Tendencia </div>
         </div>
         <div class="flex justify-around">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Diseño de autor</div>
+            <div class="text-sm uppercase text-bluejuli">Textile pattern </div>
           </div>
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -60,13 +60,13 @@
           <div class="flex items-center justify-center w-full">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
+            <div class="text-sm uppercase text-bluejuli">Inspiración en lo natural</div>
           </div>
           <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
+        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">NATURAL ORIGIN
         </div>
       </div>
 
@@ -95,7 +95,7 @@
         >
 
           <div id="ultima12" @click='toggleColorFoto'>
-            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diadoce/9.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
       </div>
     </div>
@@ -135,118 +135,48 @@ export default {
         {
           id: 1,
           name: 'uno',
-          href: require(`~/assets/img/proyectos/diacuatro/1.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          href: require(`~/assets/img/proyectos/diacuatro/2.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          href: require(`~/assets/img/proyectos/diacuatro/3.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          href: require(`~/assets/img/proyectos/diacuatro/4.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          href: require(`~/assets/img/proyectos/diacuatro/5.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          href: require(`~/assets/img/proyectos/diacuatro/6.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          href: require(`~/assets/img/proyectos/diacuatro/7.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diacuatro/8.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diacuatro/9.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/9.jpg`)
         },
-        {
-          id: 10,
-          name: 'dies',
-          href: require(`~/assets/img/proyectos/diacuatro/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          href: require(`~/assets/img/proyectos/diacuatro/11.jpg`)
-        },
-        {
-          id: 12,
-          name: 'doce',
-          href: require(`~/assets/img/proyectos/diacuatro/12.jpg`)
-        },
-        {
-          id: 13,
-          name: 'trece',
-          href: require(`~/assets/img/proyectos/diacuatro/13.jpg`)
-        },
-        {
-          id: 14,
-          name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diacuatro/14.jpg`)
-        },
-        {
-          id: 15,
-          name: 'quinze',
-          href: require(`~/assets/img/proyectos/diacuatro/15.jpg`)
-        },
-        {
-          id: 16,
-          name: 'diesiseis',
-          href: require(`~/assets/img/proyectos/diacuatro/16.jpg`)
-        },
-        {
-          id: 17,
-          name: 'diesisiete',
-          href: require(`~/assets/img/proyectos/diacuatro/17.jpg`)
-        },
-        {
-          id: 18,
-          name: 'diesiocho',
-          href: require(`~/assets/img/proyectos/diacuatro/18.jpg`)
-        },
-        {
-          id: 19,
-          name: 'diesinueve',
-          href: require(`~/assets/img/proyectos/diacuatro/19.jpg`)
-        },
-        {
-          id: 20,
-          name: 'veinte',
-          href: require(`~/assets/img/proyectos/diacuatro/20.jpg`)
-        },
-        {
-          id: 21,
-          name: 'veintiuno',
-          href: require(`~/assets/img/proyectos/diacuatro/21.jpg`)
-        },
-        {
-          id: 22,
-          name: 'veintidos',
-          href: require(`~/assets/img/proyectos/diacuatro/22.jpg`)
-        },
-        {
-          id: 23,
-          name: 'veintitres',
-          href: require(`~/assets/img/proyectos/diacuatro/23.jpg`)
-        }
       ],
       index: null
     };
