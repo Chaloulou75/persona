@@ -25,7 +25,7 @@ module.exports = {
         'dia-9': "url('~assets/img/proyectos/dias/dia9.jpg')",
         'dia-10': "url('~assets/img/proyectos/dias/dia10.jpg')",
         'dia-11': "url('~assets/img/proyectos/dias/dia11.jpg')",
-        // 'dia-12': "url('~assets/img/proyectos/dias/dia12.jpg')"
+        'dia-12': "url('~assets/img/proyectos/dias/dia12.jpg')",
         'cuadro-1': "url('~assets/img/proyectos/cuadros/dia-1.png')",
         'cuadro-2': "url('~assets/img/proyectos/cuadros/dia-2.png')",
         'cuadro-3': "url('~assets/img/proyectos/cuadros/dia-3.png')",
