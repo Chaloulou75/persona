@@ -19,9 +19,14 @@
       <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" >
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
+        <div class="relative w-48 h-48 mt-auto overflow-hidden text-transparent transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring-offset-1 ring-4 ring-fuchsia-800 ring-opacity-50 cursor-mano hover:text-fuchsia-800" @click="show = !show">
+          <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
+          <div class="absolute inset-0 group-hover:bg-yellow-300 group-hover:bg-opacity-50"></div>
+          <div class="relative flex items-center justify-center h-full">
+            <div class="px-4 py-4 text-lg font-semibold leading-normal tracking-wider">Ver las fotos</div>
+          </div>
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -40,7 +45,7 @@
 
       <transition name="component-fade" mode="out-in">
         <!-- right screen 1 -->
-        <div key="right1" v-if="show" @click="show = !show" @mouseenter="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+        <div key="right1" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
@@ -222,7 +227,7 @@ export default {
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: all .4s ease;
+  transition: all .3s ease;
 }
 .component-fade-enter, .component-fade-leave-to {
   opacity: 0;
