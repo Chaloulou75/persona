@@ -37,8 +37,9 @@
         </div>
       </div>
 
+      <transition name="component-fade" mode="out-in">
       <!-- right screen 1 -->
-      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+      <div key="right1" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
         <div class="flex items-center justify-center w-full h-48">
           <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
           </div>
@@ -71,7 +72,7 @@
       </div>
 
       <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+      <div key="right2" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
       v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
       >
 
@@ -98,6 +99,7 @@
           <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diadies/9.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
         </div>
       </div>
+      </transition>
     </div>
 
     <!-- <transition name="component-fade" mode="out-in">
@@ -219,7 +221,7 @@ export default {
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity .3s ease;
+  transition: all .4s ease;
 }
 .component-fade-enter, .component-fade-leave-to {
   opacity: 0;

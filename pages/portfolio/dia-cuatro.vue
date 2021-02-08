@@ -37,68 +37,70 @@
         </div>
       </div>
 
-      <!-- right screen 1 -->
-      <div name="page" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
-        <div class="flex items-center justify-center w-full h-48">
-          <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-          </div>
-          <div class="text-sm uppercase text-bluejuli">Experimentación</div>
-        </div>
-        <div class="flex justify-around">
+      <transition name="component-fade" mode="out-in">
+        <!-- right screen 1 -->
+        <div key="right1" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Diseño de autor</div>
+            <div class="text-sm uppercase text-bluejuli">Experimentación</div>
           </div>
-          <div class="flex items-center justify-center w-full h-48">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+          <div class="flex justify-around">
+            <div class="flex items-center justify-center w-full h-48">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli">Diseño de autor</div>
             </div>
-            <div class="text-sm uppercase text-bluejuli"></div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center w-full h-48 space-x-16">
-          <div class="flex items-center justify-center w-full">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+            <div class="flex items-center justify-center w-full h-48">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli"></div>
             </div>
-            <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
           </div>
-          <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
+          <div class="flex items-center justify-center w-full h-48 space-x-16">
+            <div class="flex items-center justify-center w-full">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
+            </div>
+            <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
+            </div>
+          </div>
+
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
+        <!-- right screen 2 -->
+        <div key="right2" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+        v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+        >
+
+          <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
+            <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+            v-for="image in images"
+            :key="image.id"
+            @click.native="isActive = image.id"
+            v-bind:class="{ active: isActive == image.id }"
+            ></scroll-link>
+          </div>
+
+            <img loading="lazy"
+              :id="image.name"
+              v-for="(image, imageIndex) in images"
+              :key="imageIndex"
+              @click="index = imageIndex"
+              :alt="image.name"
+              :src="image.href"
+              class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
+            >
+
+          <div id="ultima4" @click='toggleColorFoto'>
+            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          </div>
+
         </div>
-      </div>
-
-      <!-- right screen 2 -->
-      <div name="page" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
-      v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
-      >
-
-        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          v-for="image in images"
-          :key="image.id"
-          @click.native="isActive = image.id"
-          v-bind:class="{ active: isActive == image.id }"
-          ></scroll-link>
-        </div>
-
-          <img loading="lazy"
-            :id="image.name"
-            v-for="(image, imageIndex) in images"
-            :key="imageIndex"
-            @click="index = imageIndex"
-            :alt="image.name"
-            :src="image.href"
-            class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
-          >
-
-        <div id="ultima4" @click='toggleColorFoto'>
-          <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
-        </div>
-
-      </div>
+      </transition>
     </div>
 
     <!-- <transition name="component-fade" mode="out-in">
@@ -290,7 +292,7 @@ export default {
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: opacity .3s ease;
+  transition: all .4s ease;
 }
 .component-fade-enter, .component-fade-leave-to {
   opacity: 0;
