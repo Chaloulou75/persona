@@ -49,18 +49,6 @@ a, button{
 .cursor-mano{
   cursor: url('~assets/img/cursors/cursor-mano.png'), pointer;
 }
-.cursor-amarillo{
-  cursor: url('~assets/img/cursors/cursor-amarillo.png'), pointer;
-}
-.cursor-negro{
-  cursor: url('~assets/img/cursors/cursor-negro.png'), pointer;
-}
-.cursor-action-amarillo{
-  cursor: url('~assets/img/cursors/cursor-action-amarillo.png'), pointer;
-}
-.cursor-action-negro{
-  cursor: url('~assets/img/cursors/cursor-action-negro.png'), pointer;
-}
 
 /* fonts families */
 .sortsMill{
