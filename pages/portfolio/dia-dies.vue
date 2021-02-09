@@ -221,7 +221,7 @@ export default {
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: all .4s ease;
+  transition: all .2s ease;
 }
 .component-fade-enter, .component-fade-leave-to {
   opacity: 0;

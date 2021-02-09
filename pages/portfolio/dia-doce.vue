@@ -21,9 +21,9 @@
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli" >
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring-4 ring-blue-600 ring-opacity-50 cursor-mano " @click="show = !show">
+        <div class="relative w-48 h-48 mt-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring-4 ring-yellow-300 ring-opacity-100 cursor-mano " @click="show = !show">
           <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
-          <div class="absolute inset-0 group-hover:bg-yellow-300 group-hover:bg-opacity-50"></div>
+          <div class="absolute inset-0 group-hover:bg-blue-300 group-hover:bg-opacity-50"></div>
           <div class="relative flex items-center justify-center h-full">
             <div class="px-4 py-4 text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Ver las fotos</div>
           </div>
@@ -227,7 +227,7 @@ export default {
 }
 
 .component-fade-enter-active, .component-fade-leave-active {
-  transition: all .3s ease;
+  transition: all .2s ease;
 }
 .component-fade-enter, .component-fade-leave-to {
   opacity: 0;
