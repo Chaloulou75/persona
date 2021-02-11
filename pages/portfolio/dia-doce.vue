@@ -25,7 +25,7 @@
           <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
           <div class="absolute inset-0 group-hover:bg-blue-200 group-hover:bg-opacity-50"></div>
           <div class="relative flex items-center justify-center h-full">
-            <div class="px-4 py-4 text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Ver las fotos</div>
+            <div class="py-4 mx-auto text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Cambiar Pantalla</div>
           </div>
         </div>
 
@@ -45,7 +45,13 @@
 
       <transition name="component-fade" mode="out-in">
         <!-- right screen 1 -->
-        <div key="right1" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+        <div key="right1" v-if="show" @click="show = !show" class="relative flex flex-col w-full h-screen p-4 transition duration-200 ease-in-out bg-white group lg:w-1/2 cursor-mano">
+          <!-- hover part -->
+          <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
+          <div class="absolute inset-0 ">
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+          </div><!-- end hover part -->
+
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
