@@ -39,7 +39,14 @@
 
     <transition name="component-fade" mode="out-in">
     <!-- right screen 1 -->
-    <div key="right1" v-if="show" @click="show = !show" class="flex flex-col w-full h-screen p-4 bg-white lg:w-1/2 cursor-mano">
+    <div key="right1" v-if="show" @click="show = !show" class="relative flex flex-col w-full h-screen p-4 transition duration-200 ease-in-out bg-white group lg:w-1/2 cursor-mano">
+
+      <!-- hover part -->
+      <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
+      <div class="absolute inset-0 ">
+        <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+      </div><!-- end hover part -->
+
       <div class="flex items-center justify-center w-full h-48">
         <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
         </div>
