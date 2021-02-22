@@ -23,8 +23,12 @@
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/tailwindcss": "^3.4.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^10.1.1",
     "tailwindcss": "^2.0.2"
