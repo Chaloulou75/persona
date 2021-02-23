@@ -332,7 +332,7 @@ export default {
     transform:  translate(170%, -125%) rotate(720deg);
   }
   100% {
-    transform:  translate(-145%, 0%)  rotate(0deg);
+    transform:  translate(-140%, 0%)  rotate(0deg);
   }
 }
 
