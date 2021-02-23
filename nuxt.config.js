@@ -86,6 +86,7 @@ export default {
     //   cookieKey: 'i18n_redirected',
     //   onlyOnRoot: true,  // recommended
     // },
+    detectBrowserLanguage: false,
     locales: [
       { code: 'en', iso: 'en-US', name: 'En', file: 'en-US.js' },
       { code: 'fr', iso: 'fr-FR', name: 'Fr', file: 'fr-FR.js' },
