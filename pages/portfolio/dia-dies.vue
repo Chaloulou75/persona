@@ -7,7 +7,7 @@
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row montserrat">
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
 
       <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 

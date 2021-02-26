@@ -75,9 +75,9 @@
 
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart">
-          <div>
+          <div class="font-ubuntu">
             <nuxt-link to="/portfolio">
-            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="absolute font-semibold leading-none text-black letter-p text-7xl lg:text-11xl ubuntu">
+            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="absolute font-semibold leading-none text-black letter-p text-7xl lg:text-11xl">
                 P
             </div>
             </nuxt-link>
@@ -85,39 +85,39 @@
             <div @click="foto = 'Amarillo'"
                 @mouseover="foto = 'Amarillo'"
                 v-bind:class="{ 'anim_letter-e' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black transform rotate-90 letter-e text-7xl lg:text-11xl ubuntu cursor-mano">
+                class="absolute font-semibold leading-none text-black transform rotate-90 letter-e text-7xl lg:text-11xl cursor-mano">
                 E
             </div>
 
             <nuxt-link to="/resume">
             <div v-bind:class="{ 'anim_letter-r' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black letter-r text-7xl lg:text-11xl ubuntu">
+                class="absolute font-semibold leading-none text-black letter-r text-7xl lg:text-11xl">
               R
             </div>
             </nuxt-link>
 
             <nuxt-link to="/sobremi">
             <div v-bind:class="{ 'anim_letter-s' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black transform rotate-90 letter-s text-7xl lg:text-11xl ubuntu">
+                class="absolute font-semibold leading-none text-black transform rotate-90 letter-s text-7xl lg:text-11xl">
               S
             </div>
             </nuxt-link>
             <div @click="foto = 'Azul'"
                 @mouseover="foto = 'Azul'"
                 v-bind:class="{ 'anim_letter-o' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black letter-o text-7xl lg:text-11xl ubuntu cursor-mano">
+                class="absolute font-semibold leading-none text-black letter-o text-7xl lg:text-11xl cursor-mano">
               O
             </div>
             <nuxt-link to="/contacto">
             <div v-bind:class="{ 'anim_letter-n' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black letter-n text-7xl lg:text-11xl ubuntu">
+                class="absolute font-semibold leading-none text-black letter-n text-7xl lg:text-11xl">
                 N
             </div>
             </nuxt-link>
             <div @click="foto = 'Rojo'"
                 @mouseover="foto = 'Rojo'"
                 v-bind:class="{ 'anim_letter-a' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-black letter-a text-7xl lg:text-11xl ubuntu cursor-mano">
+                class="absolute font-semibold leading-none text-black letter-a text-7xl lg:text-11xl cursor-mano">
                 A
             </div>
           </div>
@@ -173,7 +173,7 @@ export default {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    filter: blur(8px);
+    filter: blur(4px);
   }
   100% {
     opacity: 1;

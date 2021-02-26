@@ -35,8 +35,6 @@
 }
 
 body, html{
-  overflow-x: hidden;
-  font-family: 'Montserrat', 'Ubuntu', sans-serif ;
   cursor: url('~assets/img/cursors/cursor-flecha.png'), pointer;
 }
 
@@ -49,21 +47,3 @@ a, button{
 .cursor-mano{
   cursor: url('~assets/img/cursors/cursor-mano.png'), pointer;
 }
-
-/* fonts families */
-.sortsMill{
-  font-family: 'Sorts Mill Goudy', 'Ubuntu',  'Montserrat', sans-serif;
-}
-
-.montserrat{
-  font-family: 'Montserrat', sans-serif;
-}
-
-.ubuntu{
-  font-family: 'Ubuntu', sans-serif;
-}
-
-nav, .desktop-menu, .mobile-menu{
-  font-family: 'Montserrat', sans-serif;
-}
-

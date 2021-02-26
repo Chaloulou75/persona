@@ -96,6 +96,11 @@ module.exports = {
       },
       borderWidth: {
         14: '14px'
+      },
+      fontFamily: {
+        'ubuntu': ['Ubuntu'],
+        'montserrat': ['Montserrat'],
+        'sortsMill': ['Sorts Mill Goudy'],
       }
     },
   },

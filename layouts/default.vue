@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-x-hidden font-montserrat">
     <Nuxt />
   </div>
 </template>

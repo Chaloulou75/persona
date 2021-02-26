@@ -73,7 +73,7 @@
       </div>
     </nav>
 
-    <transition name="fade" class="mobile-menu lg:hidden">
+    <transition name="fade" class="mobile-menu lg:hidden font-montserrat">
       <ul
         class="flex flex-col items-start px-6 py-4 space-y-3 text-base font-semibold text-gray-900"
         v-if="show"
