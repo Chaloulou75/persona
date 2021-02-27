@@ -101,7 +101,22 @@ module.exports = {
         'ubuntu': ['Ubuntu'],
         'montserrat': ['Montserrat'],
         'sortsMill': ['Sorts Mill Goudy'],
-      }
+      },
+      animation: {
+        'appearLettersStart': 'appearLettersStart 4s ease-in forwards',
+      },
+      keyframes: {
+        'appearLettersStart': {
+          '0%': {
+            opacity: '0',
+            filter: 'blur(4px)',
+          },
+          '100%': {
+            opacity: '1',
+            filter: 'blur(0)',
+          }
+        }
+      },
     },
   },
   variants: {

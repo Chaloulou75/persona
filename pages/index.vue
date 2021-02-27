@@ -74,50 +74,51 @@
         </div>
 
         <!-- las letras -->
-        <transition name="letters" appear v-on:appear="lettersAnimStart">
+        <transition name="letters" appear v-on:appear="lettersAnimStart" >
           <div class="font-ubuntu">
             <nuxt-link to="/portfolio">
-            <div v-bind:class="{ 'anim_letter-p' : show, 'appearLettersStart' : appearLetters}" class="absolute font-semibold leading-none text-white text-shadow-lg letter-p text-7xl lg:text-11xl">
+            <div v-bind:class="{ 'anim_letter-p' : show, 'animate-appearLettersStart' : appearLetters}"
+            class="absolute font-semibold leading-none text-white text-shadow-lg letter-p text-7xl lg:text-11xl">
                 P
             </div>
             </nuxt-link>
 
             <div @click="foto = 'Amarillo'"
                 @mouseover="foto = 'Amarillo'"
-                v-bind:class="{ 'anim_letter-e' : show, 'appearLettersStart' : appearLetters}"
+                v-bind:class="{ 'anim_letter-e' : show, 'animate-appearLettersStart' : appearLetters }"
                 class="absolute font-semibold leading-none text-white transform rotate-90 text-shadow-lg letter-e text-7xl lg:text-11xl cursor-mano">
                 E
             </div>
 
             <nuxt-link to="/resume">
-            <div v-bind:class="{ 'anim_letter-r' : show, 'appearLettersStart' : appearLetters}"
+            <div v-bind:class="{ 'anim_letter-r' : show, 'animate-appearLettersStart': appearLetters }"
                 class="absolute font-semibold leading-none text-white text-shadow-lg letter-r text-7xl lg:text-11xl">
               R
             </div>
             </nuxt-link>
 
             <nuxt-link to="/sobremi">
-            <div v-bind:class="{ 'anim_letter-s' : show, 'appearLettersStart' : appearLetters}"
+            <div v-bind:class="{ 'anim_letter-s' : show, 'animate-appearLettersStart' : appearLetters }"
                 class="absolute font-semibold leading-none text-white transform rotate-90 text-shadow-lg letter-s text-7xl lg:text-11xl">
               S
             </div>
             </nuxt-link>
             <div @click="foto = 'Azul'"
                 @mouseover="foto = 'Azul'"
-                v-bind:class="{ 'anim_letter-o' : show, 'appearLettersStart' : appearLetters}"
+                v-bind:class="{ 'anim_letter-o' : show , 'animate-appearLettersStart' : appearLetters}"
                 class="absolute font-semibold leading-none text-white text-shadow-lg letter-o text-7xl lg:text-11xl cursor-mano">
               O
             </div>
             <nuxt-link to="/contacto">
-            <div v-bind:class="{ 'anim_letter-n' : show, 'appearLettersStart' : appearLetters}"
+            <div v-bind:class="{ 'anim_letter-n' : show, 'animate-appearLettersStart' : appearLetters}"
                 class="absolute font-semibold leading-none text-white text-shadow-lg letter-n text-7xl lg:text-11xl">
                 N
             </div>
             </nuxt-link>
             <div @click="foto = 'Rojo'"
                 @mouseover="foto = 'Rojo'"
-                v-bind:class="{ 'anim_letter-a' : show, 'appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-white text-shadow-lg letter-a text-7xl lg:text-11xl cursor-mano">
+                v-bind:class="{ 'anim_letter-a' : show, 'animate-appearLettersStart' : appearLetters}"
+                class="absolute font-semibold leading-none text-white text-shadow-lg letter-a text-7xl lg:text-11xl cursor-mano ">
                 A
             </div>
           </div>
@@ -166,21 +167,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.appearLettersStart {
-  animation: 4s ease-in forwards fade-in;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    filter: blur(4px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-  }
-}
-
+// position initiale letters
 .letter-p {
   top: 3%;
   left: 45%;
@@ -190,29 +177,9 @@ export default {
     top: 2%;
     left: 50%;
     transform-origin: center;
+
   }
 }
-
-.anim_letter-p {
-  animation: letterP 6.4s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
-
-@keyframes letterP {
-  0% {
-    transform:  translate()  rotate(0deg);
-
-  }
-  40%, 60% {
-    transform:  translate(-400%, 200%) rotate(360deg);
-  }
-  100% {
-    transform:  translate(150%, 15%) rotate(0deg);
-  }
-}
-
 .letter-e {
   top: 15%;
   left: 22%;
@@ -222,28 +189,9 @@ export default {
     top: 15%;
     left: 34%;
     transform-origin: center;
+
   }
 }
-
-.anim_letter-e {
-  animation: letterE 5.6s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
-
-@keyframes letterE {
-  0% {
-    transform:  translate()  rotate(90deg);
-  }
-  40%, 60% {
-    transform:  translate(-40%, 80%) rotate(-90deg);
-  }
-  100% {
-    transform:  translate(210%, -65%)  rotate(90deg);
-  }
-}
-
 .letter-r {
   top: 35%;
   left: 5%;
@@ -253,28 +201,9 @@ export default {
     top: 35%;
     left: 17%;
     transform-origin: center;
+
   }
 }
-
-.anim_letter-r {
-  animation: letterR 6.1s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
-
-@keyframes letterR {
-  0% {
-    transform:  translate()  rotate(0deg);
-  }
-  40%, 60%  {
-    transform:  translate(300%, -60%) rotate(360deg);
-  }
-  100% {
-    transform:  translate(40%, 28%) rotate(0deg);
-  }
-}
-
 .letter-s {
   top: 55%;
   left: 22%;
@@ -284,28 +213,9 @@ export default {
     top: 52%;
     left: 34%;
     transform-origin: center;
+
   }
 }
-
-.anim_letter-s {
-  animation: letterS 5.3s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
-
-@keyframes letterS {
-  0% {
-    transform:  translate()  rotate(90deg);
-  }
-  40%, 60% {
-    transform:  translate(300%, -30%)  rotate(-90deg);
-  }
-  100% {
-    transform:  translate(60%, -40%) rotate(90deg);
-  }
-}
-
 .letter-o {
   bottom: 10%;
   left: 45%;
@@ -315,27 +225,9 @@ export default {
     bottom: 2%;
     left: 50%;
     transform-origin: center;
-  }
-}
-.anim_letter-o {
-  animation: letterO 6s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
 
-@keyframes letterO {
-  0% {
-    transform:  translate()  rotate(0deg);
-  }
-  40%, 60%  {
-    transform:  translate(170%, -125%) rotate(720deg);
-  }
-  100% {
-    transform:  translate(-140%, 0%)  rotate(0deg);
   }
 }
-
 .letter-n {
   top: 30%;
   left: 65%;
@@ -345,27 +237,9 @@ export default {
     top: 15%;
     left: 70%;
     transform-origin: center;
-  }
-}
-.anim_letter-n {
-  animation: letterN 5.9s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
-  }
-}
 
-@keyframes letterN {
-  0% {
-    transform:  translate()  rotate(0deg);
-  }
-  40%, 60%  {
-    transform:  translate(-180%, -50%)  rotate(360deg);
-  }
-  100% {
-    transform:  translate(-230%, 86%)  rotate(0deg);
   }
 }
-
 .letter-a {
   top: 50%;
   left: 65%;
@@ -375,19 +249,67 @@ export default {
     top: 45%;
     left: 70%;
     transform-origin: center;
+
   }
 }
-.anim_letter-a {
-  animation: letterA 6.2s 0.5s forwards 1 ease-in-out normal running;
-  &:hover {
-    animation-play-state: paused;
+//transform on desktop
+@keyframes letterP {
+  0% {}
+  40%, 60% {
+    transform:  translate(-400%, 200%) rotate(360deg);
+  }
+  100% {
+    transform:  translate(150%, 15%) rotate(0deg);
+  }
+}
+@keyframes letterE {
+  0% {}
+  40%, 60% {
+    transform:  translate(-40%, 80%) rotate(-90deg);
+  }
+  100% {
+    transform:  translate(210%, -65%)  rotate(90deg);
   }
 }
 
-@keyframes letterA {
-  0% {
-    transform:  translate()  rotate(0deg);
+@keyframes letterR {
+  0% {}
+  40%, 60%  {
+    transform:  translate(300%, -60%) rotate(360deg);
   }
+  100% {
+    transform:  translate(40%, 28%) rotate(0deg);
+  }
+}
+@keyframes letterS {
+  0% {}
+  40%, 60% {
+    transform:  translate(300%, -30%)  rotate(-90deg);
+  }
+  100% {
+    transform:  translate(60%, -40%) rotate(90deg);
+  }
+}
+@keyframes letterO {
+  0% {}
+  40%, 60%  {
+    transform:  translate(170%, -125%) rotate(720deg);
+  }
+  100% {
+    transform:  translate(-140%, 0%)  rotate(0deg);
+  }
+}
+@keyframes letterN {
+  0% {}
+  40%, 60%  {
+    transform:  translate(-180%, -50%)  rotate(360deg);
+  }
+  100% {
+    transform:  translate(-230%, 86%)  rotate(0deg);
+  }
+}
+@keyframes letterA {
+  0% {}
   40%, 60%  {
     transform:  translate(-350%, 50%) rotate(-360deg);
   }
@@ -395,11 +317,11 @@ export default {
     transform:  translate(80%, -1%) rotate(0deg);
   }
 }
-
+//transform on mobile
 @media (max-width: 768px) {
   @keyframes letterP {
     0% {
-      transform:  translate()  rotate(0deg);
+      transform:  translate(0)  rotate(0);
     }
     40%, 60% {
       transform:  translate(80%, 200%) rotate(270deg);
@@ -411,7 +333,7 @@ export default {
 
   @keyframes letterE {
     0% {
-      transform:  translate()  rotate(90deg);
+      transform:  translate(0)  rotate(90);
     }
     40%, 60%  {
       transform:  translate(-60%, 170%)  rotate(0deg);
@@ -423,7 +345,7 @@ export default {
 
   @keyframes letterR {
     0% {
-      transform:  translate()  rotate(0deg);
+      transform:  translate(0)  rotate(0);
     }
     40%, 60%  {
       transform:  translate(20%, -90%)  rotate(270deg) ;
@@ -434,7 +356,7 @@ export default {
   }
   @keyframes letterS {
     0% {
-      transform:  translate()  rotate(90deg);
+      transform:  translate(0)  rotate(90);
     }
     40%, 60%  {
       transform:  translate(170%, -280%)  rotate(360deg);
@@ -446,7 +368,7 @@ export default {
 
   @keyframes letterO {
     0% {
-      transform:  translate()  rotate(0deg);
+      transform:  translate(0)  rotate(0);
     }
     40%, 60%  {
       transform:  translate(-60%, -200%)  rotate(360deg);
@@ -458,7 +380,7 @@ export default {
 
   @keyframes letterN {
     0% {
-      transform:  translate()  rotate(0deg);
+      transform:  translate(0)  rotate(0);
     }
     40%, 60% {
       transform:  translate( 20%, 180%) rotate(90deg) ;
@@ -470,7 +392,7 @@ export default {
 
   @keyframes letterA {
     0% {
-      transform:  translate()  rotate(0deg);
+      transform:  translate(0)  rotate(0);
     }
     40%, 60%  {
       transform:  translate(-180%, 120%) rotate(180deg);
@@ -478,6 +400,49 @@ export default {
     100% {
       transform:  translate(60%, -50%) rotate(0deg);
     }
+  }
+}
+
+.anim_letter-p {
+  animation: 6.4s ease-in-out 1 forwards running letterP;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-e {
+  animation: 5.6s ease-in-out 1 forwards running letterE;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-r {
+  animation: 6.1s ease-in-out 1 forwards running letterR;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-s {
+  animation: 5.3s ease-in-out 1 forwards running letterS;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-o {
+  animation: 6s ease-in-out 1 forwards running letterO;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-n {
+  animation: 5.9s ease-in-out 1 forwards running letterN;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.anim_letter-a {
+  animation: 6.2s forwards 1 ease-in-out normal running letterA;
+  &:hover {
+    animation-play-state: paused;
   }
 }
 </style>
