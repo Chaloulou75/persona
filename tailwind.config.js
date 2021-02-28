@@ -103,17 +103,15 @@ module.exports = {
         'sortsMill': ['Sorts Mill Goudy'],
       },
       animation: {
-        'appearLettersStart': 'appearLettersStart 4s ease-in forwards',
+        'appearLettersStart': 'appearLettersStart 1.5s ease-in forwards',
       },
       keyframes: {
         'appearLettersStart': {
           '0%': {
-            opacity: '0',
-            filter: 'blur(4px)',
+            opacity: '0.1',
           },
           '100%': {
             opacity: '1',
-            filter: 'blur(0)',
           }
         }
       },
@@ -129,5 +127,4 @@ module.exports = {
   },
   plugins: [
   ],
-
 }
