@@ -75,10 +75,10 @@
 
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart" >
-          <div class="antialiased font-ubuntu">
+          <div class="font-ubuntu">
             <nuxt-link to="/portfolio">
             <div v-bind:class="{ 'anim_letter-p' : show, 'animate-appearLettersStart' : appearLetters}"
-            class="absolute font-semibold leading-none text-white text-shadow-lg letter-p text-7xl lg:text-11xl transform-gpu">
+            class="absolute font-semibold leading-none text-white text-shadow-lg letter-p text-7xl lg:text-11xl">
                 P
             </div>
             </nuxt-link>
@@ -86,39 +86,39 @@
             <div @click="foto = 'Amarillo'"
                 @mouseover="foto = 'Amarillo'"
                 v-bind:class="{ 'anim_letter-e' : show, 'animate-appearLettersStart' : appearLetters }"
-                class="absolute font-semibold leading-none text-white rotate-90 transform-gpu text-shadow-lg letter-e text-7xl lg:text-11xl cursor-mano">
+                class="absolute font-semibold leading-none text-white transform rotate-90 text-shadow-lg letter-e text-7xl lg:text-11xl cursor-mano">
                 E
             </div>
 
             <nuxt-link to="/resume">
             <div v-bind:class="{ 'anim_letter-r' : show, 'animate-appearLettersStart': appearLetters }"
-                class="absolute font-semibold leading-none text-white text-shadow-lg letter-r text-7xl lg:text-11xl transform-gpu">
+                class="absolute font-semibold leading-none text-white text-shadow-lg letter-r text-7xl lg:text-11xl">
               R
             </div>
             </nuxt-link>
 
             <nuxt-link to="/sobremi">
             <div v-bind:class="{ 'anim_letter-s' : show, 'animate-appearLettersStart' : appearLetters }"
-                class="absolute font-semibold leading-none text-white rotate-90 text-shadow-lg letter-s text-7xl lg:text-11xl transform-gpu">
+                class="absolute font-semibold leading-none text-white transform rotate-90 text-shadow-lg letter-s text-7xl lg:text-11xl">
               S
             </div>
             </nuxt-link>
             <div @click="foto = 'Azul'"
                 @mouseover="foto = 'Azul'"
                 v-bind:class="{ 'anim_letter-o' : show , 'animate-appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-white text-shadow-lg letter-o text-7xl lg:text-11xl cursor-mano transform-gpu">
+                class="absolute font-semibold leading-none text-white text-shadow-lg letter-o text-7xl lg:text-11xl cursor-mano">
               O
             </div>
             <nuxt-link to="/contacto">
             <div v-bind:class="{ 'anim_letter-n' : show, 'animate-appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-white text-shadow-lg letter-n text-7xl lg:text-11xl transform-gpu">
+                class="absolute font-semibold leading-none text-white text-shadow-lg letter-n text-7xl lg:text-11xl">
                 N
             </div>
             </nuxt-link>
             <div @click="foto = 'Rojo'"
                 @mouseover="foto = 'Rojo'"
                 v-bind:class="{ 'anim_letter-a' : show, 'animate-appearLettersStart' : appearLetters}"
-                class="absolute font-semibold leading-none text-white text-shadow-lg letter-a text-7xl lg:text-11xl cursor-mano transform-gpu">
+                class="absolute font-semibold leading-none text-white text-shadow-lg letter-a text-7xl lg:text-11xl cursor-mano">
                 A
             </div>
           </div>
