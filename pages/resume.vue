@@ -302,9 +302,9 @@
 
           <div class="flex items-center justify-start w-full transition duration-200 hover:transform hover:scale-105">
             <div class="mr-4 hover:text-gray-500 text-bluejuli">
-              <a href="mailto:personadisenio@gmail.com" target="_blank">
+              <Mailto mail="personadisenio@gmail.com" target="_blank">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              </a>
+              </Mailto>
             </div>
             <div class="text-sm font-medium text-bluejuli hover:text-gray-500">
               <a href="mailto:personadisenio@gmail.com" target="_blank">
@@ -564,9 +564,9 @@
                       </a>
                     </div>
                     <div class="text-sm font-medium text-bluejuli hover:text-gray-500">
-                      <a href="mailto:personadisenio@gmail.com" target="_blank">
+                      <Mailto mail="personadisenio@gmail.com" target="_blank">
                         personadisenio@gmail.com
-                      </a>
+                      </Mailto>
                     </div>
                   </div>
 

@@ -17,6 +17,7 @@
     "nuxt": "^2.14.12",
     "nuxt-compress": "^4.1.0",
     "nuxt-i18n": "^6.19.0",
+    "nuxt-protected-mailto": "0.0.6",
     "postcss": "^8.2.4",
     "scroll-out": "^2.2.12",
     "vue-gallery": "^2.0.1",

@@ -58,6 +58,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-protected-mailto',
     [
       "nuxt-compress",
       {
@@ -104,6 +105,11 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    html: {
+      minify: {
+        decodeEntities: false
+      }
+    }
   },
 
   tailwindcss: {
