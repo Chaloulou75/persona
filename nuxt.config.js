@@ -109,7 +109,7 @@ export default {
 
   tailwindcss: {
     // add '~tailwind.config` alias
-    exposeConfig: true
+    jit: true
   },
   pwa: {
     manifest: {

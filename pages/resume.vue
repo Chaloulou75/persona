@@ -6,13 +6,13 @@
 
     <div class="relative w-full min-h-screen mb-16 lg:hidden"> <!--Resume Mobile -->
 
-      <div class="fixed left-0 z-50 flex items-center justify-center h-auto px-2 py-1 ml-4 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-2 shadow-xl border-redjuli hover:bg-redjuli hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white"> <!--Button Vimeo -->
+      <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-2 shadow-xl left-4 top-1/4 border-redjuli hover:bg-redjuli hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
           <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           Ver Video CV
         </a>
       </div>
-      <div class="fixed bottom-0 right-0 z-50 flex items-center justify-center h-auto px-2 py-1 mb-48 ml-10 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-2 shadow-xl border-bluejuli hover:bg-bluejuli hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white">
+      <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-2 shadow-xl right-4 bottom-1/4 border-bluejuli hover:bg-bluejuli hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white">
         <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank">
           <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
@@ -362,14 +362,14 @@
 
     <div class="relative hidden w-full min-h-screen lg:block"> <!--Resume screen LG -->
 
-      <div class="fixed top-0 left-0 z-50 flex items-center justify-center h-auto px-5 py-3 mt-64 ml-8 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-4 shadow-xl border-redjuli hover:bg-redjuli hover:text-white hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button Vimeo -->
+      <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-4 shadow-xl top-1/4 left-16 border-redjuli hover:bg-redjuli hover:text-white hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           Ver Video CV
         </a>
       </div>
 
-      <div class="fixed bottom-0 right-0 z-50 flex items-center justify-center h-auto px-5 py-3 mb-24 mr-40 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-4 shadow-xl border-bluejuli hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button descargar CV -->
+      <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-4 shadow-xl bottom-1/4 right-44 border-bluejuli hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button descargar CV -->
         <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
