@@ -6,9 +6,9 @@
 
         <h1 class="py-4 text-2xl font-semibold tracking-widest text-center uppercase">sobre mi</h1>
 
-        <nuxt-link to="/contacto" class="fixed z-40 h-auto px-4 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform rotate-45 border-2 border-gray-600 rounded shadow-lg left-1/4 bottom-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
+        <nuxt-link to="/contacto" class="fixed z-40 h-auto px-4 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform rotate-45 border-2 border-gray-600 rounded shadow-lg left-1 lg:left-1/4 bottom-1/3 lg:bottom-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
 
-        <nuxt-link to="/resume" class="fixed z-40 h-auto px-6 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border-2 border-gray-600 rounded shadow-lg right-1/4 top-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume
+        <nuxt-link to="/resume" class="fixed z-40 h-auto px-6 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border-2 border-gray-600 rounded shadow-lg right-1 lg:right-1/4 top-1/3 lg:top-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume
         </nuxt-link>
 
         <div class="flex items-center justify-center w-full h-auto my-4 lg:min-h-screen respContainer">
