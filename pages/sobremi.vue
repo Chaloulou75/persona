@@ -17,27 +17,27 @@
 
         <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto my-8">
           <div class="px-4 py-4 mr-auto" data-scroll>
-            <h2 class="py-4 text-sm font-semibold text-gray-900">a// Quien sos?</h2>
+            <h2 class="py-4 text-sm font-semibold text-gray-900">a// ¿Quién sos?</h2>
 
-            <vue-typed-js :strings="['b // hola!! soy Julieta, una diseñadora muy manija ...', 'b // Hola, soy Julieta y como diseñadora creo en la capacidad de la disciplina de crear un entorno contemporáneo que acompañe a las personas en el avance y desarrollo de las sociedades uniendo eficiencia y responsabilidad. Creo en el trabajo en equipo, la curiosidad y la experiencia como principales motores generadores.']" :startDelay="1000" :backDelay="100" :backSpeed="20" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['b // soy Julieta, una diseñadora muy manija ...', 'b // Hola, soy Julieta Mercerat. Como diseñadora creo en la capacidad de la disciplina de crear un entorno contemporáneo. Que acompañe a las personas en el avance y desarrollo de las sociedades, uniendo eficiencia y responsabilidad. Creo en el trabajo en equipo, la curiosidad y la experiencia como principales motores generadores.']" :startDelay="1000" :backDelay="100" :backSpeed="20" :typeSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
 
           <div class="px-4 py-4 mb-auto mr-auto" data-scroll>
 
-            <vue-typed-js :strings="['a// Porque Persona?']" :startDelay="14000" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['a// ¿Por qué Persona?']" :startDelay="14000" :typeSpeed="20" :showCursor="false">
               <h2 class="py-4 text-sm font-semibold text-left text-gray-900 typing"></h2>
             </vue-typed-js>
 
-            <vue-typed-js :strings="['b// bueno, que decirrr...', 'b// La elección está dada por una perspectiva sobre el diseño y más particularmente de la indumentaria que estuve indagando durante el último tiempo, la misma consiste en entender al diseño como manifestación sociológica de una cultura global orientada hacia el mundo de las imágenes, es decir, como en la actualidad con un sistema de relaciones mediato y superficial (aunque no por ello menos interesante) los individuos logran construir diversos sistemas de comunicación y lenguajes complejos, codificados al igual que el habla.']" :startDelay="16000" :typeSpeed="20" :backSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['b// bueno, que decirrr...', 'b// La elección del nombre está dada por una perspectiva sobre el diseño, más particularmente de la indumentaria. La misma consiste en entender al diseño como manifestación sociológica de una cultura global, orientada hacia el mundo de las imágenes. Es decir, como la actualidad estaría construída por un sistema de relaciones mediato y superficial (aunque no por ello menos interesante). Los individuos logran construir sistemas de comunicación, lenguajes complejos, donde las personas se convierten en personajes que comunican.']" :startDelay="16000" :typeSpeed="20" :backSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
 
           <div class="px-4 py-4 mb-auto mr-auto" data-scroll>
 
-            <vue-typed-js :strings="['a// Como te identificarías?']" :startDelay="34000" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['a// ¿Cómo te identificarías?']" :startDelay="34000" :typeSpeed="20" :showCursor="false">
               <h2 class="py-4 text-sm font-semibold text-left text-gray-900 typing"></h2>
             </vue-typed-js>
 
@@ -47,13 +47,13 @@
           </div>
 
           <div class="px-4 py-4 mb-auto mr-auto" data-scroll>
-            <vue-typed-js :strings="['A la hora de diseñar, tiendo a inclinarme (por no decir a caer estrepitosamente) a pensar en las personas, en estos sujetos increíbles, misteriosos, que pueden aportar un sin fin de disparadores. Hay muchas maneras de observarlos, de entenderlos, según el día en que me encuentre suelen despertar en mi diferentes sentidos..']" :startDelay="39000" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['A la hora de diseñar, tiendo a inclinarme (por no decir a caer estrepitosamente) a pensar en las personas. Estos sujetos increíbles, misteriosos, que pueden aportar un sin fin de inspiraciones. Hay muchas maneras de observar, de entender el día a día. Según como me encuentro cada momento, suelo inspirarme en el mundo corriente de diferentes maneras...']" :startDelay="39000" :typeSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
 
           <div class="px-4 py-4 mb-auto mr-auto" data-scroll>
-            <vue-typed-js :strings="['A lo largo de este sitio, intentaré mostrarles un poco de lo que fui recolentando en el pasar de los días y así esperaré que entiendan que me detuvo en cada ocasión...']" :startDelay="48000" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['A lo largo de este sitio, intentaré mostrarles un poco de lo que fui recolectando con el pasar de los días. Así, esperaré que entiendan que me detuvo en cada ocasión...']" :startDelay="48000" :typeSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
