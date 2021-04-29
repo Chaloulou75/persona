@@ -13,7 +13,7 @@
 
       <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
         <nuxt-link to="/">
-          <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12">
+          <Logopersona class="h-12" />
         </nuxt-link>
       </div>
       <Lostresbotones />

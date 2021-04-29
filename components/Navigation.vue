@@ -7,8 +7,8 @@
         to="/"
         class="transition duration-500 transform hover:translate-x-2"
         >
-        <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-10 lg:h-12">
-
+        <!-- <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-10 lg:h-12"> -->
+        <Logopersona class="h-10 lg:h-12" />
       </nuxt-link>
 
       <button
@@ -96,7 +96,9 @@
 </template>
 
 <script>
+import Logopersona from './Logopersona.vue';
 export default {
+  components: { Logopersona },
   data() {
     return {
       show: false,
