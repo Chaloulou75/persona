@@ -45,6 +45,7 @@
             d="M6 18L18 6M6 6l12 12"
           ></path>
         </svg>
+        <span class="sr-only">Open Menu</span>
       </button>
 
       <div class="hidden mr-40 font-medium desktop-menu lg:block">
