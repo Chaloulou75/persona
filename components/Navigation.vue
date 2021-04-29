@@ -8,6 +8,7 @@
         class="transition duration-500 transform hover:translate-x-2"
         >
         <!-- <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-10 lg:h-12"> -->
+        <span class="sr-only">Home</span>
         <Logopersona class="h-10 lg:h-12" />
       </nuxt-link>
 
