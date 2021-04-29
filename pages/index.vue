@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
       <Navigation />
-      <div class="relative w-full min-h-full">
+      <main class="relative w-full min-h-full">
 
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
@@ -123,7 +123,7 @@
             </div>
           </div>
         </transition>
-      </div>
+      </main>
     </div>
 </template>
 
