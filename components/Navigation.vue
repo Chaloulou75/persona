@@ -76,22 +76,24 @@
     </nav>
 
     <transition name="fade" class="mobile-menu lg:hidden font-montserrat">
-      <ul
-        class="flex flex-col items-start px-6 py-4 space-y-3 text-base font-semibold text-gray-900"
-        v-if="show"
-      >
-        <li
-          class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
+      <div class="z-20 lg:hidden">
+        <ul
+          class="flex flex-col items-start px-6 py-4 space-y-3 text-base font-semibold text-gray-900"
+          v-if="show"
         >
-          <nuxt-link to="/portfolio">portfolio</nuxt-link>
-        </li>
+          <li
+            class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
+          >
+            <nuxt-link to="/portfolio">portfolio</nuxt-link>
+          </li>
 
-        <li
-          class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
-        >
-          <nuxt-link to="/sobremi">Sobre mi</nuxt-link>
-        </li>
-      </ul>
+          <li
+            class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
+          >
+            <nuxt-link to="/sobremi">Sobre mi</nuxt-link>
+          </li>
+        </ul>
+      </div>
     </transition>
   </div>
 </template>
