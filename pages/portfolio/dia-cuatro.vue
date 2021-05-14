@@ -103,7 +103,7 @@
             >
 
           <div id="ultima4" @click='toggleColorFoto'>
-            <img loading="lazy" alt="veintetres" src="~assets/img/proyectos/diacuatro/23.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <img loading="lazy" alt="veintiuno" src="~assets/img/proyectos/diacuatro/21.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
 
         </div>
