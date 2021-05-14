@@ -186,17 +186,17 @@ export default {
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diadies/8.jpg`)
+          href: require(`~/assets/img/proyectos/diadies/8.JPG`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diadies/9.jpg`)
+          href: require(`~/assets/img/proyectos/diadies/9.JPG`)
         },
         {
           id: 10,
           name: 'dies',
-          href: require(`~/assets/img/proyectos/diadies/10.jpg`)
+          href: require(`~/assets/img/proyectos/diadies/10.JPG`)
         }
       ],
       index: null

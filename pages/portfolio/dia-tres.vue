@@ -180,17 +180,17 @@ export default {
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diatres/8.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diatres/9.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          href: require(`~/assets/img/proyectos/diatres/10.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/10.jpg`)
         },
         {
           id: 11,
