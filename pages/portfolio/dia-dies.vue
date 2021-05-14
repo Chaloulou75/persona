@@ -31,7 +31,7 @@
       </div>
 
       <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-        <p class="pb-6">El tercer día la tierra se me hizo imprescindible, sus texturas, sus capas, sus colores y la facilidad con la que flotaba en el aire.
+        <p class="pb-6">El décimo día la tierra se me hizo imprescindible, sus texturas, sus capas, sus colores y la facilidad con la que flotaba en el aire.
         </p>
         <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA Y CONCEPTUALIZACIÓN DE DOS COLECCIONES.</p>
       </div>
