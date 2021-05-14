@@ -246,16 +246,6 @@ export default {
           id: 21,
           name: 'veintiuno',
           href: require(`~/assets/img/proyectos/diacuatro/21.jpg`)
-        },
-        {
-          id: 22,
-          name: 'veintidos',
-          href: require(`~/assets/img/proyectos/diacuatro/22.jpg`)
-        },
-        {
-          id: 23,
-          name: 'veintitres',
-          href: require(`~/assets/img/proyectos/diacuatro/23.jpg`)
         }
       ],
       index : null
