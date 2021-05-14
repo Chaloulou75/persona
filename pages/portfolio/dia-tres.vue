@@ -1,105 +1,98 @@
 <template>
-<div class="relative">
+  <div class="relative">
 
-  <client-only>
-    <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
-  </client-only>
-
-  <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
-
-  <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
+    <client-only>
+      <v-gallery :images="images" :index="index" @close="index = null" class="cursor-mano" />
+    </client-only>
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-      <nuxt-link to="/">
-        <Logopersona class="h-12" />
-      </nuxt-link>
-    </div>
-    <Lostresbotones />
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
 
-    <!-- left screen -->
-    <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
+      <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-      <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-3">
+      <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
+        <nuxt-link to="/">
+          <Logopersona class="h-12" />
+        </nuxt-link>
       </div>
+      <Lostresbotones />
 
-      <div class="flex items-center justify-center mt-8 space-x-1">
-        <div class="px-1 py-1 border border-white"></div>
-        <div class="px-1 py-1 border border-white"></div>
-        <div class="px-1 py-1 border border-white"></div>
-      </div>
+      <!-- left screen -->
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli cursor-mano" @click="show = !show">
 
-      <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-        <p class="pb-6">El tercer día la tierra se me hizo imprescindible, sus texturas, sus capas, sus colores y la facilidad con la que flotaba en el aire.
-        </p>
-        <p class="uppercase">TRABAJO DE ENSAYO FOTOGRÁFICO.</p>
-      </div>
-    </div>
-
-    <transition name="component-fade" mode="out-in">
-    <!-- right screen 1 -->
-      <div key="right1" v-if="show" @click="show = !show" class="relative flex flex-col w-full h-screen p-4 transition duration-200 ease-in-out bg-white group lg:w-1/2 cursor-mano">
-
-        <!-- hover part -->
-        <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
-        <div class="absolute inset-0 ">
-          <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
-        </div><!-- end hover part -->
-        <div class="flex items-center justify-center w-full h-48">
-          <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
-          </div>
-          <div class="text-sm uppercase text-bluejuli">Experimentación</div>
+        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-3">
         </div>
-        <div class="flex justify-around">
+
+        <div class="flex items-center justify-center mt-8 space-x-1">
+          <div class="px-1 py-1 border border-white"></div>
+          <div class="px-1 py-1 border border-white"></div>
+          <div class="px-1 py-1 border border-white"></div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
+          <p class="pb-6">El tercer día viajé, caminé, observé a las personas. Y para entenderlas mejor, las separé en tres grupos, a los que nombré y describí.
+          </p>
+          <p class="uppercase">ESTUDIO DE TENDENCIAS SOCIOLÓGICAS, CAMBIOS MACROECONÓMICOS Y SOCIALES. CON BAJADA DE MICROTENDENCIAS</p>
+        </div>
+      </div>
+
+      <transition name="component-fade" mode="out-in">
+        <!-- right screen 1 -->
+        <div key="right1" v-if="show" @click="show = !show" class="relative flex flex-col w-full h-screen p-4 transition duration-200 ease-in-out bg-white group lg:w-1/2 cursor-mano">
+
+          <!-- hover part -->
+          <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
+          <div class="absolute inset-0 ">
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+          </div><!-- end hover part -->
+
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Diseño de autor</div>
+            <div class="text-sm uppercase text-bluejuli">Estudio de tendencias</div>
           </div>
-          <div class="flex items-center justify-center w-full h-48">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+          <div class="flex justify-around">
+            <div class="flex items-center justify-center w-full h-48">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli">Microtendencias </div>
             </div>
-            <div class="text-sm uppercase text-bluejuli"></div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center w-full h-48 space-x-16">
-          <div class="flex items-center justify-center w-full">
-            <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+            <div class="flex items-center justify-center w-full h-48">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli"></div>
             </div>
-            <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
           </div>
-          <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
+          <div class="flex items-center justify-center w-full h-48 space-x-16">
+            <div class="flex items-center justify-center w-full">
+              <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
+              </div>
+              <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
+            </div>
+            <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
+            </div>
+          </div>
+
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
           </div>
         </div>
 
-        <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
-        </div>
-      </div>
+        <!-- right screen 2 -->
+        <div key="right2" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
+        v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
+        >
 
-      <!-- right screen 2 -->
-      <div key="right2" v-else class="relative flex flex-col justify-between w-full h-screen p-2 space-y-8 overflow-y-scroll lg:w-1/2 scrollhidden"
-      v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
-      >
-
-        <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-          <scroll-link href="#video" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          @click.native="isActive = 'video'"
-          v-bind:class="{ active: isActive == 'video' }"
-          ></scroll-link>
-          <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-          v-for="image in images"
-          :key="image.id"
-          @click.native="isActive = image.id"
-          v-bind:class="{ active: isActive == image.id }"
-          ></scroll-link>
-        </div>
-
-          <div id="video" class="flex items-center justify-center w-full h-auto my-4 shadow-lg lg:min-h-screen">
-            <iframe src="https://player.vimeo.com/video/223297212" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
+            <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+            v-for="image in images"
+            :key="image.id"
+            @click.native="isActive = image.id"
+            v-bind:class="{ active: isActive == image.id }"
+            ></scroll-link>
           </div>
 
-          <img loading="lazy"
+            <img loading="lazy"
               :id="image.name"
               v-for="(image, imageIndex) in images"
               :key="imageIndex"
@@ -107,22 +100,23 @@
               :alt="image.name"
               :src="image.href"
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
-          >
+            >
 
           <div id="ultima3" @click='toggleColorFoto'>
-            <img loading="lazy" alt="dies" src="~assets/img/proyectos/diatres/10.JPG" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <img loading="lazy" alt="veintecuatro" src="~assets/img/proyectos/diatres/24.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
-      </div>
-    </transition>
+
+        </div>
+      </transition>
+    </div>
+
+    <!-- <transition name="component-fade" mode="out-in">
+      <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
+    </transition> -->
+
+    <VolverButton />
+    <Footer />
   </div>
-
-  <!-- <transition name="component-fade" mode="out-in">
-    <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
-  </transition> -->
-
-  <VolverButton />
-  <Footer />
-</div>
 </template>
 
 <script>
@@ -186,20 +180,90 @@ export default {
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diatres/8.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diatres/9.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          href: require(`~/assets/img/proyectos/diatres/10.JPG`)
+          href: require(`~/assets/img/proyectos/diatres/10.jpg`)
+        },
+        {
+          id: 11,
+          name: 'once',
+          href: require(`~/assets/img/proyectos/diatres/11.jpg`)
+        },
+        {
+          id: 12,
+          name: 'doce',
+          href: require(`~/assets/img/proyectos/diatres/12.jpg`)
+        },
+        {
+          id: 13,
+          name: 'trece',
+          href: require(`~/assets/img/proyectos/diatres/13.jpg`)
+        },
+        {
+          id: 14,
+          name: 'quatorze',
+          href: require(`~/assets/img/proyectos/diatres/14.jpg`)
+        },
+        {
+          id: 15,
+          name: 'quinze',
+          href: require(`~/assets/img/proyectos/diatres/15.jpg`)
+        },
+        {
+          id: 16,
+          name: 'diesiseis',
+          href: require(`~/assets/img/proyectos/diatres/16.jpg`)
+        },
+        {
+          id: 17,
+          name: 'diesisiete',
+          href: require(`~/assets/img/proyectos/diatres/17.jpg`)
+        },
+        {
+          id: 18,
+          name: 'diesiocho',
+          href: require(`~/assets/img/proyectos/diatres/18.jpg`)
+        },
+        {
+          id: 19,
+          name: 'diesinueve',
+          href: require(`~/assets/img/proyectos/diatres/19.jpg`)
+        },
+        {
+          id: 20,
+          name: 'veinte',
+          href: require(`~/assets/img/proyectos/diatres/20.jpg`)
+        },
+        {
+          id: 21,
+          name: 'veintiuno',
+          href: require(`~/assets/img/proyectos/diatres/21.jpg`)
+        },
+        {
+          id: 22,
+          name: 'veintidos',
+          href: require(`~/assets/img/proyectos/diatres/22.jpg`)
+        },
+        {
+          id: 23,
+          name: 'veintitres',
+          href: require(`~/assets/img/proyectos/diatres/23.jpg`)
+        },
+        {
+          id: 24,
+          name: 'veinticuatro',
+          href: require(`~/assets/img/proyectos/diatres/24.jpg`)
         }
       ],
-      index: null
+      index : null
     };
   },
   mounted() {
@@ -258,5 +322,4 @@ export default {
   opacity: 0;
   transform: translateX(-100px);
 }
-
 </style>

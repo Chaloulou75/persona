@@ -31,9 +31,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Este día me obsesioné con aquellas cosas que tenían la capacidad de interrumpir el orden, me intrigó lo inquieto, los que rompían la tan esperada absurda monotonía.
+          <p class="pb-6">Este día me obsesioné con aquellas cosas que tenían la capacidad de interrumpir el orden, me intrigó lo innovador, los que rompían la tan esperada absurda monotonía.
           </p>
-          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS CON DESARROLLO DE COLECCIÓN</p>
+          <p class="uppercase">TRABAJO DE REVELAMIENTO DE TENDENCIAS PARA EVENTO VIRTUAL</p>
         </div>
       </div>
 
@@ -56,7 +56,7 @@
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Moldería</div>
+            <div class="text-sm uppercase text-bluejuli">Denim</div>
           </div>
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -68,7 +68,7 @@
           <div class="flex items-center justify-center w-full">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Concepto</div>
+            <div class="text-sm uppercase text-bluejuli">Inspiración</div>
           </div>
           <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
           </div>
@@ -103,7 +103,7 @@
         >
 
         <div id="ultima1" @click='toggleColorFoto'>
-          <img loading="lazy" alt="siete" src="~assets/img/proyectos/diauno/7.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          <img loading="lazy" alt="once" src="~assets/img/proyectos/diauno/11.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
         </div>
       </div>
       </transition>
@@ -175,6 +175,26 @@ export default {
           id: 7,
           name: 'siete',
           href: require(`~/assets/img/proyectos/diauno/7.jpg`)
+        },
+        {
+          id: 8,
+          name: 'ocho',
+          href: require(`~/assets/img/proyectos/diauno/8.jpg`)
+        },
+        {
+          id: 9,
+          name: 'nueve',
+          href: require(`~/assets/img/proyectos/diauno/9.jpg`)
+        },
+        {
+          id: 10,
+          name: 'dies',
+          href: require(`~/assets/img/proyectos/diauno/10.jpg`)
+        },
+        {
+          id: 11,
+          name: 'once',
+          href: require(`~/assets/img/proyectos/diauno/11.jpg`)
         }
       ],
       index: null

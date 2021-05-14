@@ -2,7 +2,7 @@
   <div class="relative w-full min-h-screen text-gray-900 bg-scroll bg-no-repeat bg-cover bg-pagina-n">
     <Navigation />
     <Lostresbotones />
-    <div class="relative w-full min-h-screen">
+    <main class="relative w-full min-h-screen">
       <div class="flex flex-col items-center max-w-sm px-6 py-6 mx-auto mt-16 mb-32 bg-gray-100 shadow-md ">
         <form name="contact" action="POST" data-netlify="true" data-netlify-recaptcha="true">
         <div>
@@ -32,7 +32,7 @@
         </div>
         </form>
       </div>
-    </div>
+    </main>
     <Footer />
   </div>
 </template>

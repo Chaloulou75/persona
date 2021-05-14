@@ -191,7 +191,7 @@
           <div class="flex flex-col justify-center my-4">
             <div class="text-2xl leading-none uppercase text-bluejuli">H</div>
             <div class="flex items-center justify-start">
-              <div class="w-5 h-5 bg-yellowjuli"></div>
+              <div class="w-5 h-5 bg-redjuli"></div>
               <div class="text-2xl leading-none uppercase text-bluejuli">E</div>
             </div>
             <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">RRAMIENTAS</div>
@@ -360,7 +360,7 @@
       </div> <!-- end contacto sm-->
     </div>
 
-    <div class="relative hidden w-full min-h-screen lg:block"> <!--Resume screen LG -->
+    <main class="relative hidden w-full min-h-screen lg:block"> <!--Resume screen LG -->
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-4 shadow-xl top-1/4 left-16 border-redjuli hover:bg-redjuli hover:text-white hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
@@ -687,7 +687,7 @@
                 <div class="flex flex-col justify-center my-4">
                   <div class="text-2xl leading-none uppercase text-bluejuli">H</div>
                   <div class="flex items-center justify-start">
-                    <div class="w-5 h-5 bg-yellowjuli"></div>
+                    <div class="w-5 h-5 bg-redjuli"></div>
                     <div class="text-2xl leading-none uppercase text-bluejuli">E</div>
                   </div>
                   <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">RRAMIENTAS</div>
@@ -753,7 +753,7 @@
             </div>
         </div>
       </div>
-    </div>
+    </main>
     <Footer />
   </div>
 </template>

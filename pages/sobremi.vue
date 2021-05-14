@@ -2,16 +2,16 @@
   <div class="relative bg-white">
     <Navigation />
     <lostresbotones />
-      <div class="relative w-full text-gray-900">
+      <main class="relative w-full text-gray-900">
 
         <h1 class="py-4 text-2xl font-semibold tracking-widest text-center uppercase">sobre mi</h1>
 
-        <nuxt-link to="/contacto" class="fixed z-40 h-auto px-4 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform rotate-45 border-2 border-gray-600 rounded shadow-lg left-1 lg:left-1/4 bottom-1/3 lg:bottom-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
+        <nuxt-link to="/contacto" class="fixed z-20 h-auto px-4 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform rotate-45 border-2 border-gray-600 shadow-lg left-1 lg:left-1/4 bottom-1/3 lg:bottom-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-yellowjuli hover:-rotate-45 hover:font-semibold">Contacto</nuxt-link>
 
-        <nuxt-link to="/resume" class="fixed z-40 h-auto px-6 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border-2 border-gray-600 rounded shadow-lg right-1 lg:right-1/4 top-1/3 lg:top-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume
+        <nuxt-link to="/resume" class="fixed z-20 h-auto px-6 py-2 tracking-widest text-gray-700 uppercase transition duration-300 ease-in-out transform -rotate-45 border-2 border-gray-600 shadow-lg right-1 lg:right-1/4 top-1/3 lg:top-1/4 hover:text-white hover:border-white focus:outline-none hover:bg-bluejuli hover:rotate-45 hover:font-semibold">Resume
         </nuxt-link>
 
-        <div class="flex items-center justify-center w-full h-auto my-4 lg:min-h-screen respContainer">
+        <div class="z-40 flex items-center justify-center w-full h-auto my-4 lg:min-h-screen respContainer">
           <iframe src="https://player.vimeo.com/video/502370696" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
 
@@ -59,13 +59,14 @@
           </div>
 
           <nuxt-link to="/portfolio">
-            <div class="px-6 py-1 mx-auto my-4 mb-auto text-lg tracking-wider text-gray-800 transition duration-100 cursor-mano hover:bg-redjuli hover:text-white focus:outline-none" data-scroll>
+            <div class="px-8 py-4 mx-auto my-4 mb-auto text-xl font-semibold tracking-wider text-white transition duration-75 bg-gray-900 ring-4 ring-gray-200 hover:ring-gray-900 cursor-mano hover:bg-white hover:text-gray-900 focus:outline-none" >
               Para ver el Portfolio
             </div>
           </nuxt-link>
         </div>
 
-        <div class="flex items-center justify-center min-h-screen" data-scroll>
+        <!-- photo Julieta -->
+        <!-- <div class="flex items-center justify-center min-h-screen" data-scroll>
           <div class="w-full mx-2 my-4 mb-auto lg:w-1/3">
             <img
               loading="lazy"
@@ -74,8 +75,8 @@
               class="object-cover w-full h-full rounded-lg"
             />
           </div>
-        </div>
-      </div>
+        </div> -->
+      </main>
     <Footer />
   </div>
 </template>
