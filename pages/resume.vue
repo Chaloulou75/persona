@@ -57,7 +57,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -72,7 +72,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2016/ <br>2017</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -85,7 +85,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2015/ <br>2016</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -101,7 +101,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2019/ <br>HOY</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -114,7 +114,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2019</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -128,7 +128,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2018</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -141,7 +141,7 @@
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli">2015</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
-                <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
             </div>
             <div class="px-4 pb-2">
@@ -424,7 +424,7 @@
                   <div class="relative ml-4">
                     <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
                     <div class="absolute top-0 left-0 mt-2 -ml-8">
-                      <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                      <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                     </div>
                   </div>
                   <div class="px-4 pb-2">
@@ -439,7 +439,7 @@
                   <div class="relative ml-4">
                     <p class="text-base font-bold text-bluejuli">2016/ <br>2017</p>
                     <div class="absolute top-0 left-0 mt-2 -ml-8">
-                      <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                      <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                     </div>
                   </div>
                   <div class="px-4 pb-2">
@@ -452,7 +452,7 @@
                   <div class="relative ml-4">
                     <p class="text-base font-bold text-bluejuli">2015/ <br>2016</p>
                     <div class="absolute top-0 left-0 mt-2 -ml-8">
-                      <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                      <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                     </div>
                   </div>
                   <div class="px-4 pb-2">
@@ -484,7 +484,7 @@
                     <div class="relative ml-4">
                       <p class="text-base font-bold text-bluejuli">2019/ <br>HOY</p>
                       <div class="absolute top-0 left-0 mt-2 -ml-8">
-                        <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                        <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                       </div>
                     </div>
                     <div class="px-4 pb-2">
@@ -497,7 +497,7 @@
                     <div class="relative ml-4">
                       <p class="text-base font-bold text-bluejuli">2019</p>
                       <div class="absolute top-0 left-0 mt-2 -ml-8">
-                        <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                        <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                       </div>
                     </div>
                     <div class="px-4 pb-2">
@@ -511,7 +511,7 @@
                     <div class="relative ml-4">
                       <p class="text-base font-bold text-bluejuli">2018</p>
                       <div class="absolute top-0 left-0 mt-2 -ml-8">
-                        <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                        <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                       </div>
                     </div>
                     <div class="px-4 pb-2">
@@ -524,7 +524,7 @@
                     <div class="relative ml-4">
                       <p class="text-base font-bold text-bluejuli">2015</p>
                       <div class="absolute top-0 left-0 mt-2 -ml-8">
-                        <img loading="lazy" alt="ubi" src="~/assets/img/CURSOR3.png" class="object-contain h-2">
+                        <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                       </div>
                     </div>
                     <div class="px-4 pb-2">
