@@ -111,8 +111,8 @@
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
           >
 
-            <div id="ultima12" @click='toggleColorFoto'>
-              <img loading="lazy" alt="nueve" src="~assets/img/proyectos/pruebas/4.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <div id="ultima13" @click='toggleColorFoto'>
+              <img loading="lazy" alt="4" src="~assets/img/proyectos/pruebas/4.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
             </div>
         </div>
       </transition>
@@ -132,12 +132,12 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 12',
+    title: 'Persona Diseño | Porfolio - Dia 13',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Porfolio Julieta Mercerat, Dia 12'
+        content: 'Porfolio Julieta Mercerat, Dia 13'
       }
     ],
   },
