@@ -100,6 +100,14 @@
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
           </div>
         </nuxt-link>
+
+        <nuxt-link to="/portfolio/dia-trece" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-12 hover:bg-gradient-to-br from-blue-600 to-bluejuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+          <div class="absolute inset-0 bg-blue-500 bg-opacity-25"></div>
+          <div class="relative flex flex-col items-start h-full">
+            <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="13" class="text-xl ubuntu"></count></h2>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <Footer />

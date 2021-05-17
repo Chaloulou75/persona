@@ -13,7 +13,7 @@
         </a>
       </div>
       <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-2 shadow-xl right-4 bottom-1/4 border-bluejuli hover:bg-bluejuli hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white">
-        <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank">
+        <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
           <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
         </a>
@@ -40,10 +40,10 @@
         </div> <!-- end foto -->
 
         <div class="flex flex-col items-start"><!--info sm -->
-            <h1 class="text-lg font-semibold text-redjuli">Info</h1>
+            <h3 class="px-6 text-lg font-semibold text-redjuli">Info</h3>
             <div class="flex items-baseline py-4">
-              <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5">
-              <p class="px-6 font-medium leading-10 text-redjuli">Buenos Aires, Argentina </p>
+              <!-- <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5"> -->
+              <p class="px-6 font-semibold leading-10 uppercase text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
             </div>
         </div>
 
@@ -53,6 +53,20 @@
         <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
 
           <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>experienca laboral</span> </h2>
+
+          <div class="flex items-start">
+            <div class="relative ml-4">
+              <p class="text-base font-bold text-bluejuli">2021</p>
+              <div class="absolute top-0 left-0 mt-2 -ml-8">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
+              </div>
+            </div>
+            <div class="px-4 pb-2">
+              <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BE DISOBEDIENT</h2>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Desarrollo de informes de tendencias de denim 360°. Speaker en conferencia de tendencias en evento de denim latinoamericano.</p>
+            </div>
+          </div>
+
           <div class="flex items-start ">
             <div class="relative ml-4">
               <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
@@ -99,7 +113,19 @@
 
           <div class="flex items-start">
             <div class="relative ml-4">
-              <p class="text-base font-bold text-bluejuli">2019/ <br>HOY</p>
+              <p class="text-base font-bold text-bluejuli">2021</p>
+              <div class="absolute top-0 left-0 mt-2 -ml-8">
+                <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
+              </div>
+            </div>
+            <div class="px-4 pb-2">
+              <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Design for Sustainability, London College of Communication (UAL)</h2>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <div class="relative ml-4">
+              <p class="text-base font-bold text-bluejuli">2020</p>
               <div class="absolute top-0 left-0 mt-2 -ml-8">
                 <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
               </div>
@@ -370,7 +396,7 @@
       </div>
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-4 shadow-xl bottom-1/4 right-44 border-bluejuli hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button descargar CV -->
-        <a href="/CV_Julieta_Mercerat.pdf" download="" target="_blank">
+        <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
           Descargar CV
         </a>
@@ -381,18 +407,18 @@
 
             <div class="row-span-3"><!--info -->
               <div class="grid items-stretch h-full grid-cols-1 grid-rows-4 justify-items-center">
-                <div class="self-end">
+                <div class="self-center justify-self-auto">
                   <h3 class="text-lg font-semibold transform -rotate-90 text-redjuli">Info</h3>
                 </div>
-                <div class="self-center">
+                <div class="self-center justify-self-auto">
                   <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">26 años // Nac. 06.04.1994</p>
                 </div>
-                <div class="self-center">
-                  <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">Buenos Aires, Argentina</p>
+                <div class="self-end justify-self-auto">
+                  <p class="text-sm font-bold tracking-wide uppercase transform -rotate-90 whitespace-nowrap text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
                 </div>
-                <div class="self-start">
+                <!-- <div class="self-start">
                   <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5">
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="items-center h-auto col-span-2 text-bluejuli"> <!--presentation -->
@@ -420,9 +446,21 @@
               <!-- Para hacer las lineas de borde -->
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
               <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
+                <div class="flex items-start">
+                  <div class="relative ml-4">
+                    <p class="text-base font-bold text-bluejuli">2021</p>
+                    <div class="absolute top-0 left-0 mt-2 -ml-8">
+                      <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
+                    </div>
+                  </div>
+                  <div class="px-4 pb-2">
+                    <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BE DISOBEDIENT</h2>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Desarrollo de informes de tendencias de denim 360°. Speaker en conferencia de tendencias en evento de denim latinoamericano</p>
+                  </div>
+                </div>
                 <div class="flex items-start ">
                   <div class="relative ml-4">
-                    <p class="text-base font-bold text-bluejuli ">2017/ <br>2020</p>
+                    <p class="text-base font-bold text-bluejuli ">2017/ <br>2021</p>
                     <div class="absolute top-0 left-0 mt-2 -ml-8">
                       <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                     </div>
@@ -482,7 +520,19 @@
                 <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
                   <div class="flex items-start">
                     <div class="relative ml-4">
-                      <p class="text-base font-bold text-bluejuli">2019/ <br>HOY</p>
+                      <p class="text-base font-bold text-bluejuli">2021</p>
+                      <div class="absolute top-0 left-0 mt-2 -ml-8">
+                        <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
+                      </div>
+                    </div>
+                    <div class="px-4 pb-2">
+                      <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Design for Sustainability, London College of Communication (UAL)</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="relative ml-4">
+                      <p class="text-base font-bold text-bluejuli">2020</p>
                       <div class="absolute top-0 left-0 mt-2 -ml-8">
                         <img loading="lazy" alt="ubi" src="~/assets/img/cursorw.png" class="object-contain h-2">
                       </div>
@@ -533,7 +583,7 @@
                     </div>
                   </div>
                 </div>
-                </div>
+              </div>
             </div>
             <div class="col-span-2"> <!--contacto -->
               <div class="flex flex-col items-center justify-center w-full h-auto px-4">
