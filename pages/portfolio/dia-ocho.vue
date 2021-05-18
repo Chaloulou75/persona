@@ -83,13 +83,15 @@
         v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
         >
 
-          <div class="fixed z-10 flex flex-col w-16 px-1 space-y-1 bg-transparent">
-            <scroll-link :href="'#'+ image.name" class="w-full h-1 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+          <div class="fixed z-10 w-24 px-1 py-2 overflow-auto bg-transparent max-h-56 scrollhidden">
+            <div class="flex flex-col mx-auto space-y-2">
+            <scroll-link :href="'#'+ image.name" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105 "
             v-for="image in images"
             :key="image.id"
             @click.native="isActive = image.id"
             v-bind:class="{ active: isActive == image.id }"
             ></scroll-link>
+            </div>
           </div>
 
           <img loading="lazy"
@@ -103,7 +105,7 @@
           >
 
           <div id="ultima8" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
-            <img loading="lazy" alt="trentacuatro" src="~assets/img/proyectos/diaocho/34.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <img loading="lazy" alt="veintiuno" src="~assets/img/proyectos/diaocho/21.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
         </div>
       </transition>
@@ -245,71 +247,6 @@ export default {
           id: 21,
           name: 'veintiuno',
           href: require(`~/assets/img/proyectos/diaocho/21.jpg`)
-        },
-        {
-          id: 22,
-          name: 'veintidos',
-          href: require(`~/assets/img/proyectos/diaocho/22.jpg`)
-        },
-        {
-          id: 23,
-          name: 'veintitres',
-          href: require(`~/assets/img/proyectos/diaocho/23.jpg`)
-        },
-        {
-          id: 24,
-          name: 'veinticuatro',
-          href: require(`~/assets/img/proyectos/diaocho/24.jpg`)
-        },
-        {
-          id: 25,
-          name: 'veinticinco',
-          href: require(`~/assets/img/proyectos/diaocho/25.jpg`)
-        },
-        {
-          id: 26,
-          name: 'veintiseis',
-          href: require(`~/assets/img/proyectos/diaocho/26.jpg`)
-        },
-        {
-          id: 27,
-          name: 'veintisiete',
-          href: require(`~/assets/img/proyectos/diaocho/27.jpg`)
-        },
-        {
-          id: 28,
-          name: 'veintiocho',
-          href: require(`~/assets/img/proyectos/diaocho/28.jpg`)
-        },
-        {
-          id: 29,
-          name: 'veintinueve',
-          href: require(`~/assets/img/proyectos/diaocho/29.jpg`)
-        },
-        {
-          id: 30,
-          name: 'treinta',
-          href: require(`~/assets/img/proyectos/diaocho/30.jpg`)
-        },
-        {
-          id: 31,
-          name: 'treintiuno',
-          href: require(`~/assets/img/proyectos/diaocho/31.jpg`)
-        },
-        {
-          id: 32,
-          name: 'treintidos',
-          href: require(`~/assets/img/proyectos/diaocho/32.jpg`)
-        },
-        {
-          id: 33,
-          name: 'treintitres',
-          href: require(`~/assets/img/proyectos/diaocho/33.jpg`)
-        },
-        {
-          id: 34,
-          name: 'treinticuatro',
-          href: require(`~/assets/img/proyectos/diaocho/34.jpg`)
         }
       ],
       index: null

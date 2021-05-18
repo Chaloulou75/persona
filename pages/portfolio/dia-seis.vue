@@ -83,18 +83,20 @@
         v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
         >
 
-          <div class="fixed z-10 flex flex-col w-16 px-1 space-y-2 bg-transparent">
-            <scroll-link href="#video" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+        <div class="fixed z-10 w-24 px-1 py-2 overflow-auto bg-transparent max-h-56 scrollhidden">
+          <div class="flex flex-col mx-auto space-y-2">
+            <scroll-link href="#video" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105"
             @click.native="isActive = 'video'"
             v-bind:class="{ active: isActive == 'video' }"
             ></scroll-link>
-            <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
+            <scroll-link :href="'#'+ image.name" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105 "
             v-for="image in images"
             :key="image.id"
             @click.native="isActive = image.id"
             v-bind:class="{ active: isActive == image.id }"
             ></scroll-link>
           </div>
+        </div>
 
           <div id="video" class="flex items-center justify-center w-full h-auto my-4 shadow-lg lg:min-h-screen">
             <iframe src="https://player.vimeo.com/video/225087294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

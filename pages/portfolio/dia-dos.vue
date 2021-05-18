@@ -83,13 +83,15 @@
     v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
     >
 
-      <div class="fixed z-10 flex flex-col w-16 px-1 space-y-4 bg-transparent">
-        <scroll-link :href="'#'+ image.name" class="w-full h-2 transition duration-200 transform bg-yellowjuli hover:bg-bluejuli hover:translate-x-2 hover:scale-110 "
-        v-for="image in images"
-        :key="image.id"
-        @click.native="isActive = image.id"
-        v-bind:class="{ active: isActive == image.id }"
-        ></scroll-link>
+      <div class="fixed z-10 w-24 px-1 py-2 overflow-auto bg-transparent max-h-56 scrollhidden">
+        <div class="flex flex-col mx-auto space-y-2">
+          <scroll-link :href="'#'+ image.name" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105 "
+          v-for="image in images"
+          :key="image.id"
+          @click.native="isActive = image.id"
+          v-bind:class="{ active: isActive == image.id }"
+          ></scroll-link>
+        </div>
       </div>
 
       <img loading="lazy"
@@ -103,7 +105,7 @@
         >
 
         <div id="ultima2" @click='toggleColorFoto'>
-          <img loading="lazy" alt="once" src="~assets/img/proyectos/diados/11.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          <img loading="lazy" alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
         </div>
     </div>
     </transition>
@@ -170,31 +172,6 @@ export default {
           id: 6,
           name: 'seis',
           href: require(`~/assets/img/proyectos/diados/6.jpg`)
-        },
-        {
-          id: 7,
-          name: 'siete',
-          href: require(`~/assets/img/proyectos/diados/7.jpg`)
-        },
-        {
-          id: 8,
-          name: 'ocho',
-          href: require(`~/assets/img/proyectos/diados/8.jpg`)
-        },
-        {
-          id: 9,
-          name: 'nueve',
-          href: require(`~/assets/img/proyectos/diados/9.jpg`)
-        },
-        {
-          id: 10,
-          name: 'dies',
-          href: require(`~/assets/img/proyectos/diados/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          href: require(`~/assets/img/proyectos/diados/11.jpg`)
         }
       ],
       index: null
