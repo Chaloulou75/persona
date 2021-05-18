@@ -15,7 +15,6 @@
     "core-js": "^3.12.1",
     "in-viewport": "^3.6.0",
     "nuxt": "^2.15.6",
-    "nuxt-compress": "^4.1.1",
     "nuxt-i18n": "^6.27.0",
     "nuxt-protected-mailto": "0.0.6",
     "scroll-out": "^2.2.12",
@@ -30,7 +29,7 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^8.0.0",
     "node-sass": "^4.14.1",
-    "postcss": "^8.2.15",
+    "nuxt-compress": "^5.0.0",
     "sass-loader": "^10.2.0"
   }
 }
