@@ -59,7 +59,7 @@ export default {
       {
         gzip: {
           // threshold: 10240,
-          cache: false //change to true after
+          cache: true
         },
         brotli: {
           threshold: 10240

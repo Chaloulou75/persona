@@ -7,11 +7,11 @@
         <template v-if="foto === 'Azul' ">
           <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
-              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/una.jpg" alt="azul" />
+              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/proyectos/dias/dia1.jpg" alt="azul" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2">
-              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/azul/dos.jpg" alt="azul2" />
+              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/proyectos/dias/dia10.jpg" alt="azul2" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
           </div>
@@ -21,12 +21,12 @@
           <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
 
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
-              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full " src="~assets/img/portadas/compress/amarillo/una.jpg" alt="amarillouna" />
+              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full " src="~assets/img/proyectos/dias/dia5.jpg" alt="amarillouna" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
 
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg shadow-2xl lg:w-1/2">
-              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/amarillo/dos.jpg" alt="amarillodos" />
+              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/proyectos/dias/dia4.jpg" alt="amarillodos" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
           </div>
@@ -35,7 +35,7 @@
         <template v-else-if="foto === 'Rojo' ">
           <div class="flex items-center justify-center p-10 lg:p-32">
             <div class="relative w-full max-w-lg overflow-hidden rounded-lg shadow-2xl h-128 lg:h-64 lg:w-1/2">
-              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/portadas/compress/rojo/una.jpg" alt="rojo" />
+              <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/proyectos/dias/dia2.jpg" alt="rojo" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
             </div>
           </div>

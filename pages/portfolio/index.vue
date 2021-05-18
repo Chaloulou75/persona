@@ -9,7 +9,7 @@
           <div class="absolute inset-0 bg-gray-900 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase "><span>D</span><span>Í</span><span>A</span> <count :to="1" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
           </div>
         </nuxt-link>
 
@@ -17,7 +17,7 @@
           <div class="absolute inset-0 bg-red-600 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="2" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2018"></count></p>
           </div>
         </nuxt-link>
 
@@ -25,7 +25,7 @@
           <div class="absolute inset-0 bg-blue-900 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="3" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
           </div>
         </nuxt-link>
 
@@ -33,7 +33,7 @@
           <div class="absolute inset-0 bg-opacity-25 bg-yellowjuli"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"> <span>D</span><span>Í</span><span>A</span> <count :to="4" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
         </nuxt-link>
 
@@ -41,7 +41,7 @@
           <div class="absolute inset-0 bg-gray-800 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="5" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2018"></count></p>
           </div>
         </nuxt-link>
 
@@ -49,7 +49,7 @@
           <div class="absolute inset-0 bg-blue-800 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="6" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2018"></count></p>
           </div>
         </nuxt-link>
 
@@ -57,7 +57,7 @@
           <div class="absolute inset-0 bg-opacity-50 bg-redjuli"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="7" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2019"></count></p>
           </div>
         </nuxt-link>
 
@@ -65,7 +65,7 @@
           <div class="absolute inset-0 bg-yellow-600 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="8" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2020"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2019"></count></p>
           </div>
         </nuxt-link>
 
@@ -73,7 +73,7 @@
           <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="9" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
         </nuxt-link>
 
@@ -81,7 +81,7 @@
           <div class="absolute inset-0 bg-blue-800 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="10" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
         </nuxt-link>
 
@@ -89,7 +89,7 @@
           <div class="absolute inset-0 bg-red-800 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="11" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
         </nuxt-link>
 
@@ -97,7 +97,7 @@
           <div class="absolute inset-0 bg-blue-500 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>D</span><span>Í</span><span>A</span> <count :to="12" class="text-xl ubuntu"></count></h2>
-            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2021"></count></p>
+            <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2018"></count></p>
           </div>
         </nuxt-link>
       </div>
