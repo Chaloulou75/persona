@@ -40,10 +40,10 @@
         </div> <!-- end foto -->
 
         <div class="flex flex-col items-start"><!--info sm -->
-            <h3 class="px-6 text-lg font-semibold text-redjuli">Info</h3>
+            <h3 class="px-4 text-lg font-semibold text-redjuli">Info</h3>
             <div class="flex items-baseline py-4">
               <!-- <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5"> -->
-              <p class="px-6 font-semibold leading-10 uppercase text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
+              <p class="px-4 text-sm font-semibold leading-10 uppercase text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
             </div>
         </div>
 
@@ -432,12 +432,12 @@
             <div class="col-span-2"><!--logo -->
               <div class="flex flex-col items-start justify-center h-full">
                 <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
-                <div class="px-6 text-sm text-bluejuli">
+                <!-- <div class="px-6 text-sm text-bluejuli">
                   Denim<br>
                   Producto<br>
                   Conceptos <br>
                   Diseño
-                </div>
+                </div> -->
               </div>
             </div>
             <div></div><!--space -->

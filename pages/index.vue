@@ -123,6 +123,8 @@
             </div>
           </div>
         </transition>
+
+        <Footerinicio />
       </main>
     </div>
 </template>
