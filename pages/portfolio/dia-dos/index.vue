@@ -12,7 +12,7 @@
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
     <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-      <nuxt-link to="/">
+      <nuxt-link :to="localePath('/')">
         <Logopersona class="h-12" />
       </nuxt-link>
     </div>
@@ -134,7 +134,12 @@ export default {
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   data() {
     return {
       show: true,

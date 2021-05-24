@@ -76,7 +76,7 @@
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart" >
           <div class="font-ubuntu">
-            <nuxt-link to="/portfolio">
+            <nuxt-link :to="localePath('/portfolio')">
             <div v-bind:class="{ 'anim_letter-p' : show, 'animate-appearLettersStart' : appearLetters}"
             class="absolute font-semibold leading-none text-black letter-p text-7xl lg:text-11xl">
                 P
@@ -90,14 +90,14 @@
                 E
             </div>
 
-            <nuxt-link to="/resume">
+            <nuxt-link :to="localePath('/resume')">
             <div v-bind:class="{ 'anim_letter-r' : show, 'animate-appearLettersStart': appearLetters }"
                 class="absolute font-semibold leading-none text-black letter-r text-7xl lg:text-11xl">
               R
             </div>
             </nuxt-link>
 
-            <nuxt-link to="/sobremi">
+            <nuxt-link :to="localePath('/sobremi')">
             <div v-bind:class="{ 'anim_letter-s' : show, 'animate-appearLettersStart' : appearLetters }"
                 class="absolute font-semibold leading-none text-black transform rotate-90 letter-s text-7xl lg:text-11xl">
               S
@@ -109,7 +109,7 @@
                 class="absolute font-semibold leading-none text-black letter-o text-7xl lg:text-11xl cursor-mano">
               O
             </div>
-            <nuxt-link to="/contacto">
+            <nuxt-link :to="localePath('/contacto')">
             <div v-bind:class="{ 'anim_letter-n' : show, 'animate-appearLettersStart' : appearLetters}"
                 class="absolute font-semibold leading-none text-black letter-n text-7xl lg:text-11xl">
                 N
@@ -131,7 +131,12 @@
 
 <script>
 export default {
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
 
   data() {
     return {

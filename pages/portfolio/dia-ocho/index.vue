@@ -7,12 +7,12 @@
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row ">
 
       <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
       <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-        <nuxt-link to="/">
+        <nuxt-link :to="localePath('/')">
           <Logopersona class="h-12" />
         </nuxt-link>
       </div>
@@ -21,7 +21,7 @@
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-yellowjuli cursor-mano" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-3">
+        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-8">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -31,9 +31,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">El tercer día viajé, caminé, observé a las personas. Y para entenderlas mejor, las separé en tres grupos, a los que nombré y describí.
+          <p class="pb-6">Hubo un día en que la conexión con el mundo se volvió tóxica. Intenté recordar la sensación de verse envuelto en un lugar conocido y confortable.
           </p>
-          <p class="uppercase">ESTUDIO DE TENDENCIAS SOCIOLÓGICAS, CAMBIOS MACROECONÓMICOS Y SOCIALES. CON BAJADA DE MICROTENDENCIAS</p>
+          <p class="uppercase">TRABAJO DE CREACIÓN DE IDENTIDAD DE MARCA, CONCEPTUALIZACIÓN Y SISTEMA DE COMERCIALIZACIÓN.</p>
         </div>
       </div>
 
@@ -50,13 +50,13 @@
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Estudio de tendencias</div>
+            <div class="text-sm uppercase text-bluejuli">Cápsula para diseñador específico</div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Microtendencias </div>
+              <div class="text-sm uppercase text-bluejuli">Streetwear</div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -68,13 +68,13 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
+              <div class="text-sm uppercase text-bluejuli">Retail y branding</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">EL AISLAMIENTO
           </div>
         </div>
 
@@ -94,7 +94,7 @@
             </div>
           </div>
 
-            <img loading="lazy"
+          <img loading="lazy"
               :id="image.name"
               v-for="(image, imageIndex) in images"
               :key="imageIndex"
@@ -102,12 +102,11 @@
               :alt="image.name"
               :src="image.href"
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
-            >
+          >
 
-          <div id="ultima3" @click='toggleColorFoto'>
-            <img loading="lazy" alt="veinte" src="~assets/img/proyectos/diatres/20.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          <div id="ultima8" class="flex items-center justify-center w-full h-auto shadow-lg lg:min-h-screen cursor-mano" @click='toggleColorFoto'>
+            <img loading="lazy" alt="veintiuno" src="~assets/img/proyectos/diaocho/21.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
-
         </div>
       </transition>
     </div>
@@ -126,16 +125,21 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 3',
+    title: 'Persona Diseño | Porfolio - Dia 8',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Porfolio Julieta Mercerat, Dia 3'
+        content: 'Porfolio Julieta Mercerat, Dia 8'
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   data() {
     return {
       show: true,
@@ -147,105 +151,110 @@ export default {
         {
           id: 1,
           name: 'uno',
-          href: require(`~/assets/img/proyectos/diatres/1.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          href: require(`~/assets/img/proyectos/diatres/2.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          href: require(`~/assets/img/proyectos/diatres/3.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          href: require(`~/assets/img/proyectos/diatres/4.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          href: require(`~/assets/img/proyectos/diatres/5.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          href: require(`~/assets/img/proyectos/diatres/6.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          href: require(`~/assets/img/proyectos/diatres/7.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diatres/8.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diatres/9.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          href: require(`~/assets/img/proyectos/diatres/10.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/10.jpg`)
         },
         {
           id: 11,
           name: 'once',
-          href: require(`~/assets/img/proyectos/diatres/11.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/11.jpg`)
         },
         {
           id: 12,
           name: 'doce',
-          href: require(`~/assets/img/proyectos/diatres/12.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/12.jpg`)
         },
         {
           id: 13,
           name: 'trece',
-          href: require(`~/assets/img/proyectos/diatres/13.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/13.jpg`)
         },
         {
           id: 14,
           name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diatres/14.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/14.jpg`)
         },
         {
           id: 15,
           name: 'quinze',
-          href: require(`~/assets/img/proyectos/diatres/15.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/15.jpg`)
         },
         {
           id: 16,
           name: 'diesiseis',
-          href: require(`~/assets/img/proyectos/diatres/16.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/16.jpg`)
         },
         {
           id: 17,
           name: 'diesisiete',
-          href: require(`~/assets/img/proyectos/diatres/17.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/17.jpg`)
         },
         {
           id: 18,
           name: 'diesiocho',
-          href: require(`~/assets/img/proyectos/diatres/18.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/18.jpg`)
         },
         {
           id: 19,
           name: 'diesinueve',
-          href: require(`~/assets/img/proyectos/diatres/19.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/19.jpg`)
         },
         {
           id: 20,
           name: 'veinte',
-          href: require(`~/assets/img/proyectos/diatres/20.jpg`)
+          href: require(`~/assets/img/proyectos/diaocho/20.jpg`)
+        },
+        {
+          id: 21,
+          name: 'veintiuno',
+          href: require(`~/assets/img/proyectos/diaocho/21.jpg`)
         }
       ],
-      index : null
+      index: null
     };
   },
   mounted() {

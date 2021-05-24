@@ -396,10 +396,10 @@
       </div>
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-4 shadow-xl bottom-1/4 right-44 border-bluejuli hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button descargar CV -->
-        <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
-          <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-          Descargar CV
-        </a>
+          <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
+            <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Descargar CV
+          </a>
       </div>
 
       <div class="container mx-auto mt-12 mb-24"> <!--Resumé Lg -->
@@ -822,7 +822,12 @@ export default {
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   mounted() {
     this.so = ScrollOut({
       scope: this.$el,

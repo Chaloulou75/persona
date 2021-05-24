@@ -7,21 +7,29 @@
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row ">
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
 
       <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
       <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-        <nuxt-link to="/">
+        <nuxt-link :to="localePath('/')">
           <Logopersona class="h-12" />
         </nuxt-link>
       </div>
       <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-redjuli cursor-mano" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen cursor-mano lg:w-1/2 bg-bluejuli" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-7">
+        <!-- <div class="relative w-48 h-48 mt-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring ring-yellow-300 ring-opacity-100 cursor-mano " @click="show = !show">
+          <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
+          <div class="absolute inset-0 group-hover:bg-blue-200 group-hover:bg-opacity-50"></div>
+          <div class="relative flex items-center justify-center h-full">
+            <div class="py-4 mx-auto text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Cambiar Pantalla</div>
+          </div>
+        </div> -->
+
+        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -30,14 +38,13 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-2/3">
-          <p class="pb-6">Que maravillosos los humanxs, con sus diversidades y rarezas. Me topé con uno y le pregunté: <br>
-          - ¿Como definen el conjunto de los muchos universos, pero que co-existen dentro del propio?<br>
-          - ¿El multiverso? - dijo riéndose el sujeto... -
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
+          <p class="pb-6">Este día me concentré en los microorganismos vivos y como se relacionan entre ellos, cuales son los enlaces que generan para la construcción del sistema.
           </p>
-          <p class="uppercase">TRABAJO DE CREACIÓN DE IDENTIDAD DE MARCA, CONCEPTUALIZACIÓN Y SISTEMA DE COMERCIALIZACIÓN.</p>
+          <p class="uppercase">TRABAJO DE DESARROLLO DE COLECCIÓN DE ESTAMPAS TEXTILES.</p>
         </div>
       </div>
+
 
       <transition name="component-fade" mode="out-in">
         <!-- right screen 1 -->
@@ -48,16 +55,17 @@
           <div class="absolute inset-0 ">
             <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
           </div><!-- end hover part -->
+
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Brand Identity</div>
+            <div class="text-sm uppercase text-bluejuli">Tendencia </div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Streetwear</div>
+              <div class="text-sm uppercase text-bluejuli">Textile pattern </div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -69,13 +77,13 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Retail y branding</div>
+              <div class="text-sm uppercase text-bluejuli">Inspiración en lo natural</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">LOS SISTEMAS
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">NATURAL ORIGIN
           </div>
         </div>
 
@@ -95,7 +103,7 @@
             </div>
           </div>
 
-          <img loading="lazy"
+            <img loading="lazy"
               :id="image.name"
               v-for="(image, imageIndex) in images"
               :key="imageIndex"
@@ -105,9 +113,9 @@
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
           >
 
-          <div id="ultima7" @click='toggleColorFoto'>
-            <img loading="lazy" alt="diesiocho" src="~assets/img/proyectos/diasiete/18.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
-          </div>
+            <div id="ultima12" @click='toggleColorFoto'>
+              <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diadoce/9.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            </div>
         </div>
       </transition>
     </div>
@@ -126,16 +134,21 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 7',
+    title: 'Persona Diseño | Porfolio - Dia 12',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Porfolio Julieta Mercerat, Dia 7'
+        content: 'Porfolio Julieta Mercerat, Dia 12'
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   data() {
     return {
       show: true,
@@ -147,93 +160,48 @@ export default {
         {
           id: 1,
           name: 'uno',
-          href: require(`~/assets/img/proyectos/diasiete/1.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          href: require(`~/assets/img/proyectos/diasiete/2.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          href: require(`~/assets/img/proyectos/diasiete/3.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          href: require(`~/assets/img/proyectos/diasiete/4.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          href: require(`~/assets/img/proyectos/diasiete/5.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          href: require(`~/assets/img/proyectos/diasiete/6.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          href: require(`~/assets/img/proyectos/diasiete/7.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diasiete/8.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diasiete/9.jpg`)
+          href: require(`~/assets/img/proyectos/diadoce/9.jpg`)
         },
-        {
-          id: 10,
-          name: 'dies',
-          href: require(`~/assets/img/proyectos/diasiete/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          href: require(`~/assets/img/proyectos/diasiete/11.jpg`)
-        },
-        {
-          id: 12,
-          name: 'doce',
-          href: require(`~/assets/img/proyectos/diasiete/12.jpg`)
-        },
-        {
-          id: 13,
-          name: 'trece',
-          href: require(`~/assets/img/proyectos/diasiete/13.jpg`)
-        },
-        {
-          id: 14,
-          name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diasiete/14.jpg`)
-        },
-        {
-          id: 15,
-          name: 'quinze',
-          href: require(`~/assets/img/proyectos/diasiete/15.jpg`)
-        },
-        {
-          id: 16,
-          name: 'diesiseis',
-          href: require(`~/assets/img/proyectos/diasiete/16.jpg`)
-        },
-        {
-          id: 17,
-          name: 'diesisiete',
-          href: require(`~/assets/img/proyectos/diasiete/17.jpg`)
-        },
-        {
-          id: 18,
-          name: 'diesiocho',
-          href: require(`~/assets/img/proyectos/diasiete/18.jpg`)
-        }
       ],
       index: null
     };

@@ -1,4 +1,5 @@
 export default {
   welcome: 'Welcome',
-  about : 'About me'
+  about: 'About me',
+  contactme: 'contact',
 }

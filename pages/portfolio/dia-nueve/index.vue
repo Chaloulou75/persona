@@ -7,21 +7,20 @@
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
-
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row ">
       <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
       <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-        <nuxt-link to="/">
+        <nuxt-link :to="localePath('/')">
           <Logopersona class="h-12" />
         </nuxt-link>
       </div>
       <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen bg-bluejuli lg:w-1/2 cursor-mano" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen bg-gray-800 lg:w-1/2 cursor-mano" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-5">
+        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-9">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -30,10 +29,11 @@
           <div class="px-1 py-1 border border-white"></div>
         </div>
 
-        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Con el pasar de los días me empecé a contagiar de un sentimiento mítico, me vi absorbida por la teatralidad de la forma de vestir de los humanos.
+        <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-2/3">
+          <p class="pb-6">Y en el noveno día me detuve, vi un hombre que tardando en hablar, con una mano apoyada contra la oreja, como si estuviera escuchándose por dentro, me miró a los ojos y dijo: <br>
+          - Para entender el presente, hay que repasar el pasado.. -
           </p>
-          <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA READY-TO-WEAR, CON SISTEMA DE COMUNICACIÓN COMPLETO.</p>
+          <p class="uppercase">TRABAJO DE CARACTERIZACIÓN DE PERSONAJE, EN BASE A UN ÍCONO HISTÓRICO, CON REUTILIZACIÓN DE PRENDAS.</p>
         </div>
       </div>
 
@@ -50,13 +50,13 @@
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Experimentación</div>
+            <div class="text-sm uppercase text-bluejuli">Construcción de relato</div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Diseño de autor</div>
+              <div class="text-sm uppercase text-bluejuli">Investigación histórica</div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -68,13 +68,13 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Conceptualización</div>
+              <div class="text-sm uppercase text-bluejuli">Reutilización de sastrería</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">SUBVERSIVO
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
           </div>
         </div>
 
@@ -104,19 +104,19 @@
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
           >
 
-          <div id="ultima5" @click='toggleColorFoto'>
-              <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacinco/16.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          <div id="ultima9" @click='toggleColorFoto'>
+            <img loading="lazy" alt="quince" src="~assets/img/proyectos/dianueve/15.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
         </div>
       </transition>
     </div>
 
     <!-- <transition name="component-fade" mode="out-in">
-      <LazyModal v-if="showModal" @close="showModal = false" :image='image'></LazyModal>
+      <modal v-if="showModal" @close="showModal = false" :image='image'></modal>
     </transition> -->
 
     <VolverButton />
-    <LazyFooter />
+    <Footer />
   </div>
 </template>
 
@@ -125,16 +125,21 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 5',
+    title: 'Persona Diseño | Porfolio - Dia 9',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Porfolio Julieta Mercerat, Dia 5'
+        content: 'Porfolio Julieta Mercerat, Dia 9'
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   data() {
     return {
       show: true,
@@ -146,82 +151,77 @@ export default {
         {
           id: 1,
           name: 'uno',
-          href: require(`~/assets/img/proyectos/diacinco/1.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          href: require(`~/assets/img/proyectos/diacinco/2.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          href: require(`~/assets/img/proyectos/diacinco/3.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          href: require(`~/assets/img/proyectos/diacinco/4.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          href: require(`~/assets/img/proyectos/diacinco/5.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          href: require(`~/assets/img/proyectos/diacinco/6.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          href: require(`~/assets/img/proyectos/diacinco/7.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diacinco/8.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diacinco/9.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/9.jpg`)
         },
         {
           id: 10,
           name: 'dies',
-          href: require(`~/assets/img/proyectos/diacinco/10.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/10.jpg`)
         },
         {
           id: 11,
           name: 'once',
-          href: require(`~/assets/img/proyectos/diacinco/11.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/11.jpg`)
         },
         {
           id: 12,
           name: 'doce',
-          href: require(`~/assets/img/proyectos/diacinco/12.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/12.jpg`)
         },
         {
           id: 13,
           name: 'trece',
-          href: require(`~/assets/img/proyectos/diacinco/13.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/13.jpg`)
         },
         {
           id: 14,
           name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diacinco/14.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/14.jpg`)
         },
         {
           id: 15,
           name: 'quinze',
-          href: require(`~/assets/img/proyectos/diacinco/15.jpg`)
-        },
-        {
-          id: 16,
-          name: 'diesiseis',
-          href: require(`~/assets/img/proyectos/diacinco/16.jpg`)
+          href: require(`~/assets/img/proyectos/dianueve/15.jpg`)
         }
       ],
       index: null

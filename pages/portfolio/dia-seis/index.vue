@@ -7,29 +7,21 @@
 
     <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
-    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row">
+    <div class="relative flex flex-col w-full min-h-screen mx-auto lg:flex-row ">
 
       <div v-if="lastFotoRed" @click='toggleColorFoto' class="absolute inset-0 bg-opacity-100 bg-redjuli"></div>
 
       <div class="absolute top-0 left-0 px-4 py-2 transition duration-500 transform hover:translate-x-2">
-        <nuxt-link to="/">
+        <nuxt-link :to="localePath('/')">
           <Logopersona class="h-12" />
         </nuxt-link>
       </div>
       <Lostresbotones />
 
       <!-- left screen -->
-      <div class="flex flex-col items-center justify-center w-full h-screen cursor-mano lg:w-1/2 bg-bluejuli" @click="show = !show">
+      <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
 
-        <!-- <div class="relative w-48 h-48 mt-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring ring-yellow-300 ring-opacity-100 cursor-mano " @click="show = !show">
-          <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
-          <div class="absolute inset-0 group-hover:bg-blue-200 group-hover:bg-opacity-50"></div>
-          <div class="relative flex items-center justify-center h-full">
-            <div class="py-4 mx-auto text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Cambiar Pantalla</div>
-          </div>
-        </div> -->
-
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
+        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-6">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
@@ -39,12 +31,11 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Este día me concentré en los microorganismos vivos y como se relacionan entre ellos, cuales son los enlaces que generan para la construcción del sistema.
+          <p class="pb-6">Este día confié en interpretar la realidad a través de las relaciones superficiales de las imágenes que los humanos generan.
           </p>
-          <p class="uppercase">TRABAJO DE DESARROLLO DE COLECCIÓN DE ESTAMPAS TEXTILES.</p>
+          <p class="uppercase">TRABAJO DE DESARROLLO DE MARCA READY-TO-WEAR, CON SISTEMA DE COMUNICACIÓN COMPLETO Y FASHION FILM.</p>
         </div>
       </div>
-
 
       <transition name="component-fade" mode="out-in">
         <!-- right screen 1 -->
@@ -59,13 +50,13 @@
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Tendencia </div>
+            <div class="text-sm uppercase text-bluejuli">Colección</div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Textile pattern </div>
+              <div class="text-sm uppercase text-bluejuli">Fashion Film</div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -77,13 +68,13 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Inspiración en lo natural</div>
+              <div class="text-sm uppercase text-bluejuli">Identidad de marca</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">NATURAL ORIGIN
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">EL SHOW
           </div>
         </div>
 
@@ -92,18 +83,26 @@
         v-bind:style=" lastFotoRed ? 'bg-redjuli bg-opacity-100' : 'bg-gray-200' "
         >
 
-          <div class="fixed z-10 w-24 px-1 py-2 overflow-auto bg-transparent max-h-56 scrollhidden">
-            <div class="flex flex-col mx-auto space-y-2">
+        <div class="fixed z-10 w-24 px-1 py-2 overflow-auto bg-transparent max-h-56 scrollhidden">
+          <div class="flex flex-col mx-auto space-y-2">
+            <scroll-link href="#video" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105"
+            @click.native="isActive = 'video'"
+            v-bind:class="{ active: isActive == 'video' }"
+            ></scroll-link>
             <scroll-link :href="'#'+ image.name" class="w-5/6 h-2 transition duration-100 transform bg-yellowjuli hover:bg-bluejuli hover:scale-105 "
             v-for="image in images"
             :key="image.id"
             @click.native="isActive = image.id"
             v-bind:class="{ active: isActive == image.id }"
             ></scroll-link>
-            </div>
+          </div>
+        </div>
+
+          <div id="video" class="flex items-center justify-center w-full h-auto my-4 shadow-lg lg:min-h-screen">
+            <iframe src="https://player.vimeo.com/video/225087294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
           </div>
 
-            <img loading="lazy"
+          <img loading="lazy"
               :id="image.name"
               v-for="(image, imageIndex) in images"
               :key="imageIndex"
@@ -113,9 +112,9 @@
               class="object-cover w-full h-auto shadow-lg lg:object-contain lg:min-h-screen cursor-mano"
           >
 
-            <div id="ultima12" @click='toggleColorFoto'>
-              <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diadoce/9.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
-            </div>
+          <div id="ultima6" @click='toggleColorFoto'>
+            <img loading="lazy" alt="diesisiete" src="~assets/img/proyectos/diaseis/17.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          </div>
         </div>
       </transition>
     </div>
@@ -134,16 +133,21 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 12',
+    title: 'Persona Diseño | Porfolio - Dia 6',
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Porfolio Julieta Mercerat, Dia 12'
+        content: 'Porfolio Julieta Mercerat, Dia 6'
       }
     ],
   },
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   data() {
     return {
       show: true,
@@ -155,48 +159,88 @@ export default {
         {
           id: 1,
           name: 'uno',
-          href: require(`~/assets/img/proyectos/diadoce/1.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/1.jpg`)
         },
         {
           id: 2,
           name: 'dos',
-          href: require(`~/assets/img/proyectos/diadoce/2.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/2.jpg`)
         },
         {
           id: 3,
           name: 'tres',
-          href: require(`~/assets/img/proyectos/diadoce/3.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/3.jpg`)
         },
         {
           id: 4,
           name: 'cuatro',
-          href: require(`~/assets/img/proyectos/diadoce/4.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/4.jpg`)
         },
         {
           id: 5,
           name: 'cinco',
-          href: require(`~/assets/img/proyectos/diadoce/5.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/5.jpg`)
         },
         {
           id: 6,
           name: 'seis',
-          href: require(`~/assets/img/proyectos/diadoce/6.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/6.jpg`)
         },
         {
           id: 7,
           name: 'siete',
-          href: require(`~/assets/img/proyectos/diadoce/7.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/7.jpg`)
         },
         {
           id: 8,
           name: 'ocho',
-          href: require(`~/assets/img/proyectos/diadoce/8.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/8.jpg`)
         },
         {
           id: 9,
           name: 'nueve',
-          href: require(`~/assets/img/proyectos/diadoce/9.jpg`)
+          href: require(`~/assets/img/proyectos/diaseis/9.jpg`)
         },
+        {
+          id: 10,
+          name: 'dies',
+          href: require(`~/assets/img/proyectos/diaseis/10.jpg`)
+        },
+        {
+          id: 11,
+          name: 'once',
+          href: require(`~/assets/img/proyectos/diaseis/11.jpg`)
+        },
+        {
+          id: 12,
+          name: 'doce',
+          href: require(`~/assets/img/proyectos/diaseis/12.jpg`)
+        },
+        {
+          id: 13,
+          name: 'trece',
+          href: require(`~/assets/img/proyectos/diaseis/13.jpg`)
+        },
+        {
+          id: 14,
+          name: 'quatorze',
+          href: require(`~/assets/img/proyectos/diaseis/14.jpg`)
+        },
+        {
+          id: 15,
+          name: 'quinze',
+          href: require(`~/assets/img/proyectos/diaseis/15.jpg`)
+        },
+        {
+          id: 16,
+          name: 'diesiseis',
+          href: require(`~/assets/img/proyectos/diaseis/16.jpg`)
+        },
+        {
+          id: 17,
+          name: 'diesisiete',
+          href: require(`~/assets/img/proyectos/diaseis/17.jpg`)
+        }
       ],
       index: null
     };

@@ -39,7 +39,12 @@
 
 <script>
 export default {
-  transition: "page",
+  transition: {
+    name: 'page',
+    beforeEnter() {
+      this.$i18n.finalizePendingLocaleChange()
+    }
+  },
   head: {
     title: 'Persona Diseño | Contacto Julieta Mercerat',
     meta: [

@@ -34,7 +34,7 @@ export default {
     '~/plugins/in-viewport.client.js',
     '~/plugins/vue-gallery.client.js',
     '~/plugins/vue-typed-js',
-
+    '~/plugins/router.js',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -85,13 +85,81 @@ export default {
     // },
     detectBrowserLanguage: false,
     locales: [
-      { code: 'en', iso: 'en-US', name: 'En', file: 'en-US.js' },
+      // { code: 'en', iso: 'en-US', name: 'En', file: 'en-US.js' },
       { code: 'fr', iso: 'fr-FR', name: 'Fr', file: 'fr-FR.js' },
       { code: 'es', iso: 'es-ES', name: 'Es', file: 'es-ES.js' }
     ],
+    skipSettingLocaleOnNavigate: true,
     lazy: true,
     langDir: "lang/",
     defaultLocale: 'es',
+    parsePages: false,
+    pages: {
+      sobremi: {
+        es: '/sobremi',
+        fr: '/a-propos',
+      },
+      contacto: {
+        es: '/contacto',
+        fr: '/contact',
+      },
+      resume: {
+        es: '/resume',
+        fr: '/curriculum',
+      },
+      'portfolio/index': {
+        es: '/portfolio',
+        fr: '/portfolio',
+      },
+      'portfolio/dia-uno/index': {
+        es: '/portfolio/dia-uno',
+        fr: '/portfolio/jour-un',
+      },
+      'portfolio/dia-dos/index': {
+        es: '/portfolio/dia-dos',
+        fr: '/portfolio/jour-deux',
+      },
+      'portfolio/dia-tres/index': {
+        es: '/portfolio/dia-tres',
+        fr: '/portfolio/jour-trois',
+      },
+      'portfolio/dia-cuatro/index': {
+        es: '/portfolio/dia-cuatro',
+        fr: '/portfolio/jour-quatre',
+      },
+      'portfolio/dia-cinco/index': {
+        es: '/portfolio/dia-cinco',
+        fr: '/portfolio/jour-cinq',
+      },
+      'portfolio/dia-seis/index': {
+        es: '/portfolio/dia-seis',
+        fr: '/portfolio/jour-six',
+      },
+      'portfolio/dia-siete/index': {
+        es: '/portfolio/dia-siete',
+        fr: '/portfolio/jour-sept',
+      },
+      'portfolio/dia-ocho/index': {
+        es: '/portfolio/dia-ocho',
+        fr: '/portfolio/jour-huit',
+      },
+      'portfolio/dia-nueve/index': {
+        es: '/portfolio/dia-nueve',
+        fr: '/portfolio/jour-neuf',
+      },
+      'portfolio/dia-dies/index': {
+        es: '/portfolio/dia-dies',
+        fr: '/portfolio/jour-dix',
+      },
+      'portfolio/dia-once/index': {
+        es: '/portfolio/dia-once',
+        fr: '/portfolio/jour-onze',
+      },
+      'portfolio/dia-doce/index': {
+        es: '/portfolio/dia-doce',
+        fr: '/portfolio/jour-douze',
+      },
+    }
   },
 
   sitemap: {

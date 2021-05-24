@@ -4,7 +4,7 @@
       class="flex items-center justify-between w-full px-8 pt-4 pb-4 text-base font-medium text-gray-900 bg-transparent lg:text-xl"
     >
       <nuxt-link
-        to="/"
+        :to="localePath('/')"
         class="transition duration-500 transform hover:translate-x-2"
         >
         <!-- <img alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-10 lg:h-12"> -->
@@ -54,15 +54,15 @@
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/portfolio">portfolio</nuxt-link>
+            <nuxt-link :to="localePath('/portfolio')" >portfolio</nuxt-link>
           </li>
           <li
             class="tracking-widest uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/sobremi"> {{ $t('about')}}</nuxt-link>
+            <nuxt-link :to="localePath('/sobremi')" > {{ $t('about')}}</nuxt-link>
           </li>
 
-          <!-- <li class="divide-x-2 divide-gray-600">
+          <li class="divide-x-2 divide-gray-600">
               <nuxt-link
               v-for="locale in availableLocales"
               :key="locale.code"
@@ -70,7 +70,7 @@
               class="px-2 text-xs tracking-widest uppercase">
                {{ locale.name }}
               </nuxt-link>
-          </li> -->
+          </li>
         </ul>
       </div>
     </nav>
@@ -84,13 +84,13 @@
           <li
             class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/portfolio">portfolio</nuxt-link>
+            <nuxt-link :to="localePath('/portfolio')">portfolio</nuxt-link>
           </li>
 
           <li
             class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
-            <nuxt-link to="/sobremi">Sobre mi</nuxt-link>
+            <nuxt-link :to="localePath('/sobremi')" >{{ $t('about')}}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -109,7 +109,8 @@ export default {
   },
   computed: {
     availableLocales () {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+      return this.$i18n.locales
+      // .filter(i => i.code !== this.$i18n.locale)
     }
   }
 };
