@@ -31,9 +31,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Hubo un día en que la conexión con el mundo se volvió tóxica. Intenté recordar la sensación de verse envuelto en un lugar conocido y confortable.
+          <p class="pb-6">{{ $t('diaochofrase1')}}
           </p>
-          <p class="uppercase">TRABAJO DE CREACIÓN DE IDENTIDAD DE MARCA, CONCEPTUALIZACIÓN Y SISTEMA DE COMERCIALIZACIÓN.</p>
+          <p class="uppercase">{{ $t('diaochofrase2')}}</p>
         </div>
       </div>
 
@@ -44,13 +44,13 @@
           <!-- hover part -->
           <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
           <div class="absolute inset-0 ">
-            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">{{ $t('seefotos')}}</div>
           </div><!-- end hover part -->
 
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Cápsula para diseñador específico</div>
+            <div class="text-sm uppercase text-bluejuli">{{ $t('diaochopalabra1')}}</div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
@@ -74,7 +74,8 @@
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">EL AISLAMIENTO
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">
+          {{ $t('diaochotitle')}}
           </div>
         </div>
 

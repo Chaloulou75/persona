@@ -31,11 +31,12 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-2/3">
-          <p class="pb-6">Que maravillosos los humanxs, con sus diversidades y rarezas. Me topé con uno y le pregunté: <br>
-          - ¿Como definen el conjunto de los muchos universos, pero que co-existen dentro del propio?<br>
-          - ¿El multiverso? - dijo riéndose el sujeto... -
+          <p class="pb-6">
+            {{ $t('diasietefrase1')}} <br>
+            {{ $t('diasietefrase2')}} <br>
+            {{ $t('diasietefrase3')}}
           </p>
-          <p class="uppercase">TRABAJO DE CREACIÓN DE IDENTIDAD DE MARCA, CONCEPTUALIZACIÓN Y SISTEMA DE COMERCIALIZACIÓN.</p>
+          <p class="uppercase">{{ $t('diasietefrase4')}}</p>
         </div>
       </div>
 
@@ -46,7 +47,7 @@
           <!-- hover part -->
           <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
           <div class="absolute inset-0 ">
-            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">{{ $t('seefotos')}}</div>
           </div><!-- end hover part -->
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -75,7 +76,8 @@
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">LOS SISTEMAS
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">
+          {{ $t('diasietetitle')}}
           </div>
         </div>
 

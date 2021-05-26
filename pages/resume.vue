@@ -9,13 +9,17 @@
       <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-2 shadow-xl left-4 top-1/4 border-redjuli hover:bg-redjuli hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
           <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          Ver Video CV
+          {{ $t('vervideo')}}
         </a>
       </div>
       <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-2 shadow-xl right-4 bottom-1/4 border-bluejuli hover:bg-bluejuli hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white">
-        <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
+        <a v-if="$i18n.locale === 'fr'" href="/CV_Julieta_Mercerat_FR.pdf" download="" target="_blank">
           <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-          Descargar CV
+          {{ $t('descargarCV') }}
+        </a>
+        <a v-else href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
+          <svg class="inline-block w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          {{ $t('descargarCV') }}
         </a>
       </div>
 
@@ -24,9 +28,9 @@
         <div class="flex flex-col items-start justify-center h-auto px-6 mb-4 text-bluejuli"> <!--presentation sm-->
           <div class="py-4 mt-auto text-3xl font-bold lineyellow "><span>Julieta Mercerat</span>
           </div>
-          <div class="mb-4 text-2xl font-semibold text-bluejuli lineyellow "><span>Hola,</span>
+          <div class="mb-4 text-2xl font-semibold text-bluejuli lineyellow "><span>{{ $t('hola') }},</span>
           </div>
-          <div class="pb-6 text-sm leading-normal lineyellow"><span>Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</span> </div>
+          <div class="pb-6 text-sm leading-normal lineyellow"><span>{{ $t('presentation') }}</span> </div>
         </div>
 
         <div class="flex flex-col h-full my-4"> <!-- foto sm-->
@@ -43,7 +47,7 @@
             <h3 class="px-4 text-lg font-semibold text-redjuli">Info</h3>
             <div class="flex items-baseline py-4">
               <!-- <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5"> -->
-              <p class="px-4 text-sm font-semibold leading-10 uppercase text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
+              <p class="px-4 text-sm font-semibold leading-10 uppercase text-redjuli">denim &bull; {{ $t('conceptos') }} &bull; {{ $t('productos') }} &bull; {{ $t('diseño') }}</p>
             </div>
         </div>
 
@@ -52,7 +56,7 @@
         <div class="max-w-sm px-2 mt-6 ml-auto border-l-2 border-gray-400 border-dashed">
         <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
 
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>experienca laboral</span> </h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>{{ $t('experiencalaboral') }}</span> </h2>
 
           <div class="flex items-start">
             <div class="relative ml-4">
@@ -63,7 +67,7 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BE DISOBEDIENT</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Desarrollo de informes de tendencias de denim 360°. Speaker en conferencia de tendencias en evento de denim latinoamericano.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('desobedienttext') }}</p>
             </div>
           </div>
 
@@ -76,9 +80,9 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>SANTISTA</h2>
-              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Responsable del área de Producto Jeanswear.</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Asistente de producto jeanswear.</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Pasantía en área de jeanswear.</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext1') }}</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext2') }}</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext3') }}</p>
             </div>
           </div>
 
@@ -91,7 +95,7 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BRANDO</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Atención al público en tienda de indumentaria masculina.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('brandotext')}}</p>
             </div>
           </div>
 
@@ -104,12 +108,12 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>FANATICOS</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Responsable de caja en tienda de indumentaria deportiva.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('fanaticostext')}}</p>
             </div>
           </div>
 
           <!-- educacion -->
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>EDUCACIÓN</span> </h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>{{ $t('educacion')}}</span> </h2>
 
           <div class="flex items-start">
             <div class="relative ml-4">
@@ -132,7 +136,7 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad Argentina de la Empresa (UADE)</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Lic. Diseño textil e indumentaria.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('uadetext') }}</p>
             </div>
           </div>
 
@@ -145,8 +149,8 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Buenos Aires (UBA)</h2>
-              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Sistemas materiales // Biofabricación</p>
-              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Experimentación con bioaglomerados fúngicos.</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('ubatext1')}}</p>
+              <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('ubatext2')}}</p>
             </div>
           </div>
 
@@ -159,7 +163,7 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Cultura potente, Curso de posgrado en cultura y comunicación.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('flacsotext') }}</p>
             </div>
           </div>
 
@@ -172,16 +176,16 @@
             </div>
             <div class="px-4 pb-2">
               <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Monterrey (UDEM)</h2>
-              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
+              <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('udemtext') }}</p>
             </div>
           </div>
 
           <!-- seminarios -->
-          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span> CURSOS Y SEMINARIOS</span></h2>
+          <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span> {{$t('cursos') }}</span></h2>
           <div class="pb-2 pl-8">
-            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>COLOR, MATERIALS & FINISH (CMF)</p>
-            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
-            <p class="text-xs font-medium text-gray-500 laboral" data-scroll>EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
+            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext1') }}</p>
+            <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext2') }}</p>
+            <p class="text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext3') }}</p>
           </div>
         </div>
         </div>
@@ -190,37 +194,37 @@
       <div class="flex items-center justify-center h-auto max-w-sm mx-auto my-8">
         <div class="flex flex-col items-start justify-center px-12 mx-auto space-y-4">
           <div class="w-full py-2 text-2xl text-center uppercase text-bluejuli lineyellow">
-            <h3><span>Habilidades</span></h3>
+            <h3><span>{{ $t('habilidades') }}</span></h3>
           </div>
           <div class="text-sm text-bluejuli lineyellow">
-            <span >- Desarrollo de conceptos e identidad</span>
+            <span >{{ $t('habilidadestext1') }}</span>
           </div>
           <div class="text-sm text-bluejuli ">
-            - Seguimiento de producción
+            {{ $t('habilidadestext2') }}
           </div>
           <div class="text-sm text-bluejuli lineyellow">
-            <span >- Aportar conocimiento integral del proceso textil de DENIM</span>
+            <span >{{ $t('habilidadestext3') }}</span>
           </div>
           <div class="text-sm text-bluejuli">
-            - Diseño con conciencia
+            {{ $t('habilidadestext4') }}
           </div>
           <div class="text-sm text-bluejuli lineyellow">
-            <span >- Investigación de tendencias</span>
+            <span >{{ $t('habilidadestext5') }}</span>
           </div>
           <div class="text-sm text-bluejuli lineyellow">
-            <span >- Nunca parar de aprender</span>
+            <span >{{ $t('habilidadestext6') }}</span>
           </div>
         </div>
       </div><!--end Habilidades sm-->
       <div class="flex flex-col justify-center h-full max-w-md mx-auto my-8"> <!--herramientas sm-->
         <div class="flex flex-col items-center justify-center w-full h-full my-8">
           <div class="flex flex-col justify-center my-4">
-            <div class="text-2xl leading-none uppercase text-bluejuli">H</div>
+            <div class="text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasH')}}</div>
             <div class="flex items-center justify-start">
               <div class="w-5 h-5 bg-redjuli"></div>
-              <div class="text-2xl leading-none uppercase text-bluejuli">E</div>
+              <div class="text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasE')}}</div>
             </div>
-            <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">RRAMIENTAS</div>
+            <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasR')}}</div>
           </div>
           <div class="grid grid-cols-5 grid-rows-5 mx-auto justify-items-stretch">
             <div ></div>
@@ -268,25 +272,25 @@
       </div><!--end herramientas sm-->
       <div class="flex flex-col items-start justify-center h-auto max-w-sm px-8 mx-auto my-12 space-y-4"><!--idiomas sm-->
         <div class="w-full px-4 py-4 text-4xl text-center uppercase border-2 border-dashed border-yellowjuli text-yellowjuli">
-          <h3>IDIO</h3>
-          <h3>MAS</h3>
+          <h3>{{ $t('idio') }}</h3>
+          <h3>{{ $t('mas') }}</h3>
         </div>
         <div class="flex items-center justify-between w-full">
-          <div class="text-sm text-redjuli">Español</div>
+          <div class="text-sm text-redjuli">{{ $t('Español') }}</div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="transform origin-left bg-yellowjuli w-full rounded-full h-1.5 idiomas" data-scroll></div>
           </div>
         </div>
         <div class="flex items-center justify-between w-full ">
           <div class="text-sm text-redjuli">
-            Inglés
+            {{ $t('Inglés') }}
           </div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="transform origin-left bg-yellowjuli rounded-full w-2/3 h-1.5 idiomas" data-scroll></div>
           </div>
         </div>
         <div class="flex items-center justify-between w-full">
-          <div class="text-sm text-redjuli">Francés</div>
+          <div class="text-sm text-redjuli">{{ $t('Francés') }}</div>
           <div class="bg-gray-100 rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-50">
             <div class="transform origin-left w-1/2 h-1.5 rounded-full bg-yellowjuli idiomas" data-scroll></div>
           </div>
@@ -294,14 +298,14 @@
       </div><!--end idiomas sm-->
       <div class="flex flex-col justify-center h-auto max-w-sm px-8 mx-auto my-12"> <!--INTERESES sm-->
         <div class="py-4 border border-dashed border-yellowjuli">
-          <h2 class="py-4 text-4xl font-thin text-center uppercase text-yellowjuli">INTERESES</h2>
+          <h2 class="py-4 text-4xl font-thin text-center uppercase text-yellowjuli">{{ $t('intereses') }}</h2>
           <div class="px-6 text-xs font-semibold text-gray-900">
-            <p class="intereses" data-scroll>1. Cine / Documentales</p>
-            <p class="intereses" data-scroll>2. Voley / Running</p>
-            <p class="intereses" data-scroll>3. Biomateriales</p>
-            <p class="intereses" data-scroll>4. Observar arquitectura</p>
-            <p class="intereses" data-scroll>5. Apreciar arte plástico y digital y fotografía.</p>
-            <p class="intereses" data-scroll>7. La montaña y el mar</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext1') }}</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext2') }}</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext3') }}</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext4') }}</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext5') }}</p>
+            <p class="intereses" data-scroll>{{ $t('interesestext6') }}</p>
           </div>
         </div>
       </div><!-- end intereses sm-->
@@ -313,7 +317,7 @@
             <div class="w-4 h-4 bg-redjuli"></div>
           </div>
           <div class="text-2xl font-bold leading-none text-center uppercase text-redjuli">
-            contacto
+            {{ $t('contactme') }}
           </div>
         </div>
 
@@ -323,7 +327,7 @@
             <div class="mr-4 hover:text-gray-500 text-bluejuli">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"></path></svg>
             </div>
-            <div class="text-lg font-semibold text-bluejuli">(+54) 11 38191518</div>
+            <div class="text-lg font-semibold text-bluejuli">(+33) 6 68 23 07 18</div>
           </div>
 
           <div class="flex items-center justify-start w-full transition duration-200 hover:transform hover:scale-105">
@@ -391,14 +395,18 @@
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-4 shadow-xl top-1/4 left-16 border-redjuli hover:bg-redjuli hover:text-white hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
           <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-          Ver Video CV
+          {{ $t('vervideo')}}
         </a>
       </div>
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform rotate-45 bg-transparent border-4 shadow-xl bottom-1/4 right-44 border-bluejuli hover:bg-bluejuli hover:text-white hover:-rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button descargar CV -->
-          <a href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
+          <a v-if="$i18n.locale === 'fr'" href="/CV_Julieta_Mercerat_FR.pdf" download="" target="_blank">
             <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-            Descargar CV
+            {{ $t('descargarCV') }}
+          </a>
+          <a v-else href="/CV_Julieta_Mercerat_ESP.pdf" download="" target="_blank">
+            <svg class="inline-block w-6 h-6 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            {{ $t('descargarCV') }}
           </a>
       </div>
 
@@ -411,24 +419,24 @@
                   <h3 class="text-lg font-semibold transform -rotate-90 text-redjuli">Info</h3>
                 </div>
                 <div class="self-center justify-self-auto">
-                  <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">26 años // Nac. 06.04.1994</p>
+                  <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">26 {{ $t('años')}} // 06.04.1994</p>
                 </div>
                 <div class="self-end justify-self-auto">
-                  <p class="text-sm font-bold tracking-wide uppercase transform -rotate-90 whitespace-nowrap text-redjuli">denim &bull; conceptos &bull; productos &bull; diseño</p>
+                  <p class="text-sm font-bold tracking-wide uppercase transform -rotate-90 whitespace-nowrap text-redjuli">denim &bull; {{ $t('conceptos')}} &bull; {{ $t('productos')}} &bull; {{ $t('diseño')}}</p>
                 </div>
                 <!-- <div class="self-start">
                   <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5">
                 </div> -->
               </div>
             </div>
-            <div class="items-center h-auto col-span-2 text-bluejuli"> <!--presentation -->
+            <div class="items-center h-auto col-span-3 text-bluejuli"> <!--presentation -->
               <div class="py-8 mt-auto text-4xl font-bold lineyellow"><span>Julieta Mercerat</span>
               </div>
-              <div class="mb-4 text-3xl font-semibold text-bluejuli lineyellow"><span>Hola</span>,
+              <div class="mb-4 text-3xl font-semibold text-bluejuli lineyellow"><span>{{ $t('hola')}}</span>,
               </div>
-              <div class="w-1/2 pb-6 text-base leading-normal lineyellow"><span>Soy una diseñadora apasionada y compromedita con este increible mundo de creación de personajes.</span></div>
+              <div class="w-1/2 pb-6 text-base leading-normal lineyellow"><span>{{ $t('presentation')}}</span></div>
             </div>
-            <div class="col-span-3"></div><!--space -->
+            <div class="col-span-2"></div><!--space -->
             <div class="col-span-2"><!--logo -->
               <div class="flex flex-col items-start justify-center h-full">
                 <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-12 mx-auto my-8 lg:h-24">
@@ -442,7 +450,7 @@
             </div>
             <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--Experienca laboral -->
-              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>experienca laboral</span> </h2>
+              <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">// <span>{{ $t('experiencalaboral')}}</span> </h2>
               <!-- Para hacer las lineas de borde -->
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
               <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
@@ -455,7 +463,7 @@
                   </div>
                   <div class="px-4 pb-2">
                     <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BE DISOBEDIENT</h2>
-                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Desarrollo de informes de tendencias de denim 360°. Speaker en conferencia de tendencias en evento de denim latinoamericano</p>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('desobedienttext')}}</p>
                   </div>
                 </div>
                 <div class="flex items-start ">
@@ -467,9 +475,9 @@
                   </div>
                   <div class="px-4 pb-2">
                     <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>SANTISTA</h2>
-                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Responsable del área de Producto Jeanswear.</p>
-                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Asistente de producto jeanswear.</p>
-                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Pasantía en área de jeanswear.</p>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext1')}}</p>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext2')}}</p>
+                    <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('santistatext3')}}</p>
                   </div>
                 </div>
 
@@ -482,7 +490,7 @@
                   </div>
                   <div class="px-4 pb-2">
                     <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>BRANDO</h2>
-                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Atención al público en tienda de indumentaria masculina.</p>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('brandotext')}}</p>
                   </div>
                 </div>
 
@@ -495,7 +503,7 @@
                   </div>
                   <div class="px-4 pb-2">
                     <h2 class="text-lg font-hairline uppercase text-bluejuli laboral" data-scroll>FANATICOS</h2>
-                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Responsable de caja en tienda de indumentaria deportiva.</p>
+                    <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('fanaticostext')}}</p>
                   </div>
                 </div>
               </div>
@@ -515,7 +523,7 @@
             <div></div><!--space -->
             <div class="col-span-2 row-span-2"> <!--educacion -->
               <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">
-                // <span>EDUCACIÓN</span></h2>
+                // <span>{{ $t('educacion')}}</span></h2>
               <div class="max-w-sm px-2 mt-2 ml-auto border-l-2 border-gray-400 border-dashed">
                 <div class="flex flex-col justify-end space-y-8 border-l-2 border-gray-400 border-dashed">
                   <div class="flex items-start">
@@ -539,7 +547,7 @@
                     </div>
                     <div class="px-4 pb-2">
                       <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad Argentina de la Empresa (UADE)</h2>
-                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Lic. Diseño textil e indumentaria.</p>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('uadetext')}}</p>
                     </div>
                   </div>
 
@@ -552,8 +560,8 @@
                     </div>
                     <div class="px-4 pb-2">
                       <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Buenos Aires (UBA)</h2>
-                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Sistemas materiales // Biofabricación</p>
-                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>Experimentación con bioaglomerados fúngicos.</p>
+                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('ubatext1')}}</p>
+                      <p class="pb-4 text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('ubatext2')}}</p>
                     </div>
                   </div>
 
@@ -566,7 +574,7 @@
                     </div>
                     <div class="px-4 pb-2">
                       <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Facultad Latinoamericana de Ciencias Sociales (FLACSO)</h2>
-                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Cultura potente, Curso de posgrado en cultura y comunicación.</p>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('flacsotext')}}</p>
                     </div>
                   </div>
 
@@ -579,7 +587,7 @@
                     </div>
                     <div class="px-4 pb-2">
                       <h2 class="text-lg font-medium text-bluejuli laboral" data-scroll>Universidad de Monterrey (UDEM)</h2>
-                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>Semestre de intercambio de Lic. en diseño textil e indumentaria.</p>
+                      <p class="text-xs font-medium text-bluejuli laboral" data-scroll>{{ $t('udemtext')}}</p>
                     </div>
                   </div>
                 </div>
@@ -594,7 +602,7 @@
                     <div class="w-4 h-4 bg-redjuli"></div>
                   </div>
                   <div class="text-2xl font-bold leading-none text-center uppercase text-redjuli">
-                    contacto
+                    {{ $t('contactme')}}
                   </div>
                 </div>
 
@@ -604,7 +612,7 @@
                     <div class="mr-4 hover:text-gray-500 text-bluejuli">
                       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 3l-6 6m0 0V4m0 5h5M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"></path></svg>
                     </div>
-                    <div class="text-lg font-semibold text-bluejuli">(+54) 11 38191518</div>
+                    <div class="text-lg font-semibold text-bluejuli">(+33) 6 68 23 07 18</div>
                   </div>
 
                   <div class="flex items-center justify-start w-full transition duration-200 hover:transform hover:scale-105">
@@ -670,25 +678,25 @@
             <div class="col-span-2"> <!--idiomas -->
               <div class="flex flex-col items-start justify-center px-8 py-8 space-y-4">
                 <div class="px-4 py-4 text-4xl uppercase border-2 border-dashed border-yellowjuli text-yellowjuli">
-                  <h3>IDIO</h3>
-                  <h3>MAS</h3>
+                  <h3>{{ $t('idio')}}</h3>
+                  <h3>{{ $t('mas')}}</h3>
                 </div>
                 <div class="flex items-center justify-between w-full">
-                  <div class="text-sm font-medium text-redjuli">Español</div>
+                  <div class="w-1/3 text-sm font-medium text-left text-redjuli">{{ $t('Español')}}</div>
                   <div class="bg-white rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
                     <div class="transform origin-left bg-yellowjuli w-full rounded-full h-1.5 idiomas" data-scroll></div>
                   </div>
                 </div>
                 <div class="flex items-center justify-between w-full ">
-                  <div class="text-sm font-medium text-redjuli">
-                    Inglés
+                  <div class="w-1/3 text-sm font-medium text-left text-redjuli">
+                    {{ $t('Inglés')}}
                   </div>
                   <div class="bg-white rounded-full w-48 h-1.5 ring-2 ring-bluejuli ring-opacity-75">
                     <div class="transform origin-left bg-yellowjuli rounded-full w-2/3 h-1.5 idiomas" data-scroll></div>
                   </div>
                 </div>
                 <div class="flex items-center justify-between w-full">
-                  <div class="text-sm font-medium text-redjuli">Francés</div>
+                  <div class="w-1/3 text-sm font-medium text-left text-redjuli">{{ $t('Francés')}}</div>
                   <div class="w-48 h-1.5 bg-white rounded-full ring-2 ring-bluejuli ring-opacity-75">
                     <div class="transform origin-left w-1/2 h-1.5 rounded-full bg-yellowjuli idiomas" data-scroll></div>
                   </div>
@@ -698,11 +706,11 @@
             <div></div><!--space -->
             <div class="col-span-2"><!-- CURSOS Y SEMINARIOS -->
               <div class="flex flex-col justify-end h-full">
-                <h2 class="py-4 pl-10 text-lg font-hairline uppercase text-redjuli lineyellow">// <span>CURSOS Y SEMINARIOS</span> </h2>
+                <h2 class="py-4 pl-10 text-lg font-hairline uppercase text-redjuli lineyellow">// <span>{{ $t('cursos')}}</span> </h2>
                 <div class="pb-2 pl-8">
-                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>COLOR, MATERIALS & FINISH (CMF)</p>
-                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>CURSO DE BIOPLÁSTICOS (Biofabricación)</p>
-                  <p class="text-xs font-medium text-gray-500 laboral" data-scroll>EXPERIMENTACIONES TEXTILES (SHIBORI Y TYE DYE)</p>
+                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext1')}}</p>
+                  <p class="pb-4 text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext2')}}</p>
+                  <p class="text-xs font-medium text-gray-500 laboral" data-scroll>{{ $t('cursostext3')}}</p>
                 </div>
               </div>
             </div>
@@ -710,37 +718,37 @@
             <div class="col-span-2"> <!--Habilidades -->
               <div class="flex flex-col items-start justify-center px-4 py-4 space-y-4">
                 <div class="py-2 text-2xl uppercase text-bluejuli lineyellow">
-                  <h3><span>Habilidades</span></h3>
+                  <h3><span>{{ $t('habilidades')}}</span></h3>
                 </div>
                 <div class="text-sm text-bluejuli lineyellow">
-                  <span >- Desarrollo de conceptos e identidad</span>
+                  <span >{{ $t('habilidadestext1')}}</span>
                 </div>
                 <div class="text-sm text-bluejuli ">
-                  - Seguimiento de producción
+                  {{ $t('habilidadestext2')}}
                 </div>
                 <div class="text-sm text-bluejuli lineyellow">
-                  <span >- Aportar conocimiento integral del proceso textil de DENIM</span>
+                  <span >{{ $t('habilidadestext3')}}</span>
                 </div>
                 <div class="text-sm text-bluejuli">
-                  - Diseño con conciencia
+                  {{ $t('habilidadestext4')}}
                 </div>
                 <div class="text-sm text-bluejuli lineyellow">
-                  <span >- Investigación de tendencias</span>
+                  <span >{{ $t('habilidadestext5')}}</span>
                 </div>
                 <div class="text-sm text-bluejuli lineyellow">
-                  <span >- Nunca parar de aprender</span>
+                  <span >{{ $t('habilidadestext6')}}</span>
                 </div>
               </div>
             </div>
             <div class="col-span-3"> <!--Herramientas -->
               <div class="flex flex-col items-center justify-center w-full h-full my-8">
                 <div class="flex flex-col justify-center my-4">
-                  <div class="text-2xl leading-none uppercase text-bluejuli">H</div>
+                  <div class="text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasH')}}</div>
                   <div class="flex items-center justify-start">
                     <div class="w-5 h-5 bg-redjuli"></div>
-                    <div class="text-2xl leading-none uppercase text-bluejuli">E</div>
+                    <div class="text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasE')}}</div>
                   </div>
-                  <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">RRAMIENTAS</div>
+                  <div class="pl-10 text-2xl leading-none uppercase text-bluejuli">{{ $t('herramientasR')}}</div>
                 </div>
                 <div class="grid grid-cols-5 grid-rows-5 mx-auto transition duration-500 transform justify-items-stretch hover:-translate-y-6 hover:skew-y-12">
                   <div ></div>
@@ -789,14 +797,14 @@
             <div class="col-span-2"> <!--INTERESES -->
               <div class="flex flex-col justify-end h-full">
                 <div class="py-4 border border-dashed border-yellowjuli">
-                  <h2 class="py-4 text-5xl font-thin text-center uppercase text-yellowjuli">INTERESES</h2>
+                  <h2 class="py-4 text-5xl font-thin text-center uppercase text-yellowjuli">{{ $t('intereses')}}</h2>
                   <div class="px-4 text-xs font-semibold text-gray-900">
-                    <p class="intereses" data-scroll>1. Cine / Documentales</p>
-                    <p class="intereses" data-scroll>2. Voley / Running</p>
-                    <p class="intereses" data-scroll>3. Biomateriales</p>
-                    <p class="intereses" data-scroll>4. Observar arquitectura</p>
-                    <p class="intereses" data-scroll>5. Apreciar arte plástico y digital y fotografía.</p>
-                    <p class="intereses" data-scroll>7. La montaña y el mar</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext1') }}</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext2') }}</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext3') }}</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext4') }}</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext5') }}</p>
+                    <p class="intereses" data-scroll>{{ $t('interesestext6') }}</p>
                   </div>
                 </div>
               </div>
@@ -889,7 +897,7 @@ $color:#FFDF00;
 }
 
 .idiomas[data-scroll] {
-  transition: all 4s;
+  transition: all 2.5s;
 }
 .idiomas[data-scroll="in"] {
   transform: scaleX(1);

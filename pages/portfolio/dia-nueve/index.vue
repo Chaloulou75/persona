@@ -30,10 +30,11 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-2/3">
-          <p class="pb-6">Y en el noveno día me detuve, vi un hombre que tardando en hablar, con una mano apoyada contra la oreja, como si estuviera escuchándose por dentro, me miró a los ojos y dijo: <br>
-          - Para entender el presente, hay que repasar el pasado.. -
+          <p class="pb-6">
+              {{ $t('diasnuevefrase1')}}<br>
+              {{ $t('diasnuevefrase2')}}
           </p>
-          <p class="uppercase">TRABAJO DE CARACTERIZACIÓN DE PERSONAJE, EN BASE A UN ÍCONO HISTÓRICO, CON REUTILIZACIÓN DE PRENDAS.</p>
+          <p class="uppercase">{{ $t('diasnuevefrase3')}}</p>
         </div>
       </div>
 
@@ -44,19 +45,19 @@
           <!-- hover part -->
           <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
           <div class="absolute inset-0 ">
-            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">{{ $t('seefotos')}}</div>
           </div><!-- end hover part -->
 
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Construcción de relato</div>
+            <div class="text-sm uppercase text-bluejuli">{{ $t('diasnuevepalabra1')}}</div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Investigación histórica</div>
+              <div class="text-sm uppercase text-bluejuli">{{ $t('diasnuevepalabra2')}}</div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -68,7 +69,7 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Reutilización de sastrería</div>
+              <div class="text-sm uppercase text-bluejuli">{{ $t('diasnuevepalabra3')}}</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>

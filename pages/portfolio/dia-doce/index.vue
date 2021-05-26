@@ -39,9 +39,9 @@
         </div>
 
         <div class="flex flex-col items-center justify-center w-full px-4 py-4 mx-auto mt-4 text-sm text-center text-white lg:w-1/2">
-          <p class="pb-6">Este día me concentré en los microorganismos vivos y como se relacionan entre ellos, cuales son los enlaces que generan para la construcción del sistema.
+          <p class="pb-6">{{ $t('diadocefrase1')}}
           </p>
-          <p class="uppercase">TRABAJO DE DESARROLLO DE COLECCIÓN DE ESTAMPAS TEXTILES.</p>
+          <p class="uppercase">{{ $t('diadocefrase2')}}</p>
         </div>
       </div>
 
@@ -53,19 +53,21 @@
           <!-- hover part -->
           <div class="absolute inset-0 group-hover:bg-gray-800 group-hover:bg-opacity-50"></div>
           <div class="absolute inset-0 ">
-            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">Ver las fotos</div>
+            <div class="flex items-center justify-center h-full text-2xl font-semibold leading-normal tracking-wider text-transparent uppercase group-hover:text-gray-100">
+              {{ $t('seefotos')}}
+            </div>
           </div><!-- end hover part -->
 
           <div class="flex items-center justify-center w-full h-48">
             <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
             </div>
-            <div class="text-sm uppercase text-bluejuli">Tendencia </div>
+            <div class="text-sm uppercase text-bluejuli">{{ $t('diadocepalabra1')}} </div>
           </div>
           <div class="flex justify-around">
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Textile pattern </div>
+              <div class="text-sm uppercase text-bluejuli">Textile pattern</div>
             </div>
             <div class="flex items-center justify-center w-full h-48">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
@@ -77,7 +79,7 @@
             <div class="flex items-center justify-center w-full">
               <div class="px-1 py-1 mr-2 border border-bluejuli bg-bluejuli">
               </div>
-              <div class="text-sm uppercase text-bluejuli">Inspiración en lo natural</div>
+              <div class="text-sm uppercase text-bluejuli">{{ $t('diadocepalabra3')}}</div>
             </div>
             <div class="px-1 py-1 border border-bluejuli bg-bluejuli">
             </div>

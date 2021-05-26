@@ -2,7 +2,7 @@
   <div class="pt-2 mt-auto text-white bg-black">
    <div class="flex flex-col items-center justify-between w-full px-3 py-6 text-xs text-gray-200 lg:flex-row md:flex-row">
 
-      <div class="flex-1 order-2 py-4 lg:order-1">&copy; <span class="text-gray-400"> Julieta Mercerat</span> {{ new Date().getFullYear() }}. Todos derechos reservados.</div>
+      <div class="flex-1 order-2 py-4 lg:order-1">&copy; <span class="text-gray-400"> Julieta Mercerat</span> {{ new Date().getFullYear() }}. {{ $t('droitreserve')}}.</div>
 
       <div class="flex-1 order-1 py-4 lg:order-2">
         <ul class="flex items-center justify-center space-x-6">
