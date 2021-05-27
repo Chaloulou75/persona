@@ -11,6 +11,11 @@ export default {
   asunto: 'Asunto',
   enviar: 'Envia mensaje',
 
+  //sobremi
+  seeporfolio: 'Para ver el Portfolio',
+  qui: '¿Quién sos?',
+  sobremitext1 : 'hola!! soy Julieta, una diseñadora muy manija...',
+
   //footer
   droitreserve : 'Todos derechos reservados',
 

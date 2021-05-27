@@ -21,15 +21,9 @@
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen cursor-mano lg:w-1/2 bg-bluejuli" @click="show = !show">
 
-        <!-- <div class="relative w-48 h-48 mt-auto overflow-hidden transition duration-200 ease-in-out transform shadow-lg group hover:scale-105 ring ring-yellow-300 ring-opacity-100 cursor-mano " @click="show = !show">
-          <div class="absolute inset-0 w-full h-full bg-center bg-cover bg-cuadro-12"></div>
-          <div class="absolute inset-0 group-hover:bg-blue-200 group-hover:bg-opacity-50"></div>
-          <div class="relative flex items-center justify-center h-full">
-            <div class="py-4 mx-auto text-lg font-semibold leading-normal tracking-wider text-transparent group-hover:text-gray-600">Cambiar Pantalla</div>
-          </div>
-        </div> -->
-
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
+        <div v-if="$i18n.locale === 'fr'"  class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-jour-12">
+        </div>
+        <div v-else class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-12">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">

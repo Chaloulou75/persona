@@ -78,19 +78,28 @@
     <transition name="fade" class="mobile-menu lg:hidden font-montserrat">
       <div class="z-20 lg:hidden">
         <ul
-          class="flex flex-col items-start px-6 py-4 space-y-3 text-base font-semibold text-gray-900"
+          class="flex flex-col items-start px-4 py-1 space-y-3 text-base font-semibold text-gray-900"
           v-if="show"
         >
           <li
-            class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
+            class="inline-block w-full px-2 tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
             <nuxt-link :to="localePath('/portfolio')">portfolio</nuxt-link>
           </li>
 
           <li
-            class="tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
+            class="inline-block w-full px-2 tracking-wide uppercase transition duration-500 ease-in-out transform hover:translate-x-2"
           >
             <nuxt-link :to="localePath('/sobremi')" >{{ $t('about')}}</nuxt-link>
+          </li>
+          <li class="inline-block w-full text-base tracking-widest text-gray-900 uppercase divide-x-2 divide-gray-600">
+              <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+              class="px-2">
+               {{ locale.name }}
+              </nuxt-link>
           </li>
         </ul>
       </div>

@@ -11,6 +11,10 @@ export default {
   asunto: 'Sujet',
   enviar: 'Envoyer',
 
+  seeporfolio: 'Voir le Portfolio',
+  qui: 'Qui es tu?',
+  sobremitext1 : 'Salut! Moi, c’est Julieta, une designer hyperactive…',
+
   //footer
   droitreserve:'Tous droits réservés',
 

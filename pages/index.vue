@@ -1,8 +1,31 @@
 <template>
-    <div class="min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
+    <div class="relative min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
       <Navigation />
-      <main class="relative w-full min-h-full">
+      <!-- los 3 botones -->
+      <div class="absolute inset-y-0 right-0 z-30 mt-16 mr-13 lg:mt-6 cursor-mano lg:mr-32">
+        <div class="fixed space-y-4">
+          <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45 cursor-mano"
+          @mouseover="toggleThemeBlue"
+          >
+          </div>
 
+          <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45 cursor-mano"
+          @mouseover="toggleThemeYellow"
+          >
+          </div>
+
+          <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45 cursor-mano"
+          @mouseover="toggleThemeRed"
+          >
+          </div>
+
+          <div class="text-copy-primary focus:outline-none cursor-mano" @click="toggle">
+            <!-- py-3 mt-6 -ml-6 text-xs lg:text-base -->
+            <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+        </div>
+      </div>
+      <main class="relative w-full min-h-full">
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
           <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
@@ -47,31 +70,6 @@
             </div>
           </div>
         </template>
-
-        <!-- los 3 botones -->
-        <div class="absolute inset-y-0 right-0 mt-2 mr-16 lg:-mt-12 lg:mr-32">
-          <div class="fixed space-y-4">
-            <div class="w-5 h-5 transition duration-200 transform border shadow-lg bg-bluejuli border-bluejuli hover:scale-110 hover:-rotate-45 cursor-mano"
-            @mouseover="toggleThemeBlue"
-            >
-            </div>
-
-            <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-yellowjuli bg-yellowjuli hover:scale-110 hover:-rotate-45 cursor-mano"
-            @mouseover="toggleThemeYellow"
-            >
-            </div>
-
-            <div class="w-5 h-5 transition duration-200 transform border shadow-lg border-redjuli bg-redjuli hover:scale-110 hover:-rotate-45 cursor-mano"
-            @mouseover="toggleThemeRed"
-            >
-            </div>
-
-            <div class="text-copy-primary focus:outline-none cursor-mano" @click="toggle">
-              <!-- py-3 mt-6 -ml-6 text-xs lg:text-base -->
-              <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            </div>
-          </div>
-        </div>
 
         <!-- las letras -->
         <transition name="letters" appear v-on:appear="lettersAnimStart" >
@@ -381,7 +379,7 @@ export default {
       transform:  translate(-60%, -200%)  rotate(360deg);
     }
     100% {
-      transform:  translate( -90%, 20%) rotate(0deg);
+      transform:  translate( -77%, 20%) rotate(0deg);
     }
   }
 
@@ -405,7 +403,7 @@ export default {
       transform:  translate(-180%, 120%) rotate(180deg);
     }
     100% {
-      transform:  translate(60%, -50%) rotate(0deg);
+      transform:  translate(60%, -63%) rotate(0deg);
     }
   }
 }

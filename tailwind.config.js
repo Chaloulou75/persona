@@ -39,6 +39,18 @@ module.exports = {
         'cuadro-10': "url('~assets/img/proyectos/cuadros/dia-10.png')",
         'cuadro-11': "url('~assets/img/proyectos/cuadros/dia-11.png')",
         'cuadro-12': "url('~assets/img/proyectos/cuadros/dia-12.png')",
+        'jour-1': "url('~assets/img/proyectos/cuadros/jour-1.png')",
+        'jour-2': "url('~assets/img/proyectos/cuadros/jour-2.png')",
+        'jour-3': "url('~assets/img/proyectos/cuadros/jour-3.png')",
+        'jour-4': "url('~assets/img/proyectos/cuadros/jour-4.png')",
+        'jour-5': "url('~assets/img/proyectos/cuadros/jour-5.png')",
+        'jour-6': "url('~assets/img/proyectos/cuadros/jour-6.png')",
+        'jour-7': "url('~assets/img/proyectos/cuadros/jour-7.png')",
+        'jour-8': "url('~assets/img/proyectos/cuadros/jour-8.png')",
+        'jour-9': "url('~assets/img/proyectos/cuadros/jour-9.png')",
+        'jour-10': "url('~assets/img/proyectos/cuadros/jour-10.png')",
+        'jour-11': "url('~assets/img/proyectos/cuadros/jour-11.png')",
+        'jour-12': "url('~assets/img/proyectos/cuadros/jour-12.png')",
       }),
       colors: {
         background: {
@@ -77,6 +89,7 @@ module.exports = {
         '17xl': '17rem',
       },
       spacing: {
+        13: '3.25rem',
         25: '6.25rem',
         26: '6.5rem',
         27: '6.75rem',

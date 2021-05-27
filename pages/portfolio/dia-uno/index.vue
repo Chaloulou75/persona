@@ -21,7 +21,9 @@
       <!-- left screen -->
       <div class="flex flex-col items-center justify-center w-full h-screen lg:w-1/2 bg-bluejuli cursor-mano" @click="show = !show">
 
-        <div class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-1">
+        <div v-if="$i18n.locale === 'fr'" class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-jour-1">
+        </div>
+        <div v-else class="relative w-48 h-48 mt-auto overflow-hidden bg-center bg-cover bg-cuadro-1">
         </div>
 
         <div class="flex items-center justify-center mt-8 space-x-1">
