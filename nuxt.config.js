@@ -163,7 +163,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://personadiseno.netlify.app',
+    hostname: 'https://www.personaportfolio.com',
     gzip: true,
   },
 
