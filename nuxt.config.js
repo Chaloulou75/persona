@@ -4,7 +4,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Persona Diseño | Julieta Mercerat',
+    title: 'Persona Portfolio | Julieta Mercerat',
     htmlAttrs: {
       lang: 'es',
     },

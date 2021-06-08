@@ -16,6 +16,7 @@
       </div>
 
       <transition name="component-fade" appear v-on:appear="switchLocale()" >
+
       <template v-if="$i18n.locale ==='fr'">
         <div class="flex flex-col items-center justify-center max-w-sm min-h-screen mx-auto my-8" v-if="languageActive">
 
@@ -129,7 +130,7 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Sobre Mi',
+    title: 'Persona Portfolio | Sobre Mi',
     meta: [
       {
         hid: 'description',

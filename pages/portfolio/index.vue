@@ -115,7 +115,7 @@ export default {
     }
   },
   head: {
-    title: 'Persona Diseño | Porfolio de Julieta Mercerat',
+    title: 'Persona Portfolio | Porfolio de Julieta Mercerat',
     meta: [
       {
         hid: 'description',

@@ -128,7 +128,7 @@ import ScrollOut from "scroll-out";
 
 export default {
   head: {
-    title: 'Persona Diseño | Porfolio - Dia 9',
+    title: 'Persona Portfolio - Dia 9',
     meta: [
       {
         hid: 'description',
