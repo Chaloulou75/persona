@@ -37,7 +37,7 @@
           <div class="h-full rounded-full">
             <div class="p-1 rounded-full bg-gradient-to-tr from-yellowjuli to-fuchsia-600">
               <div class="block p-1 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg hover:-rotate-12">
-                <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full h-auto">
+                <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotoCV2.jpg" class="object-contain w-full h-auto rounded-full">
               </div>
             </div>
           </div>
@@ -515,7 +515,7 @@
               <div class="h-full rounded-full">
                 <div class="p-1 rounded-full bg-gradient-to-tr from-yellowjuli to-fuchsia-600">
                   <div class="block p-1 transition duration-500 ease-in-out transform bg-white rounded-full shadow-xl hover:-rotate-180">
-                    <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotocurvit.png" class="object-contain w-full h-auto">
+                    <img loading="lazy" alt="fotocv" src="~/assets/img/paginaR/fotoCV2.jpg" class="object-contain w-full h-auto rounded-full">
                   </div>
                 </div>
               </div>
