@@ -22,7 +22,7 @@
 
           <div class="px-4 py-4 mr-auto" data-scroll>
             <h2 class="py-4 text-sm font-semibold text-gray-900">a// Qui es-tu?</h2>
-            <vue-typed-js :strings="['b // Salut! Moi, c’est Julieta, une designer hyperactive…', 'b // Bonjour, je m´appelle Julieta Mercerat. En tant que designer, je crois en la capacité de créer un environnement contemporain, qui accompagne les personnes dans le progrès et le développement des sociétés, en associant l’efficacité et la responsabilité. Je crois au travail d´équipe, à la curiosité et à l’expérience comme moteurs principaux.']" :startDelay="1000" :backDelay="100" :backSpeed="20" :typeSpeed="20" :showCursor="false">
+            <vue-typed-js :strings="['b // Salut! Moi, c’est Julieta, une designer hyperactive…', 'b // Bonjour, je m’appelle Julieta Mercerat. En tant que designer, je crois en la capacité de créer un environnement contemporain, qui accompagne les personnes dans le progrès et le développement des sociétés, en associant l’efficacité et la responsabilité. Je crois au travail d’équipe, à la curiosité et à l’expérience comme moteurs principaux.']" :startDelay="1000" :backDelay="100" :backSpeed="20" :typeSpeed="20" :showCursor="false">
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
@@ -33,7 +33,7 @@
               <h2 class="py-4 text-sm font-semibold text-left text-gray-900 typing"></h2>
             </vue-typed-js>
 
-            <vue-typed-js :strings="['b// Bon, que dire…', 'b// Le choix de ce nom est basé sur une réflexion autour du design et plus particulièrement du design de mode. Cette réflexion tend à percevoir le design comme une manifestation sociologique d’une culture globale, orientée sur l´image. C’est-à-dire, comment l´instant présent se construit par un système de relations immédiates et superficielles, pas pour autant intéressantes. Les individus réussissent à construire des systèmes de communication, des langages complexes, où les personnes deviennent personnages qui communiquent.']" :startDelay="16000" :typeSpeed="20" :backSpeed="20" :showCursor="false" >
+            <vue-typed-js :strings="['b// Bon, que dire…', 'b// Le choix de ce nom est basé sur une réflexion autour du design et plus particulièrement du design de mode. Cette réflexion tend à percevoir le design comme une manifestation sociologique d’une culture globale, orientée sur l’image. C’est-à-dire, comment l’instant présent se construit par un système de relations immédiates et superficielles, pas pour autant intéressantes. Les individus réussissent à construire des systèmes de communication, des langages complexes, où les personnes deviennent personnages qui communiquent.']" :startDelay="16000" :typeSpeed="20" :backSpeed="20" :showCursor="false" >
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
@@ -50,7 +50,7 @@
           </div>
 
           <div class="px-4 py-4 mb-auto mr-auto" data-scroll>
-            <vue-typed-js :strings="['Il y a beaucoup de façons d’observer et de comprendre le quotidien. Quand je commence à travailler un sujet, j’ai tendance à penser aux personnes. C´est pour moi une source d´inspiration sans limite. Selon comment je me sens à chaque moment, je m’inspire de différentes manières.']" :startDelay="39000" :typeSpeed="20" :showCursor="false" >
+            <vue-typed-js :strings="['Il y a beaucoup de façons d’observer et de comprendre le quotidien. Quand je commence à travailler un sujet, j’ai tendance à penser aux personnes. C’est pour moi une source d’inspiration sans limite. Selon comment je me sens à chaque moment, je m’inspire de différentes manières.']" :startDelay="39000" :typeSpeed="20" :showCursor="false" >
               <p class="text-sm text-justify text-gray-600 typing"></p>
             </vue-typed-js>
           </div>
