@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
+    <div class="relative flex flex-col min-h-screen overflow-y-hidden transition duration-1000 bg-background-primary" :class="theme">
       <Navigation />
       <!-- los 3 botones -->
       <div class="absolute inset-y-0 right-0 z-30 mt-16 mr-13 lg:mt-6 cursor-mano lg:mr-32">
@@ -28,7 +28,7 @@
       <main class="relative w-full min-h-full">
         <!-- photos de colores -->
         <template v-if="foto === 'Azul' ">
-          <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
+          <div class="flex flex-col items-center justify-between p-10 space-y-4 xl:justify-around lg:p-32 lg:space-y-0 lg:flex-row" >
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full" src="~assets/img/proyectos/dias/dia1.jpg" alt="azul" />
               <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
@@ -41,7 +41,7 @@
         </template>
 
         <template v-else-if="foto === 'Amarillo'">
-          <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row" >
+          <div class="flex flex-col items-center justify-between p-10 space-y-4 lg:p-32 lg:space-y-0 lg:flex-row xl:justify-around" >
 
             <div class="relative w-full h-64 max-w-lg overflow-hidden rounded-lg lg:w-1/2" >
               <img loading="lazy" class="absolute inset-0 object-cover w-full h-full " src="~assets/img/proyectos/dias/dia5.jpg" alt="amarillouna" />
@@ -122,8 +122,9 @@
           </div>
         </transition>
 
-        <Footerinicio />
+
       </main>
+      <Footerinicio />
     </div>
 </template>
 
