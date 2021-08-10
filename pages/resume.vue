@@ -419,7 +419,7 @@
                   <h3 class="text-lg font-semibold transform -rotate-90 text-redjuli">Info</h3>
                 </div>
                 <div class="self-center justify-self-auto">
-                  <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">26 {{ $t('años')}} // 06.04.1994</p>
+                  <p class="font-medium transform -rotate-90 whitespace-nowrap text-redjuli">27 {{ $t('años')}} // 06.04.1994</p>
                 </div>
                 <div class="self-end justify-self-auto">
                   <p class="text-sm font-bold tracking-wide uppercase transform -rotate-90 whitespace-nowrap text-redjuli">denim &bull; {{ $t('conceptos')}} &bull; {{ $t('productos')}} &bull; {{ $t('diseño')}}</p>
