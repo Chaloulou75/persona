@@ -66,7 +66,7 @@ export default {
         }
       }
     ],
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
     '@nuxtjs/sitemap', //toujours en dernier des modules
   ],
 
