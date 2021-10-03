@@ -20,6 +20,7 @@
 </template>
 <script>
 export default {
+  name: 'Modal',
   props: ['image'],
 }
 </script>

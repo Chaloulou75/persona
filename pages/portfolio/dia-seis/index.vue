@@ -136,8 +136,15 @@
 
 <script>
 import ScrollOut from "scroll-out";
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
+import Lostresbotones from '@/components/Lostresbotones.vue'
+import VolverButton from '@/components/VolverButton.vue'
+import Logopersona from '@/components/Logopersona.vue'
+import ScrollLink from '@/components/ScrollLink.vue'
 
 export default {
+  components: { Navigation, Footer, Lostresbotones, VolverButton, Logopersona, ScrollLink },
   head: {
     title: 'Persona Porfolio - Dia 6',
     meta: [

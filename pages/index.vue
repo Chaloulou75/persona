@@ -129,7 +129,10 @@
 </template>
 
 <script>
+import Navigation from '@/components/Navigation.vue'
+import Footerinicio from '@/components/Footerinicio.vue'
 export default {
+  components: { Navigation, Footerinicio },
   transition: {
     name: 'page',
     beforeEnter() {

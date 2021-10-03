@@ -109,7 +109,9 @@
 
 <script>
 import Logopersona from './Logopersona.vue';
+
 export default {
+  name: 'Navigation',
   components: { Logopersona },
   data() {
     return {

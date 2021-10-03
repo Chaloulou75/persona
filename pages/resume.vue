@@ -4,21 +4,6 @@
     <Navigation />
     <Lostresbotones />
 
-    <!--info -->
-    <div class="fixed inset-y-0 left-0 items-center hidden my-20 lg:grid">
-      <div class="flex items-center justify-center space-x-4 transform -rotate-90">
-        <p class="font-medium whitespace-nowrap text-redjuli">Paris</p>
-        <div class="transform rotate-90 ">
-          <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5">
-        </div>
-        <h3 class="text-lg font-semibold text-redjuli">Info</h3>
-      </div>
-      <div class="flex justify-end transform -rotate-90">
-        <p class="text-sm font-bold tracking-wide uppercase whitespace-nowrap text-redjuli">denim &bull; {{ $t('conceptos')}} &bull; {{ $t('productos')}} &bull; {{ $t('diseño')}}</p>
-      </div>
-
-    </div>
-
     <div class="relative w-full min-h-screen mb-16 lg:hidden"> <!--Resume Mobile -->
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-2 py-1 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-2 shadow-xl left-4 top-1/4 border-redjuli hover:bg-redjuli hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano hover:text-white"> <!--Button Vimeo -->
@@ -432,7 +417,7 @@
       </div> <!-- end contacto sm-->
     </div>
 
-    <main class="relative flex-col justify-between hidden min-h-full px-4 mx-auto mt-12 mb-24 lg:flex max-w-7xl"> <!--Resume screen LG -->
+    <main class="relative flex-col justify-between hidden min-h-full px-4 mx-auto mt-12 mb-24 max-w-7xl lg:flex"> <!--Resume screen LG -->
 
       <div class="fixed z-50 flex items-center justify-center h-auto px-5 py-3 text-sm font-medium tracking-wider text-gray-600 uppercase transition duration-300 ease-in-out transform -rotate-45 bg-transparent border-4 shadow-xl top-80 left-16 border-redjuli hover:bg-redjuli hover:text-white hover:rotate-45 hover:border-white focus:outline-none focus:shadow-outline-none cursor-mano"> <!--Button Vimeo -->
         <a href="https://vimeo.com/502370696" target="_blank">
@@ -452,8 +437,23 @@
           </a>
       </div>
 
-      <div class="flex justify-between min-h-full">
-        <div class="flex flex-col justify-between w-1/3 min-h-full mx-auto">
+      <div class="relative flex justify-between min-h-full px-4">
+
+        <!--info -->
+        <div class="flex flex-col items-center flex-shrink-0 w-4 h-auto mx-auto justify-evenly">
+          <div class="flex items-center justify-center mt-24 space-x-4 transform -rotate-90">
+            <p class="font-medium whitespace-nowrap text-redjuli">Paris</p>
+            <div class="transform rotate-90 ">
+              <img loading="lazy" alt="ubi" src="~/assets/img/paginaR/logoubi.png" class="object-contain h-5">
+            </div>
+            <h3 class="text-lg font-semibold text-redjuli">Info</h3>
+          </div>
+          <div class="flex justify-center w-full transform -rotate-90">
+            <p class="text-sm font-bold tracking-wide uppercase whitespace-nowrap text-redjuli">denim &bull; {{ $t('conceptos')}} &bull; {{ $t('productos')}} &bull; {{ $t('diseño')}}</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between min-h-full mx-auto w-3/10">
           <div class="text-bluejuli"> <!--presentation -->
             <div class="py-8 mt-auto text-4xl font-bold lineyellow"><span>Julieta Mercerat</span> <br/>
             <p class="text-xs">1 rue Jean Leclaire, 75017</p>
@@ -572,7 +572,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col justify-between w-1/3 min-h-full mx-auto">
+        <div class="flex flex-col justify-between min-h-full mx-auto w-3/10">
           <div class="mt-auto mb-20"> <!--educacion -->
               <h2 class="py-4 pl-6 text-lg font-hairline text-gray-900 uppercase lineyellow">
                 // <span>{{ $t('educacion')}}</span></h2>
@@ -646,7 +646,7 @@
               </div>
           </div>
         </div>
-        <div class="flex flex-col justify-start w-1/3 min-h-full mx-auto">
+        <div class="flex flex-col justify-start min-h-full mx-auto w-3/10">
           <!--logo -->
           <div class="flex flex-col items-start justify-start h-auto py-8">
               <img loading="lazy" alt="logo" src="~/assets/img/logo/logo.png" class="object-contain h-24 mx-auto">
@@ -753,7 +753,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-around h-auto">
+      <div class="flex justify-between h-auto">
         <!--idiomas -->
         <div class="flex flex-col items-start justify-center space-y-4">
           <div class="px-4 py-4 text-4xl uppercase border-2 border-dashed border-yellowjuli text-yellowjuli">
@@ -856,8 +856,12 @@
 
 <script>
 import ScrollOut from "scroll-out";
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
+import Lostresbotones from '@/components/Lostresbotones.vue'
 
 export default {
+  components: { Navigation, Footer, Lostresbotones},
   head: {
     title: 'Persona Portfolio | Resume Julieta Mercerat',
     meta: [

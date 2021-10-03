@@ -6,6 +6,7 @@
 import inViewport from 'in-viewport';
 
 export default {
+    name: 'Count',
     props: ['to'],
     data() {
         return {

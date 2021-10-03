@@ -39,7 +39,12 @@
 </template>
 
 <script>
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
+import Lostresbotones from '@/components/Lostresbotones.vue'
+
 export default {
+  components: { Navigation, Footer, Lostresbotones},
   transition: {
     name: 'page',
     beforeEnter() {

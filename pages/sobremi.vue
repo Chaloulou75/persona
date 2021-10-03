@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-white">
     <Navigation />
-    <lostresbotones />
+    <Lostresbotones />
     <main class="relative w-full text-gray-900">
 
       <h1 class="py-4 text-2xl font-semibold tracking-widest text-center uppercase">{{$t('about')}}</h1>
@@ -129,8 +129,12 @@
 
 <script>
 import ScrollOut from "scroll-out";
+import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
+import Lostresbotones from '@/components/Lostresbotones.vue'
 
 export default {
+  components: { Navigation, Footer, Lostresbotones},
   head: {
     title: 'Persona Portfolio | Sobre Mi',
     meta: [

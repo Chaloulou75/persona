@@ -6,6 +6,7 @@
 
 <script>
 export default {
+    name: 'ScrollLink',
     props: ['href'],
     methods: {
         scroll() {
