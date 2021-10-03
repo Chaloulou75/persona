@@ -30,8 +30,8 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^9.0.0",
     "node-sass": "^6.0.0",
-    "nuxt-compress": "^5.0.0",
     "postcss": "^8.2.15",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "nuxt-compress": "^5.0.0"
   }
 }
