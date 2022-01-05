@@ -118,7 +118,7 @@
     </transition> -->
 
     <VolverButton />
-    <LazyFooter />
+    <Footer />
   </div>
 </template>
 

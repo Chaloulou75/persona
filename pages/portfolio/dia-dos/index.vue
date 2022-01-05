@@ -108,7 +108,7 @@
         >
 
         <div id="ultima2" @click='toggleColorFoto'>
-          <img loading="lazy" alt="seis" src="~assets/img/proyectos/diados/6.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+          <img loading="lazy" alt="nueve" src="~assets/img/proyectos/diados/9.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
         </div>
     </div>
     </transition>
@@ -187,6 +187,21 @@ export default {
           id: 6,
           name: 'seis',
           href: require(`~/assets/img/proyectos/diados/6.jpg`)
+        },
+        {
+          id: 7,
+          name: 'siete',
+          href: require(`~/assets/img/proyectos/diados/7.jpg`)
+        },
+        {
+          id: 8,
+          name: 'ocho',
+          href: require(`~/assets/img/proyectos/diados/8.jpg`)
+        },
+        {
+          id: 9,
+          name: 'nueve',
+          href: require(`~/assets/img/proyectos/diados/9.jpg`)
         }
       ],
       index: null

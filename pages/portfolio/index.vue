@@ -53,53 +53,53 @@
           </div>
         </nuxt-link>
 
-        <nuxt-link :to="localePath('/portfolio/dia-siete')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-7 hover:bg-gradient-to-br from-red-600 to-redjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-siete')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-7 hover:bg-gradient-to-br from-red-600 to-redjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-opacity-50 bg-redjuli"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="7" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2019"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
 
-        <nuxt-link :to="localePath('/portfolio/dia-ocho')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-8 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-ocho')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-8 hover:bg-gradient-to-br from-yellow-500 to-yellowjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-yellow-600 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="8" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2019"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
 
-        <nuxt-link :to="localePath('/portfolio/dia-nueve')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-9 hover:bg-gradient-to-br from-gray-900 to-black dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-nueve')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-9 hover:bg-gradient-to-br from-gray-900 to-black dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="9" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
 
-        <nuxt-link :to="localePath('/portfolio/dia-dies')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-10 hover:bg-gradient-to-br from-blue-500 to-bluejuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-dies')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-10 hover:bg-gradient-to-br from-blue-500 to-bluejuli dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-blue-800 bg-opacity-50"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="10" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
 
-        <nuxt-link :to="localePath('/portfolio/dia-once')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-11 hover:bg-gradient-to-br from-red-600 to-redjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-once')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-11 hover:bg-gradient-to-br from-red-600 to-redjuli dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-red-800 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="11" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2017"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
 
-        <nuxt-link :to="localePath('/portfolio/dia-doce')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-12 hover:bg-gradient-to-br from-blue-600 to-bluejuli dias-moove hover:rotate-3 lg:hover:rotate-6">
+        <!-- <nuxt-link :to="localePath('/portfolio/dia-doce')" class="relative transition duration-300 ease-in-out transform bg-center bg-cover bg-dia-12 hover:bg-gradient-to-br from-blue-600 to-bluejuli dias-moove hover:rotate-3 lg:hover:rotate-6">
           <div class="absolute inset-0 bg-blue-500 bg-opacity-25"></div>
           <div class="relative flex flex-col items-start h-full">
             <h2 class="px-4 py-4 text-3xl font-bold leading-normal tracking-wider text-white uppercase"><span>{{ $t('D')}}</span><span>{{ $t('Í')}}</span><span>{{ $t('A')}}</span><span>{{ $t('R')}}</span> <count :to="12" class="text-xl ubuntu"></count></h2>
             <p class="px-4 py-1 text-lg leading-normal tracking-wider text-white lg:py-0"><count :to="2018"></count></p>
           </div>
-        </nuxt-link>
+        </nuxt-link> -->
       </div>
     </div>
     <Footer />

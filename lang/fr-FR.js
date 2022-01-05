@@ -35,12 +35,12 @@ export default {
   diaunofrase2: 'travail de recherche de tendances pour un événement virtuel',
 
   //dia 2
-  diadostitle: 'POSSIBILITÉS D\'ABSTRACTION',
+  diadostitle: 'BLUE CODE',
   diadospalabra1: 'Concept',
   diadospalabra2: 'Photographie digitale',
   diadospalabra3: 'Littérature',
   diadosfrase1: ' Ce jour là, je me suis concentrée sur les corps, jusqu\'à voir seulement des formes qui flottaient.',
-  diadosfrase2: 'Travail de photographie',
+  diadosfrase2: 'Collection SS2020, Santista Jeanswear',
 
   //dia 3
   diatrestitle: 'TREND REVIEW',
@@ -55,15 +55,15 @@ export default {
   diacuatropalabra2: 'Design',
   diacuatropalabra3: 'Conceptualisation',
   diacuatrofrase1: 'Le quatrième jour j\'ai découvert un chemin, j\'ai continué comme si le temps s\'était figé, avec la même obsession.',
-  diacuatrofrase2: 'Travail de développement de marque et conceptualisation de deux collections.',
+  diacuatrofrase2: 'Trend Report SS2022.',
 
   //dia 5
-  diacincotitle: 'Subversif',
+  diacincotitle: 'HERE',
   diacincopalabra1: 'Expérimentation',
   diacincopalabra2: 'Design',
   diacincopalabra3: 'Conceptualisation',
   diacincofrase1: 'Au fur et à mesure, j\'ai commencé à m\'empreindre d\'un sentiment mystique, je me suis vue absorbée par la manière théâtrale qu\'ont les humains de s\'habiller.',
-  diacincofrase2: 'Travail de développement de marque de prêt-à-porter avec un système de communication complète.',
+  diacincofrase2: 'Collection SS2021, Santista Jeanswear.',
 
   //dia 6
   diaseistitle: 'LE SHOW',

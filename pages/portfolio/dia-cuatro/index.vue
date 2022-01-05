@@ -76,7 +76,7 @@
             </div>
           </div>
 
-          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">KAUK
+          <div class="w-2/3 px-2 ml-auto text-2xl text-right uppercase lg:text-4xl text-bluejuli">BE DISOBEDIENT
           </div>
         </div>
 
@@ -107,7 +107,7 @@
             >
 
           <div id="ultima4" @click='toggleColorFoto'>
-            <img loading="lazy" alt="quince" src="~assets/img/proyectos/diacuatro/15.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+            <img loading="lazy" alt="quince" src="~assets/img/proyectos/diacuatro/7.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
 
         </div>
@@ -192,47 +192,47 @@ export default {
           id: 7,
           name: 'siete',
           href: require(`~/assets/img/proyectos/diacuatro/7.jpg`)
-        },
-        {
-          id: 8,
-          name: 'ocho',
-          href: require(`~/assets/img/proyectos/diacuatro/8.jpg`)
-        },
-        {
-          id: 9,
-          name: 'nueve',
-          href: require(`~/assets/img/proyectos/diacuatro/9.jpg`)
-        },
-        {
-          id: 10,
-          name: 'dies',
-          href: require(`~/assets/img/proyectos/diacuatro/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          href: require(`~/assets/img/proyectos/diacuatro/11.jpg`)
-        },
-        {
-          id: 12,
-          name: 'doce',
-          href: require(`~/assets/img/proyectos/diacuatro/12.jpg`)
-        },
-        {
-          id: 13,
-          name: 'trece',
-          href: require(`~/assets/img/proyectos/diacuatro/13.jpg`)
-        },
-        {
-          id: 14,
-          name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diacuatro/14.jpg`)
-        },
-        {
-          id: 15,
-          name: 'quinze',
-          href: require(`~/assets/img/proyectos/diacuatro/15.jpg`)
         }
+        // {
+        //   id: 8,
+        //   name: 'ocho',
+        //   href: require(`~/assets/img/proyectos/diacuatro/8.jpg`)
+        // },
+        // {
+        //   id: 9,
+        //   name: 'nueve',
+        //   href: require(`~/assets/img/proyectos/diacuatro/9.jpg`)
+        // },
+        // {
+        //   id: 10,
+        //   name: 'dies',
+        //   href: require(`~/assets/img/proyectos/diacuatro/10.jpg`)
+        // },
+        // {
+        //   id: 11,
+        //   name: 'once',
+        //   href: require(`~/assets/img/proyectos/diacuatro/11.jpg`)
+        // },
+        // {
+        //   id: 12,
+        //   name: 'doce',
+        //   href: require(`~/assets/img/proyectos/diacuatro/12.jpg`)
+        // },
+        // {
+        //   id: 13,
+        //   name: 'trece',
+        //   href: require(`~/assets/img/proyectos/diacuatro/13.jpg`)
+        // },
+        // {
+        //   id: 14,
+        //   name: 'quatorze',
+        //   href: require(`~/assets/img/proyectos/diacuatro/14.jpg`)
+        // },
+        // {
+        //   id: 15,
+        //   name: 'quinze',
+        //   href: require(`~/assets/img/proyectos/diacuatro/15.jpg`)
+        // }
       ],
       index : null
     };

@@ -36,12 +36,12 @@ export default {
   diaunofrase2 : 'TRABAJO DE REVELAMIENTO DE TENDENCIAS PARA EVENTO VIRTUAL',
 
   //dia 2
-  diadostitle: 'POSIBILIDADES DE ABSTRACCIÓN',
+  diadostitle: 'BLUE CODE',
   diadospalabra1: 'Concepto',
   diadospalabra2: 'Fotografía digital',
   diadospalabra3: 'Literatura',
   diadosfrase1: 'Este día, me obsesioné con los cuerpos, hasta ver solo formas flotando.',
-  diadosfrase2: 'TRABAJO DE RELATO FOTOGRAFICO',
+  diadosfrase2: 'Collection SS2020, Santista Jeanswear',
 
   //dia 3
   diatrestitle: 'TREND REVIEW',
@@ -56,15 +56,15 @@ export default {
   diacuatropalabra2: 'Diseño de autor',
   diacuatropalabra3: 'Conceptualización',
   diacuatrofrase1: 'El cuarto día descubrí un camino y continué, como si el tiempo no pasara, con la misma obsesión.',
-  diacuatrofrase2: 'TRABAJO DE DESARROLLO DE MARCA Y CONCEPTUALIZACIÓN DE DOS COLECCIONES.',
+  diacuatrofrase2: 'Trend Report SS2022.',
 
   //dia 5
-  diacincotitle: 'Subversivo',
+  diacincotitle: 'HERE',
   diacincopalabra1: 'Experimentación',
   diacincopalabra2: 'Design',
   diacincopalabra3: 'Conceptualización',
   diacincofrase1: 'Con el pasar de los días me empecé a contagiar de un sentimiento místico, me vi absorbida por la teatralidad de la forma de vestir de los humanos.',
-  diacincofrase2: 'TRABAJO DE DESARROLLO DE MARCA READY-TO-WEAR, CON SISTEMA DE COMUNICACIÓN COMPLETO.',
+  diacincofrase2: 'Collection SS2021, Santista Jeanswear.',
 
   //dia 6
   diaseistitle: 'EL SHOW',

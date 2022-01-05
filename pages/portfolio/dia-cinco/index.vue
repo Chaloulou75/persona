@@ -108,7 +108,7 @@
           >
 
           <div id="ultima5" @click='toggleColorFoto'>
-              <img loading="lazy" alt="seize" src="~assets/img/proyectos/diacinco/16.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
+              <img loading="lazy" alt="dies" src="~assets/img/proyectos/diacinco/10.jpg" class="object-cover w-full h-auto shadow-lg lg:object-contain lg:h-screen cursor-mano">
           </div>
         </div>
       </transition>
@@ -119,7 +119,7 @@
     </transition> -->
 
     <VolverButton />
-    <LazyFooter />
+    <Footer />
   </div>
 </template>
 
@@ -207,37 +207,37 @@ export default {
           id: 10,
           name: 'dies',
           href: require(`~/assets/img/proyectos/diacinco/10.jpg`)
-        },
-        {
-          id: 11,
-          name: 'once',
-          href: require(`~/assets/img/proyectos/diacinco/11.jpg`)
-        },
-        {
-          id: 12,
-          name: 'doce',
-          href: require(`~/assets/img/proyectos/diacinco/12.jpg`)
-        },
-        {
-          id: 13,
-          name: 'trece',
-          href: require(`~/assets/img/proyectos/diacinco/13.jpg`)
-        },
-        {
-          id: 14,
-          name: 'quatorze',
-          href: require(`~/assets/img/proyectos/diacinco/14.jpg`)
-        },
-        {
-          id: 15,
-          name: 'quinze',
-          href: require(`~/assets/img/proyectos/diacinco/15.jpg`)
-        },
-        {
-          id: 16,
-          name: 'diesiseis',
-          href: require(`~/assets/img/proyectos/diacinco/16.jpg`)
         }
+        // {
+        //   id: 11,
+        //   name: 'once',
+        //   href: require(`~/assets/img/proyectos/diacinco/11.jpg`)
+        // },
+        // {
+        //   id: 12,
+        //   name: 'doce',
+        //   href: require(`~/assets/img/proyectos/diacinco/12.jpg`)
+        // },
+        // {
+        //   id: 13,
+        //   name: 'trece',
+        //   href: require(`~/assets/img/proyectos/diacinco/13.jpg`)
+        // },
+        // {
+        //   id: 14,
+        //   name: 'quatorze',
+        //   href: require(`~/assets/img/proyectos/diacinco/14.jpg`)
+        // },
+        // {
+        //   id: 15,
+        //   name: 'quinze',
+        //   href: require(`~/assets/img/proyectos/diacinco/15.jpg`)
+        // },
+        // {
+        //   id: 16,
+        //   name: 'diesiseis',
+        //   href: require(`~/assets/img/proyectos/diacinco/16.jpg`)
+        // }
       ],
       index: null
     };
